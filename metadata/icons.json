@@ -1,0 +1,11 @@
+{
+  "icons": [
+    {
+      "name": "security-cctv",
+      "category": "security",
+      "tags": ["camera", "surveillance"],
+      "styles": ["outline", "filled"],
+      "sizes": [16, 24, 32, 40, 48]
+    }
+  ]
+}
