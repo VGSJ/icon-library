@@ -123,7 +123,7 @@ function getCategoryLabel(icon) {
 }
 
 function svgPath(name, style, size) {
-  return `../raw-svg/${style}/${size}/${name}.svg`;
+  return `./raw-svg/${style}/${size}/${name}.svg`;
 }
 
 async function fetchSvg(name, style, size) {
@@ -238,7 +238,7 @@ function rerender() {
    Init
 -------------------------------------------------- */
 async function loadIconsJson() {
-  const res = await fetch("../metadata/icons.json");
+  const res = await fetch("./metadata/icons.json");
   if (!res.ok) throw new Error("Failed to load icons.json");
   return res.json();
 }
