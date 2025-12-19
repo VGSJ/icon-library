@@ -1,0 +1,12 @@
+{
+  "name": "icon-library",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "icons:sync": "node scripts/icons-sync.mjs",
+    "dev": "npx http-server site -p 8080 -c-1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}

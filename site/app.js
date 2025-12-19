@@ -1,0 +1,264 @@
+const els = {
+  grid: document.getElementById("grid"),
+  status: document.getElementById("status"),
+  search: document.getElementById("search"),
+  style: document.getElementById("style"),
+  size: document.getElementById("size"),
+};
+
+/* --------------------------------------------------
+   Toast
+-------------------------------------------------- */
+const toast = document.createElement("div");
+toast.className = "toast";
+document.body.appendChild(toast);
+
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 1400);
+}
+
+/* --------------------------------------------------
+   Clipboard (Safari-safe)
+-------------------------------------------------- */
+async function copyText(text) {
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  } catch (_) {}
+
+  try {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.left = "0";
+    ta.style.top = "0";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    ta.setSelectionRange(0, ta.value.length);
+    const ok = document.execCommand("copy");
+    document.body.removeChild(ta);
+    return ok;
+  } catch (_) {
+    return false;
+  }
+}
+
+/* --------------------------------------------------
+   Manual copy modal (guaranteed fallback)
+-------------------------------------------------- */
+function openManualCopy(svg) {
+  const overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.inset = "0";
+  overlay.style.background = "rgba(0,0,0,0.45)";
+  overlay.style.display = "grid";
+  overlay.style.placeItems = "center";
+  overlay.style.zIndex = "9999";
+
+  const box = document.createElement("div");
+  box.style.background = "var(--bg)";
+  box.style.color = "var(--fg)";
+  box.style.width = "min(90vw, 720px)";
+  box.style.borderRadius = "16px";
+  box.style.padding = "16px";
+  box.style.boxShadow = "0 20px 40px rgba(0,0,0,0.35)";
+
+  const title = document.createElement("div");
+  title.textContent = "Press ⌘ + C to copy SVG";
+  title.style.fontWeight = "600";
+  title.style.marginBottom = "8px";
+
+  const hint = document.createElement("div");
+  hint.textContent = "Safari blocked automatic copy. This always works.";
+  hint.style.fontSize = "12px";
+  hint.style.opacity = "0.7";
+  hint.style.marginBottom = "8px";
+
+  const ta = document.createElement("textarea");
+  ta.value = svg;
+  ta.style.width = "100%";
+  ta.style.height = "260px";
+  ta.style.fontFamily = "ui-monospace, SFMono-Regular, Menlo, monospace";
+  ta.style.fontSize = "12px";
+  ta.style.borderRadius = "10px";
+  ta.style.padding = "10px";
+
+  const close = document.createElement("button");
+  close.textContent = "Close";
+  close.style.marginTop = "12px";
+
+  close.onclick = () => overlay.remove();
+  overlay.onclick = (e) => e.target === overlay && overlay.remove();
+
+  box.appendChild(title);
+  box.appendChild(hint);
+  box.appendChild(ta);
+  box.appendChild(close);
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+
+  ta.focus();
+  ta.select();
+}
+
+/* --------------------------------------------------
+   Utilities
+-------------------------------------------------- */
+function normalize(s = "") {
+  return s.toLowerCase().trim();
+}
+
+function getCategoryLabel(icon) {
+  // Supports both old format (string) and new format ({id,label})
+  if (!icon || !icon.category) return "uncategorized";
+  if (typeof icon.category === "string") return icon.category;
+  return icon.category.label || "uncategorized";
+}
+
+function svgPath(name, style, size) {
+  return `../raw-svg/${style}/${size}/${name}.svg`;
+}
+
+async function fetchSvg(name, style, size) {
+  const path = svgPath(name, style, size);
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(`Missing SVG: ${path}`);
+  return res.text();
+}
+
+function iconMatches(icon, query) {
+  if (!query) return true;
+  const q = normalize(query);
+
+  const categoryLabel = getCategoryLabel(icon);
+
+  const hay = [
+    icon.name,
+    categoryLabel,
+    ...(icon.tags || []),
+  ]
+    .map(normalize)
+    .join(" ");
+
+  return hay.includes(q);
+}
+
+/* --------------------------------------------------
+   Rendering
+-------------------------------------------------- */
+function renderCard(icon, style, size) {
+  const card = document.createElement("button");
+  card.type = "button";
+  card.className = "card";
+  card.title = "Click to copy SVG";
+
+  const preview = document.createElement("div");
+  preview.className = "preview";
+  preview.innerHTML = "…";
+
+  const info = document.createElement("div");
+
+  const name = document.createElement("div");
+  name.className = "name";
+  name.textContent = icon.name;
+
+  const meta = document.createElement("div");
+  meta.className = "meta";
+
+  const categoryLabel = getCategoryLabel(icon);
+  meta.textContent = `${categoryLabel} • ${style} • ${size}px`;
+
+  info.appendChild(name);
+  info.appendChild(meta);
+
+  card.appendChild(preview);
+  card.appendChild(info);
+
+  fetchSvg(icon.name, style, size)
+    .then((svg) => {
+      preview.innerHTML = svg;
+    })
+    .catch(() => {
+      preview.innerHTML = "⚠️";
+      meta.textContent += " • missing";
+    });
+
+  card.addEventListener("click", async () => {
+    const path = svgPath(icon.name, style, size);
+    try {
+      const svg = await fetchSvg(icon.name, style, size);
+      const ok = await copyText(svg);
+      if (ok) {
+        showToast(`Copied SVG: ${icon.name} (${style} ${size})`);
+      } else {
+        openManualCopy(svg);
+      }
+    } catch (_) {
+      showToast(`Missing: ${path}`);
+    }
+  });
+
+  return card;
+}
+
+/* --------------------------------------------------
+   App state
+-------------------------------------------------- */
+let allIcons = [];
+
+function rerender() {
+  const query = els.search.value;
+  const style = els.style.value;
+  const size = Number(els.size.value);
+
+  const filtered = allIcons.filter((icon) => iconMatches(icon, query));
+
+  els.grid.innerHTML = "";
+
+  if (filtered.length === 0) {
+    els.status.textContent = "No matching icons.";
+    return;
+  }
+
+  els.status.textContent = `${filtered.length} icon(s)`;
+
+  for (const icon of filtered) {
+    els.grid.appendChild(renderCard(icon, style, size));
+  }
+}
+
+/* --------------------------------------------------
+   Init
+-------------------------------------------------- */
+async function loadIconsJson() {
+  const res = await fetch("../metadata/icons.json");
+  if (!res.ok) throw new Error("Failed to load icons.json");
+  return res.json();
+}
+
+async function main() {
+  try {
+    const data = await loadIconsJson();
+    allIcons = data.icons || [];
+    els.status.textContent = `Loaded ${allIcons.length} icon(s).`;
+    rerender();
+  } catch (e) {
+    els.status.textContent = `Error: ${e.message}`;
+  }
+}
+
+/* --------------------------------------------------
+   Events
+-------------------------------------------------- */
+els.search.addEventListener("input", rerender);
+els.style.addEventListener("change", rerender);
+els.size.addEventListener("change", rerender);
+
+main();
