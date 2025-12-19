@@ -443,11 +443,14 @@
     {
       "name": "wrench",
       "category": {
-        "id": "uncategorized",
-        "label": "uncategorized"
+        "id": "building-construction",
+        "label": "Building & Construction"
       },
       "tags": [
-        "wrench"
+        "wrench",
+        "tools",
+        "spanner",
+        "repair"
       ],
       "styles": [
         "outline",
