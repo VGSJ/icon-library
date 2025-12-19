@@ -439,6 +439,27 @@
         40,
         48
       ]
+    },
+    {
+      "name": "wrench",
+      "category": {
+        "id": "uncategorized",
+        "label": "uncategorized"
+      },
+      "tags": [
+        "wrench"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
     }
   ]
 }
