@@ -211,7 +211,7 @@
       "name": "cargo-lift",
       "category": {
         "id": "vertical-transport",
-        "label": "vertical transport"
+        "label": "Vertical Transport"
       },
       "tags": [
         "cargo",
@@ -237,7 +237,7 @@
       "name": "escalator-down",
       "category": {
         "id": "vertical-transport",
-        "label": "vertical transport"
+        "label": "Vertical Transport"
       },
       "tags": [
         "escalator",
@@ -262,7 +262,7 @@
       "name": "escalator-down-person",
       "category": {
         "id": "vertical-transport",
-        "label": "vertical transport"
+        "label": "Vertical Transport"
       },
       "tags": [
         "escalator",
@@ -288,7 +288,7 @@
       "name": "escalator-up",
       "category": {
         "id": "vertical-transport",
-        "label": "vertical transport"
+        "label": "Vertical Transport"
       },
       "tags": [
         "escalator",
@@ -313,7 +313,7 @@
       "name": "escalator-up-person",
       "category": {
         "id": "vertical-transport",
-        "label": "vertical transport"
+        "label": "Vertical Transport"
       },
       "tags": [
         "escalator",
@@ -339,7 +339,7 @@
       "name": "passenger-lift-arrow",
       "category": {
         "id": "vertical-transport",
-        "label": "vertical transport"
+        "label": "Vertical Transport"
       },
       "tags": [
         "passenger",
@@ -365,7 +365,7 @@
       "name": "passenger-lift-person",
       "category": {
         "id": "vertical-transport",
-        "label": "vertical transport"
+        "label": "Vertical Transport"
       },
       "tags": [
         "passenger",
@@ -419,7 +419,7 @@
       "name": "wheelchair-lift",
       "category": {
         "id": "vertical-transport",
-        "label": "vertical transport"
+        "label": "Vertical Transport"
       },
       "tags": [
         "wheelchair",
