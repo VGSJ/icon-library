@@ -427,6 +427,9 @@ async function main() {
     const styles = [];
     if (Object.keys(availability.outline).length) styles.push("outline");
     if (Object.keys(availability.filled).length) styles.push("filled");
+    
+    // Default to outline if no styles found
+    if (styles.length === 0) styles.push("outline");
 
     const sizes = Array.from(
       new Set([...Object.keys(availability.outline), ...Object.keys(availability.filled)].map(Number))
