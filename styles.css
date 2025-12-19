@@ -81,8 +81,6 @@ main { padding: 20px 24px; }
 }
 
 .preview {
-  width: 44px;
-  height: 44px;
   border-radius: 12px;
   display: grid;
   place-items: center;

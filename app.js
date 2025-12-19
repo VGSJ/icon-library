@@ -162,6 +162,11 @@ function renderCard(icon, style, size) {
   const preview = document.createElement("div");
   preview.className = "preview";
   preview.innerHTML = "…";
+  
+  // Set preview size dynamically: icon size + 20px padding (10px on each side)
+  const previewSize = size + 20;
+  preview.style.width = `${previewSize}px`;
+  preview.style.height = `${previewSize}px`;
 
   const info = document.createElement("div");
 
