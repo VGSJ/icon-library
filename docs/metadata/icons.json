@@ -1,0 +1,444 @@
+{
+  "icons": [
+    {
+      "name": "ai-2-stars",
+      "category": {
+        "id": "ai-vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "ai",
+        "2",
+        "stars",
+        "sparkles",
+        "ai-2-stars"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-3-stars",
+      "category": {
+        "id": "ai-vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "ai",
+        "3",
+        "stars",
+        "sparkles",
+        "ai-3-stars"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-avatar-gen",
+      "category": {
+        "id": "ai-vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "ai",
+        "avatar",
+        "gen",
+        "generate",
+        "person",
+        "create",
+        "ai-avatar-gen"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-magic-brush",
+      "category": {
+        "id": "ai-vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "ai",
+        "magic",
+        "brush",
+        "pencil",
+        "create",
+        "paint",
+        "ai-magic-brush"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-magic-wand",
+      "category": {
+        "id": "ai-vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "ai",
+        "magic",
+        "wand",
+        "generate",
+        "star",
+        "ai-magic-wand"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-prompt",
+      "category": {
+        "id": "ai-vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "ai",
+        "prompt",
+        "generate",
+        "terminal",
+        "create",
+        "ai-prompt"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-text-gen",
+      "category": {
+        "id": "ai-vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "ai",
+        "text",
+        "gen",
+        "generate",
+        "ai-text-gen"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-wand",
+      "category": {
+        "id": "ai-vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "ai",
+        "wand",
+        "generate",
+        "magic",
+        "sparkle",
+        "ai-wand"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cargo-lift",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "cargo",
+        "lift",
+        "elevator",
+        "escalator",
+        "cargo-lift",
+        "freight-lift"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "escalator-down",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "escalator",
+        "down",
+        "lift",
+        "elevator",
+        "escalator-down"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "escalator-down-person",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "escalator",
+        "down",
+        "person",
+        "lift",
+        "elevator",
+        "escalator-down-person"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "escalator-up",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "escalator",
+        "up",
+        "lift",
+        "elevator",
+        "escalator-up"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "escalator-up-person",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "escalator",
+        "up",
+        "person",
+        "lift",
+        "elevator",
+        "escalator-up-person"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "passenger-lift-arrow",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "passenger",
+        "lift",
+        "arrow",
+        "elevator",
+        "escalator",
+        "passenger-lift-arrow"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "passenger-lift-person",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "passenger",
+        "lift",
+        "person",
+        "elevator",
+        "escalator",
+        "passenger-lift-person"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "vr-panoramic",
+      "category": {
+        "id": "ai-vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "vr",
+        "panoramic",
+        "virtual",
+        "reality",
+        "xr",
+        "panorama",
+        "screen",
+        "vr-panoramic"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wheelchair-lift",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "wheelchair",
+        "lift",
+        "elevator",
+        "escalator",
+        "wheelchair-lift"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    }
+  ]
+}
