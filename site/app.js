@@ -173,7 +173,7 @@ function renderCard(icon, style, size) {
   meta.className = "meta";
 
   const categoryLabel = getCategoryLabel(icon);
-  meta.textContent = `${categoryLabel} • ${style} • ${size}px`;
+  meta.textContent = `${categoryLabel}`;
 
   info.appendChild(name);
   info.appendChild(meta);

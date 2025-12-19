@@ -51,6 +51,10 @@ select, button {
   outline: none;
 }
 
+select {
+  padding-right: 24px;
+}
+
 button { cursor: pointer; }
 
 .hint { margin: 12px 0 0; color: var(--muted); font-size: 13px; }
