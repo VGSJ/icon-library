@@ -29,7 +29,7 @@ const TYPE_SYNONYMS = new Map([
 
 // Debug
 const DEBUG = true;
-const DEBUG_ICON = "escalator-up";
+const DEBUG_ICON = "gps";
 
 function env(name) {
   return process.env[name];

@@ -338,12 +338,15 @@
     {
       "name": "flag-pole",
       "category": {
-        "id": "flag",
-        "label": "flag"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "flag",
-        "pole"
+        "pole",
+        "priority",
+        "mark",
+        "flag-pole"
       ],
       "styles": [
         "outline",
@@ -360,12 +363,16 @@
     {
       "name": "flag-zone",
       "category": {
-        "id": "flag",
-        "label": "flag"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "flag",
-        "zone"
+        "zone",
+        "mark",
+        "pin",
+        "area",
+        "flag-zone"
       ],
       "styles": [
         "outline",
@@ -382,11 +389,15 @@
     {
       "name": "gps",
       "category": {
-        "id": "uncategorized",
-        "label": "uncategorized"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
-        "gps"
+        "gps",
+        "direction",
+        "navigate",
+        "compass",
+        "geolocate"
       ],
       "styles": [
         "outline",
@@ -403,13 +414,17 @@
     {
       "name": "group-trip-pin",
       "category": {
-        "id": "group",
-        "label": "group"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "group",
         "trip",
-        "pin"
+        "pin",
+        "location",
+        "map",
+        "route",
+        "group-trip-pin"
       ],
       "styles": [
         "outline",
@@ -426,13 +441,16 @@
     {
       "name": "location-earth-pin",
       "category": {
-        "id": "location",
-        "label": "location"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "location",
         "earth",
-        "pin"
+        "pin",
+        "globe",
+        "locate",
+        "location-earth-pin"
       ],
       "styles": [
         "outline",
@@ -449,13 +467,17 @@
     {
       "name": "location-group-pin",
       "category": {
-        "id": "location",
-        "label": "location"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "location",
         "group",
-        "pin"
+        "pin",
+        "locate",
+        "map",
+        "direction",
+        "location-group-pin"
       ],
       "styles": [
         "outline",
@@ -472,12 +494,16 @@
     {
       "name": "location-pin",
       "category": {
-        "id": "location",
-        "label": "location"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "location",
-        "pin"
+        "pin",
+        "locate",
+        "map",
+        "direction",
+        "location-pin"
       ],
       "styles": [
         "outline",
@@ -494,12 +520,16 @@
     {
       "name": "location-zone",
       "category": {
-        "id": "location",
-        "label": "location"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "location",
-        "zone"
+        "zone",
+        "mark",
+        "pin",
+        "area",
+        "location-zone"
       ],
       "styles": [
         "outline",
@@ -516,11 +546,14 @@
     {
       "name": "map",
       "category": {
-        "id": "uncategorized",
-        "label": "uncategorized"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
-        "map"
+        "map",
+        "direction",
+        "navigate",
+        "locate"
       ],
       "styles": [
         "outline",
@@ -537,12 +570,16 @@
     {
       "name": "map-pin",
       "category": {
-        "id": "map",
-        "label": "map"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "map",
-        "pin"
+        "pin",
+        "direction",
+        "navigate",
+        "locate",
+        "map-pin"
       ],
       "styles": [
         "outline",
@@ -559,12 +596,16 @@
     {
       "name": "map-route",
       "category": {
-        "id": "map",
-        "label": "map"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "map",
-        "route"
+        "route",
+        "direction",
+        "navigate",
+        "locate",
+        "map-route"
       ],
       "styles": [
         "outline",
@@ -581,12 +622,16 @@
     {
       "name": "map-tree",
       "category": {
-        "id": "map",
-        "label": "map"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "map",
-        "tree"
+        "tree",
+        "direction",
+        "navigate",
+        "locate",
+        "map-tree"
       ],
       "styles": [
         "outline",
@@ -603,12 +648,17 @@
     {
       "name": "multiple-signboard",
       "category": {
-        "id": "multiple",
-        "label": "multiple"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "multiple",
-        "signboard"
+        "signboard",
+        "sign",
+        "direction",
+        "route",
+        "way",
+        "multiple-signboard"
       ],
       "styles": [
         "outline",
@@ -677,12 +727,18 @@
     {
       "name": "single-signboard",
       "category": {
-        "id": "single",
-        "label": "single"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "single",
-        "signboard"
+        "signboard",
+        "sign",
+        "direction",
+        "route",
+        "way",
+        "one",
+        "single-signboard"
       ],
       "styles": [
         "outline",
@@ -699,12 +755,15 @@
     {
       "name": "target-aim",
       "category": {
-        "id": "target",
-        "label": "target"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "target",
-        "aim"
+        "aim",
+        "focus",
+        "radar",
+        "target-aim"
       ],
       "styles": [
         "outline",
@@ -721,12 +780,17 @@
     {
       "name": "vr-guardian",
       "category": {
-        "id": "vr",
-        "label": "vr"
+        "id": "wayfinding",
+        "label": "Wayfinding"
       },
       "tags": [
         "vr",
-        "guardian"
+        "guardian",
+        "zone",
+        "area",
+        "person",
+        "space",
+        "vr-guardian"
       ],
       "styles": [
         "outline",
