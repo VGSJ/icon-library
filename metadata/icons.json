@@ -336,6 +336,293 @@
       ]
     },
     {
+      "name": "flag-pole",
+      "category": {
+        "id": "flag",
+        "label": "flag"
+      },
+      "tags": [
+        "flag",
+        "pole"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "flag-zone",
+      "category": {
+        "id": "flag",
+        "label": "flag"
+      },
+      "tags": [
+        "flag",
+        "zone"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gps",
+      "category": {
+        "id": "uncategorized",
+        "label": "uncategorized"
+      },
+      "tags": [
+        "gps"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "group-trip-pin",
+      "category": {
+        "id": "group",
+        "label": "group"
+      },
+      "tags": [
+        "group",
+        "trip",
+        "pin"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "location-earth-pin",
+      "category": {
+        "id": "location",
+        "label": "location"
+      },
+      "tags": [
+        "location",
+        "earth",
+        "pin"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "location-group-pin",
+      "category": {
+        "id": "location",
+        "label": "location"
+      },
+      "tags": [
+        "location",
+        "group",
+        "pin"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "location-pin",
+      "category": {
+        "id": "location",
+        "label": "location"
+      },
+      "tags": [
+        "location",
+        "pin"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "location-zone",
+      "category": {
+        "id": "location",
+        "label": "location"
+      },
+      "tags": [
+        "location",
+        "zone"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "map",
+      "category": {
+        "id": "uncategorized",
+        "label": "uncategorized"
+      },
+      "tags": [
+        "map"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "map-pin",
+      "category": {
+        "id": "map",
+        "label": "map"
+      },
+      "tags": [
+        "map",
+        "pin"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "map-route",
+      "category": {
+        "id": "map",
+        "label": "map"
+      },
+      "tags": [
+        "map",
+        "route"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "map-tree",
+      "category": {
+        "id": "map",
+        "label": "map"
+      },
+      "tags": [
+        "map",
+        "tree"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "multiple-signboard",
+      "category": {
+        "id": "multiple",
+        "label": "multiple"
+      },
+      "tags": [
+        "multiple",
+        "signboard"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "passenger-lift-arrow",
       "category": {
         "id": "vertical-transport",
@@ -374,6 +661,72 @@
         "elevator",
         "escalator",
         "passenger-lift-person"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "single-signboard",
+      "category": {
+        "id": "single",
+        "label": "single"
+      },
+      "tags": [
+        "single",
+        "signboard"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "target-aim",
+      "category": {
+        "id": "target",
+        "label": "target"
+      },
+      "tags": [
+        "target",
+        "aim"
+      ],
+      "styles": [
+        "outline",
+        "filled"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "vr-guardian",
+      "category": {
+        "id": "vr",
+        "label": "vr"
+      },
+      "tags": [
+        "vr",
+        "guardian"
       ],
       "styles": [
         "outline",
