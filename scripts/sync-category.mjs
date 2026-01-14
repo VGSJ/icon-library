@@ -154,15 +154,51 @@ async function syncCategoryFromFigma(category) {
     
     console.log(`📥 Found ${variants.length} variants to download`);
     
+    // Filter to only variants that need downloading (don't exist in site/raw-svg)
+    const variantsToDownload = [];
+    let skipped = 0;
+    
+    for (const variant of variants) {
+      const parts = variant.name.split(", ").reduce((acc, part) => {
+        const [key, val] = part.split("=");
+        acc[key?.trim()] = val?.trim();
+        return acc;
+      }, {});
+      
+      let style = parts.type || "outline";
+      let size = parts.size || "16";
+      if (style === "fill") style = "filled";
+      if (style === "outlined") style = "outline";
+      
+      const filename = `icon-${variant.setName}-${style}-${size}.svg`;
+      const siteFilePath = path.join("site", "raw-svg", style, String(size), filename);
+      
+      try {
+        await fs.stat(siteFilePath);
+        skipped++;
+      } catch {
+        variantsToDownload.push(variant);
+      }
+    }
+    
+    if (skipped > 0) {
+      console.log(`⏭️  Skipping ${skipped} existing SVGs`);
+    }
+    console.log(`📥 Downloading ${variantsToDownload.length} new/updated SVGs`);
+    
     // Download SVGs in batches
     const batchSize = 50;
     let downloaded = 0;
     let failed = 0;
     
-    console.log(`\n⏳ Downloading in batches of ${batchSize}...`);
+    if (variantsToDownload.length === 0) {
+      console.log(`✅ All SVGs up-to-date`);
+    } else {
+      console.log(`\n⏳ Downloading in batches of ${batchSize}...`);
+    }
     
-    for (let i = 0; i < variants.length; i += batchSize) {
-      const batch = variants.slice(i, i + batchSize);
+    for (let i = 0; i < variantsToDownload.length; i += batchSize) {
+      const batch = variantsToDownload.slice(i, i + batchSize);
       const nodeIds = batch.map(v => v.id).join(",");
       
       try {
@@ -199,9 +235,21 @@ async function syncCategoryFromFigma(category) {
             
             // Generate filename
             const filename = `icon-${variant.setName}-${style}-${size}.svg`;
-            const filePath = path.join("raw-svg", style, String(size), filename);
+            const siteFilePath = path.join("site", "raw-svg", style, String(size), filename);
+            const rawFilePath = path.join("raw-svg", style, String(size), filename);
             
-            await downloadSvg(url, filePath);
+            // Skip if file already exists in site (optimization for incremental syncs)
+            try {
+              await fs.stat(siteFilePath);
+              // File exists, skip download
+              downloaded++;
+              continue;
+            } catch {
+              // File doesn't exist, proceed with download
+            }
+            
+            await downloadSvg(url, siteFilePath);
+            await downloadSvg(url, rawFilePath);
             downloaded++;
             
             if (downloaded % 20 === 0) {
