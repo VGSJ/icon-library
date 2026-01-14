@@ -1803,8 +1803,8 @@
     {
       "name": "check",
       "category": {
-        "id": "heating-ventilation-air-conditioning",
-        "label": "heating ventilation air conditioning"
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
       },
       "tags": [
         "check",
