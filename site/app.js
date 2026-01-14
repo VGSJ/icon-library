@@ -214,7 +214,11 @@ function renderCard(icon, style, size) {
 
   fetchSvg(icon.name, style, size)
     .then((svg) => {
-      preview.innerHTML = svg;
+      // Create container for SVG to avoid innerHTML issues in Safari
+      const container = document.createElement("div");
+      container.innerHTML = svg;
+      preview.innerHTML = "";
+      preview.appendChild(container.firstElementChild || container);
     })
     .catch(() => {
       preview.innerHTML = "⚠️";
