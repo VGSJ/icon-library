@@ -1249,18 +1249,24 @@
     {
       "name": "check",
       "category": {
-        "id": "actions--general-interface",
-        "label": "actions & general interface"
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
       },
       "tags": [
         "check",
         "tick",
         "confirm",
-        "success"
+        "success",
+        "check-valve",
+        "backflow",
+        "valve",
+        "plumbing",
+        "safety"
       ],
       "aliases": [
         "checkmark",
-        "tick"
+        "tick",
+        "backflow-valve"
       ],
       "styles": [
         "outline"
@@ -3819,19 +3825,30 @@
     {
       "name": "heart",
       "category": {
-        "id": "actions--general-interface",
-        "label": "actions & general interface"
+        "id": "health--safety",
+        "label": "health & safety"
       },
       "tags": [
         "heart",
         "like",
         "favorite",
         "love",
-        "health"
+        "health",
+        "heart-rate",
+        "heartbeat",
+        "pulse",
+        "aed",
+        "defibrillator",
+        "medical",
+        "emergency"
       ],
       "aliases": [
         "like-heart",
-        "favorite-heart"
+        "favorite-heart",
+        "heart-rate",
+        "heartbeat",
+        "pulse",
+        "aed"
       ],
       "styles": [
         "filled",
@@ -4443,11 +4460,16 @@
       },
       "tags": [
         "mouse",
+        "pointer",
+        "input",
+        "device",
+        "hardware",
         "double-click",
-        "click",
-        "input"
+        "click"
       ],
       "aliases": [
+        "computer-mouse",
+        "pointing-device",
         "mouse-click-x2",
         "double-click"
       ],
@@ -4821,12 +4843,20 @@
         "label": "actions & general interface"
       },
       "tags": [
+        "printer-cart",
+        "stand",
+        "shelf",
+        "rolling",
+        "workstation",
         "printer",
         "print",
         "output",
         "document"
       ],
       "aliases": [
+        "printer-stand",
+        "printer-trolley",
+        "printer-shelf",
         "print-device",
         "print"
       ],
@@ -5098,8 +5128,8 @@
     {
       "name": "rotate",
       "category": {
-        "id": "arrows",
-        "label": "arrows"
+        "id": "editor",
+        "label": "editor"
       },
       "tags": [
         "rotate",
@@ -5107,11 +5137,20 @@
         "refresh",
         "loop",
         "circular",
-        "arrow"
+        "arrow",
+        "axis-y",
+        "360",
+        "transform",
+        "rotation",
+        "turn"
       ],
       "aliases": [
         "redo",
-        "undo"
+        "undo",
+        "rotate-vertical",
+        "rotate-y-axis",
+        "rotate-360",
+        "spin"
       ],
       "styles": [
         "outline"
@@ -5213,18 +5252,24 @@
     {
       "name": "settings-adjust",
       "category": {
-        "id": "actions--general-interface",
-        "label": "actions & general interface"
+        "id": "system--technology",
+        "label": "system & technology"
       },
       "tags": [
         "settings",
         "adjust",
         "configure",
-        "sliders"
+        "sliders",
+        "configuration",
+        "preferences",
+        "options",
+        "gear"
       ],
       "aliases": [
         "settings-sliders",
-        "adjust-controls"
+        "adjust-controls",
+        "config",
+        "preferences"
       ],
       "styles": [
         "outline"

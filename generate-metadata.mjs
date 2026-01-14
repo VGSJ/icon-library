@@ -92,20 +92,43 @@ async function generateMetadata() {
     console.log(`✅ Found ${componentSets.length} component sets with metadata`);
     
     // Merge Figma metadata into icons
+    let matched = 0;
     for (const comp of componentSets) {
       if (!comp.name?.startsWith("icon-")) continue;
       
-      const baseName = comp.name.substring(5); // Remove "icon-" prefix
-      if (!icons.has(baseName)) continue;
+      // Extract base icon name - component names can have variants info, so parse carefully
+      let baseName = comp.name.substring(5); // Remove "icon-" prefix
+      
+      // If the name has comma-separated variants info, take just the base name
+      if (baseName.includes(",")) {
+        baseName = baseName.split(",")[0].trim();
+      }
+      
+      // Try to find matching icon in our map
+      if (!icons.has(baseName)) {
+        // Try to find a close match
+        const possibleMatch = Array.from(icons.keys()).find(key => {
+          // Check if this SVG icon name starts with the component base name
+          return key.startsWith(baseName) || baseName.startsWith(key);
+        });
+        if (possibleMatch) {
+          baseName = possibleMatch;
+        } else {
+          continue;
+        }
+      }
       
       const desc = comp.description || "";
       const lines = desc.split("\n");
       
+      let hasCategoryLine = false;
       for (const line of lines) {
         if (line.startsWith("category:")) {
           const val = line.substring(9).trim();
           const id = val.toLowerCase().replace(/\s+/g, "-").replace(/[&]/g, "");
           icons.get(baseName).category = { id, label: val };
+          matched++;
+          hasCategoryLine = true;
         } else if (line.startsWith("tags:")) {
           const tags = line.substring(5).trim().split(",").map(t => t.trim()).filter(t => t);
           if (tags.length > 0) {
@@ -119,31 +142,13 @@ async function generateMetadata() {
         }
       }
     }
+    console.log(`✅ Matched ${matched} icons with Figma metadata`);
   } catch (e) {
     console.warn(`⚠️ Could not fetch Figma metadata: ${e.message}`);
   }
   
-  // Add housekeeping icons manually if they exist in SVG but not in Figma metadata
-  const housekeepingIcons = [
-    "water-consumption", "smoking", "tshirt", "cleaning", "fix-leak", "dumpster",
-    "hand-dryer", "wine-glass", "wet-cleaning", "reception", "room-service",
-    "apple", "apple-half", "waste-basket", "smart-toilet",
-    "cleaning-room-woman", "male-toilet", "toilet-gender", "female-toilet"
-  ];
-  
-  let addedHousekeeping = 0;
-  for (const iconName of housekeepingIcons) {
-    if (icons.has(iconName)) {
-      if (icons.get(iconName).category.id === "uncategorized") {
-        icons.get(iconName).category = { id: "housekeeping", label: "housekeeping" };
-        addedHousekeeping++;
-      }
-    }
-  }
-  console.log(`✨ Tagged ${addedHousekeeping} housekeeping icons`);
-  console.log(`📦 Total icons in map before conversion: ${icons.size}`);
-  
   // Convert to proper format
+  // Include ALL icons that have SVG files (not just ones with Figma categories)
   const iconList = Array.from(icons.values())
     .map(icon => ({
       name: icon.name,
@@ -156,10 +161,37 @@ async function generateMetadata() {
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
   
-  // Write metadata
+  // Debug: show how many of each category
+  const byCat = {};
+  iconList.forEach(icon => {
+    const cat = icon.category.label;
+    byCat[cat] = (byCat[cat] || 0) + 1;
+  });
+  console.log(`📊 Icons by category:`);
+  Object.entries(byCat).sort((a, b) => b[1] - a[1]).forEach(([cat, count]) => {
+    console.log(`  ${cat}: ${count}`);
+  });
+  
+  // Write metadata to both locations (root and site)
   await fs.mkdir(META_DIR, { recursive: true });
   await fs.writeFile(
     META_FILE,
+    JSON.stringify({ icons: iconList }, null, 2)
+  );
+  
+  // Also write to site/metadata for consistency
+  const siteMetaDir = path.join(ROOT, "site", "metadata");
+  await fs.mkdir(siteMetaDir, { recursive: true });
+  await fs.writeFile(
+    path.join(siteMetaDir, "icons.json"),
+    JSON.stringify({ icons: iconList }, null, 2)
+  );
+  
+  // And docs/metadata for GitHub Pages
+  const docsMetaDir = path.join(ROOT, "docs", "metadata");
+  await fs.mkdir(docsMetaDir, { recursive: true });
+  await fs.writeFile(
+    path.join(docsMetaDir, "icons.json"),
     JSON.stringify({ icons: iconList }, null, 2)
   );
   

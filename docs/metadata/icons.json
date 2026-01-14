@@ -1,38 +1,6 @@
 {
   "icons": [
     {
-      "name": "aed-kit",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "aed",
-        "automated-external-defibrillator",
-        "defibrillator",
-        "heart",
-        "cardiac",
-        "emergency",
-        "medical"
-      ],
-      "aliases": [
-        "aed",
-        "defibrillator",
-        "cardiac-defibrillator"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
       "name": "ai-2-stars",
       "category": {
         "id": "ai--vr",
@@ -242,24 +210,25 @@
       ]
     },
     {
-      "name": "ambulance",
+      "name": "apple",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "media--entertainment",
+        "label": "media & entertainment"
       },
       "tags": [
-        "ambulance",
-        "emergency",
-        "medical",
-        "health",
-        "vehicle",
-        "rescue",
-        "first-aid"
+        "apple",
+        "fruit",
+        "food",
+        "nutrition",
+        "tech",
+        "platform",
+        "brand",
+        "company"
       ],
       "aliases": [
-        "ambulance",
-        "emergency-vehicle",
-        "medical-transport"
+        "fresh-apple",
+        "apple-logo",
+        "apple-inc"
       ],
       "styles": [
         "filled",
@@ -274,23 +243,19 @@
       ]
     },
     {
-      "name": "asterisk",
+      "name": "apple-half",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "housekeeping",
+        "label": "housekeeping"
       },
       "tags": [
-        "asterisk",
-        "star",
-        "medical",
-        "emergency",
-        "symbol",
-        "important"
+        "apple-half",
+        "nutrition",
+        "food",
+        "healthy"
       ],
       "aliases": [
-        "asterisk",
-        "star",
-        "medical-mark"
+        "half-apple"
       ],
       "styles": [
         "filled",
@@ -305,24 +270,23 @@
       ]
     },
     {
-      "name": "breeching-inlet",
+      "name": "archive-box",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "document--statistics",
+        "label": "document & statistics"
       },
       "tags": [
-        "breeching-inlet",
-        "fire-inlet",
-        "fire-department-connection",
-        "water-inlet",
-        "firefighting",
-        "emergency",
-        "safety"
+        "archive",
+        "box",
+        "folder",
+        "storage",
+        "container",
+        "backup"
       ],
       "aliases": [
-        "breeching-inlet",
-        "fire-inlet",
-        "fire-department-connection"
+        "archive-folder",
+        "storage-box",
+        "file-archive"
       ],
       "styles": [
         "filled",
@@ -337,26 +301,22 @@
       ]
     },
     {
-      "name": "buoy",
+      "name": "archive-inbox",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "document--statistics",
+        "label": "document & statistics"
       },
       "tags": [
-        "float",
-        "buoy",
-        "swim",
-        "vest",
-        "life-vest",
-        "flotation",
-        "safety",
-        "water",
-        "rescue"
+        "archive",
+        "box",
+        "inbox",
+        "storage",
+        "folder"
       ],
       "aliases": [
-        "life-vest",
-        "life-jacket",
-        "flotation-vest"
+        "inbox-archive",
+        "archive-box",
+        "storage-inbox"
       ],
       "styles": [
         "filled",
@@ -371,945 +331,47 @@
       ]
     },
     {
-      "name": "carbon-monoxide-alarm",
+      "name": "arrow",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "arrows",
+        "label": "arrows"
       },
       "tags": [
-        "carbon-monoxide",
-        "co-alarm",
-        "gas",
-        "detector",
-        "alarm",
-        "safety",
-        "emergency"
-      ],
-      "aliases": [
-        "carbon-monoxide-alarm",
-        "co-alarm",
-        "gas-detector"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "cargo-lift",
-      "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
-      },
-      "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
-        "cargo-lift",
-        "freight-lift"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "electrical-hazard",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "electrical",
-        "electricity",
-        "electronic",
-        "danger",
-        "hazard",
-        "high-voltage",
-        "warning",
-        "safety"
-      ],
-      "aliases": [
-        "electrical-hazard",
-        "electric-danger",
-        "high-voltage"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "emergency-phone",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "emergency",
-        "phone",
-        "call",
-        "hotline",
-        "sos",
-        "help",
-        "safety"
-      ],
-      "aliases": [
-        "emergency-phone",
-        "sos-phone",
-        "hotline-phone"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "emergency-phone-medical",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "emergency",
-        "phone",
-        "medical",
-        "call",
-        "hotline",
-        "sos",
-        "help",
-        "healthcare"
-      ],
-      "aliases": [
-        "medical-emergency-phone",
-        "emergency-call-medical",
-        "sos-medical-phone"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "escalator-down",
-      "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
-      },
-      "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
-        "escalator-down"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "escalator-down-person",
-      "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
-      },
-      "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
-        "escalator-down-person"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "escalator-up",
-      "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
-      },
-      "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
-        "escalator-up"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "escalator-up-person",
-      "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
-      },
-      "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
-        "escalator-up-person"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "eye-wash-station",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "eye-wash",
-        "eyewash-station",
-        "safety",
-        "emergency",
-        "decontamination",
-        "wash",
-        "hazard"
-      ],
-      "aliases": [
-        "eye-wash",
-        "eyewash",
-        "eyewash-station"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fight-1",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "fight",
-        "fighting",
-        "violence",
-        "conflict",
-        "assault",
-        "physical",
-        "danger"
-      ],
-      "aliases": [
-        "fight",
-        "fighting",
-        "physical-conflict"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fight-2",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "fight",
-        "fighting",
-        "violence",
-        "conflict",
-        "assault",
-        "physical",
-        "danger"
-      ],
-      "aliases": [
-        "fight",
-        "fighting",
-        "physical-conflict"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire",
-        "flame",
-        "heat",
-        "hot",
-        "burn",
-        "hazard",
-        "emergency",
-        "fas"
-      ],
-      "aliases": [
-        "fire",
-        "flame",
-        "heat"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-alarm",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire",
-        "fire-alarm",
-        "alarm",
-        "detection",
-        "emergency",
-        "alert",
-        "safety",
-        "fas"
-      ],
-      "aliases": [
-        "fire-alarm",
-        "alarm-fire",
-        "fire-detector"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-alarm-panel",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire",
-        "alarm",
-        "fire-alarm",
-        "control-panel",
-        "detection",
-        "emergency",
-        "safety"
-      ],
-      "aliases": [
-        "fire-alarm-panel",
-        "fire-control-panel",
-        "alarm-panel"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-anti",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire",
-        "fire-extinguisher",
-        "extinguisher",
-        "suppression",
-        "safety",
-        "emergency",
-        "anti-fire"
-      ],
-      "aliases": [
-        "fire-extinguisher",
-        "fire-suppressor",
-        "anti-fire"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-emergency-panel",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire",
-        "fire-alarm",
-        "alarm",
-        "call-point",
-        "manual-call",
-        "emergency",
-        "safety"
-      ],
-      "aliases": [
-        "fire-alarm",
-        "fire-call",
-        "manual-call-point"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-escape",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire",
-        "escape",
-        "evacuation",
-        "stairs",
-        "emergency-exit",
-        "running",
-        "safety"
-      ],
-      "aliases": [
-        "fire-escape",
-        "emergency-escape",
-        "evacuation-route"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-extinguisher",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire-extinguisher",
-        "fire",
-        "suppression",
-        "safety",
-        "emergency",
-        "extinguisher"
-      ],
-      "aliases": [
-        "fire-extinguisher",
-        "extinguisher",
-        "fire-suppressor"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-flame",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire",
-        "flame",
-        "heat",
-        "hot"
-      ],
-      "aliases": [
-        "fire",
-        "flame",
-        "heat"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-hose-reel",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire-hose",
-        "hose-reel",
-        "fire-suppression",
-        "firefighting",
-        "emergency",
-        "safety",
-        "water",
-        "fas"
-      ],
-      "aliases": [
-        "fire-hose-reel",
-        "hose-reel",
-        "fire-hose"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-hydrant",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire-hydrant",
-        "hydrant",
-        "water",
-        "firefighting",
-        "emergency",
-        "safety",
-        "fire",
-        "fas"
-      ],
-      "aliases": [
-        "fire-hydrant",
-        "hydrant",
-        "water-source"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-sprinkler",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire",
-        "sprinkler",
-        "water",
-        "fire-suppression",
-        "firefighting",
-        "emergency",
-        "safety",
-        "fas"
-      ],
-      "aliases": [
-        "fire-sprinkler",
-        "sprinkler-head",
-        "water-sprinkler"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "fire-warning",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire",
-        "warning",
-        "fire-warning",
-        "hazard",
-        "danger",
-        "flammable",
-        "alert",
-        "safety"
-      ],
-      "aliases": [
-        "fire-warning",
-        "warning-fire",
-        "flammable-warning"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "firecracker",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "fire",
-        "fire-cracker",
-        "explosion",
-        "ignition",
-        "spark",
-        "hazard",
-        "warning",
-        "fas"
-      ],
-      "aliases": [
-        "fire-cracker",
-        "firework",
-        "ignition-source"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "firefighter-helmet",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "firefighter",
-        "helmet",
-        "fire",
-        "safety",
-        "protective-gear",
-        "emergency",
-        "rescue"
-      ],
-      "aliases": [
-        "firefighter-helmet",
-        "fire-helmet",
-        "safety-helmet"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "first-aid-kit",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "first-aid",
-        "medical",
-        "health",
-        "emergency",
-        "kit",
-        "medicine",
-        "rescue"
-      ],
-      "aliases": [
-        "first-aid-kit",
-        "medical-kit",
-        "emergency-kit"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "first-aid-medical",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "health",
-        "medical",
-        "hospital",
-        "first-aid",
-        "medic",
-        "emergency",
-        "healthcare",
-        "treatment"
-      ],
-      "aliases": [
-        "first-aid",
-        "medic",
-        "medical-aid"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "flag-pole",
-      "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
-      },
-      "tags": [
-        "flag",
-        "priority",
-        "mark"
-      ],
-      "aliases": [
-        "flag-pole"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "flag-zone",
-      "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
-      },
-      "tags": [
-        "flag",
-        "mark",
-        "pin",
-        "area"
-      ],
-      "aliases": [
-        "flag-zone"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "gps",
-      "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
-      },
-      "tags": [
+        "arrow",
         "direction",
-        "navigate",
-        "compass",
-        "geolocate"
+        "navigation"
       ],
       "aliases": [
-        "gps"
+        "directional-arrow"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-connect",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "connect",
+        "link",
+        "relation",
+        "flow"
+      ],
+      "aliases": [
+        "connector",
+        "link-arrow",
+        "editor"
       ],
       "styles": [
         "filled",
@@ -1324,21 +386,2082 @@
       ]
     },
     {
-      "name": "group-trip-pin",
+      "name": "arrow-down",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "arrows",
+        "label": "arrows"
       },
       "tags": [
-        "location",
-        "map",
-        "trip",
+        "arrow",
+        "down",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "down"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-down-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "down",
+        "circle",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "down-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-down-square",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "down",
+        "square",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "down-square"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-from-point",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "point",
+        "origin",
+        "connection",
+        "flow"
+      ],
+      "aliases": [
+        "arrow-from-node"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "left",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "left"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-left-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "left",
+        "circle",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "left-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-left-square",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "left",
+        "square",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "left-square"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "right",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "right"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-right-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "right",
+        "circle",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "right-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-right-square",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "right",
+        "square",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "right-square"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-to-line",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "line",
+        "boundary",
+        "edge",
+        "navigation"
+      ],
+      "aliases": [
+        "jump",
+        "go-to-edge"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-top-right-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "top-right",
+        "diagonal",
+        "circle",
+        "direction"
+      ],
+      "aliases": [
+        "arrow-up-right-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-up",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "up",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "up"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-up-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "up",
+        "circle",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "top-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-up-square",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "up",
+        "square",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "up-square"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "attachment",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "attachment",
+        "attach",
+        "file",
+        "paperclip"
+      ],
+      "aliases": [
+        "paper-clip",
+        "file-attach"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "badge-verified",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "badge",
+        "verified",
+        "check",
+        "award",
+        "trust"
+      ],
+      "aliases": [
+        "verified-badge",
+        "check-badge"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bar-chart",
+      "category": {
+        "id": "document-statistics",
+        "label": "document-statistics"
+      },
+      "tags": [
+        "chart",
+        "bar",
+        "analytics",
+        "statistics",
+        "data",
+        "report"
+      ],
+      "aliases": [
+        "bar-chart",
+        "bar-graph",
+        "analytics-bars"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bar-chart-horizontal",
+      "category": {
+        "id": "document-statistics",
+        "label": "document-statistics"
+      },
+      "tags": [
+        "chart",
+        "bar",
+        "horizontal",
+        "analytics",
+        "statistics",
+        "data"
+      ],
+      "aliases": [
+        "horizontal-bar-chart",
+        "bar-chart-h",
+        "analytics-horizontal"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bar-chart-vertical",
+      "category": {
+        "id": "document-statistics",
+        "label": "document-statistics"
+      },
+      "tags": [
+        "chart",
+        "bar",
+        "vertical",
+        "analytics",
+        "statistics",
+        "data",
+        "axis"
+      ],
+      "aliases": [
+        "vertical-bar-chart",
+        "column-chart",
+        "bar-chart-v"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bell-mute",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "notification",
+        "bell",
+        "mute",
+        "silent",
+        "disabled"
+      ],
+      "aliases": [
+        "bell-off",
+        "notification-mute"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "blank-paper",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "paper",
+        "blank",
+        "note",
+        "document",
+        "file",
+        "page",
+        "sticker"
+      ],
+      "aliases": [
+        "empty-paper",
+        "blank-page",
+        "note-paper"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "blank-paper-copy",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "paper",
+        "blank",
+        "copy",
+        "duplicate",
+        "document",
+        "file",
+        "stack"
+      ],
+      "aliases": [
+        "copy-paper",
+        "duplicate-paper",
+        "paper-copy",
+        "document-copy",
+        "file-copy",
+        "duplicate-document"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "book-guide",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "book",
+        "guide",
+        "manual",
+        "contact",
+        "reference"
+      ],
+      "aliases": [
+        "handbook",
+        "user-guide",
+        "documentation"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bookmark",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "bookmark",
+        "save",
+        "label",
+        "tag"
+      ],
+      "aliases": [
+        "bookmark-tag",
+        "save-marker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bookmark-add",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "bookmark",
+        "add",
+        "save",
+        "label",
+        "tag"
+      ],
+      "aliases": [
+        "bookmark-plus",
+        "add-bookmark"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "call-incoming",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "call",
+        "incoming",
+        "phone",
+        "receive"
+      ],
+      "aliases": [
+        "incoming-call"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "call-outgoing",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "call",
+        "outgoing",
+        "phone",
+        "dial",
+        "connect"
+      ],
+      "aliases": [
+        "outgoing-call"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "celebrate",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "celebrate",
+        "congrats",
+        "party",
+        "confetti",
+        "success"
+      ],
+      "aliases": [
+        "celebration",
+        "confetti"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chat",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "chat",
+        "message",
+        "conversation",
+        "comment",
+        "bubble"
+      ],
+      "aliases": [
+        "messages",
+        "chat-bubble"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "check",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "check",
+        "tick",
+        "confirm",
+        "success",
+        "check-valve",
+        "backflow",
+        "valve",
+        "plumbing",
+        "safety"
+      ],
+      "aliases": [
+        "checkmark",
+        "tick",
+        "backflow-valve"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "checkbox-add",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "checkbox",
+        "plus",
+        "add",
+        "create"
+      ],
+      "aliases": [
+        "checkbox-plus",
+        "add-square"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "checkbox-checked",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "checkbox",
+        "checkmark",
+        "confirm",
+        "selected",
+        "tick"
+      ],
+      "aliases": [
+        "checkmark-box",
+        "checkbox-confirm"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "checkbox-indeterminate",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "checkbox",
+        "minus",
+        "indeterminate",
+        "remove"
+      ],
+      "aliases": [
+        "checkbox-minus",
+        "checkbox-partial"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "checklist",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "checklist",
+        "check",
+        "list",
+        "search",
+        "verify"
+      ],
+      "aliases": [
+        "check-list-search",
+        "checklist-find",
+        "task-search"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "checklist-search",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "checklist",
+        "check",
+        "list",
+        "search",
+        "verify"
+      ],
+      "aliases": [
+        "check-list-search",
+        "checklist-find",
+        "task-search"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-double-down-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "double-chevron",
+        "down",
+        "circle",
+        "arrow",
+        "expand"
+      ],
+      "aliases": [
+        "double-arrow-down"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-double-large",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "double",
+        "arrow",
+        "navigation",
+        "large"
+      ],
+      "aliases": [
+        "double-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-double-small",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "double",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "double-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-double-up-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "double-chevron",
+        "up",
+        "circle",
+        "arrow",
+        "expand"
+      ],
+      "aliases": [
+        "double-arrow-up"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-large",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "large",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "big-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-left-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "left",
+        "circle",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "circle-left"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-right-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "right",
+        "circle",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "circle-right"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-small",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "small",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "mini-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-up-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "up",
+        "circle",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "circle-up"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circle-add",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "radio",
+        "plus",
+        "add",
+        "create",
+        "+"
+      ],
+      "aliases": [
+        "radio-plus",
+        "add-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circle-alert",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "alert",
+        "warning",
+        "exclamation",
+        "error",
+        "attention"
+      ],
+      "aliases": [
+        "exclamation-circle",
+        "alert-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circle-check",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "radio",
+        "checkmark",
+        "confirmed",
+        "selected",
+        "option"
+      ],
+      "aliases": [
+        "radio-check",
+        "radio-tick"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circle-close",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "close",
+        "x",
+        "cross",
+        "remove",
+        "dismiss"
+      ],
+      "aliases": [
+        "close-circle",
+        "circle-x"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circle-equal",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "equal",
+        "equals",
+        "compare",
+        "same"
+      ],
+      "aliases": [
+        "equal-circle",
+        "equals-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circle-indeterminate",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "radio",
+        "minus",
+        "indeterminate",
+        "remove",
+        "dash"
+      ],
+      "aliases": [
+        "radio-minus",
+        "radio-partial"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circle-info",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "info",
+        "information",
+        "help",
+        "tooltip"
+      ],
+      "aliases": [
+        "info-circle",
+        "information-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circle-more",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "menu",
+        "more",
+        "dots",
+        "options"
+      ],
+      "aliases": [
+        "more-circle",
+        "ellipsis-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circle-question",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "question",
+        "help",
+        "ask",
+        "support"
+      ],
+      "aliases": [
+        "question-circle",
+        "help-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cleaning",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "cleaning",
+        "house-chore",
+        "broom",
+        "wipe",
+        "hygiene"
+      ],
+      "aliases": [
+        "housekeeping-clean"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cleaning-room-woman",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "cleaning-room",
+        "woman",
+        "housekeeping",
+        "staff"
+      ],
+      "aliases": [
+        "housekeeper"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "clipboard",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "clipboard",
+        "copy",
+        "list",
+        "notes",
+        "document"
+      ],
+      "aliases": [
+        "pasteboard",
+        "checklist"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "clipboard-add",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "clipboard",
+        "add",
+        "plus",
+        "create",
+        "new",
+        "document"
+      ],
+      "aliases": [
+        "clipboard-plus",
+        "add-clipboard",
+        "new-entry"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "clipboard-chart",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "clipboard",
+        "chart",
+        "analytics",
+        "statistics",
+        "report",
+        "data"
+      ],
+      "aliases": [
+        "clipboard-stats",
+        "clipboard-analytics",
+        "report-chart"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "clipboard-check",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "clipboard",
+        "check",
+        "done",
+        "verified",
+        "complete",
+        "approve"
+      ],
+      "aliases": [
+        "clipboard-done",
+        "clipboard-verified",
+        "checklist-complete"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "clipboard-remove",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "clipboard",
+        "remove",
+        "minus",
+        "delete",
+        "document"
+      ],
+      "aliases": [
+        "clipboard-minus",
+        "remove-entry",
+        "delete-clipboard"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "clipboard-sync",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "clipboard",
+        "sync",
+        "refresh",
+        "update",
+        "repeat"
+      ],
+      "aliases": [
+        "clipboard-refresh",
+        "clipboard-update"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "close",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "close",
+        "remove",
+        "delete",
+        "dismiss",
+        "x"
+      ],
+      "aliases": [
+        "close-x",
+        "remove-x"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "conversation",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "message",
+        "chat",
+        "bubble",
+        "conversation"
+      ],
+      "aliases": [
+        "chat",
+        "message-bubble"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "corner-arrow",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "corner",
+        "turn",
+        "bend",
+        "arrow",
+        "direction"
+      ],
+      "aliases": [
+        "turn-arrow",
+        "bent-arrow"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cursor-click",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "cursor",
+        "click",
+        "select",
+        "pointer",
+        "arrow"
+      ],
+      "aliases": [
+        "cursor-select",
+        "pointer-click"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cursor-hand",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "cursor",
+        "hand",
+        "drag",
+        "grab",
+        "move"
+      ],
+      "aliases": [
+        "hand-drag",
+        "cursor-hand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cursor-pointer",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "cursor",
+        "pointer",
+        "mouse",
+        "arrow"
+      ],
+      "aliases": [
+        "cursor-pointer",
+        "mouse-cursor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cursor-select-box",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "cursor",
+        "select",
+        "box",
+        "area",
+        "marquee"
+      ],
+      "aliases": [
+        "box-select",
+        "marquee-select"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cursor-text",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "cursor",
+        "text",
+        "caret",
+        "input",
+        "typing"
+      ],
+      "aliases": [
+        "text-cursor",
+        "i-beam"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "diamond-alert",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "alert",
+        "warning",
+        "exclamation",
+        "attention",
+        "!"
+      ],
+      "aliases": [
+        "exclamation-diamond",
+        "warning-diamond"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "diamond-question",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "question",
+        "unknown",
+        "help",
+        "alert"
+      ],
+      "aliases": [
+        "question-diamond",
+        "unknown-diamond"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "dock",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "dock",
+        "attach",
+        "snap",
+        "box",
+        "arrow"
+      ],
+      "aliases": [
         "pin",
-        "group",
-        "route"
-      ],
-      "aliases": [
-        "group-trip-pin"
+        "attach"
       ],
       "styles": [
         "filled",
@@ -1353,54 +2476,1375 @@
       ]
     },
     {
-      "name": "health-monitor",
+      "name": "document-add",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "document",
+        "file",
+        "add",
+        "create",
+        "new"
+      ],
+      "aliases": [
+        "new-document",
+        "add-file",
+        "file-plus"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "document-add-text",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "document",
+        "file",
+        "text",
+        "add",
+        "create",
+        "note"
+      ],
+      "aliases": [
+        "add-text-file",
+        "new-document-text",
+        "document-plus"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "document-bag",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "business",
+        "work",
+        "case",
+        "documents",
+        "briefcase",
+        "portfolio",
+        "files"
+      ],
+      "aliases": [
+        "document-case",
+        "briefcase-documents",
+        "file-bag",
+        "luggage-docs"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "document-locked",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "document",
+        "locked",
+        "secured",
+        "security",
+        "protected",
+        "file",
+        "page",
+        "list"
+      ],
+      "aliases": [
+        "locked-document",
+        "secure-file",
+        "protected-document",
+        "file-lock"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "document-locked-lines",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "document",
+        "locked",
+        "security",
+        "secured",
+        "protected",
+        "list",
+        "lines",
+        "page",
+        "file"
+      ],
+      "aliases": [
+        "locked-document-lines",
+        "secure-file-list",
+        "protected-document-list"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "document-stats",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "document",
+        "statistics",
+        "analytics",
+        "graph",
+        "report",
+        "list",
+        "page",
+        "file"
+      ],
+      "aliases": [
+        "document-analytics",
+        "stats-document",
+        "report-stats",
+        "file-graph"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "document-text",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "document",
+        "file",
+        "text",
+        "note",
+        "content",
+        "page"
+      ],
+      "aliases": [
+        "file-text",
+        "document-content",
+        "text-file",
+        "note-document"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "document-verified",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "document",
+        "verified",
+        "approved",
+        "check",
+        "success",
+        "validated",
+        "list",
+        "page",
+        "file"
+      ],
+      "aliases": [
+        "verified-document",
+        "approved-file",
+        "document-check",
+        "validated-document"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "down-up-1",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "up",
+        "down",
+        "vertical",
+        "chevron",
+        "arrow"
+      ],
+      "aliases": [
+        "sort-vertical",
+        "expand-collapse"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "down-up-2",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "up",
+        "down",
+        "vertical",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "vertical-arrow",
+        "swap-vertical"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "download-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "download",
+        "arrow",
+        "down",
+        "circle",
+        "import"
+      ],
+      "aliases": [
+        "import-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "drag-handle",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "drag",
+        "grab",
+        "reorder",
+        "handle"
+      ],
+      "aliases": [
+        "drag-grip",
+        "reorder-handle"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "dumpster",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "dumpster",
+        "garbage",
+        "waste",
+        "trash",
+        "disposal"
+      ],
+      "aliases": [
+        "waste-container"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "eform",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "eform",
+        "form",
+        "document",
+        "file",
+        "written",
+        "record"
+      ],
+      "aliases": [
+        "eform",
+        "electronic-form",
+        "digital-form"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ellipsis",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "menu",
+        "dots",
+        "ellipsis",
+        "more",
+        "options"
+      ],
+      "aliases": [
+        "menu-dots",
+        "more-options"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "email",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "email",
+        "envelope",
+        "mail",
+        "message",
+        "contact"
+      ],
+      "aliases": [
+        "mail",
+        "inbox-message"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "enter",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "enter",
+        "in",
+        "square",
+        "box",
+        "arrow"
+      ],
+      "aliases": [
+        "arrow-in",
+        "open"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "error-report",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "report",
+        "error",
+        "fault",
+        "issue",
+        "problem"
+      ],
+      "aliases": [
+        "fault-report",
+        "error-log"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "exclamation",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "exclamation",
+        "alert",
+        "warning",
+        "attention"
+      ],
+      "aliases": [
+        "exclamation-mark",
+        "bang"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "expand",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "expand",
+        "resize",
+        "arrow",
+        "horizontal",
+        "vertical"
+      ],
+      "aliases": [
+        "fullscreen",
+        "enlarge"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "expand-diagonal",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "expand",
+        "enlarge",
+        "diagonal",
+        "arrow",
+        "resize"
+      ],
+      "aliases": [
+        "maximize",
+        "fullscreen"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "export",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "export",
+        "share",
+        "upload",
+        "arrow",
+        "upward",
+        "out"
+      ],
+      "aliases": [
+        "share",
+        "upload"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "export-square",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "export",
+        "upload",
+        "square",
+        "arrow",
+        "up"
+      ],
+      "aliases": [
+        "upload-square"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "eye-closed",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "eye",
+        "closed",
+        "hide",
+        "visibility-off"
+      ],
+      "aliases": [
+        "eye-hide",
+        "eye-off"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "eye-off",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "eye",
+        "hide",
+        "visibility",
+        "conceal"
+      ],
+      "aliases": [
+        "eye-closed",
+        "hide-view"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "eye-open",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "eye",
+        "view",
+        "show",
+        "visible",
+        "preview"
+      ],
+      "aliases": [
+        "eye-visible",
+        "show-eye"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "female-toilet",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "female-toilet",
+        "woman",
+        "restroom",
+        "bathroom"
+      ],
+      "aliases": [
+        "women-restroom"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "file-cvs",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "file",
+        "document",
+        "text",
+        "properties",
+        "info",
+        "metadata",
+        "csv",
+        "flle type"
+      ],
+      "aliases": [
+        "file-info",
+        "document-properties",
+        "file-details"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "file-properties",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "file",
+        "document",
+        "text",
+        "properties",
+        "info",
+        "metadata"
+      ],
+      "aliases": [
+        "file-info",
+        "document-properties",
+        "file-details"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "filter",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "filter",
+        "sort",
+        "funnel",
+        "refine"
+      ],
+      "aliases": [
+        "filter-funnel",
+        "sort-filter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "filter-horizontal",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "filter",
+        "adjust",
+        "sliders",
+        "configure",
+        "settings"
+      ],
+      "aliases": [
+        "filter-hor",
+        "adjust-horizontal"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "filter-sort",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "filter",
+        "sort",
+        "order",
+        "arrange"
+      ],
+      "aliases": [
+        "sort-filter",
+        "order-filter"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "filter-vertical",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "filter",
+        "adjust",
+        "configure",
+        "vertical"
+      ],
+      "aliases": [
+        "filter-ver",
+        "vertical-filter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fix-leak",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "fix",
+        "leak",
+        "repair",
+        "water",
+        "plumbing"
+      ],
+      "aliases": [
+        "repair-leak",
+        "fix-pipe"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "folder",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "folder",
+        "documents",
+        "files",
+        "directory",
+        "storage"
+      ],
+      "aliases": [
+        "file-folder",
+        "document-folder"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "folder-add",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "folder",
+        "add",
+        "plus",
+        "attachment",
+        "create"
+      ],
+      "aliases": [
+        "add-folder",
+        "new-folder"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "folder-lock",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "folder",
+        "lock",
+        "secure",
+        "protected",
+        "private"
+      ],
+      "aliases": [
+        "locked-folder",
+        "secure-folder"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "folder-move",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "folder",
+        "move",
+        "transfer",
+        "relocate"
+      ],
+      "aliases": [
+        "move-folder",
+        "folder-transfer"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "folder-open",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "folder",
+        "open",
+        "documents",
+        "files",
+        "directory"
+      ],
+      "aliases": [
+        "open-folder",
+        "document-folder-open"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fullscreen",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "fullscreen",
+        "expand",
+        "focus",
+        "corners"
+      ],
+      "aliases": [
+        "full-screen",
+        "expand-corners"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fullscreen-exit",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "fullscreen",
+        "exit",
+        "minimize",
+        "collapse"
+      ],
+      "aliases": [
+        "exit-fullscreen",
+        "minimize-screen"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hand-dryer",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "automatic-hand-dryer",
+        "hand-dryer",
+        "hygiene",
+        "restroom"
+      ],
+      "aliases": [
+        "electric-hand-dryer"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hand-pinch",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "hand",
+        "pinch",
+        "scale",
+        "zoom",
+        "resize"
+      ],
+      "aliases": [
+        "pinch-zoom",
+        "scale-gesture"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hand-point",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "hand",
+        "pointer",
+        "index-finger",
+        "click",
+        "tap"
+      ],
+      "aliases": [
+        "hand-pointer",
+        "finger-point"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hand-stop",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "hand",
+        "stop",
+        "palm",
+        "block",
+        "prohibit"
+      ],
+      "aliases": [
+        "hand-palm",
+        "stop-hand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "headset",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "headset",
+        "support",
+        "call-center",
+        "customer-service",
+        "help"
+      ],
+      "aliases": [
+        "call-center",
+        "support-headset"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heart",
       "category": {
         "id": "health--safety",
         "label": "health & safety"
       },
       "tags": [
+        "heart",
+        "like",
+        "favorite",
+        "love",
         "health",
-        "monitor",
-        "medical",
-        "vital-signs",
-        "heart-rate",
-        "ecg",
-        "hospital"
-      ],
-      "aliases": [
-        "health-monitor",
-        "medical-monitor",
-        "vital-monitor"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "heart-pulse",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
         "heart-rate",
         "heartbeat",
         "pulse",
         "aed",
         "defibrillator",
         "medical",
-        "emergency",
-        "health"
+        "emergency"
       ],
       "aliases": [
+        "like-heart",
+        "favorite-heart",
         "heart-rate",
         "heartbeat",
         "pulse",
@@ -1419,24 +3863,48 @@
       ]
     },
     {
-      "name": "heat-detector",
+      "name": "import",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "arrows",
+        "label": "arrows"
       },
       "tags": [
-        "heat",
-        "detector",
-        "fire",
-        "alarm",
-        "detection",
-        "emergency",
-        "safety"
+        "import",
+        "download",
+        "file",
+        "arrow",
+        "downward",
+        "in"
       ],
       "aliases": [
-        "heat-detector",
-        "fire-heat-detector",
-        "thermal-detector"
+        "download"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "import-square",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "import",
+        "download",
+        "square",
+        "arrow",
+        "down"
+      ],
+      "aliases": [
+        "download-square"
       ],
       "styles": [
         "filled",
@@ -1451,24 +3919,21 @@
       ]
     },
     {
-      "name": "hospital-medical",
+      "name": "left-right",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "arrows",
+        "label": "arrows"
       },
       "tags": [
-        "health",
-        "medical",
-        "hospital",
-        "healthcare",
-        "clinic",
-        "emergency",
-        "treatment"
+        "left",
+        "right",
+        "horizontal",
+        "arrow",
+        "navigation"
       ],
       "aliases": [
-        "hospital",
-        "medical-center",
-        "healthcare-facility"
+        "horizontal-arrow",
+        "swap-horizontal"
       ],
       "styles": [
         "filled",
@@ -1483,24 +3948,74 @@
       ]
     },
     {
-      "name": "hospital-sign",
+      "name": "link-1",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
       },
       "tags": [
-        "hospital",
-        "clinic",
-        "medical",
-        "health",
-        "healthcare",
-        "sign",
-        "emergency"
+        "link",
+        "url",
+        "chain",
+        "connect"
       ],
       "aliases": [
-        "hospital",
-        "clinic-sign",
-        "medical-facility"
+        "hyperlink",
+        "chain-link"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "link-2",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "link",
+        "chain",
+        "url",
+        "connect"
+      ],
+      "aliases": [
+        "hyperlink",
+        "external-link"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "list-bulleted",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "list",
+        "bullet",
+        "checklist",
+        "properties"
+      ],
+      "aliases": [
+        "bullet-list",
+        "list-items"
       ],
       "styles": [
         "filled",
@@ -1515,19 +4030,75 @@
       ]
     },
     {
-      "name": "location-earth-pin",
+      "name": "loader-circular",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
       },
       "tags": [
-        "earth",
-        "globe",
-        "pin",
-        "locate"
+        "loading",
+        "spinner",
+        "progress",
+        "waiting"
       ],
       "aliases": [
-        "location-earth-pin"
+        "loading-circle",
+        "progress-spinner"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "loading-spinner",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "loading",
+        "spinner",
+        "waiting",
+        "progress"
+      ],
+      "aliases": [
+        "loader",
+        "progress-spinner"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "mail-invite",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "invite",
+        "invitation",
+        "mail",
+        "email",
+        "send"
+      ],
+      "aliases": [
+        "email-invite",
+        "invite-mail"
       ],
       "styles": [
         "filled",
@@ -1542,19 +4113,19 @@
       ]
     },
     {
-      "name": "location-group-pin",
+      "name": "male-toilet",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "housekeeping",
+        "label": "housekeeping"
       },
       "tags": [
-        "locate",
-        "map",
-        "direction",
-        "pin"
+        "male-toilet",
+        "man",
+        "restroom",
+        "bathroom"
       ],
       "aliases": [
-        "location-group-pin"
+        "men-restroom"
       ],
       "styles": [
         "filled",
@@ -1569,19 +4140,75 @@
       ]
     },
     {
-      "name": "location-pin",
+      "name": "menu-aligned",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
       },
       "tags": [
-        "locate",
-        "map",
-        "direction",
-        "pin"
+        "menu",
+        "list",
+        "navigation",
+        "hamburger"
       ],
       "aliases": [
-        "location-pin"
+        "menu-list",
+        "hamburger-aligned"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "menu-hamburger",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "menu",
+        "list",
+        "navigation",
+        "hamburger"
+      ],
+      "aliases": [
+        "menu-list",
+        "nav-menu"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "message-annotation",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "message",
+        "bubble",
+        "annotation",
+        "comment",
+        "note"
+      ],
+      "aliases": [
+        "comment",
+        "message-note"
       ],
       "styles": [
         "filled",
@@ -1596,19 +4223,20 @@
       ]
     },
     {
-      "name": "location-zone",
+      "name": "message-bubble",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "communication",
+        "label": "communication"
       },
       "tags": [
-        "location",
-        "mark",
-        "pin",
-        "area"
+        "message",
+        "chat",
+        "bubble",
+        "conversation"
       ],
       "aliases": [
-        "location-zone"
+        "chat",
+        "message-bubble"
       ],
       "styles": [
         "filled",
@@ -1623,18 +4251,20 @@
       ]
     },
     {
-      "name": "map",
+      "name": "message-middle",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "communication",
+        "label": "communication"
       },
       "tags": [
-        "direction",
-        "navigate",
-        "locate"
+        "message",
+        "bubble",
+        "chat",
+        "conversation"
       ],
       "aliases": [
-        "map"
+        "chat-message",
+        "message-bubble"
       ],
       "styles": [
         "filled",
@@ -1649,18 +4279,21 @@
       ]
     },
     {
-      "name": "map-pin",
+      "name": "message-notification",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "communication",
+        "label": "communication"
       },
       "tags": [
-        "direction",
-        "navigate",
-        "locate"
+        "message",
+        "bubble",
+        "notification",
+        "unread",
+        "alert"
       ],
       "aliases": [
-        "map-pin"
+        "chat-notification",
+        "unread-message"
       ],
       "styles": [
         "filled",
@@ -1675,19 +4308,21 @@
       ]
     },
     {
-      "name": "map-route",
+      "name": "message-square",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "communication",
+        "label": "communication"
       },
       "tags": [
-        "direction",
-        "navigate",
-        "route",
-        "locate"
+        "message",
+        "chat",
+        "bubble",
+        "square",
+        "conversation"
       ],
       "aliases": [
-        "map-route"
+        "chat-square",
+        "message-box"
       ],
       "styles": [
         "filled",
@@ -1702,19 +4337,21 @@
       ]
     },
     {
-      "name": "map-tree",
+      "name": "message-text",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "communication",
+        "label": "communication"
       },
       "tags": [
-        "direction",
-        "navigate",
-        "tree",
-        "locate"
+        "message",
+        "text",
+        "chat",
+        "bubble",
+        "conversation"
       ],
       "aliases": [
-        "map-tree"
+        "text-message",
+        "chat-text"
       ],
       "styles": [
         "filled",
@@ -1729,24 +4366,21 @@
       ]
     },
     {
-      "name": "medical-cross",
+      "name": "message-typing",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "communication",
+        "label": "communication"
       },
       "tags": [
-        "medical",
-        "health",
-        "cross",
-        "hospital",
-        "first-aid",
-        "emergency",
-        "healthcare"
+        "message",
+        "typing",
+        "composing",
+        "chat",
+        "status"
       ],
       "aliases": [
-        "medical-cross",
-        "health-cross",
-        "hospital-cross"
+        "typing-indicator",
+        "message-pending"
       ],
       "styles": [
         "filled",
@@ -1761,24 +4395,21 @@
       ]
     },
     {
-      "name": "medical-star",
+      "name": "message-typing-1",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "communication",
+        "label": "communication"
       },
       "tags": [
-        "medical",
-        "health",
-        "emergency",
-        "star-of-life",
-        "asterisk",
-        "hospital",
-        "rescue"
+        "message",
+        "typing",
+        "composing",
+        "chat",
+        "bubble"
       ],
       "aliases": [
-        "medical-star",
-        "star-of-life",
-        "emergency-symbol"
+        "typing-indicator",
+        "message-pending"
       ],
       "styles": [
         "filled",
@@ -1793,19 +4424,142 @@
       ]
     },
     {
-      "name": "multiple-signboard",
+      "name": "minus",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
       },
       "tags": [
-        "sign",
-        "direction",
-        "route",
-        "way"
+        "minus",
+        "remove",
+        "dash",
+        "subtract",
+        "-",
+        "delete"
       ],
       "aliases": [
-        "multiple-signboard"
+        "hyphen",
+        "subtract"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "mouse-double-click",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "mouse",
+        "pointer",
+        "input",
+        "device",
+        "hardware",
+        "double-click",
+        "click"
+      ],
+      "aliases": [
+        "computer-mouse",
+        "pointing-device",
+        "mouse-click-x2",
+        "double-click"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        64,
+        72
+      ]
+    },
+    {
+      "name": "mouse-left",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "mouse",
+        "left-button",
+        "click",
+        "input"
+      ],
+      "aliases": [
+        "mouse-click-left",
+        "left-click"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        64,
+        72
+      ]
+    },
+    {
+      "name": "move",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "move",
+        "drag",
+        "pan",
+        "reposition",
+        "arrow"
+      ],
+      "aliases": [
+        "drag"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "notebook-1",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "notebook",
+        "journal",
+        "notes",
+        "book",
+        "log",
+        "record"
+      ],
+      "aliases": [
+        "notebook-1",
+        "journal-book",
+        "note-book"
       ],
       "styles": [
         "filled",
@@ -1820,18 +4574,23 @@
       ]
     },
     {
-      "name": "passenger-lift-arrow",
+      "name": "notebook-2",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "document--statistics",
+        "label": "document & statistics"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator"
+        "notebook",
+        "journal",
+        "notes",
+        "book",
+        "log",
+        "record"
       ],
       "aliases": [
-        "passenger-lift-arrow"
+        "notebook-1",
+        "journal-book",
+        "note-book"
       ],
       "styles": [
         "filled",
@@ -1846,173 +4605,24 @@
       ]
     },
     {
-      "name": "passenger-lift-person",
+      "name": "notebook-alert",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "document--statistics",
+        "label": "document & statistics"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
-        "passenger-lift-person"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "police-car",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "police",
-        "law-enforcement",
-        "emergency",
-        "vehicle",
-        "patrol",
-        "security"
-      ],
-      "aliases": [
-        "police-car",
-        "patrol-car",
-        "law-enforcement-vehicle"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "safety-shower",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "safety",
-        "safety-shower",
-        "emergency",
-        "decontamination",
-        "wash",
-        "hazard",
-        "workplace"
-      ],
-      "aliases": [
-        "safety-shower",
-        "emergency-shower",
-        "wash-station"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "single-signboard",
-      "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
-      },
-      "tags": [
-        "sign",
-        "direction",
-        "route",
-        "way",
-        "one"
-      ],
-      "aliases": [
-        "single-signboard"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "smoke-heat-detector",
-      "category": {
-        "id": "fire",
-        "label": "fire"
-      },
-      "tags": [
-        "detector",
-        "smoke",
-        "heat",
-        "fire",
-        "alarm",
-        "detection",
-        "emergency",
-        "safety"
-      ],
-      "aliases": [
-        "smoke-detector",
-        "heat-detector",
-        "fire-detector"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "sos",
-      "category": {
-        "id": "health--safety",
-        "label": "health & safety"
-      },
-      "tags": [
-        "sos",
-        "emergency",
-        "help",
-        "distress",
+        "notebook",
+        "journal",
         "alert",
-        "safety"
+        "warning",
+        "exclamation",
+        "incident",
+        "work order"
       ],
       "aliases": [
-        "sos",
-        "emergency-alert",
-        "distress-signal"
+        "exclamation-notebook",
+        "notebook-warning",
+        "journal-alert"
       ],
       "styles": [
         "filled",
@@ -2027,18 +4637,20 @@
       ]
     },
     {
-      "name": "target-aim",
+      "name": "notification-active",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
       },
       "tags": [
-        "focus",
-        "radar",
-        "aim"
+        "notification",
+        "bell",
+        "ringing",
+        "alert"
       ],
       "aliases": [
-        "target-aim"
+        "bell-ringing",
+        "active-notification"
       ],
       "styles": [
         "filled",
@@ -2053,22 +4665,1374 @@
       ]
     },
     {
-      "name": "vr-guardian",
+      "name": "notification-bell",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
       },
       "tags": [
-        "zone",
-        "area",
-        "person",
-        "space"
+        "notification",
+        "bell",
+        "alert",
+        "reminder"
       ],
       "aliases": [
-        "vr-guardian"
+        "bell-alert",
+        "notification-ring"
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "notification-snooze",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "notification",
+        "bell",
+        "snooze",
+        "sleep",
+        "mute"
+      ],
+      "aliases": [
+        "bell-snooze",
+        "notification-sleep"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "octagon-alert",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "alert",
+        "error",
+        "exclamation",
+        "stop",
+        "!"
+      ],
+      "aliases": [
+        "exclamation-octagon",
+        "stop-alert"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "phone",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "phone",
+        "hotline",
+        "call",
+        "contact-center",
+        "support"
+      ],
+      "aliases": [
+        "telephone",
+        "call"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "phone-end",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "phone",
+        "end-call",
+        "hang-up",
+        "call",
+        "disconnect"
+      ],
+      "aliases": [
+        "hang-up",
+        "end-call"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "plus",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "plus",
+        "add",
+        "create",
+        "increase",
+        "+"
+      ],
+      "aliases": [
+        "add",
+        "increment"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "printer",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "printer-cart",
+        "stand",
+        "shelf",
+        "rolling",
+        "workstation",
+        "printer",
+        "print",
+        "output",
+        "document"
+      ],
+      "aliases": [
+        "printer-stand",
+        "printer-trolley",
+        "printer-shelf",
+        "print-device",
+        "print"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "quantity",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "quantity",
+        "count",
+        "math",
+        "calculate",
+        "sum"
+      ],
+      "aliases": [
+        "count",
+        "maths"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "question-mark",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "question",
+        "help",
+        "unknown",
+        "ask"
+      ],
+      "aliases": [
+        "question",
+        "help-mark"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "radio-selected",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "radio",
+        "button",
+        "selected",
+        "option"
+      ],
+      "aliases": [
+        "radio-dot",
+        "radio-checked"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "read-receipt",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "read",
+        "seen",
+        "double-check",
+        "message",
+        "status"
+      ],
+      "aliases": [
+        "seen",
+        "message-read"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "reception",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "reception",
+        "front-desk",
+        "lobby",
+        "service"
+      ],
+      "aliases": [
+        "reception-desk"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "refresh",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "refresh",
+        "reload",
+        "retry",
+        "reset",
+        "rotate",
+        "repeat"
+      ],
+      "aliases": [
+        "reload",
+        "retry"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "resize-big",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "resize",
+        "collapse",
+        "in",
+        "box",
+        "arrow"
+      ],
+      "aliases": [
+        "minimize",
+        "shrink"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "resize-small",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "resize",
+        "expand",
+        "out",
+        "box",
+        "arrow"
+      ],
+      "aliases": [
+        "maximize",
+        "expand-out",
+        "share"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "room-service",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "room-service",
+        "hospitality",
+        "hotel",
+        "service"
+      ],
+      "aliases": [
+        "hotel-service"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rotate",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "rotate",
+        "reset",
+        "refresh",
+        "loop",
+        "circular",
+        "arrow",
+        "axis-y",
+        "360",
+        "transform",
+        "rotation",
+        "turn"
+      ],
+      "aliases": [
+        "redo",
+        "undo",
+        "rotate-vertical",
+        "rotate-y-axis",
+        "rotate-360",
+        "spin"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rotate-circle",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "rotate",
+        "change",
+        "reverse",
+        "refresh",
+        "circle"
+      ],
+      "aliases": [
+        "swap-circle",
+        "reverse-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "search",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "search",
+        "find",
+        "magnify",
+        "query"
+      ],
+      "aliases": [
+        "magnifying-glass",
+        "search-find"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "send",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "send",
+        "message",
+        "email",
+        "arrow",
+        "paper-plane"
+      ],
+      "aliases": [
+        "send-message",
+        "send-email"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "settings-adjust",
+      "category": {
+        "id": "system--technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "settings",
+        "adjust",
+        "configure",
+        "sliders",
+        "configuration",
+        "preferences",
+        "options",
+        "gear"
+      ],
+      "aliases": [
+        "settings-sliders",
+        "adjust-controls",
+        "config",
+        "preferences"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shape-square",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "square",
+        "box",
+        "shape",
+        "geometry"
+      ],
+      "aliases": [
+        "square-box",
+        "rectangle-square"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "share",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "share",
+        "turn-right",
+        "arrow",
+        "forward",
+        "redirect"
+      ],
+      "aliases": [
+        "forward"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-diamond",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "diamond",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "diamond-arrow",
+        "arrow-square-tilted"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-in",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "sign-in",
+        "login",
+        "enter",
+        "authenticate"
+      ],
+      "aliases": [
+        "log-in",
+        "arrow-enter"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-out",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "sign-out",
+        "logout",
+        "exit",
+        "leave"
+      ],
+      "aliases": [
+        "log-out",
+        "exit-account"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "simple-menu",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "menu",
+        "navigation",
+        "list",
+        "hamburger"
+      ],
+      "aliases": [
+        "menu-simple",
+        "nav-simple"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "smart-toilet",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "smart-toilet",
+        "restroom",
+        "hygiene",
+        "bathroom"
+      ],
+      "aliases": [
+        "intelligent-toilet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "smoking",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "smoking",
+        "cigarette",
+        "tobacco",
+        "hazard"
+      ],
+      "aliases": [
+        "cigarette"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "spark",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "spark",
+        "magic",
+        "shine",
+        "highlight"
+      ],
+      "aliases": [
+        "star-four",
+        "sparkle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "speaker",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "announcement",
+        "speaker",
+        "broadcast",
+        "megaphone",
+        "notice"
+      ],
+      "aliases": [
+        "broadcast",
+        "loudspeaker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "stapled-notebook",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "staple",
+        "notebook",
+        "cover",
+        "binding",
+        "paper"
+      ],
+      "aliases": [
+        "bound-notebook",
+        "stapled-pages",
+        "notebook-bind"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "star-favorite",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "star",
+        "favorite",
+        "bookmark",
+        "rating"
+      ],
+      "aliases": [
+        "favourite-star",
+        "star-like"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "status-dot",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "status",
+        "dot",
+        "circle",
+        "indicator"
+      ],
+      "aliases": [
+        "status-circle",
+        "indicator-dot"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "swap",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "sort",
+        "switch",
+        "double-arrow",
+        "horizontal",
+        "vertical"
+      ],
+      "aliases": [
+        "reorder"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tag",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "tag",
+        "label",
+        "sale",
+        "price"
+      ],
+      "aliases": [
+        "price-tag",
+        "label-tag"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "thumbs-down",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "thumbs-down",
+        "dislike",
+        "no",
+        "rejection",
+        "hand"
+      ],
+      "aliases": [
+        "dislike",
+        "reject"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "thumbs-up",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "thumbs-up",
+        "like",
+        "yes",
+        "approval",
+        "hand"
+      ],
+      "aliases": [
+        "like",
+        "approve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "timeline-gantt",
+      "category": {
+        "id": "document-statistics",
+        "label": "document-statistics"
+      },
+      "tags": [
+        "timeline",
+        "tracking",
+        "progress",
+        "workflow",
+        "schedule",
+        "history",
+        "gantt-chart"
+      ],
+      "aliases": [
+        "work-timeline",
+        "progress-tracking",
+        "activity-timeline",
+        "schedule-tracker"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24
+      ]
+    },
+    {
+      "name": "toilet-gender",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "toilet",
+        "restroom",
+        "female",
+        "male",
+        "gender",
+        "washroom"
+      ],
+      "aliases": [
+        "restroom",
+        "wc",
+        "public-toilet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "transition-push",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "transition",
+        "push",
+        "navigate",
+        "arrow",
+        "left"
+      ],
+      "aliases": [
+        "push"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "trash",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "delete",
+        "remove",
+        "trash",
+        "bin"
+      ],
+      "aliases": [
+        "delete-trash",
+        "remove-bin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "triangle-warning",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "warning",
+        "alert",
+        "exclamation",
+        "caution",
+        "!"
+      ],
+      "aliases": [
+        "alert-triangle",
+        "exclamation-triangle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tshirt",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "t-shirt",
+        "cloth",
+        "clothing",
+        "laundry"
+      ],
+      "aliases": [
+        "shirt"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "turn-down-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "turn",
+        "corner",
+        "down",
+        "right",
+        "arrow",
+        "redirect"
+      ],
+      "aliases": [
+        "corner-arrow",
+        "bend-right"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "undo",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "undo",
+        "turn-left",
+        "back",
+        "reverse",
+        "arrow"
+      ],
+      "aliases": [
+        "back",
+        "reply"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "undock",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "undock",
+        "detach",
+        "float",
+        "box",
+        "arrow"
+      ],
+      "aliases": [
+        "unpin",
+        "detach",
+        "share"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "unlink",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "unlink",
+        "break",
+        "disconnect"
+      ],
+      "aliases": [
+        "unchain",
+        "unlink-url"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -2108,19 +6072,21 @@
       ]
     },
     {
-      "name": "wheelchair-lift",
+      "name": "waste-basket",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "housekeeping",
+        "label": "housekeeping"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator",
-        "accessible"
+        "waste-basket",
+        "trash",
+        "garbage",
+        "recycle",
+        "bin"
       ],
       "aliases": [
-        "wheelchair-lift"
+        "trash-bin",
+        "garbage-can"
       ],
       "styles": [
         "filled",
@@ -2135,23 +6101,132 @@
       ]
     },
     {
-      "name": "wrench",
+      "name": "water-consumption",
       "category": {
-        "id": "building--construction",
-        "label": "building & construction"
+        "id": "housekeeping",
+        "label": "housekeeping"
       },
       "tags": [
-        "wrench",
-        "tool",
-        "maintenance",
-        "repair",
-        "construction",
-        "mechanical"
+        "water",
+        "consumption",
+        "usage",
+        "meter",
+        "sustainability"
       ],
       "aliases": [
-        "wrench",
-        "spanner",
-        "repair-tool"
+        "water-usage",
+        "water-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wet-cleaning",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "bucket-spill",
+        "wet",
+        "water",
+        "clean",
+        "mop"
+      ],
+      "aliases": [
+        "wet-floor-clean"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wine-glass",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "glass",
+        "wine",
+        "drink",
+        "beverage"
+      ],
+      "aliases": [
+        "wine"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "zoom-in",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "search",
+        "zoom",
+        "magnify",
+        "plus"
+      ],
+      "aliases": [
+        "zoom-in",
+        "search-plus"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "zoom-out",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "search",
+        "zoom-out",
+        "magnify",
+        "minus"
+      ],
+      "aliases": [
+        "zoom-out",
+        "magnifier-minus"
       ],
       "styles": [
         "filled",
