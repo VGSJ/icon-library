@@ -6178,6 +6178,84 @@
     {
       "name": "message-bubble",
       "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "message-bubble"
+      ],
+      "aliases": [],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "message-bubble-left",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "message",
+        "chat",
+        "bubble",
+        "conversation"
+      ],
+      "aliases": [
+        "chat",
+        "message-bubble"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "message-bubble-right",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "message",
+        "chat",
+        "bubble",
+        "conversation"
+      ],
+      "aliases": [
+        "chat",
+        "message-bubble"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "message-bubble-typing-left",
+      "category": {
         "id": "communication",
         "label": "communication"
       },
@@ -6186,15 +6264,40 @@
         "typing",
         "composing",
         "chat",
-        "status",
-        "bubble",
-        "conversation"
+        "status"
       ],
       "aliases": [
         "typing-indicator",
-        "message-pending",
+        "message-pending"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "message-bubble-typing-right",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "message",
+        "typing",
+        "composing",
         "chat",
-        "message-bubble"
+        "status"
+      ],
+      "aliases": [
+        "typing-indicator",
+        "message-pending"
       ],
       "styles": [
         "filled",
@@ -6268,6 +6371,57 @@
     {
       "name": "message-square",
       "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "message-square"
+      ],
+      "aliases": [],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "message-square-left",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "message",
+        "chat",
+        "bubble",
+        "square",
+        "conversation"
+      ],
+      "aliases": [
+        "chat-square",
+        "message-box"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "message-square-right",
+      "category": {
         "id": "communication",
         "label": "communication"
       },
@@ -6319,6 +6473,50 @@
     {
       "name": "message-typing",
       "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "message-typing"
+      ],
+      "aliases": [],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "message-typing-1",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      },
+      "tags": [
+        "message-typing-1"
+      ],
+      "aliases": [],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "message-typing-left",
+      "category": {
         "id": "communication",
         "label": "communication"
       },
@@ -6346,15 +6544,22 @@
       ]
     },
     {
-      "name": "message-typing-1",
+      "name": "message-typing-right",
       "category": {
         "id": "communication",
         "label": "communication"
       },
       "tags": [
-        "message-typing-1"
+        "message",
+        "typing",
+        "composing",
+        "chat",
+        "bubble"
       ],
-      "aliases": [],
+      "aliases": [
+        "typing-indicator",
+        "message-pending"
+      ],
       "styles": [
         "filled",
         "outline"
