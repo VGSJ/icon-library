@@ -123,6 +123,26 @@ async function generateMetadata() {
     console.warn(`⚠️ Could not fetch Figma metadata: ${e.message}`);
   }
   
+  // Add housekeeping icons manually if they exist in SVG but not in Figma metadata
+  const housekeepingIcons = [
+    "water-consumption", "smoking", "tshirt", "cleaning", "fix-leak", "dumpster",
+    "hand-dryer", "wine-glass", "wet-cleaning", "reception", "room-service",
+    "apple", "apple-half", "waste-basket", "smart-toilet",
+    "cleaning-room-woman", "male-toilet", "toilet-gender", "female-toilet"
+  ];
+  
+  let addedHousekeeping = 0;
+  for (const iconName of housekeepingIcons) {
+    if (icons.has(iconName)) {
+      if (icons.get(iconName).category.id === "uncategorized") {
+        icons.get(iconName).category = { id: "housekeeping", label: "housekeeping" };
+        addedHousekeeping++;
+      }
+    }
+  }
+  console.log(`✨ Tagged ${addedHousekeeping} housekeeping icons`);
+  console.log(`📦 Total icons in map before conversion: ${icons.size}`);
+  
   // Convert to proper format
   const iconList = Array.from(icons.values())
     .map(icon => ({

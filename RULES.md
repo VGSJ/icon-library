@@ -29,6 +29,7 @@
 - Deploy to GitHub Pages automatically after changes
 - Hard refresh browser (**Cmd+Shift+R**) to see updates
 - Site loads icons from: `./raw-svg/{style}/{size}/icon-{name}-{style}-{size}.svg`
+- Always verify on live site before saying that it's live
 
 ## Code Changes
 - Use absolute file paths when editing
