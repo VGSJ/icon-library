@@ -51,6 +51,21 @@
 - Must contain: `app.js`, `index.html`, `styles.css`, `raw-svg/`, `metadata/`
 - App loads icons dynamically from `app.js`
 
+## Current Status
+- **Live site**: https://vgsj.github.io/icon-library/
+- **Displayed icons**: 73 (manually exported from Figma)
+- **Available in Figma**: 1,110+ icon component sets with 11,059 total variants
+- **Direct API sync**: Script ready (`scripts/figma-sync.mjs`), requires SVG export endpoint fix
+
+## Getting All 1100+ Icons
+To display all Figma icons on the site:
+1. Use Figma's native export feature to download all icons as SVGs
+2. Place exported files in `figma-export/` folder
+3. Run `npm run icons:sync` to organize and generate metadata
+4. Commit changes - GitHub Actions will deploy automatically
+
+**Note**: Direct Figma API export endpoint currently has limitations with large batch requests. Manual export via Figma UI is more reliable.
+
 ## Common Tasks
 - Add new icons: export from Figma → run `npm run icons:sync` → commit → push
 - Update icon categories: edit `metadata/icons.json` after `generate-metadata.mjs`
