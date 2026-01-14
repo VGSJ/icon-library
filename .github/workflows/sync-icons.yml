@@ -1,0 +1,35 @@
+name: Sync Figma Icons
+
+on:
+  schedule:
+    # Run every day at 9 AM UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Sync Figma exports with quick-sync
+        run: node quick-sync.mjs
+      
+      - name: Copy to site folder
+        run: |
+          rm -rf site/raw-svg site/metadata
+          cp -r raw-svg site/
+          cp -r metadata site/
+      
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add raw-svg/ metadata/ site/
+          git commit -m "chore: sync icons from Figma" || echo "No changes to commit"
+          git push
