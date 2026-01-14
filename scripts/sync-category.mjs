@@ -3,7 +3,7 @@ import fs from "fs/promises";
 import path from "path";
 import { execSync } from "child_process";
 
-console.log("🎨 CATEGORY SYNC (Housekeeping)");
+const ROOT = process.cwd();
 
 function env(name) {
   return process.env[name];
@@ -20,6 +20,82 @@ async function figmaFetch(url) {
   return res.json();
 }
 
+async function cleanupCategory(categoryName) {
+  // Before syncing, remove old SVGs for this category to ensure clean update
+  // This ensures renamed/deleted icons in Figma are removed locally
+  const icons = new Map();
+  const RAW_SVG_DIR = path.join(ROOT, "raw-svg");
+  
+  try {
+    // Scan current SVGs
+    const styles = await fs.readdir(RAW_SVG_DIR);
+    for (const style of styles) {
+      const stylePath = path.join(RAW_SVG_DIR, style);
+      const stat = await fs.stat(stylePath);
+      if (!stat.isDirectory()) continue;
+      
+      const sizes = await fs.readdir(stylePath);
+      for (const size of sizes) {
+        const sizePath = path.join(stylePath, size);
+        const sstat = await fs.stat(sizePath);
+        if (!sstat.isDirectory()) continue;
+        
+        const files = await fs.readdir(sizePath);
+        for (const file of files) {
+          if (!file.endsWith(".svg")) continue;
+          const match = file.match(/^icon-(.+?)-(outline|outlined|filled|fill)-(\d+)(?:px)?\.svg$/);
+          if (!match) continue;
+          
+          const iconName = match[1];
+          if (!icons.has(iconName)) icons.set(iconName, []);
+          icons.get(iconName).push(path.join(stylePath, size, file));
+        }
+      }
+    }
+    
+    // Fetch Figma metadata for this category
+    const fileKey = env("FIGMA_FILE_KEY");
+    const compsetsUrl = `https://api.figma.com/v1/files/${fileKey}/component_sets`;
+    const compsetsData = await figmaFetch(compsetsUrl);
+    const componentSets = compsetsData.meta?.component_sets || [];
+    
+    const figmaIcons = new Set();
+    for (const comp of componentSets) {
+      if (!comp.name?.startsWith("icon-")) continue;
+      let baseName = comp.name.substring(5);
+      if (baseName.includes(",")) baseName = baseName.split(",")[0].trim();
+      
+      // Check if this icon is in the target category
+      const desc = comp.description || "";
+      if (desc.toLowerCase().includes(`category: ${categoryName.toLowerCase()}`)) {
+        figmaIcons.add(baseName);
+      }
+    }
+    
+    // Delete local SVGs for icons no longer in this category in Figma
+    let deletedCount = 0;
+    for (const [iconName, files] of icons) {
+      if (!figmaIcons.has(iconName)) {
+        for (const file of files) {
+          try {
+            await fs.unlink(file);
+            deletedCount++;
+          } catch (e) {
+            // File might already be deleted
+          }
+        }
+      }
+    }
+    
+    if (deletedCount > 0) {
+      console.log(`🗑️  Cleaned up ${deletedCount} SVGs no longer in '${categoryName}' category`);
+    }
+  } catch (e) {
+    // Cleanup is optional - don't fail if it errors
+    console.log(`⚠️  Cleanup warning: ${e.message}`);
+  }
+}
+
 async function downloadSvg(url, filePath) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Download failed: ${res.status}`);
@@ -30,6 +106,9 @@ async function downloadSvg(url, filePath) {
 
 async function syncCategoryFromFigma(category) {
   const fileKey = env("FIGMA_FILE_KEY");
+  
+  // Clean up old SVGs for this category before syncing
+  await cleanupCategory(category);
   
   console.log(`🔍 Fetching component sets for "${category}" category...`);
   
