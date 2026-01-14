@@ -5,9 +5,6 @@ import { execSync } from "child_process";
 
 console.log("🎨 RUNNING figma-sync.mjs (Direct Figma API)");
 
-const ROOT = process.cwd();
-const OUT_DIR = path.join(ROOT, "raw-svg");
-
 function env(name) {
   return process.env[name];
 }
@@ -38,12 +35,18 @@ async function syncIconsFromFigma() {
   const fileUrl = `https://api.figma.com/v1/files/${fileKey}`;
   const fileData = await figmaFetch(fileUrl);
   
-  // Find all icon component sets
-  const componentSets = {};
+  // Find all icon COMPONENT_SET nodes and collect their children (variants)
+  const variants = [];
+  
   function traverse(node) {
     if (node.type === "COMPONENT_SET" && node.name?.startsWith("icon-")) {
-      const baseName = node.name.substring(5); // Remove "icon-" prefix
-      componentSets[baseName] = node;
+      // Only care about children of component sets
+      if (node.children && node.children.length > 0) {
+        variants.push(...node.children.map(child => ({
+          ...child,
+          setName: node.name.substring(5) // Remove "icon-" prefix
+        })));
+      }
     }
     if (node.children) {
       for (const child of node.children) traverse(child);
@@ -52,91 +55,84 @@ async function syncIconsFromFigma() {
   
   traverse(fileData.document);
   
-  console.log(`✅ Found ${Object.keys(componentSets).length} icon component sets`);
-  
-  // Get export settings for all components
-  const nodeIds = Object.values(componentSets)
-    .flatMap(set => (set.children || []).map(c => c.id))
-    .join(",");
-  
-  if (!nodeIds) {
-    console.log("❌ No component variants found");
+  if (variants.length === 0) {
+    console.log("❌ No icon component set variants found");
     return;
   }
   
-  console.log(`\n📥 Fetching export URLs for ${nodeIds.split(",").length} variants...`);
+  console.log(`✅ Found ${variants.length} icon component variants`);
   
-  // Get export URLs in batches (API limit ~100 nodes per request)
-  const nodeArray = nodeIds.split(",");
-  const batchSize = 100;
-  const allImages = {};
-  
-  for (let i = 0; i < nodeArray.length; i += batchSize) {
-    const batch = nodeArray.slice(i, i + batchSize).join(",");
-    const exportsUrl = `https://api.figma.com/v1/files/${fileKey}/export?ids=${batch}&format=svg`;
-    const exportsData = await figmaFetch(exportsUrl);
-    
-    if (exportsData.images) {
-      Object.assign(allImages, exportsData.images);
-    }
-  }
-  
+  // Get export URLs in batches
+  const batchSize = 50;
   let downloaded = 0;
   let failed = 0;
   
-  // Download each variant
-  for (const [baseName, set] of Object.entries(componentSets)) {
-    for (const child of (set.children || [])) {
-      const nodeId = child.id;
-      const url = allImages[nodeId];
+  console.log(`\n📥 Downloading SVGs in batches of ${batchSize}...`);
+  
+  for (let i = 0; i < variants.length; i += batchSize) {
+    const batch = variants.slice(i, i + batchSize);
+    const nodeIds = batch.map(v => v.id).join(",");
+    
+    try {
+      const exportsUrl = `https://api.figma.com/v1/files/${fileKey}/export?ids=${nodeIds}&format=svg`;
+      const exportsData = await figmaFetch(exportsUrl);
       
-      if (!url) {
-        console.warn(`⚠️ No URL for ${baseName} variant ${child.name}`);
-        failed++;
+      if (!exportsData.images) {
+        console.warn(`⚠️ No images in batch ${Math.floor(i / batchSize) + 1}`);
+        failed += batch.length;
         continue;
       }
       
-      try {
-        // Parse variant properties from component name
-        // Example: "type=outline, size=16"
-        const parts = child.name.split(", ").reduce((acc, part) => {
-          const [key, val] = part.split("=");
-          acc[key?.trim()] = val?.trim();
-          return acc;
-        }, {});
-        
-        let style = parts.type || "outline";
-        const size = parts.size || "16";
-        
-        // Normalize style names (fill -> filled, outlined -> outline)
-        if (style === "fill") style = "filled";
-        if (style === "outlined") style = "outline";
-        
-        // Generate filename
-        // Some files use px suffix, some don't - detect from pattern
-        const hasPx = ["escalator", "single-signboard", "vr-"].some(str => baseName.includes(str));
-        const suffix = hasPx ? "px" : "";
-        const filename = `icon-${baseName}-${style}-${size}${suffix}.svg`;
-        
-        const filePath = path.join("raw-svg", style, size, filename);
-        
-        await downloadSvg(url, filePath);
-        downloaded++;
-        
-        if (downloaded % 50 === 0) {
-          console.log(`  📦 Downloaded ${downloaded} SVGs...`);
+      // Download each variant in the batch
+      for (const variant of batch) {
+        const url = exportsData.images[variant.id];
+        if (!url) {
+          failed++;
+          continue;
         }
-      } catch (e) {
-        console.error(`❌ Failed to download ${baseName}: ${e.message}`);
-        failed++;
+        
+        try {
+          // Parse variant name: "type=filled, size=16"
+          const parts = variant.name.split(", ").reduce((acc, part) => {
+            const [key, val] = part.split("=");
+            acc[key?.trim()] = val?.trim();
+            return acc;
+          }, {});
+          
+          let style = parts.type || "outline";
+          let size = parts.size || "16";
+          
+          // Normalize style
+          if (style === "fill") style = "filled";
+          if (style === "outlined") style = "outline";
+          
+          // Generate filename
+          const filename = `icon-${variant.setName}-${style}-${size}.svg`;
+          const filePath = path.join("raw-svg", style, String(size), filename);
+          
+          await downloadSvg(url, filePath);
+          downloaded++;
+          
+          if (downloaded % 100 === 0) {
+            console.log(`  ✅ Downloaded ${downloaded} SVGs...`);
+          }
+        } catch (e) {
+          failed++;
+        }
       }
+      
+      const batchNum = Math.floor(i / batchSize) + 1;
+      const successful = batch.length - batch.filter(v => !exportsData.images[v.id]).length;
+      console.log(`  Batch ${batchNum}: ${successful}/${batch.length} downloaded`);
+      
+    } catch (e) {
+      console.error(`❌ Batch failed: ${e.message}`);
+      failed += batch.length;
     }
   }
   
   console.log(`\n✅ Downloaded ${downloaded} SVGs`);
-  if (failed > 0) {
-    console.log(`⚠️ Failed: ${failed}`);
-  }
+  if (failed > 0) console.log(`⚠️ Failed or skipped: ${failed}`);
   
   // Regenerate metadata
   console.log("\n📝 Generating metadata...");
