@@ -1,7 +1,13 @@
 # icon-library Development Rules
 
 ## File Naming & Organization
-- 
+- SVG filenames: `icon-{name}-{style}-{size}{px_suffix}.svg`
+  - **name**: icon identifier (e.g., `escalator-down`, `oxygen-tank`)
+  - **style**: `filled` or `outline` (interchangeable with `fill` and `outlined`)
+  - **size**: `16`, `24`, `32`, `40`, or `48` (in pixels)
+  - **px_suffix**: optional `px` (some icons have it, some don't)
+- Directory structure: `raw-svg/{style}/{size}/icon-{name}-{style}-{size}.svg`
+- Style name normalization: `fill` → `filled`, `outlined` → `outline` (automatic) 
 
 ## Metadata Management
 - Keep `metadata/icons.json` in sync with actual SVG files in `raw-svg/`
