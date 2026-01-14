@@ -16,7 +16,10 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Sync icons
+      - name: Sync icons from Figma
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
         run: npm run icons:sync
       
       - name: Copy to site folder
