@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "icons:sync": "node scripts/icons-sync.mjs",
+    "icons:sync": "node quick-sync.mjs && node generate-metadata.mjs",
     "dev": "npx http-server site -p 8080 -c-1"
   },
   "dependencies": {

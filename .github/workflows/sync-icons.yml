@@ -16,11 +16,8 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Sync Figma exports
-        run: node quick-sync.mjs
-      
-      - name: Generate metadata
-        run: node generate-metadata.mjs
+      - name: Sync icons
+        run: npm run icons:sync
       
       - name: Copy to site folder
         run: |
