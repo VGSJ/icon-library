@@ -123,10 +123,12 @@ function getCategoryLabel(icon) {
 }
 
 function svgPath(name, style, size) {
-  // Convert name to filename: ai-2-stars → icon-ai-2-stars-outline-16.svg
-  const typeMap = { filled: "fill", outline: "outline" };
-  const styleType = typeMap[style] || style;
-  return `./raw-svg/${style}/${size}/icon-${name}-${styleType}-${size}.svg`;
+  // Convert name to filename: ai-2-stars → icon-ai-2-stars-filled-16.svg
+  // Normalize style names (fill -> filled, outlined -> outline)
+  let normalizedStyle = style;
+  if (normalizedStyle === "fill") normalizedStyle = "filled";
+  if (normalizedStyle === "outlined") normalizedStyle = "outline";
+  return `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}.svg`;
 }
 
 async function fetchSvg(name, style, size) {

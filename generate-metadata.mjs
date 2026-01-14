@@ -46,8 +46,8 @@ async function generateMetadata() {
         if (!file.endsWith(".svg")) continue;
         
         // Parse filename: icon-{name}-{style}-{size}.svg or icon-{name}-{style}-{size}px.svg
-        // Style can be: outline, filled, fill
-        const match = file.match(/^icon-(.+?)-(outline|filled|fill)-(\d+)(?:px)?\.svg$/);
+        // Style can be: outline, outlined, filled, fill
+        const match = file.match(/^icon-(.+?)-(outline|outlined|filled|fill)-(\d+)(?:px)?\.svg$/);
         if (!match) {
           console.warn(`⚠️ Unexpected filename: ${file}`);
           continue;
@@ -55,8 +55,10 @@ async function generateMetadata() {
         
         const [, iconName, fileStyle, sizeNum] = match;
         
-        // Normalize style names (fill -> filled)
-        const normalizedStyle = fileStyle === 'fill' ? 'filled' : fileStyle;
+        // Normalize style names: fill->filled, outlined->outline
+        let normalizedStyle = fileStyle;
+        if (normalizedStyle === 'fill') normalizedStyle = 'filled';
+        if (normalizedStyle === 'outlined') normalizedStyle = 'outline';
         if (!icons.has(iconName)) {
           icons.set(iconName, {
             name: iconName,
