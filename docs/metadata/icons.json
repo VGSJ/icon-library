@@ -1042,8 +1042,8 @@
     {
       "name": "bar-chart",
       "category": {
-        "id": "document-statistics",
-        "label": "document-statistics"
+        "id": "document & statistics",
+        "label": "document & statistics"
       },
       "tags": [
         "chart",
@@ -1073,8 +1073,8 @@
     {
       "name": "bar-chart-horizontal",
       "category": {
-        "id": "document-statistics",
-        "label": "document-statistics"
+        "id": "document & statistics",
+        "label": "document & statistics"
       },
       "tags": [
         "chart",
@@ -1104,8 +1104,8 @@
     {
       "name": "bar-chart-vertical",
       "category": {
-        "id": "document-statistics",
-        "label": "document-statistics"
+        "id": "document & statistics",
+        "label": "document & statistics"
       },
       "tags": [
         "chart",
@@ -8476,8 +8476,8 @@
     {
       "name": "timeline-gantt",
       "category": {
-        "id": "document-statistics",
-        "label": "document-statistics"
+        "id": "document & statistics",
+        "label": "document & statistics"
       },
       "tags": [
         "timeline",
