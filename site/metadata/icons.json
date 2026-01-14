@@ -364,8 +364,8 @@
     {
       "name": "apple",
       "category": {
-        "id": "media--entertainment",
-        "label": "media & entertainment"
+        "id": "housekeeping",
+        "label": "housekeeping"
       },
       "tags": [
         "apple",
