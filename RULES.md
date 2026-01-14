@@ -1,12 +1,7 @@
 # icon-library Development Rules
 
 ## File Naming & Organization
-- All icon files **must start with `icon-`** prefix
-- Naming format: `icon-{name}-{style}-{size}.svg`
-  - Example: `icon-ai-2-stars-outline-16.svg`
-  - Styles: `filled`, `outline`
-  - Sizes: `16`, `24`, `32`, `40`, `48`
-- Organize in folders: `raw-svg/{style}/{size}/`
+- 
 
 ## Metadata Management
 - Keep `metadata/icons.json` in sync with actual SVG files in `raw-svg/`

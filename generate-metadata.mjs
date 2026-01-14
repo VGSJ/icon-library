@@ -3,7 +3,7 @@ import fs from "fs/promises";
 import path from "path";
 
 const ROOT = process.cwd();
-const EXPORT_DIR = path.join(ROOT, "figma-export");
+const RAW_SVG_DIR = path.join(ROOT, "raw-svg");
 const META_DIR = path.join(ROOT, "metadata");
 const META_FILE = path.join(META_DIR, "icons.json");
 
@@ -22,86 +22,108 @@ async function figmaFetch(url) {
   return res.json();
 }
 
-function parseMetadata(description = "") {
-  const meta = {
-    category: { id: "uncategorized", label: "Uncategorized" },
-    tags: [],
-    aliases: []
-  };
-  
-  if (!description) return meta;
-  
-  const lines = String(description).split(/\n|;/).map(s => s.trim());
-  
-  for (const line of lines) {
-    if (line.startsWith("category:")) {
-      const val = line.replace(/^category:\s*/i, "").trim();
-      const slug = val.toLowerCase().replace(/\s+/g, "-").replace(/[&]/g, "");
-      meta.category = { id: slug, label: val };
-    } else if (line.startsWith("tags:")) {
-      const val = line.replace(/^tags:\s*/i, "").trim();
-      meta.tags = val.split(/,\s*/).filter(Boolean);
-    } else if (line.startsWith("aliases:")) {
-      const val = line.replace(/^aliases:\s*/i, "").trim();
-      meta.aliases = val.split(/,\s*/).filter(Boolean);
-    }
-  }
-  
-  return meta;
-}
-
 async function generateMetadata() {
-  const files = await fs.readdir(EXPORT_DIR);
-  const svgFiles = files.filter(f => f.endsWith('.svg'));
-  
   const icons = new Map();
   
-  // Parse all SVG files to extract icon names and available styles/sizes
-  for (const file of svgFiles) {
-    const match = file.match(/^icon-(.+?)-(fill|filled|outline|line)-(\d+)(?:px)?\.svg$/i);
-    if (!match) continue;
+  // Scan raw-svg directory structure
+  console.log("📂 Scanning raw-svg directory...");
+  
+  const styles = await fs.readdir(RAW_SVG_DIR);
+  
+  for (const style of styles) {
+    const stylePath = path.join(RAW_SVG_DIR, style);
+    const styleStat = await fs.stat(stylePath);
+    if (!styleStat.isDirectory()) continue;
     
-    const [, iconName, typeRaw, sizeRaw] = match;
-    const style = typeRaw === 'fill' ? 'filled' : typeRaw === 'line' ? 'outline' : typeRaw;
-    const size = parseInt(sizeRaw);
-    
-    if (!icons.has(iconName)) {
-      icons.set(iconName, {
-        name: iconName,
-        styles: new Set(),
-        sizes: new Set(),
-        category: { id: "uncategorized", label: "Uncategorized" },
-        tags: [iconName],
-        aliases: []
-      });
+    const sizes = await fs.readdir(stylePath);
+    for (const size of sizes) {
+      const sizePath = path.join(stylePath, size);
+      const sizeStat = await fs.stat(sizePath);
+      if (!sizeStat.isDirectory()) continue;
+      
+      const files = await fs.readdir(sizePath);
+      for (const file of files) {
+        if (!file.endsWith(".svg")) continue;
+        
+        // Parse filename: icon-{name}-{style}-{size}.svg or icon-{name}-{style}-{size}px.svg
+        // Style can be: outline, filled, fill
+        const match = file.match(/^icon-(.+?)-(outline|filled|fill)-(\d+)(?:px)?\.svg$/);
+        if (!match) {
+          console.warn(`⚠️ Unexpected filename: ${file}`);
+          continue;
+        }
+        
+        const [, iconName, fileStyle, sizeNum] = match;
+        
+        // Normalize style names (fill -> filled)
+        const normalizedStyle = fileStyle === 'fill' ? 'filled' : fileStyle;
+        if (!icons.has(iconName)) {
+          icons.set(iconName, {
+            name: iconName,
+            styles: new Set(),
+            sizes: new Set(),
+            category: { id: "uncategorized", label: "Uncategorized" },
+            tags: [],
+            aliases: []
+          });
+        }
+        
+        const icon = icons.get(iconName);
+        icon.styles.add(normalizedStyle);
+        icon.sizes.add(parseInt(sizeNum));
+      }
     }
-    
-    const icon = icons.get(iconName);
-    icon.styles.add(style);
-    icon.sizes.add(size);
   }
   
+  console.log(`✅ Found ${icons.size} unique icons from SVG files`);
+  
   // Fetch metadata from Figma
-  console.log("Fetching metadata from Figma...");
+  console.log("🔍 Fetching Figma metadata for categories/tags...");
   try {
     const fileKey = env("FIGMA_FILE_KEY");
-    const compUrl = `https://api.figma.com/v1/files/${fileKey}/components`;
-    const compData = await figmaFetch(compUrl);
-    const allComps = compData?.meta?.components || [];
+    const fileUrl = `https://api.figma.com/v1/files/${fileKey}`;
+    const fileData = await figmaFetch(fileUrl);
     
-    // Map component names to metadata
-    for (const comp of allComps) {
-      if (!comp.name.startsWith("icon-")) continue;
-      
-      const match = comp.name.match(/^icon-(.+?)-(fill|filled|outline|line)-(\d+)/i);
-      if (!match) continue;
-      
-      const iconName = match[1];
-      if (icons.has(iconName)) {
-        const parsed = parseMetadata(comp.description);
-        icons.get(iconName).category = parsed.category;
-        icons.get(iconName).tags = parsed.tags.length ? parsed.tags : [iconName];
-        icons.get(iconName).aliases = parsed.aliases;
+    const figmaComps = {};
+    function traverse(node) {
+      if (node.type === "COMPONENT_SET" && node.name?.startsWith("icon-")) {
+        const baseName = node.name.substring(5); // Remove "icon-" prefix
+        figmaComps[baseName] = {
+          description: node.description || "",
+          name: node.name
+        };
+      }
+      if (node.children) {
+        for (const child of node.children) traverse(child);
+      }
+    }
+    
+    traverse(fileData.document);
+    console.log(`✅ Found ${Object.keys(figmaComps).length} components in Figma`);
+    
+    // Merge Figma metadata into icons
+    for (const [baseName, comp] of Object.entries(figmaComps)) {
+      if (icons.has(baseName)) {
+        const desc = comp.description || "";
+        const lines = desc.split("\n");
+        
+        for (const line of lines) {
+          if (line.startsWith("category:")) {
+            const val = line.substring(9).trim();
+            const id = val.toLowerCase().replace(/\s+/g, "-").replace(/[&]/g, "");
+            icons.get(baseName).category = { id, label: val };
+          } else if (line.startsWith("tags:")) {
+            const tags = line.substring(5).trim().split(",").map(t => t.trim()).filter(t => t);
+            if (tags.length > 0) {
+              icons.get(baseName).tags = tags;
+            }
+          } else if (line.startsWith("aliases:")) {
+            const aliases = line.substring(8).trim().split(",").map(a => a.trim()).filter(a => a);
+            if (aliases.length > 0) {
+              icons.get(baseName).aliases = aliases;
+            }
+          }
+        }
       }
     }
   } catch (e) {
@@ -113,7 +135,8 @@ async function generateMetadata() {
     .map(icon => ({
       name: icon.name,
       category: icon.category,
-      tags: Array.from(icon.tags).filter(Boolean),
+      // Use icon name as tag for searchability if no tags are set
+      tags: icon.tags.size > 0 ? Array.from(icon.tags).filter(Boolean) : [icon.name],
       aliases: Array.from(icon.aliases || []),
       styles: Array.from(icon.styles).sort(),
       sizes: Array.from(icon.sizes).sort((a, b) => a - b)
