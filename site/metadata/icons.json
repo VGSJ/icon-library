@@ -1046,6 +1046,45 @@
       ]
     },
     {
+      "name": "bedroom-lamp",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "bed",
+        "bedroom",
+        "hotel",
+        "sleep",
+        "relax",
+        "bedroom-lamp",
+        "table-lamp",
+        "light",
+        "bedside",
+        "lighting",
+        "indoor",
+        "lamp"
+      ],
+      "aliases": [
+        "single-bed",
+        "sleeping-bed",
+        "bedside-lamp",
+        "table-lamp",
+        "bedroom-light"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "bell-mute",
       "category": {
         "id": "actions--general-interface",
@@ -1229,6 +1268,38 @@
       ]
     },
     {
+      "name": "building-isolation-switch",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "building",
+        "isolation-switch",
+        "power",
+        "electrical",
+        "cutoff",
+        "safety",
+        "control"
+      ],
+      "aliases": [
+        "isolation-switch",
+        "main-switch",
+        "power-isolator"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "buoy",
       "category": {
         "id": "health--safety",
@@ -1318,6 +1389,38 @@
       ]
     },
     {
+      "name": "ceiling-light",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "ceiling-light",
+        "lamp",
+        "luminaire",
+        "lighting",
+        "indoor",
+        "fixture",
+        "illumination"
+      ],
+      "aliases": [
+        "ceiling-lamp",
+        "luminaire",
+        "overhead-light"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "celebrate",
       "category": {
         "id": "communication",
@@ -1333,6 +1436,38 @@
       "aliases": [
         "celebration",
         "confetti"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chandelier",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "chandelier",
+        "luminaire",
+        "lms",
+        "lighting",
+        "ceiling",
+        "decorative",
+        "indoor"
+      ],
+      "aliases": [
+        "chandelier",
+        "decorative-light",
+        "ceiling-luminaire"
       ],
       "styles": [
         "filled",
@@ -2508,6 +2643,44 @@
         "i-beam"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "desk-lamp",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "desk",
+        "study",
+        "work",
+        "table",
+        "furniture",
+        "desk-lamp",
+        "reading",
+        "lamp",
+        "lighting",
+        "task-light",
+        "modern"
+      ],
+      "aliases": [
+        "study-desk",
+        "work-desk",
+        "desk-lamp",
+        "table-lamp",
+        "task-lamp"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -4182,6 +4355,37 @@
       ]
     },
     {
+      "name": "hanging-light",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "hanging-light",
+        "pendant-light",
+        "lamp",
+        "lighting",
+        "ceiling",
+        "indoor"
+      ],
+      "aliases": [
+        "hanging-lamp",
+        "pendant-lamp",
+        "ceiling-light"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "headset",
       "category": {
         "id": "communication",
@@ -4430,6 +4634,164 @@
       ]
     },
     {
+      "name": "lantern",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "lantern",
+        "light",
+        "portable",
+        "lighting",
+        "outdoor",
+        "lamp"
+      ],
+      "aliases": [
+        "lantern",
+        "portable-lamp",
+        "camping-lantern"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "led-ceiling-ray",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "led",
+        "ceiling",
+        "ray",
+        "led-ceiling",
+        "lighting",
+        "illumination",
+        "downlight"
+      ],
+      "aliases": [
+        "led-ceiling-ray",
+        "ceiling-led",
+        "led-downlight"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "led-light",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "led",
+        "electric",
+        "light",
+        "lighting",
+        "illumination",
+        "energy-efficient"
+      ],
+      "aliases": [
+        "led-light",
+        "electric-led",
+        "led-lamp"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "led-light-ray",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "led",
+        "electric",
+        "light",
+        "ray",
+        "led-light",
+        "illumination",
+        "lighting"
+      ],
+      "aliases": [
+        "led-ray",
+        "led-light",
+        "electric-led"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "led-light-strip",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "led",
+        "light-strip",
+        "led-strip",
+        "lighting",
+        "illumination",
+        "flexible",
+        "accent"
+      ],
+      "aliases": [
+        "led-light-strip",
+        "led-strip",
+        "light-strip"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "left-right",
       "category": {
         "id": "arrows",
@@ -4445,6 +4807,171 @@
       "aliases": [
         "horizontal-arrow",
         "swap-horizontal"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "light-bulb",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "light",
+        "bulb",
+        "idea",
+        "lighting",
+        "illumination",
+        "energy",
+        "electricity"
+      ],
+      "aliases": [
+        "light-bulb",
+        "idea",
+        "illumination"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "light-bulb-dim",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "light",
+        "bulb",
+        "dim",
+        "lighting",
+        "low-brightness",
+        "illumination",
+        "electricity"
+      ],
+      "aliases": [
+        "dim-light",
+        "bulb-dim",
+        "low-light"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "light-bulb-on",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "light",
+        "bulb",
+        "lighting",
+        "illumination",
+        "on",
+        "active",
+        "electricity"
+      ],
+      "aliases": [
+        "light-on",
+        "bulb-on",
+        "illuminated-bulb"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "light-dimmer-switch",
+      "category": {
+        "id": "power--electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "light",
+        "switch",
+        "dimmer",
+        "lighting",
+        "brightness",
+        "control",
+        "electricity",
+        "on-off",
+        "thermostat",
+        "electrical"
+      ],
+      "aliases": [
+        "dimmer-switch",
+        "light-dimmer",
+        "brightness-control",
+        "light-control",
+        "light-control-dimmer"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "light-switch",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "light",
+        "switch",
+        "lighting",
+        "power",
+        "on-off",
+        "control",
+        "electricity"
+      ],
+      "aliases": [
+        "light-switch",
+        "power-switch",
+        "wall-switch"
       ],
       "styles": [
         "filled",
@@ -4584,6 +5111,37 @@
         "progress-spinner"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "luminaire-driver",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "luminaire-driver",
+        "driver",
+        "led-driver",
+        "power-supply",
+        "lighting-control",
+        "electrical"
+      ],
+      "aliases": [
+        "luminaire-driver",
+        "led-driver",
+        "light-driver"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -5118,6 +5676,38 @@
       ]
     },
     {
+      "name": "night-stand-lamp",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "night-stand-lamp",
+        "bedside-lamp",
+        "lamp",
+        "light",
+        "bedroom",
+        "lighting",
+        "indoor"
+      ],
+      "aliases": [
+        "bedside-lamp",
+        "night-lamp",
+        "table-lamp"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "notebook-1",
       "category": {
         "id": "document--statistics",
@@ -5326,6 +5916,70 @@
       ]
     },
     {
+      "name": "parking-light",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "parking-light",
+        "parking",
+        "lighting",
+        "indicator",
+        "outdoor",
+        "safety"
+      ],
+      "aliases": [
+        "parking-light",
+        "parking-lamp",
+        "parking-indicator"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "pendant-light",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "pendant-light",
+        "hanging-lamp",
+        "luminaire",
+        "ceiling",
+        "lighting",
+        "indoor",
+        "decorative",
+        "lms"
+      ],
+      "aliases": [
+        "pendant-lamp",
+        "hanging-light",
+        "ceiling-pendant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "phone",
       "category": {
         "id": "communication",
@@ -5370,6 +6024,38 @@
       "aliases": [
         "hang-up",
         "end-call"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "photo-light",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "photo-light",
+        "photography",
+        "studio-light",
+        "lighting",
+        "equipment",
+        "lamp",
+        "spotlight"
+      ],
+      "aliases": [
+        "photo-light",
+        "studio-light",
+        "photography-light"
       ],
       "styles": [
         "filled",
@@ -6149,6 +6835,38 @@
       ]
     },
     {
+      "name": "solar-pv-inverter-switchboard",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "solar",
+        "pv-inverter",
+        "switchboard",
+        "light-control",
+        "renewable-energy",
+        "electrical",
+        "power"
+      ],
+      "aliases": [
+        "pv-inverter",
+        "solar-inverter",
+        "lighting-switchboard"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "sos",
       "category": {
         "id": "health--safety",
@@ -6223,6 +6941,37 @@
       "aliases": [
         "broadcast",
         "loudspeaker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "standing-lamp-double",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "standing-lamp",
+        "floor-lamp",
+        "double-lamp",
+        "light",
+        "lighting",
+        "indoor"
+      ],
+      "aliases": [
+        "floor-lamp-double",
+        "standing-light",
+        "twin-floor-lamp"
       ],
       "styles": [
         "filled",
@@ -6323,6 +7072,70 @@
       ]
     },
     {
+      "name": "street-light",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "street-light",
+        "lamp",
+        "lighting",
+        "outdoor",
+        "road",
+        "pole",
+        "lms"
+      ],
+      "aliases": [
+        "street-light",
+        "lamp-post",
+        "outdoor-light"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "street-light-double",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "street-light",
+        "lamp",
+        "double-lamp",
+        "lighting",
+        "outdoor",
+        "road",
+        "lms"
+      ],
+      "aliases": [
+        "double-street-light",
+        "twin-lamp-post",
+        "street-light-double"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "swap",
       "category": {
         "id": "arrows",
@@ -6339,6 +7152,69 @@
         "reorder"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "table-candles",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "table-candles",
+        "candles",
+        "candlelight",
+        "lighting",
+        "ambient",
+        "decoration"
+      ],
+      "aliases": [
+        "candles",
+        "candle-set",
+        "table-candle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "table-lamp",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "table-lamp",
+        "table-lighting",
+        "lamp",
+        "light",
+        "indoor",
+        "lighting",
+        "fixture"
+      ],
+      "aliases": [
+        "table-lamp",
+        "desk-lamp",
+        "bedside-lamp"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -6482,6 +7358,39 @@
         "restroom",
         "wc",
         "public-toilet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "touch-light-control",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "touch",
+        "panel",
+        "tap",
+        "control",
+        "brightness",
+        "lighting",
+        "dimmer",
+        "interface"
+      ],
+      "aliases": [
+        "touch-panel",
+        "light-control-panel",
+        "brightness-control"
       ],
       "styles": [
         "filled",
@@ -6736,6 +7645,38 @@
       ],
       "aliases": [
         "vr-panoramic"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wall-lamp-up",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
+        "wall-lamp",
+        "wall-light",
+        "up-light",
+        "lighting",
+        "indoor",
+        "fixture",
+        "lms"
+      ],
+      "aliases": [
+        "wall-lamp-up",
+        "wall-up-light",
+        "wall-sconce-up"
       ],
       "styles": [
         "filled",
