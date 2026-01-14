@@ -7547,8 +7547,8 @@
     {
       "name": "settings-adjust",
       "category": {
-        "id": "system-technology",
-        "label": "system & technology"
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
       },
       "tags": [
         "settings",

@@ -48,6 +48,13 @@
         "id": "security",
         "label": "security"
       }
+    },
+    {
+      "name": "settings-adjust",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      }
     }
   ]
 }
