@@ -4967,6 +4967,35 @@
       ]
     },
     {
+      "name": "heatmap",
+      "category": {
+        "id": "document-statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "heatmap",
+        "data",
+        "visualization",
+        "analytics",
+        "statistics"
+      ],
+      "aliases": [
+        "data-heatmap",
+        "intensity-map"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "hospital-medical",
       "category": {
         "id": "health-safety",
