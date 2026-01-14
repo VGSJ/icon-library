@@ -210,6 +210,66 @@
       ]
     },
     {
+      "name": "apple",
+      "category": {
+        "id": "media--entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "apple",
+        "fruit",
+        "food",
+        "nutrition",
+        "tech",
+        "platform",
+        "brand",
+        "company"
+      ],
+      "aliases": [
+        "fresh-apple",
+        "apple-logo",
+        "apple-inc"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "apple-half",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "apple-half",
+        "nutrition",
+        "food",
+        "healthy"
+      ],
+      "aliases": [
+        "half-apple"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "archive-box",
       "category": {
         "id": "document--statistics",
@@ -1861,6 +1921,61 @@
       ]
     },
     {
+      "name": "cleaning",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "cleaning",
+        "house-chore",
+        "broom",
+        "wipe",
+        "hygiene"
+      ],
+      "aliases": [
+        "housekeeping-clean"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cleaning-room-woman",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "cleaning-room",
+        "woman",
+        "housekeeping",
+        "staff"
+      ],
+      "aliases": [
+        "housekeeper"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "clipboard",
       "category": {
         "id": "document--statistics",
@@ -2731,6 +2846,34 @@
       ]
     },
     {
+      "name": "dumpster",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "dumpster",
+        "garbage",
+        "waste",
+        "trash",
+        "disposal"
+      ],
+      "aliases": [
+        "waste-container"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "eform",
       "category": {
         "id": "document--statistics",
@@ -3101,6 +3244,33 @@
       ]
     },
     {
+      "name": "female-toilet",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "female-toilet",
+        "woman",
+        "restroom",
+        "bathroom"
+      ],
+      "aliases": [
+        "women-restroom"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "file-cvs",
       "category": {
         "id": "document--statistics",
@@ -3263,6 +3433,35 @@
       "aliases": [
         "filter-ver",
         "vertical-filter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fix-leak",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "fix",
+        "leak",
+        "repair",
+        "water",
+        "plumbing"
+      ],
+      "aliases": [
+        "repair-leak",
+        "fix-pipe"
       ],
       "styles": [
         "filled",
@@ -3464,6 +3663,33 @@
         "minimize-screen"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hand-dryer",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "automatic-hand-dryer",
+        "hand-dryer",
+        "hygiene",
+        "restroom"
+      ],
+      "aliases": [
+        "electric-hand-dryer"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -3856,6 +4082,33 @@
       "aliases": [
         "email-invite",
         "invite-mail"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "male-toilet",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "male-toilet",
+        "man",
+        "restroom",
+        "bathroom"
+      ],
+      "aliases": [
+        "men-restroom"
       ],
       "styles": [
         "filled",
@@ -4701,6 +4954,33 @@
       ]
     },
     {
+      "name": "reception",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "reception",
+        "front-desk",
+        "lobby",
+        "service"
+      ],
+      "aliases": [
+        "reception-desk"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "refresh",
       "category": {
         "id": "arrows",
@@ -4775,6 +5055,33 @@
         "maximize",
         "expand-out",
         "share"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "room-service",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "room-service",
+        "hospitality",
+        "hotel",
+        "service"
+      ],
+      "aliases": [
+        "hotel-service"
       ],
       "styles": [
         "filled",
@@ -5096,6 +5403,60 @@
       ]
     },
     {
+      "name": "smart-toilet",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "smart-toilet",
+        "restroom",
+        "hygiene",
+        "bathroom"
+      ],
+      "aliases": [
+        "intelligent-toilet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "smoking",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "smoking",
+        "cigarette",
+        "tobacco",
+        "hazard"
+      ],
+      "aliases": [
+        "cigarette"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "spark",
       "category": {
         "id": "actions--general-interface",
@@ -5381,6 +5742,37 @@
       ]
     },
     {
+      "name": "toilet-gender",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "toilet",
+        "restroom",
+        "female",
+        "male",
+        "gender",
+        "washroom"
+      ],
+      "aliases": [
+        "restroom",
+        "wc",
+        "public-toilet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "transition-push",
       "category": {
         "id": "arrows",
@@ -5452,6 +5844,33 @@
       "aliases": [
         "alert-triangle",
         "exclamation-triangle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tshirt",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "t-shirt",
+        "cloth",
+        "clothing",
+        "laundry"
+      ],
+      "aliases": [
+        "shirt"
       ],
       "styles": [
         "filled",
@@ -5594,6 +6013,119 @@
       ],
       "aliases": [
         "vr-panoramic"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "waste-basket",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "waste-basket",
+        "trash",
+        "garbage",
+        "recycle",
+        "bin"
+      ],
+      "aliases": [
+        "trash-bin",
+        "garbage-can"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-consumption",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "water",
+        "consumption",
+        "usage",
+        "meter",
+        "sustainability"
+      ],
+      "aliases": [
+        "water-usage",
+        "water-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wet-cleaning",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "bucket-spill",
+        "wet",
+        "water",
+        "clean",
+        "mop"
+      ],
+      "aliases": [
+        "wet-floor-clean"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wine-glass",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      },
+      "tags": [
+        "glass",
+        "wine",
+        "drink",
+        "beverage"
+      ],
+      "aliases": [
+        "wine"
       ],
       "styles": [
         "filled",
