@@ -132,14 +132,26 @@ function svgPath(name, style, size) {
 }
 
 async function fetchSvg(name, style, size) {
+  // Normalize style name
+  let normalizedStyle = style;
+  if (normalizedStyle === "fill") normalizedStyle = "filled";
+  if (normalizedStyle === "outlined") normalizedStyle = "outline";
+  
   // Try primary path first
   let path = svgPath(name, style, size);
   let res = await fetch(path);
   
-  // If not found, try with 'px' suffix for size
+  // If not found, try with 'px' suffix in filename (same folder)
   if (!res.ok) {
     const sizeWithPx = `${size}px`;
-    path = `./raw-svg/${style === "fill" ? "filled" : style === "outlined" ? "outline" : style}/${sizeWithPx}/icon-${name}-${style === "fill" ? "filled" : style === "outlined" ? "outline" : style}-${sizeWithPx}.svg`;
+    path = `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${sizeWithPx}.svg`;
+    res = await fetch(path);
+  }
+  
+  // If still not found, try with 'px' in both folder and filename
+  if (!res.ok) {
+    const sizeWithPx = `${size}px`;
+    path = `./raw-svg/${normalizedStyle}/${sizeWithPx}/icon-${name}-${normalizedStyle}-${sizeWithPx}.svg`;
     res = await fetch(path);
   }
   
