@@ -1,6 +1,38 @@
 {
   "icons": [
     {
+      "name": "aed-kit",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "aed",
+        "automated-external-defibrillator",
+        "defibrillator",
+        "heart",
+        "cardiac",
+        "emergency",
+        "medical"
+      ],
+      "aliases": [
+        "aed",
+        "defibrillator",
+        "cardiac-defibrillator"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "ai-2-stars",
       "category": {
         "id": "ai--vr",
@@ -196,6 +228,38 @@
       ],
       "aliases": [
         "ai-wand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ambulance",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "ambulance",
+        "emergency",
+        "medical",
+        "health",
+        "vehicle",
+        "rescue",
+        "first-aid"
+      ],
+      "aliases": [
+        "ambulance",
+        "emergency-vehicle",
+        "medical-transport"
       ],
       "styles": [
         "filled",
@@ -801,6 +865,37 @@
       ]
     },
     {
+      "name": "asterisk",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "asterisk",
+        "star",
+        "medical",
+        "emergency",
+        "symbol",
+        "important"
+      ],
+      "aliases": [
+        "asterisk",
+        "star",
+        "medical-mark"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "attachment",
       "category": {
         "id": "actions--general-interface",
@@ -1120,6 +1215,40 @@
       "aliases": [
         "bookmark-plus",
         "add-bookmark"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "buoy",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "float",
+        "buoy",
+        "swim",
+        "vest",
+        "life-vest",
+        "flotation",
+        "safety",
+        "water",
+        "rescue"
+      ],
+      "aliases": [
+        "life-vest",
+        "life-jacket",
+        "flotation-vest"
       ],
       "styles": [
         "filled",
@@ -2911,6 +3040,39 @@
       ]
     },
     {
+      "name": "electrical-hazard",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "electrical",
+        "electricity",
+        "electronic",
+        "danger",
+        "hazard",
+        "high-voltage",
+        "warning",
+        "safety"
+      ],
+      "aliases": [
+        "electrical-hazard",
+        "electric-danger",
+        "high-voltage"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "ellipsis",
       "category": {
         "id": "actions--general-interface",
@@ -2954,6 +3116,71 @@
       "aliases": [
         "mail",
         "inbox-message"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "emergency-phone",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "emergency",
+        "phone",
+        "call",
+        "hotline",
+        "sos",
+        "help",
+        "safety"
+      ],
+      "aliases": [
+        "emergency-phone",
+        "sos-phone",
+        "hotline-phone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "emergency-phone-medical",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "emergency",
+        "phone",
+        "medical",
+        "call",
+        "hotline",
+        "sos",
+        "help",
+        "healthcare"
+      ],
+      "aliases": [
+        "medical-emergency-phone",
+        "emergency-call-medical",
+        "sos-medical-phone"
       ],
       "styles": [
         "filled",
@@ -3250,6 +3477,38 @@
       ]
     },
     {
+      "name": "eye-wash-station",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "eye-wash",
+        "eyewash-station",
+        "safety",
+        "emergency",
+        "decontamination",
+        "wash",
+        "hazard"
+      ],
+      "aliases": [
+        "eye-wash",
+        "eyewash",
+        "eyewash-station"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "female-toilet",
       "category": {
         "id": "housekeeping",
@@ -3263,6 +3522,70 @@
       ],
       "aliases": [
         "women-restroom"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fight-1",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "fight",
+        "fighting",
+        "violence",
+        "conflict",
+        "assault",
+        "physical",
+        "danger"
+      ],
+      "aliases": [
+        "fight",
+        "fighting",
+        "physical-conflict"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fight-2",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "fight",
+        "fighting",
+        "violence",
+        "conflict",
+        "assault",
+        "physical",
+        "danger"
+      ],
+      "aliases": [
+        "fight",
+        "fighting",
+        "physical-conflict"
       ],
       "styles": [
         "filled",
@@ -3439,6 +3762,71 @@
       "aliases": [
         "filter-ver",
         "vertical-filter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "first-aid-kit",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "first-aid",
+        "medical",
+        "health",
+        "emergency",
+        "kit",
+        "medicine",
+        "rescue"
+      ],
+      "aliases": [
+        "first-aid-kit",
+        "medical-kit",
+        "emergency-kit"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "first-aid-medical",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "health",
+        "medical",
+        "hospital",
+        "first-aid",
+        "medic",
+        "emergency",
+        "healthcare",
+        "treatment"
+      ],
+      "aliases": [
+        "first-aid",
+        "medic",
+        "medical-aid"
       ],
       "styles": [
         "filled",
@@ -3823,32 +4211,155 @@
       ]
     },
     {
-      "name": "heart",
+      "name": "health-monitor",
       "category": {
         "id": "health--safety",
         "label": "health & safety"
+      },
+      "tags": [
+        "health",
+        "monitor",
+        "medical",
+        "vital-signs",
+        "heart-rate",
+        "ecg",
+        "hospital"
+      ],
+      "aliases": [
+        "health-monitor",
+        "medical-monitor",
+        "vital-monitor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heart",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
       },
       "tags": [
         "heart",
         "like",
         "favorite",
         "love",
-        "health",
+        "health"
+      ],
+      "aliases": [
+        "like-heart",
+        "favorite-heart"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heart-pulse",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
         "heart-rate",
         "heartbeat",
         "pulse",
         "aed",
         "defibrillator",
         "medical",
-        "emergency"
+        "emergency",
+        "health"
       ],
       "aliases": [
-        "like-heart",
-        "favorite-heart",
         "heart-rate",
         "heartbeat",
         "pulse",
         "aed"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hospital-medical",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "hospital",
+        "clinic",
+        "health",
+        "medical",
+        "healthcare",
+        "building",
+        "facility",
+        "emergency",
+        "treatment"
+      ],
+      "aliases": [
+        "hospital",
+        "clinic",
+        "medical-building",
+        "medical-center",
+        "healthcare-facility"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hospital-sign",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "hospital",
+        "clinic",
+        "medical",
+        "health",
+        "healthcare",
+        "sign",
+        "emergency"
+      ],
+      "aliases": [
+        "hospital",
+        "clinic-sign",
+        "medical-facility"
       ],
       "styles": [
         "filled",
@@ -4126,6 +4637,70 @@
       ],
       "aliases": [
         "men-restroom"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "medical-cross",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "medical",
+        "health",
+        "cross",
+        "hospital",
+        "first-aid",
+        "emergency",
+        "healthcare"
+      ],
+      "aliases": [
+        "medical-cross",
+        "health-cross",
+        "hospital-cross"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "medical-star",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "medical",
+        "health",
+        "emergency",
+        "star-of-life",
+        "asterisk",
+        "hospital",
+        "rescue"
+      ],
+      "aliases": [
+        "medical-star",
+        "star-of-life",
+        "emergency-symbol"
       ],
       "styles": [
         "filled",
@@ -4837,6 +5412,37 @@
       ]
     },
     {
+      "name": "police-car",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "police",
+        "law-enforcement",
+        "emergency",
+        "vehicle",
+        "patrol",
+        "security"
+      ],
+      "aliases": [
+        "police-car",
+        "patrol-car",
+        "law-enforcement-vehicle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "printer",
       "category": {
         "id": "actions--general-interface",
@@ -5193,6 +5799,47 @@
       ]
     },
     {
+      "name": "safety-shower",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "safe",
+        "saving",
+        "lock",
+        "security",
+        "secure",
+        "storage",
+        "safety",
+        "safety-shower",
+        "emergency",
+        "decontamination",
+        "wash",
+        "hazard",
+        "workplace"
+      ],
+      "aliases": [
+        "safety-safe",
+        "lockbox",
+        "vault",
+        "safety-shower",
+        "emergency-shower",
+        "wash-station"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "search",
       "category": {
         "id": "actions--general-interface",
@@ -5488,6 +6135,37 @@
       ],
       "aliases": [
         "cigarette"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sos",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "sos",
+        "emergency",
+        "help",
+        "distress",
+        "alert",
+        "safety"
+      ],
+      "aliases": [
+        "sos",
+        "emergency-alert",
+        "distress-signal"
       ],
       "styles": [
         "filled",
