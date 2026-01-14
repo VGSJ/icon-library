@@ -22,15 +22,17 @@ jobs:
           FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
         run: npm run icons:sync
       
-      - name: Copy to site folder
+      - name: Copy to docs folder
         run: |
-          rm -rf site/raw-svg site/metadata
-          cp -r raw-svg site/
-          cp -r metadata site/
+          rm -rf docs
+          mkdir -p docs
+          cp site/app.js site/index.html site/styles.css docs/
+          cp -r site/raw-svg docs/
+          cp -r site/metadata docs/
       
       - name: Commit and push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add raw-svg/ metadata/ site/
+          git add raw-svg/ metadata/ docs/
           git diff --quiet --exit-code --cached || (git commit -m "chore: sync icons from Figma" && git push)

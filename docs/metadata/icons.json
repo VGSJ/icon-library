@@ -1,0 +1,2169 @@
+{
+  "icons": [
+    {
+      "name": "aed-kit",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "aed",
+        "automated-external-defibrillator",
+        "defibrillator",
+        "heart",
+        "cardiac",
+        "emergency",
+        "medical"
+      ],
+      "aliases": [
+        "aed",
+        "defibrillator",
+        "cardiac-defibrillator"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-2-stars",
+      "category": {
+        "id": "ai--vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "stars",
+        "sparkles"
+      ],
+      "aliases": [
+        "ai-2-stars"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-3-stars",
+      "category": {
+        "id": "ai--vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "stars",
+        "sparkles"
+      ],
+      "aliases": [
+        "ai-3-stars"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-avatar-gen",
+      "category": {
+        "id": "ai--vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "generate",
+        "avatar",
+        "person",
+        "create"
+      ],
+      "aliases": [
+        "ai-avatar-gen"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-magic-brush",
+      "category": {
+        "id": "ai--vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "magic",
+        "brush",
+        "pencil",
+        "create",
+        "paint"
+      ],
+      "aliases": [
+        "ai-magic-brush"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-magic-wand",
+      "category": {
+        "id": "ai--vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "generate",
+        "magic",
+        "star"
+      ],
+      "aliases": [
+        "ai-magic-wand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-prompt",
+      "category": {
+        "id": "ai--vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "generate",
+        "prompt",
+        "terminal",
+        "create"
+      ],
+      "aliases": [
+        "ai-prompt"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-text-gen",
+      "category": {
+        "id": "ai--vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "generate",
+        "text"
+      ],
+      "aliases": [
+        "ai-text-gen"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-wand",
+      "category": {
+        "id": "ai--vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "generate",
+        "magic",
+        "sparkle"
+      ],
+      "aliases": [
+        "ai-wand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ambulance",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "ambulance",
+        "emergency",
+        "medical",
+        "health",
+        "vehicle",
+        "rescue",
+        "first-aid"
+      ],
+      "aliases": [
+        "ambulance",
+        "emergency-vehicle",
+        "medical-transport"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "asterisk",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "asterisk",
+        "star",
+        "medical",
+        "emergency",
+        "symbol",
+        "important"
+      ],
+      "aliases": [
+        "asterisk",
+        "star",
+        "medical-mark"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "breeching-inlet",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "breeching-inlet",
+        "fire-inlet",
+        "fire-department-connection",
+        "water-inlet",
+        "firefighting",
+        "emergency",
+        "safety"
+      ],
+      "aliases": [
+        "breeching-inlet",
+        "fire-inlet",
+        "fire-department-connection"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "buoy",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "float",
+        "buoy",
+        "swim",
+        "vest",
+        "life-vest",
+        "flotation",
+        "safety",
+        "water",
+        "rescue"
+      ],
+      "aliases": [
+        "life-vest",
+        "life-jacket",
+        "flotation-vest"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "carbon-monoxide-alarm",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "carbon-monoxide",
+        "co-alarm",
+        "gas",
+        "detector",
+        "alarm",
+        "safety",
+        "emergency"
+      ],
+      "aliases": [
+        "carbon-monoxide-alarm",
+        "co-alarm",
+        "gas-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cargo-lift",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "lift",
+        "elevator",
+        "escalator"
+      ],
+      "aliases": [
+        "cargo-lift",
+        "freight-lift"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electrical-hazard",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "electrical",
+        "electricity",
+        "electronic",
+        "danger",
+        "hazard",
+        "high-voltage",
+        "warning",
+        "safety"
+      ],
+      "aliases": [
+        "electrical-hazard",
+        "electric-danger",
+        "high-voltage"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "emergency-phone",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "emergency",
+        "phone",
+        "call",
+        "hotline",
+        "sos",
+        "help",
+        "safety"
+      ],
+      "aliases": [
+        "emergency-phone",
+        "sos-phone",
+        "hotline-phone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "emergency-phone-medical",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "emergency",
+        "phone",
+        "medical",
+        "call",
+        "hotline",
+        "sos",
+        "help",
+        "healthcare"
+      ],
+      "aliases": [
+        "medical-emergency-phone",
+        "emergency-call-medical",
+        "sos-medical-phone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "escalator-down",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "lift",
+        "elevator",
+        "escalator"
+      ],
+      "aliases": [
+        "escalator-down"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "escalator-down-person",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "lift",
+        "elevator",
+        "escalator"
+      ],
+      "aliases": [
+        "escalator-down-person"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "escalator-up",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "lift",
+        "elevator",
+        "escalator"
+      ],
+      "aliases": [
+        "escalator-up"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "escalator-up-person",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "lift",
+        "elevator",
+        "escalator"
+      ],
+      "aliases": [
+        "escalator-up-person"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "eye-wash-station",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "eye-wash",
+        "eyewash-station",
+        "safety",
+        "emergency",
+        "decontamination",
+        "wash",
+        "hazard"
+      ],
+      "aliases": [
+        "eye-wash",
+        "eyewash",
+        "eyewash-station"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fight-1",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "fight",
+        "fighting",
+        "violence",
+        "conflict",
+        "assault",
+        "physical",
+        "danger"
+      ],
+      "aliases": [
+        "fight",
+        "fighting",
+        "physical-conflict"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fight-2",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "fight",
+        "fighting",
+        "violence",
+        "conflict",
+        "assault",
+        "physical",
+        "danger"
+      ],
+      "aliases": [
+        "fight",
+        "fighting",
+        "physical-conflict"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire",
+        "flame",
+        "heat",
+        "hot",
+        "burn",
+        "hazard",
+        "emergency",
+        "fas"
+      ],
+      "aliases": [
+        "fire",
+        "flame",
+        "heat"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-alarm",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire",
+        "fire-alarm",
+        "alarm",
+        "detection",
+        "emergency",
+        "alert",
+        "safety",
+        "fas"
+      ],
+      "aliases": [
+        "fire-alarm",
+        "alarm-fire",
+        "fire-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-alarm-panel",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire",
+        "alarm",
+        "fire-alarm",
+        "control-panel",
+        "detection",
+        "emergency",
+        "safety"
+      ],
+      "aliases": [
+        "fire-alarm-panel",
+        "fire-control-panel",
+        "alarm-panel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-anti",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire",
+        "fire-extinguisher",
+        "extinguisher",
+        "suppression",
+        "safety",
+        "emergency",
+        "anti-fire"
+      ],
+      "aliases": [
+        "fire-extinguisher",
+        "fire-suppressor",
+        "anti-fire"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-emergency-panel",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire",
+        "fire-alarm",
+        "alarm",
+        "call-point",
+        "manual-call",
+        "emergency",
+        "safety"
+      ],
+      "aliases": [
+        "fire-alarm",
+        "fire-call",
+        "manual-call-point"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-escape",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire",
+        "escape",
+        "evacuation",
+        "stairs",
+        "emergency-exit",
+        "running",
+        "safety"
+      ],
+      "aliases": [
+        "fire-escape",
+        "emergency-escape",
+        "evacuation-route"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-extinguisher",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire-extinguisher",
+        "fire",
+        "suppression",
+        "safety",
+        "emergency",
+        "extinguisher"
+      ],
+      "aliases": [
+        "fire-extinguisher",
+        "extinguisher",
+        "fire-suppressor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-flame",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire",
+        "flame",
+        "heat",
+        "hot"
+      ],
+      "aliases": [
+        "fire",
+        "flame",
+        "heat"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-hose-reel",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire-hose",
+        "hose-reel",
+        "fire-suppression",
+        "firefighting",
+        "emergency",
+        "safety",
+        "water",
+        "fas"
+      ],
+      "aliases": [
+        "fire-hose-reel",
+        "hose-reel",
+        "fire-hose"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-hydrant",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire-hydrant",
+        "hydrant",
+        "water",
+        "firefighting",
+        "emergency",
+        "safety",
+        "fire",
+        "fas"
+      ],
+      "aliases": [
+        "fire-hydrant",
+        "hydrant",
+        "water-source"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-sprinkler",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire",
+        "sprinkler",
+        "water",
+        "fire-suppression",
+        "firefighting",
+        "emergency",
+        "safety",
+        "fas"
+      ],
+      "aliases": [
+        "fire-sprinkler",
+        "sprinkler-head",
+        "water-sprinkler"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-warning",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire",
+        "warning",
+        "fire-warning",
+        "hazard",
+        "danger",
+        "flammable",
+        "alert",
+        "safety"
+      ],
+      "aliases": [
+        "fire-warning",
+        "warning-fire",
+        "flammable-warning"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "firecracker",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "fire",
+        "fire-cracker",
+        "explosion",
+        "ignition",
+        "spark",
+        "hazard",
+        "warning",
+        "fas"
+      ],
+      "aliases": [
+        "fire-cracker",
+        "firework",
+        "ignition-source"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "firefighter-helmet",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "firefighter",
+        "helmet",
+        "fire",
+        "safety",
+        "protective-gear",
+        "emergency",
+        "rescue"
+      ],
+      "aliases": [
+        "firefighter-helmet",
+        "fire-helmet",
+        "safety-helmet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "first-aid-kit",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "first-aid",
+        "medical",
+        "health",
+        "emergency",
+        "kit",
+        "medicine",
+        "rescue"
+      ],
+      "aliases": [
+        "first-aid-kit",
+        "medical-kit",
+        "emergency-kit"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "first-aid-medical",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "health",
+        "medical",
+        "hospital",
+        "first-aid",
+        "medic",
+        "emergency",
+        "healthcare",
+        "treatment"
+      ],
+      "aliases": [
+        "first-aid",
+        "medic",
+        "medical-aid"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "flag-pole",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "flag",
+        "priority",
+        "mark"
+      ],
+      "aliases": [
+        "flag-pole"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "flag-zone",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "flag",
+        "mark",
+        "pin",
+        "area"
+      ],
+      "aliases": [
+        "flag-zone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gps",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "direction",
+        "navigate",
+        "compass",
+        "geolocate"
+      ],
+      "aliases": [
+        "gps"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "group-trip-pin",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "location",
+        "map",
+        "trip",
+        "pin",
+        "group",
+        "route"
+      ],
+      "aliases": [
+        "group-trip-pin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "health-monitor",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "health",
+        "monitor",
+        "medical",
+        "vital-signs",
+        "heart-rate",
+        "ecg",
+        "hospital"
+      ],
+      "aliases": [
+        "health-monitor",
+        "medical-monitor",
+        "vital-monitor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heart-pulse",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "heart-rate",
+        "heartbeat",
+        "pulse",
+        "aed",
+        "defibrillator",
+        "medical",
+        "emergency",
+        "health"
+      ],
+      "aliases": [
+        "heart-rate",
+        "heartbeat",
+        "pulse",
+        "aed"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heat-detector",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "heat",
+        "detector",
+        "fire",
+        "alarm",
+        "detection",
+        "emergency",
+        "safety"
+      ],
+      "aliases": [
+        "heat-detector",
+        "fire-heat-detector",
+        "thermal-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hospital-medical",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "health",
+        "medical",
+        "hospital",
+        "healthcare",
+        "clinic",
+        "emergency",
+        "treatment"
+      ],
+      "aliases": [
+        "hospital",
+        "medical-center",
+        "healthcare-facility"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hospital-sign",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "hospital",
+        "clinic",
+        "medical",
+        "health",
+        "healthcare",
+        "sign",
+        "emergency"
+      ],
+      "aliases": [
+        "hospital",
+        "clinic-sign",
+        "medical-facility"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "location-earth-pin",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "earth",
+        "globe",
+        "pin",
+        "locate"
+      ],
+      "aliases": [
+        "location-earth-pin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "location-group-pin",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "locate",
+        "map",
+        "direction",
+        "pin"
+      ],
+      "aliases": [
+        "location-group-pin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "location-pin",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "locate",
+        "map",
+        "direction",
+        "pin"
+      ],
+      "aliases": [
+        "location-pin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "location-zone",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "location",
+        "mark",
+        "pin",
+        "area"
+      ],
+      "aliases": [
+        "location-zone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "map",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "direction",
+        "navigate",
+        "locate"
+      ],
+      "aliases": [
+        "map"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "map-pin",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "direction",
+        "navigate",
+        "locate"
+      ],
+      "aliases": [
+        "map-pin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "map-route",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "direction",
+        "navigate",
+        "route",
+        "locate"
+      ],
+      "aliases": [
+        "map-route"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "map-tree",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "direction",
+        "navigate",
+        "tree",
+        "locate"
+      ],
+      "aliases": [
+        "map-tree"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "medical-cross",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "medical",
+        "health",
+        "cross",
+        "hospital",
+        "first-aid",
+        "emergency",
+        "healthcare"
+      ],
+      "aliases": [
+        "medical-cross",
+        "health-cross",
+        "hospital-cross"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "medical-star",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "medical",
+        "health",
+        "emergency",
+        "star-of-life",
+        "asterisk",
+        "hospital",
+        "rescue"
+      ],
+      "aliases": [
+        "medical-star",
+        "star-of-life",
+        "emergency-symbol"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "multiple-signboard",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "sign",
+        "direction",
+        "route",
+        "way"
+      ],
+      "aliases": [
+        "multiple-signboard"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "passenger-lift-arrow",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "lift",
+        "elevator",
+        "escalator"
+      ],
+      "aliases": [
+        "passenger-lift-arrow"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "passenger-lift-person",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "lift",
+        "elevator",
+        "escalator"
+      ],
+      "aliases": [
+        "passenger-lift-person"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "police-car",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "police",
+        "law-enforcement",
+        "emergency",
+        "vehicle",
+        "patrol",
+        "security"
+      ],
+      "aliases": [
+        "police-car",
+        "patrol-car",
+        "law-enforcement-vehicle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "safety-shower",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "safety",
+        "safety-shower",
+        "emergency",
+        "decontamination",
+        "wash",
+        "hazard",
+        "workplace"
+      ],
+      "aliases": [
+        "safety-shower",
+        "emergency-shower",
+        "wash-station"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "single-signboard",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "sign",
+        "direction",
+        "route",
+        "way",
+        "one"
+      ],
+      "aliases": [
+        "single-signboard"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "smoke-heat-detector",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      },
+      "tags": [
+        "detector",
+        "smoke",
+        "heat",
+        "fire",
+        "alarm",
+        "detection",
+        "emergency",
+        "safety"
+      ],
+      "aliases": [
+        "smoke-detector",
+        "heat-detector",
+        "fire-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sos",
+      "category": {
+        "id": "health--safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "sos",
+        "emergency",
+        "help",
+        "distress",
+        "alert",
+        "safety"
+      ],
+      "aliases": [
+        "sos",
+        "emergency-alert",
+        "distress-signal"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "target-aim",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "focus",
+        "radar",
+        "aim"
+      ],
+      "aliases": [
+        "target-aim"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "vr-guardian",
+      "category": {
+        "id": "wayfinding",
+        "label": "wayfinding"
+      },
+      "tags": [
+        "zone",
+        "area",
+        "person",
+        "space"
+      ],
+      "aliases": [
+        "vr-guardian"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "vr-panoramic",
+      "category": {
+        "id": "ai--vr",
+        "label": "AI & VR"
+      },
+      "tags": [
+        "virtual",
+        "reality",
+        "xr",
+        "panorama",
+        "screen"
+      ],
+      "aliases": [
+        "vr-panoramic"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wheelchair-lift",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      },
+      "tags": [
+        "lift",
+        "elevator",
+        "escalator",
+        "accessible"
+      ],
+      "aliases": [
+        "wheelchair-lift"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wrench",
+      "category": {
+        "id": "building--construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "wrench",
+        "tool",
+        "maintenance",
+        "repair",
+        "construction",
+        "mechanical"
+      ],
+      "aliases": [
+        "wrench",
+        "spanner",
+        "repair-tool"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    }
+  ]
+}
