@@ -4,7 +4,10 @@ const els = {
   search: document.getElementById("search"),
   style: document.getElementById("style"),
   size: document.getElementById("size"),
+  categories: document.getElementById("categories"),
 };
+
+let selectedCategory = null; // Track selected category filter
 
 /* --------------------------------------------------
    Toast
@@ -200,14 +203,7 @@ function renderCard(icon, style, size) {
   name.className = "name";
   name.textContent = icon.name;
 
-  const meta = document.createElement("div");
-  meta.className = "meta";
-
-  const categoryLabel = getCategoryLabel(icon);
-  meta.textContent = `${categoryLabel}`;
-
   info.appendChild(name);
-  info.appendChild(meta);
 
   card.appendChild(preview);
   card.appendChild(info);
@@ -221,8 +217,8 @@ function renderCard(icon, style, size) {
       preview.appendChild(container.firstElementChild || container);
     })
     .catch(() => {
-      preview.innerHTML = "⚠️";
-      // Don't add "missing" - just show warning icon
+      // Don't show error - just leave empty
+      // This handles cases where a style doesn't exist for this icon
     });
 
   card.addEventListener("click", async () => {
@@ -248,12 +244,62 @@ function renderCard(icon, style, size) {
 -------------------------------------------------- */
 let allIcons = [];
 
+function populateCategories() {
+  // Get unique categories and their counts
+  const categoryCounts = {};
+  allIcons.forEach(icon => {
+    const cat = getCategoryLabel(icon);
+    categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+  });
+
+  // Sort by count descending
+  const sorted = Object.entries(categoryCounts)
+    .sort((a, b) => b[1] - a[1])
+    .map(([name, count]) => ({ name, count }));
+
+  // Add "All icons" at the top
+  const allItem = { name: "All icons", count: allIcons.length };
+
+  els.categories.innerHTML = "";
+
+  // Create "All icons" button
+  const allBtn = document.createElement("button");
+  allBtn.className = "category-btn active";
+  allBtn.innerHTML = `${allItem.name} <span class="category-count">${allItem.count}</span>`;
+  allBtn.addEventListener("click", () => {
+    selectedCategory = null;
+    document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
+    allBtn.classList.add("active");
+    rerender();
+  });
+  els.categories.appendChild(allBtn);
+
+  // Create category buttons
+  sorted.forEach(({ name, count }) => {
+    const btn = document.createElement("button");
+    btn.className = "category-btn";
+    btn.innerHTML = `${name} <span class="category-count">${count}</span>`;
+    btn.addEventListener("click", () => {
+      selectedCategory = name;
+      document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      rerender();
+    });
+    els.categories.appendChild(btn);
+  });
+}
+
 function rerender() {
   const query = els.search.value;
   const style = els.style.value;
   const size = Number(els.size.value);
 
-  const filtered = allIcons.filter((icon) => iconMatches(icon, query));
+  let filtered = allIcons.filter((icon) => iconMatches(icon, query));
+  
+  // Filter by selected category if one is chosen
+  if (selectedCategory) {
+    filtered = filtered.filter(icon => getCategoryLabel(icon) === selectedCategory);
+  }
 
   els.grid.innerHTML = "";
 
@@ -264,8 +310,18 @@ function rerender() {
 
   els.status.textContent = `${filtered.length} icon(s)`;
 
+  // For each icon, check which styles are available and only render those
   for (const icon of filtered) {
-    els.grid.appendChild(renderCard(icon, style, size));
+    // Check if this icon has the selected style
+    if (icon.styles && !icon.styles.includes(style)) {
+      // Skip this icon for the selected style (don't show error)
+      // Find the first available style for this icon
+      if (icon.styles && icon.styles.length > 0) {
+        els.grid.appendChild(renderCard(icon, icon.styles[0], size));
+      }
+    } else {
+      els.grid.appendChild(renderCard(icon, style, size));
+    }
   }
 }
 
@@ -283,6 +339,7 @@ async function main() {
     const data = await loadIconsJson();
     allIcons = data.icons || [];
     els.status.textContent = `Loaded ${allIcons.length} icon(s).`;
+    populateCategories();
     rerender();
   } catch (e) {
     els.status.textContent = `Error: ${e.message}`;

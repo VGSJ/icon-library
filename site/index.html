@@ -32,10 +32,19 @@
       </p>
     </header>
 
-    <main>
-      <div id="status" class="status">Loading icons…</div>
-      <div id="grid" class="grid" aria-live="polite"></div>
-    </main>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="sidebar-title">Categories</div>
+        <div id="categories" class="categories-list">
+          <!-- Populated by JS -->
+        </div>
+      </nav>
+
+      <main>
+        <div id="status" class="status">Loading icons…</div>
+        <div id="grid" class="grid" aria-live="polite"></div>
+      </main>
+    </div>
 
     <script type="module" src="./app.js"></script>
   </body>
