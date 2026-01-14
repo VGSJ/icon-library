@@ -9,6 +9,7 @@
       "tags": [
         "aed-kit"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -30,6 +31,7 @@
       "tags": [
         "ai-2-stars"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -51,6 +53,7 @@
       "tags": [
         "ai-3-stars"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -72,6 +75,7 @@
       "tags": [
         "ai-avatar-gen"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -93,6 +97,7 @@
       "tags": [
         "ai-magic-brush"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -114,6 +119,7 @@
       "tags": [
         "ai-magic-wand"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -135,6 +141,7 @@
       "tags": [
         "ai-prompt"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -156,6 +163,7 @@
       "tags": [
         "ai-text-gen"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -177,6 +185,7 @@
       "tags": [
         "ai-wand"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -198,6 +207,7 @@
       "tags": [
         "ambulance"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -219,6 +229,7 @@
       "tags": [
         "asterisk"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -240,6 +251,7 @@
       "tags": [
         "breeching-inlet"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -261,6 +273,7 @@
       "tags": [
         "buoy"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -282,6 +295,7 @@
       "tags": [
         "carbon-monoxide-alarm"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -303,6 +317,7 @@
       "tags": [
         "cargo-lift"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -324,6 +339,7 @@
       "tags": [
         "electrical-hazard"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -345,6 +361,7 @@
       "tags": [
         "emergency-phone"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -366,6 +383,7 @@
       "tags": [
         "emergency-phone-medical"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -387,6 +405,7 @@
       "tags": [
         "escalator-down"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -408,6 +427,7 @@
       "tags": [
         "escalator-down-person"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -429,6 +449,7 @@
       "tags": [
         "escalator-up"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -450,6 +471,7 @@
       "tags": [
         "escalator-up-person"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -471,6 +493,7 @@
       "tags": [
         "eye-wash-station"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -492,6 +515,7 @@
       "tags": [
         "fight-1"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -513,6 +537,7 @@
       "tags": [
         "fight-2"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -534,6 +559,7 @@
       "tags": [
         "fire"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -555,6 +581,7 @@
       "tags": [
         "fire-alarm"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -576,6 +603,7 @@
       "tags": [
         "fire-alarm-panel"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -597,6 +625,7 @@
       "tags": [
         "fire-anti"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -618,6 +647,7 @@
       "tags": [
         "fire-emergency-panel"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -639,6 +669,7 @@
       "tags": [
         "fire-escape"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -660,6 +691,7 @@
       "tags": [
         "fire-extinguisher"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -681,6 +713,7 @@
       "tags": [
         "fire-flame"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -702,6 +735,7 @@
       "tags": [
         "fire-hose-reel"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -723,6 +757,7 @@
       "tags": [
         "fire-hydrant"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -744,6 +779,7 @@
       "tags": [
         "fire-sprinkler"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -765,6 +801,7 @@
       "tags": [
         "fire-warning"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -786,6 +823,7 @@
       "tags": [
         "firecracker"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -807,6 +845,7 @@
       "tags": [
         "firefighter-helmet"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -828,6 +867,7 @@
       "tags": [
         "first-aid-kit"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -849,6 +889,7 @@
       "tags": [
         "first-aid-medical"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -870,6 +911,7 @@
       "tags": [
         "flag-pole"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -891,6 +933,7 @@
       "tags": [
         "flag-zone"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -912,6 +955,7 @@
       "tags": [
         "gps"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -933,6 +977,7 @@
       "tags": [
         "group-trip-pin"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -954,6 +999,7 @@
       "tags": [
         "health-monitor"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -975,6 +1021,7 @@
       "tags": [
         "heart-pulse"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -996,6 +1043,7 @@
       "tags": [
         "heat-detector"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1017,6 +1065,7 @@
       "tags": [
         "hospital-medical"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1038,6 +1087,7 @@
       "tags": [
         "hospital-sign"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1059,6 +1109,7 @@
       "tags": [
         "location-earth-pin"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1080,6 +1131,7 @@
       "tags": [
         "location-group-pin"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1101,6 +1153,7 @@
       "tags": [
         "location-pin"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1122,6 +1175,7 @@
       "tags": [
         "location-zone"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1143,6 +1197,7 @@
       "tags": [
         "map"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1164,6 +1219,7 @@
       "tags": [
         "map-pin"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1185,6 +1241,7 @@
       "tags": [
         "map-route"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1206,6 +1263,7 @@
       "tags": [
         "map-tree"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1227,6 +1285,7 @@
       "tags": [
         "medical-cross"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1248,6 +1307,7 @@
       "tags": [
         "medical-star"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1269,6 +1329,7 @@
       "tags": [
         "multiple-signboard"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1290,6 +1351,7 @@
       "tags": [
         "passenger-lift-arrow"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1311,6 +1373,7 @@
       "tags": [
         "passenger-lift-person"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1332,6 +1395,7 @@
       "tags": [
         "police-car"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1353,6 +1417,7 @@
       "tags": [
         "safety-shower"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1374,6 +1439,7 @@
       "tags": [
         "single-signboard"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1395,6 +1461,7 @@
       "tags": [
         "smoke-heat-detector"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1416,6 +1483,7 @@
       "tags": [
         "sos"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1437,6 +1505,7 @@
       "tags": [
         "target-aim"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1458,6 +1527,7 @@
       "tags": [
         "vr-guardian"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1479,6 +1549,7 @@
       "tags": [
         "vr-panoramic"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1500,6 +1571,7 @@
       "tags": [
         "wheelchair-lift"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1521,6 +1593,7 @@
       "tags": [
         "wrench"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"

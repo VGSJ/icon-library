@@ -16,7 +16,7 @@
 - Always copy `raw-svg/` and `metadata/` to `site/` before deploying
 
 ## Workflow & Automation
-- GitHub Actions runs daily at 9 AM UTC
+- GitHub Actions runs daily at 9 AM SGT
 - Only commits/pushes if there are actual changes (no empty commits)
 - Workflow path: `.github/workflows/sync-icons.yml`
 - Key scripts:
