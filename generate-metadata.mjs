@@ -22,6 +22,25 @@ async function figmaFetch(url) {
   return res.json();
 }
 
+async function applyCorrections(iconList) {
+  const correctionsFile = path.join(ROOT, "metadata-corrections.json");
+  try {
+    const data = JSON.parse(await fs.readFile(correctionsFile, "utf8"));
+    console.log(`🔧 Applying ${data.corrections.length} metadata corrections...`);
+    
+    data.corrections.forEach(correction => {
+      const icon = iconList.find(i => i.name === correction.name);
+      if (icon) {
+        icon.category = correction.category;
+        console.log(`  ✓ Fixed ${correction.name} → ${correction.category.label}`);
+      }
+    });
+  } catch (e) {
+    // Corrections file not found or invalid - that's okay
+  }
+  return iconList;
+}
+
 async function generateMetadata() {
   const icons = new Map();
   
@@ -125,7 +144,7 @@ async function generateMetadata() {
       for (const line of lines) {
         if (line.startsWith("category:")) {
           const val = line.substring(9).trim();
-          const id = val.toLowerCase().replace(/\s+/g, "-").replace(/[&]/g, "");
+          const id = val.toLowerCase().replace(/\s+/g, "-").replace(/&/g, "-").replace(/-+/g, "-");
           icons.get(baseName).category = { id, label: val };
           matched++;
           hasCategoryLine = true;
@@ -149,7 +168,7 @@ async function generateMetadata() {
   
   // Convert to proper format
   // Include ALL icons that have SVG files (not just ones with Figma categories)
-  const iconList = Array.from(icons.values())
+  let iconList = Array.from(icons.values())
     .map(icon => ({
       name: icon.name,
       category: icon.category,
@@ -160,6 +179,9 @@ async function generateMetadata() {
       sizes: Array.from(icon.sizes).sort((a, b) => a - b)
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
+  
+  // Apply corrections from metadata-corrections.json
+  iconList = await applyCorrections(iconList);
   
   // Debug: show how many of each category
   const byCat = {};

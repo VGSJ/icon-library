@@ -1,0 +1,18 @@
+{
+  "corrections": [
+    {
+      "name": "check",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      }
+    },
+    {
+      "name": "apple",
+      "category": {
+        "id": "housekeeping",
+        "label": "housekeeping"
+      }
+    }
+  ]
+}
