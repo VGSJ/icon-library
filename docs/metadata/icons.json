@@ -2747,8 +2747,8 @@
     {
       "name": "conversation",
       "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
+        "id": "communication",
+        "label": "communication"
       },
       "tags": [
         "conversation"
@@ -6297,8 +6297,8 @@
     {
       "name": "message-text",
       "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
+        "id": "communication",
+        "label": "communication"
       },
       "tags": [
         "message-text"
@@ -6348,8 +6348,8 @@
     {
       "name": "message-typing-1",
       "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
+        "id": "communication",
+        "label": "communication"
       },
       "tags": [
         "message-typing-1"
@@ -7295,8 +7295,8 @@
     {
       "name": "rotate",
       "category": {
-        "id": "editor",
-        "label": "editor"
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
       },
       "tags": [
         "rotate",
@@ -8803,8 +8803,8 @@
     {
       "name": "user-face-scanicon-user-face-scan",
       "category": {
-        "id": "people",
-        "label": "people"
+        "id": "security",
+        "label": "security"
       },
       "tags": [
         "user",

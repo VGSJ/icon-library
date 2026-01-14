@@ -13,6 +13,41 @@
         "id": "housekeeping",
         "label": "housekeeping"
       }
+    },
+    {
+      "name": "conversation",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      }
+    },
+    {
+      "name": "message-text",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      }
+    },
+    {
+      "name": "message-typing-1",
+      "category": {
+        "id": "communication",
+        "label": "communication"
+      }
+    },
+    {
+      "name": "rotate",
+      "category": {
+        "id": "actions--general-interface",
+        "label": "actions & general interface"
+      }
+    },
+    {
+      "name": "user-face-scanicon-user-face-scan",
+      "category": {
+        "id": "security",
+        "label": "security"
+      }
     }
   ]
 }
