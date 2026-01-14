@@ -1,6 +1,94 @@
 {
   "icons": [
     {
+      "name": "access-panel-door",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "panel",
+        "door",
+        "intrusion",
+        "access",
+        "control",
+        "security"
+      ],
+      "aliases": [
+        "access-panel",
+        "intrusion-door"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "access-panel-hatch",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "access-panel",
+        "wall-door",
+        "hatch",
+        "access",
+        "security"
+      ],
+      "aliases": [
+        "service-hatch",
+        "access-door"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "access-reader",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "access-reader",
+        "security",
+        "door-access",
+        "authentication",
+        "control"
+      ],
+      "aliases": [
+        "card-reader",
+        "access-scanner"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "aed-kit",
       "category": {
         "id": "health--safety",
@@ -1046,6 +1134,34 @@
       ]
     },
     {
+      "name": "barcode-scan",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "scan",
+        "barcode",
+        "qr",
+        "code",
+        "identification"
+      ],
+      "aliases": [
+        "code-scan",
+        "qr-barcode-scan"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "bedroom-lamp",
       "category": {
         "id": "light",
@@ -1181,6 +1297,65 @@
       ]
     },
     {
+      "name": "blocked",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "blocked",
+        "banned",
+        "prohibited",
+        "denied",
+        "restricted"
+      ],
+      "aliases": [
+        "blocked",
+        "banned",
+        "access-denied"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "body-worn-camera",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "body-worn",
+        "camera",
+        "security",
+        "surveillance",
+        "recording"
+      ],
+      "aliases": [
+        "body-camera",
+        "wearable-camera"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "book-guide",
       "category": {
         "id": "document--statistics",
@@ -1300,6 +1475,35 @@
       ]
     },
     {
+      "name": "building-lock",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "building",
+        "lock",
+        "ids",
+        "access",
+        "security"
+      ],
+      "aliases": [
+        "facility-lock",
+        "building-security"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "buoy",
       "category": {
         "id": "health--safety",
@@ -1375,6 +1579,92 @@
       ],
       "aliases": [
         "outgoing-call"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "camera-cctv-1",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "camera",
+        "cctv",
+        "surveillance",
+        "monitoring",
+        "security"
+      ],
+      "aliases": [
+        "cctv-camera",
+        "surveillance-camera"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "camera-cctv-3",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "camera",
+        "cctv",
+        "surveillance",
+        "monitoring",
+        "security"
+      ],
+      "aliases": [
+        "surveillance-camera"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cctv-2",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "cctv",
+        "bullet-camera",
+        "surveillance",
+        "security",
+        "monitoring"
+      ],
+      "aliases": [
+        "bullet-camera",
+        "security-cctv"
       ],
       "styles": [
         "filled",
@@ -3041,6 +3331,94 @@
       ]
     },
     {
+      "name": "door-barrier",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "door",
+        "barrier",
+        "shutter",
+        "blocker",
+        "metal-gate",
+        "security"
+      ],
+      "aliases": [
+        "security-shutter",
+        "metal-gate"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "door-room",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "door",
+        "room",
+        "access",
+        "entry",
+        "security"
+      ],
+      "aliases": [
+        "room-door",
+        "entry-door"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "door-room-out",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "door",
+        "room",
+        "access",
+        "entry",
+        "security"
+      ],
+      "aliases": [
+        "room-door",
+        "entry-door"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "down-up-1",
       "category": {
         "id": "arrows",
@@ -3682,6 +4060,63 @@
       ]
     },
     {
+      "name": "eyes-scan",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "eyes",
+        "scan",
+        "biometric",
+        "access",
+        "iris"
+      ],
+      "aliases": [
+        "iris-scan",
+        "eye-biometric"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "face-id",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "face-id",
+        "scan",
+        "recognition",
+        "biometric",
+        "access"
+      ],
+      "aliases": [
+        "facial-recognition",
+        "face-scan"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "female-toilet",
       "category": {
         "id": "housekeeping",
@@ -3938,6 +4373,34 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fingerprint",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "fingerprint",
+        "touch-id",
+        "access",
+        "biometric",
+        "authentication"
+      ],
+      "aliases": [
+        "touch-id",
+        "fingerprint-scan"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -4578,6 +5041,42 @@
       ]
     },
     {
+      "name": "house-lock",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "house",
+        "home",
+        "residential",
+        "building",
+        "property",
+        "dwelling",
+        "lock",
+        "ids",
+        "security"
+      ],
+      "aliases": [
+        "house",
+        "home",
+        "residential-house",
+        "home-lock",
+        "residential-lock"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "import",
       "category": {
         "id": "arrows",
@@ -4620,6 +5119,135 @@
       ],
       "aliases": [
         "download-square"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "inspect-scan",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "inspect",
+        "scan",
+        "check",
+        "review",
+        "security"
+      ],
+      "aliases": [
+        "security-check",
+        "inspection"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "intercom",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "intercom",
+        "communication",
+        "access",
+        "entry",
+        "security"
+      ],
+      "aliases": [
+        "door-intercom",
+        "entry-intercom"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "intrusion-lock-panel",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "panel",
+        "lock",
+        "key",
+        "intrusion",
+        "access",
+        "security"
+      ],
+      "aliases": [
+        "key-panel",
+        "secure-panel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "key",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "keyboard",
+        "input",
+        "typing",
+        "hardware",
+        "device",
+        "keypad",
+        "number-pad",
+        "pin",
+        "code",
+        "authentication",
+        "key",
+        "access",
+        "unlock",
+        "security"
+      ],
+      "aliases": [
+        "keypad",
+        "typing-keyboard",
+        "number-pad",
+        "pin-pad",
+        "access-key",
+        "security-key"
       ],
       "styles": [
         "filled",
@@ -4807,6 +5435,64 @@
       "aliases": [
         "horizontal-arrow",
         "swap-horizontal"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "license-plate-scan",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "plate-scan",
+        "car",
+        "driving",
+        "vehicle",
+        "recognition"
+      ],
+      "aliases": [
+        "anpr",
+        "license-plate-recognition"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "life-vest",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "life-vest",
+        "vest",
+        "safety",
+        "protection",
+        "emergency"
+      ],
+      "aliases": [
+        "safety-vest",
+        "flotation-vest"
       ],
       "styles": [
         "filled",
@@ -5122,6 +5808,94 @@
       ]
     },
     {
+      "name": "lock",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "lock",
+        "access",
+        "secure",
+        "protection",
+        "security"
+      ],
+      "aliases": [
+        "padlock",
+        "secure-access"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "lock-secure",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "lock",
+        "secure",
+        "safe",
+        "protection",
+        "security"
+      ],
+      "aliases": [
+        "secure-lock",
+        "safety-lock"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "lock-shield",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "lock",
+        "shield",
+        "protection",
+        "ids",
+        "intrusion",
+        "security"
+      ],
+      "aliases": [
+        "secure-lock",
+        "intrusion-protection"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "luminaire-driver",
       "category": {
         "id": "light",
@@ -5168,6 +5942,64 @@
       "aliases": [
         "email-invite",
         "invite-mail"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "maintenance-construction",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "maintenance",
+        "construction",
+        "fixing",
+        "repair",
+        "work"
+      ],
+      "aliases": [
+        "repair-work",
+        "maintenance-work"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "maintenance-construction-2",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "maintenance",
+        "construction",
+        "fixing",
+        "repair",
+        "work"
+      ],
+      "aliases": [
+        "repair-work-2",
+        "maintenance-work-2"
       ],
       "styles": [
         "filled",
@@ -5947,6 +6779,35 @@
       ]
     },
     {
+      "name": "passkeys",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "passkeys",
+        "passkey",
+        "passwordless",
+        "authentication",
+        "access"
+      ],
+      "aliases": [
+        "passwordless-login",
+        "secure-passkey"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "pendant-light",
       "category": {
         "id": "light",
@@ -5966,6 +6827,41 @@
         "pendant-lamp",
         "hanging-light",
         "ceiling-pendant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "people-count-sensor",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "people",
+        "count",
+        "sensor",
+        "occupancy",
+        "detection",
+        "people-count",
+        "intrusion-detection",
+        "monitoring",
+        "security"
+      ],
+      "aliases": [
+        "people-counter",
+        "occupancy-counter",
+        "occupancy-sensor",
+        "people-detector"
       ],
       "styles": [
         "filled",
@@ -6526,6 +7422,35 @@
       ]
     },
     {
+      "name": "scan-qrcode",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "scan",
+        "qrcode",
+        "qr",
+        "access",
+        "authentication"
+      ],
+      "aliases": [
+        "qr-scan",
+        "qrcode-scan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "search",
       "category": {
         "id": "actions--general-interface",
@@ -6540,6 +7465,35 @@
       "aliases": [
         "magnifying-glass",
         "search-find"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "security-checkpoint",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "security",
+        "checkpoint",
+        "control",
+        "inspection",
+        "access"
+      ],
+      "aliases": [
+        "control-point",
+        "security-gate"
       ],
       "styles": [
         "filled",
@@ -6569,6 +7523,35 @@
       "aliases": [
         "send-message",
         "send-email"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sensor-detect",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "sensor",
+        "detect",
+        "detection",
+        "monitoring",
+        "security"
+      ],
+      "aliases": [
+        "motion-sensor",
+        "detection-sensor"
       ],
       "styles": [
         "filled",
@@ -6658,6 +7641,126 @@
       ],
       "aliases": [
         "forward"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shield-check",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "shield",
+        "check",
+        "protect",
+        "safe",
+        "verified",
+        "security"
+      ],
+      "aliases": [
+        "secure-check",
+        "protection-check"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shield-countdown",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "shield",
+        "countdown",
+        "security",
+        "timer",
+        "protection"
+      ],
+      "aliases": [
+        "security-timer",
+        "protection-countdown"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shield-encryption",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "shield",
+        "encryption",
+        "key",
+        "secure",
+        "data",
+        "security"
+      ],
+      "aliases": [
+        "encrypted-shield",
+        "secure-key"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shield-exclamation",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "shield",
+        "exclamation",
+        "breach",
+        "intrusion",
+        "alert",
+        "security",
+        "safety"
+      ],
+      "aliases": [
+        "security-alert",
+        "breach-warning"
       ],
       "styles": [
         "filled",
@@ -6770,6 +7873,35 @@
         "nav-simple"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "siren",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "siren",
+        "alert",
+        "incident",
+        "warning",
+        "emergency"
+      ],
+      "aliases": [
+        "emergency-siren",
+        "alarm-alert"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -7122,6 +8254,36 @@
         "double-street-light",
         "twin-lamp-post",
         "street-light-double"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "surveillance-camera-smartphone",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "surveillance",
+        "camera",
+        "smartphone",
+        "control",
+        "alarm",
+        "monitoring"
+      ],
+      "aliases": [
+        "smart-camera",
+        "mobile-surveillance"
       ],
       "styles": [
         "filled",
@@ -7631,6 +8793,101 @@
       ]
     },
     {
+      "name": "unlock",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "unlock",
+        "access",
+        "open",
+        "security",
+        "permission"
+      ],
+      "aliases": [
+        "open-lock",
+        "access-unlock"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "user-face-scanicon-user-face-scan",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "user",
+        "scan",
+        "id",
+        "access",
+        "face-recognition",
+        "biometric",
+        "avatar",
+        "account",
+        "profile",
+        "person"
+      ],
+      "aliases": [
+        "face-id",
+        "user-biometric",
+        "me",
+        "profile-user"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "vibration-sensor",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "vibration",
+        "sensor",
+        "detection",
+        "motion",
+        "equipment-monitoring",
+        "machine-health"
+      ],
+      "aliases": [
+        "vibration-detector",
+        "motion-sensor-equipment"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "vr-panoramic",
       "category": {
         "id": "ai--vr",
@@ -7777,6 +9034,35 @@
       ]
     },
     {
+      "name": "window-barrier",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "window",
+        "barrier",
+        "security-window",
+        "glazing-bar",
+        "protection"
+      ],
+      "aliases": [
+        "window-guard",
+        "security-grille"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "wine-glass",
       "category": {
         "id": "housekeeping",
@@ -7790,6 +9076,36 @@
       ],
       "aliases": [
         "wine"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "witness",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "eye",
+        "exclamation",
+        "alert",
+        "warning",
+        "spot",
+        "see"
+      ],
+      "aliases": [
+        "alert-eye",
+        "warning-eye"
       ],
       "styles": [
         "filled",
