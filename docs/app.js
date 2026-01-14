@@ -132,9 +132,18 @@ function svgPath(name, style, size) {
 }
 
 async function fetchSvg(name, style, size) {
-  const path = svgPath(name, style, size);
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`Missing SVG: ${path}`);
+  // Try primary path first
+  let path = svgPath(name, style, size);
+  let res = await fetch(path);
+  
+  // If not found, try with 'px' suffix for size
+  if (!res.ok) {
+    const sizeWithPx = `${size}px`;
+    path = `./raw-svg/${style === "fill" ? "filled" : style === "outlined" ? "outline" : style}/${sizeWithPx}/icon-${name}-${style === "fill" ? "filled" : style === "outlined" ? "outline" : style}-${sizeWithPx}.svg`;
+    res = await fetch(path);
+  }
+  
+  if (!res.ok) throw new Error(`Missing SVG for ${name} (${style}/${size})`);
   return res.text();
 }
 
