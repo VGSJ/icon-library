@@ -197,7 +197,7 @@ function renderCard(icon, style, size) {
     })
     .catch(() => {
       preview.innerHTML = "⚠️";
-      meta.textContent += " • missing";
+      // Don't add "missing" - just show warning icon
     });
 
   card.addEventListener("click", async () => {

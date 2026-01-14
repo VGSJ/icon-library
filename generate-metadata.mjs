@@ -65,8 +65,8 @@ async function generateMetadata() {
             styles: new Set(),
             sizes: new Set(),
             category: { id: "uncategorized", label: "Uncategorized" },
-            tags: [],
-            aliases: []
+            tags: new Set(),
+            aliases: new Set()
           });
         }
         
@@ -79,51 +79,42 @@ async function generateMetadata() {
   
   console.log(`✅ Found ${icons.size} unique icons from SVG files`);
   
-  // Fetch metadata from Figma
+  // Fetch metadata from Figma component_sets endpoint
   console.log("🔍 Fetching Figma metadata for categories/tags...");
   try {
     const fileKey = env("FIGMA_FILE_KEY");
-    const fileUrl = `https://api.figma.com/v1/files/${fileKey}`;
-    const fileData = await figmaFetch(fileUrl);
     
-    const figmaComps = {};
-    function traverse(node) {
-      if (node.type === "COMPONENT_SET" && node.name?.startsWith("icon-")) {
-        const baseName = node.name.substring(5); // Remove "icon-" prefix
-        figmaComps[baseName] = {
-          description: node.description || "",
-          name: node.name
-        };
-      }
-      if (node.children) {
-        for (const child of node.children) traverse(child);
-      }
-    }
+    // Use component_sets endpoint which includes descriptions
+    const compsetsUrl = `https://api.figma.com/v1/files/${fileKey}/component_sets`;
+    const compsetsData = await figmaFetch(compsetsUrl);
     
-    traverse(fileData.document);
-    console.log(`✅ Found ${Object.keys(figmaComps).length} components in Figma`);
+    const componentSets = compsetsData.meta?.component_sets || [];
+    console.log(`✅ Found ${componentSets.length} component sets with metadata`);
     
     // Merge Figma metadata into icons
-    for (const [baseName, comp] of Object.entries(figmaComps)) {
-      if (icons.has(baseName)) {
-        const desc = comp.description || "";
-        const lines = desc.split("\n");
-        
-        for (const line of lines) {
-          if (line.startsWith("category:")) {
-            const val = line.substring(9).trim();
-            const id = val.toLowerCase().replace(/\s+/g, "-").replace(/[&]/g, "");
-            icons.get(baseName).category = { id, label: val };
-          } else if (line.startsWith("tags:")) {
-            const tags = line.substring(5).trim().split(",").map(t => t.trim()).filter(t => t);
-            if (tags.length > 0) {
-              icons.get(baseName).tags = tags;
-            }
-          } else if (line.startsWith("aliases:")) {
-            const aliases = line.substring(8).trim().split(",").map(a => a.trim()).filter(a => a);
-            if (aliases.length > 0) {
-              icons.get(baseName).aliases = aliases;
-            }
+    for (const comp of componentSets) {
+      if (!comp.name?.startsWith("icon-")) continue;
+      
+      const baseName = comp.name.substring(5); // Remove "icon-" prefix
+      if (!icons.has(baseName)) continue;
+      
+      const desc = comp.description || "";
+      const lines = desc.split("\n");
+      
+      for (const line of lines) {
+        if (line.startsWith("category:")) {
+          const val = line.substring(9).trim();
+          const id = val.toLowerCase().replace(/\s+/g, "-").replace(/[&]/g, "");
+          icons.get(baseName).category = { id, label: val };
+        } else if (line.startsWith("tags:")) {
+          const tags = line.substring(5).trim().split(",").map(t => t.trim()).filter(t => t);
+          if (tags.length > 0) {
+            tags.forEach(t => icons.get(baseName).tags.add(t));
+          }
+        } else if (line.startsWith("aliases:")) {
+          const aliases = line.substring(8).trim().split(",").map(a => a.trim()).filter(a => a);
+          if (aliases.length > 0) {
+            aliases.forEach(a => icons.get(baseName).aliases.add(a));
           }
         }
       }
