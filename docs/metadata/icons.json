@@ -6205,28 +6205,6 @@
       ]
     },
     {
-      "name": "message-bubble",
-      "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
-      },
-      "tags": [
-        "message-bubble"
-      ],
-      "aliases": [],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
       "name": "message-bubble-left",
       "category": {
         "id": "communication",
@@ -6398,28 +6376,6 @@
       ]
     },
     {
-      "name": "message-square",
-      "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
-      },
-      "tags": [
-        "message-square"
-      ],
-      "aliases": [],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
       "name": "message-square-left",
       "category": {
         "id": "communication",
@@ -6485,50 +6441,6 @@
       },
       "tags": [
         "message-text"
-      ],
-      "aliases": [],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "message-typing",
-      "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
-      },
-      "tags": [
-        "message-typing"
-      ],
-      "aliases": [],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "message-typing-1",
-      "category": {
-        "id": "communication",
-        "label": "communication"
-      },
-      "tags": [
-        "message-typing-1"
       ],
       "aliases": [],
       "styles": [
