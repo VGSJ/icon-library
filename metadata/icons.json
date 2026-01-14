@@ -3,23 +3,13 @@
     {
       "name": "aed-kit",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "aed",
-        "automated-external-defibrillator",
-        "defibrillator",
-        "heart",
-        "cardiac",
-        "emergency",
-        "medical"
+        "aed-kit"
       ],
-      "aliases": [
-        "aed",
-        "defibrillator",
-        "cardiac-defibrillator"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -35,16 +25,13 @@
     {
       "name": "ai-2-stars",
       "category": {
-        "id": "ai--vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "stars",
-        "sparkles"
-      ],
-      "aliases": [
         "ai-2-stars"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -60,16 +47,13 @@
     {
       "name": "ai-3-stars",
       "category": {
-        "id": "ai--vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "stars",
-        "sparkles"
-      ],
-      "aliases": [
         "ai-3-stars"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -85,18 +69,13 @@
     {
       "name": "ai-avatar-gen",
       "category": {
-        "id": "ai--vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "generate",
-        "avatar",
-        "person",
-        "create"
-      ],
-      "aliases": [
         "ai-avatar-gen"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -112,19 +91,13 @@
     {
       "name": "ai-magic-brush",
       "category": {
-        "id": "ai--vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "magic",
-        "brush",
-        "pencil",
-        "create",
-        "paint"
-      ],
-      "aliases": [
         "ai-magic-brush"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -140,17 +113,13 @@
     {
       "name": "ai-magic-wand",
       "category": {
-        "id": "ai--vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "generate",
-        "magic",
-        "star"
-      ],
-      "aliases": [
         "ai-magic-wand"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -166,18 +135,13 @@
     {
       "name": "ai-prompt",
       "category": {
-        "id": "ai--vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "generate",
-        "prompt",
-        "terminal",
-        "create"
-      ],
-      "aliases": [
         "ai-prompt"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -193,16 +157,13 @@
     {
       "name": "ai-text-gen",
       "category": {
-        "id": "ai--vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "generate",
-        "text"
-      ],
-      "aliases": [
         "ai-text-gen"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -218,17 +179,13 @@
     {
       "name": "ai-wand",
       "category": {
-        "id": "ai--vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "generate",
-        "magic",
-        "sparkle"
-      ],
-      "aliases": [
         "ai-wand"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -244,23 +201,13 @@
     {
       "name": "ambulance",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "ambulance",
-        "emergency",
-        "medical",
-        "health",
-        "vehicle",
-        "rescue",
-        "first-aid"
+        "ambulance"
       ],
-      "aliases": [
-        "ambulance",
-        "emergency-vehicle",
-        "medical-transport"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -276,22 +223,13 @@
     {
       "name": "asterisk",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "asterisk",
-        "star",
-        "medical",
-        "emergency",
-        "symbol",
-        "important"
+        "asterisk"
       ],
-      "aliases": [
-        "asterisk",
-        "star",
-        "medical-mark"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -307,23 +245,13 @@
     {
       "name": "breeching-inlet",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "breeching-inlet",
-        "fire-inlet",
-        "fire-department-connection",
-        "water-inlet",
-        "firefighting",
-        "emergency",
-        "safety"
+        "breeching-inlet"
       ],
-      "aliases": [
-        "breeching-inlet",
-        "fire-inlet",
-        "fire-department-connection"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -339,25 +267,13 @@
     {
       "name": "buoy",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "float",
-        "buoy",
-        "swim",
-        "vest",
-        "life-vest",
-        "flotation",
-        "safety",
-        "water",
-        "rescue"
+        "buoy"
       ],
-      "aliases": [
-        "life-vest",
-        "life-jacket",
-        "flotation-vest"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -373,23 +289,13 @@
     {
       "name": "carbon-monoxide-alarm",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "carbon-monoxide",
-        "co-alarm",
-        "gas",
-        "detector",
-        "alarm",
-        "safety",
-        "emergency"
+        "carbon-monoxide-alarm"
       ],
-      "aliases": [
-        "carbon-monoxide-alarm",
-        "co-alarm",
-        "gas-detector"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -405,18 +311,13 @@
     {
       "name": "cargo-lift",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator"
+        "cargo-lift"
       ],
-      "aliases": [
-        "cargo-lift",
-        "freight-lift"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -432,24 +333,13 @@
     {
       "name": "electrical-hazard",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "electrical",
-        "electricity",
-        "electronic",
-        "danger",
-        "hazard",
-        "high-voltage",
-        "warning",
-        "safety"
+        "electrical-hazard"
       ],
-      "aliases": [
-        "electrical-hazard",
-        "electric-danger",
-        "high-voltage"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -465,23 +355,13 @@
     {
       "name": "emergency-phone",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "emergency",
-        "phone",
-        "call",
-        "hotline",
-        "sos",
-        "help",
-        "safety"
+        "emergency-phone"
       ],
-      "aliases": [
-        "emergency-phone",
-        "sos-phone",
-        "hotline-phone"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -497,24 +377,13 @@
     {
       "name": "emergency-phone-medical",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "emergency",
-        "phone",
-        "medical",
-        "call",
-        "hotline",
-        "sos",
-        "help",
-        "healthcare"
+        "emergency-phone-medical"
       ],
-      "aliases": [
-        "medical-emergency-phone",
-        "emergency-call-medical",
-        "sos-medical-phone"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -530,17 +399,13 @@
     {
       "name": "escalator-down",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
         "escalator-down"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -556,17 +421,13 @@
     {
       "name": "escalator-down-person",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
         "escalator-down-person"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -582,17 +443,13 @@
     {
       "name": "escalator-up",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
         "escalator-up"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -608,17 +465,13 @@
     {
       "name": "escalator-up-person",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
         "escalator-up-person"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -634,23 +487,13 @@
     {
       "name": "eye-wash-station",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "eye-wash",
-        "eyewash-station",
-        "safety",
-        "emergency",
-        "decontamination",
-        "wash",
-        "hazard"
+        "eye-wash-station"
       ],
-      "aliases": [
-        "eye-wash",
-        "eyewash",
-        "eyewash-station"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -666,23 +509,13 @@
     {
       "name": "fight-1",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fight",
-        "fighting",
-        "violence",
-        "conflict",
-        "assault",
-        "physical",
-        "danger"
+        "fight-1"
       ],
-      "aliases": [
-        "fight",
-        "fighting",
-        "physical-conflict"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -698,23 +531,13 @@
     {
       "name": "fight-2",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fight",
-        "fighting",
-        "violence",
-        "conflict",
-        "assault",
-        "physical",
-        "danger"
+        "fight-2"
       ],
-      "aliases": [
-        "fight",
-        "fighting",
-        "physical-conflict"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -730,24 +553,13 @@
     {
       "name": "fire",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire",
-        "flame",
-        "heat",
-        "hot",
-        "burn",
-        "hazard",
-        "emergency",
-        "fas"
+        "fire"
       ],
-      "aliases": [
-        "fire",
-        "flame",
-        "heat"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -763,24 +575,13 @@
     {
       "name": "fire-alarm",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire",
-        "fire-alarm",
-        "alarm",
-        "detection",
-        "emergency",
-        "alert",
-        "safety",
-        "fas"
+        "fire-alarm"
       ],
-      "aliases": [
-        "fire-alarm",
-        "alarm-fire",
-        "fire-detector"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -796,23 +597,13 @@
     {
       "name": "fire-alarm-panel",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire",
-        "alarm",
-        "fire-alarm",
-        "control-panel",
-        "detection",
-        "emergency",
-        "safety"
+        "fire-alarm-panel"
       ],
-      "aliases": [
-        "fire-alarm-panel",
-        "fire-control-panel",
-        "alarm-panel"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -828,23 +619,13 @@
     {
       "name": "fire-anti",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire",
-        "fire-extinguisher",
-        "extinguisher",
-        "suppression",
-        "safety",
-        "emergency",
-        "anti-fire"
+        "fire-anti"
       ],
-      "aliases": [
-        "fire-extinguisher",
-        "fire-suppressor",
-        "anti-fire"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -860,23 +641,13 @@
     {
       "name": "fire-emergency-panel",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire",
-        "fire-alarm",
-        "alarm",
-        "call-point",
-        "manual-call",
-        "emergency",
-        "safety"
+        "fire-emergency-panel"
       ],
-      "aliases": [
-        "fire-alarm",
-        "fire-call",
-        "manual-call-point"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -892,23 +663,13 @@
     {
       "name": "fire-escape",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire",
-        "escape",
-        "evacuation",
-        "stairs",
-        "emergency-exit",
-        "running",
-        "safety"
+        "fire-escape"
       ],
-      "aliases": [
-        "fire-escape",
-        "emergency-escape",
-        "evacuation-route"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -924,22 +685,13 @@
     {
       "name": "fire-extinguisher",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire-extinguisher",
-        "fire",
-        "suppression",
-        "safety",
-        "emergency",
-        "extinguisher"
+        "fire-extinguisher"
       ],
-      "aliases": [
-        "fire-extinguisher",
-        "extinguisher",
-        "fire-suppressor"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -955,20 +707,13 @@
     {
       "name": "fire-flame",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire",
-        "flame",
-        "heat",
-        "hot"
+        "fire-flame"
       ],
-      "aliases": [
-        "fire",
-        "flame",
-        "heat"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -984,24 +729,13 @@
     {
       "name": "fire-hose-reel",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire-hose",
-        "hose-reel",
-        "fire-suppression",
-        "firefighting",
-        "emergency",
-        "safety",
-        "water",
-        "fas"
+        "fire-hose-reel"
       ],
-      "aliases": [
-        "fire-hose-reel",
-        "hose-reel",
-        "fire-hose"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1017,24 +751,13 @@
     {
       "name": "fire-hydrant",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire-hydrant",
-        "hydrant",
-        "water",
-        "firefighting",
-        "emergency",
-        "safety",
-        "fire",
-        "fas"
+        "fire-hydrant"
       ],
-      "aliases": [
-        "fire-hydrant",
-        "hydrant",
-        "water-source"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1050,24 +773,13 @@
     {
       "name": "fire-sprinkler",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire",
-        "sprinkler",
-        "water",
-        "fire-suppression",
-        "firefighting",
-        "emergency",
-        "safety",
-        "fas"
+        "fire-sprinkler"
       ],
-      "aliases": [
-        "fire-sprinkler",
-        "sprinkler-head",
-        "water-sprinkler"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1083,24 +795,13 @@
     {
       "name": "fire-warning",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire",
-        "warning",
-        "fire-warning",
-        "hazard",
-        "danger",
-        "flammable",
-        "alert",
-        "safety"
+        "fire-warning"
       ],
-      "aliases": [
-        "fire-warning",
-        "warning-fire",
-        "flammable-warning"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1116,24 +817,13 @@
     {
       "name": "firecracker",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "fire",
-        "fire-cracker",
-        "explosion",
-        "ignition",
-        "spark",
-        "hazard",
-        "warning",
-        "fas"
+        "firecracker"
       ],
-      "aliases": [
-        "fire-cracker",
-        "firework",
-        "ignition-source"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1149,23 +839,13 @@
     {
       "name": "firefighter-helmet",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "firefighter",
-        "helmet",
-        "fire",
-        "safety",
-        "protective-gear",
-        "emergency",
-        "rescue"
+        "firefighter-helmet"
       ],
-      "aliases": [
-        "firefighter-helmet",
-        "fire-helmet",
-        "safety-helmet"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1181,23 +861,13 @@
     {
       "name": "first-aid-kit",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "first-aid",
-        "medical",
-        "health",
-        "emergency",
-        "kit",
-        "medicine",
-        "rescue"
+        "first-aid-kit"
       ],
-      "aliases": [
-        "first-aid-kit",
-        "medical-kit",
-        "emergency-kit"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1213,24 +883,13 @@
     {
       "name": "first-aid-medical",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "health",
-        "medical",
-        "hospital",
-        "first-aid",
-        "medic",
-        "emergency",
-        "healthcare",
-        "treatment"
+        "first-aid-medical"
       ],
-      "aliases": [
-        "first-aid",
-        "medic",
-        "medical-aid"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1246,17 +905,13 @@
     {
       "name": "flag-pole",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "flag",
-        "priority",
-        "mark"
-      ],
-      "aliases": [
         "flag-pole"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1272,18 +927,13 @@
     {
       "name": "flag-zone",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "flag",
-        "mark",
-        "pin",
-        "area"
-      ],
-      "aliases": [
         "flag-zone"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1299,18 +949,13 @@
     {
       "name": "gps",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "direction",
-        "navigate",
-        "compass",
-        "geolocate"
-      ],
-      "aliases": [
         "gps"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1326,20 +971,13 @@
     {
       "name": "group-trip-pin",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "location",
-        "map",
-        "trip",
-        "pin",
-        "group",
-        "route"
-      ],
-      "aliases": [
         "group-trip-pin"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1355,23 +993,13 @@
     {
       "name": "health-monitor",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "health",
-        "monitor",
-        "medical",
-        "vital-signs",
-        "heart-rate",
-        "ecg",
-        "hospital"
+        "health-monitor"
       ],
-      "aliases": [
-        "health-monitor",
-        "medical-monitor",
-        "vital-monitor"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1387,25 +1015,13 @@
     {
       "name": "heart-pulse",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "heart-rate",
-        "heartbeat",
-        "pulse",
-        "aed",
-        "defibrillator",
-        "medical",
-        "emergency",
-        "health"
+        "heart-pulse"
       ],
-      "aliases": [
-        "heart-rate",
-        "heartbeat",
-        "pulse",
-        "aed"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1421,23 +1037,13 @@
     {
       "name": "heat-detector",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "heat",
-        "detector",
-        "fire",
-        "alarm",
-        "detection",
-        "emergency",
-        "safety"
+        "heat-detector"
       ],
-      "aliases": [
-        "heat-detector",
-        "fire-heat-detector",
-        "thermal-detector"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1453,23 +1059,13 @@
     {
       "name": "hospital-medical",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "health",
-        "medical",
-        "hospital",
-        "healthcare",
-        "clinic",
-        "emergency",
-        "treatment"
+        "hospital-medical"
       ],
-      "aliases": [
-        "hospital",
-        "medical-center",
-        "healthcare-facility"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1485,23 +1081,13 @@
     {
       "name": "hospital-sign",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "hospital",
-        "clinic",
-        "medical",
-        "health",
-        "healthcare",
-        "sign",
-        "emergency"
+        "hospital-sign"
       ],
-      "aliases": [
-        "hospital",
-        "clinic-sign",
-        "medical-facility"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1517,18 +1103,13 @@
     {
       "name": "location-earth-pin",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "earth",
-        "globe",
-        "pin",
-        "locate"
-      ],
-      "aliases": [
         "location-earth-pin"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1544,18 +1125,13 @@
     {
       "name": "location-group-pin",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "locate",
-        "map",
-        "direction",
-        "pin"
-      ],
-      "aliases": [
         "location-group-pin"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1571,18 +1147,13 @@
     {
       "name": "location-pin",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "locate",
-        "map",
-        "direction",
-        "pin"
-      ],
-      "aliases": [
         "location-pin"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1598,18 +1169,13 @@
     {
       "name": "location-zone",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "location",
-        "mark",
-        "pin",
-        "area"
-      ],
-      "aliases": [
         "location-zone"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1625,17 +1191,13 @@
     {
       "name": "map",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "direction",
-        "navigate",
-        "locate"
-      ],
-      "aliases": [
         "map"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1651,17 +1213,13 @@
     {
       "name": "map-pin",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "direction",
-        "navigate",
-        "locate"
-      ],
-      "aliases": [
         "map-pin"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1677,18 +1235,13 @@
     {
       "name": "map-route",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "direction",
-        "navigate",
-        "route",
-        "locate"
-      ],
-      "aliases": [
         "map-route"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1704,18 +1257,13 @@
     {
       "name": "map-tree",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "direction",
-        "navigate",
-        "tree",
-        "locate"
-      ],
-      "aliases": [
         "map-tree"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1731,23 +1279,13 @@
     {
       "name": "medical-cross",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "medical",
-        "health",
-        "cross",
-        "hospital",
-        "first-aid",
-        "emergency",
-        "healthcare"
+        "medical-cross"
       ],
-      "aliases": [
-        "medical-cross",
-        "health-cross",
-        "hospital-cross"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1763,23 +1301,13 @@
     {
       "name": "medical-star",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "medical",
-        "health",
-        "emergency",
-        "star-of-life",
-        "asterisk",
-        "hospital",
-        "rescue"
+        "medical-star"
       ],
-      "aliases": [
-        "medical-star",
-        "star-of-life",
-        "emergency-symbol"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1795,18 +1323,13 @@
     {
       "name": "multiple-signboard",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "sign",
-        "direction",
-        "route",
-        "way"
-      ],
-      "aliases": [
         "multiple-signboard"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1822,17 +1345,13 @@
     {
       "name": "passenger-lift-arrow",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
         "passenger-lift-arrow"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1848,17 +1367,13 @@
     {
       "name": "passenger-lift-person",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator"
-      ],
-      "aliases": [
         "passenger-lift-person"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1874,22 +1389,13 @@
     {
       "name": "police-car",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "police",
-        "law-enforcement",
-        "emergency",
-        "vehicle",
-        "patrol",
-        "security"
+        "police-car"
       ],
-      "aliases": [
-        "police-car",
-        "patrol-car",
-        "law-enforcement-vehicle"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1905,23 +1411,13 @@
     {
       "name": "safety-shower",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "safety",
-        "safety-shower",
-        "emergency",
-        "decontamination",
-        "wash",
-        "hazard",
-        "workplace"
+        "safety-shower"
       ],
-      "aliases": [
-        "safety-shower",
-        "emergency-shower",
-        "wash-station"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1937,19 +1433,13 @@
     {
       "name": "single-signboard",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "sign",
-        "direction",
-        "route",
-        "way",
-        "one"
-      ],
-      "aliases": [
         "single-signboard"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1965,24 +1455,13 @@
     {
       "name": "smoke-heat-detector",
       "category": {
-        "id": "fire",
-        "label": "fire"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "detector",
-        "smoke",
-        "heat",
-        "fire",
-        "alarm",
-        "detection",
-        "emergency",
-        "safety"
+        "smoke-heat-detector"
       ],
-      "aliases": [
-        "smoke-detector",
-        "heat-detector",
-        "fire-detector"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -1998,22 +1477,13 @@
     {
       "name": "sos",
       "category": {
-        "id": "health--safety",
-        "label": "health & safety"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "sos",
-        "emergency",
-        "help",
-        "distress",
-        "alert",
-        "safety"
+        "sos"
       ],
-      "aliases": [
-        "sos",
-        "emergency-alert",
-        "distress-signal"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -2029,17 +1499,13 @@
     {
       "name": "target-aim",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "focus",
-        "radar",
-        "aim"
-      ],
-      "aliases": [
         "target-aim"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -2055,18 +1521,13 @@
     {
       "name": "vr-guardian",
       "category": {
-        "id": "wayfinding",
-        "label": "wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "zone",
-        "area",
-        "person",
-        "space"
-      ],
-      "aliases": [
         "vr-guardian"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -2082,19 +1543,13 @@
     {
       "name": "vr-panoramic",
       "category": {
-        "id": "ai--vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "virtual",
-        "reality",
-        "xr",
-        "panorama",
-        "screen"
-      ],
-      "aliases": [
         "vr-panoramic"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -2110,18 +1565,13 @@
     {
       "name": "wheelchair-lift",
       "category": {
-        "id": "vertical-transport",
-        "label": "vertical transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "lift",
-        "elevator",
-        "escalator",
-        "accessible"
-      ],
-      "aliases": [
         "wheelchair-lift"
       ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -2137,22 +1587,13 @@
     {
       "name": "wrench",
       "category": {
-        "id": "building--construction",
-        "label": "building & construction"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "wrench",
-        "tool",
-        "maintenance",
-        "repair",
-        "construction",
-        "mechanical"
+        "wrench"
       ],
-      "aliases": [
-        "wrench",
-        "spanner",
-        "repair-tool"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
