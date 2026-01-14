@@ -1,21 +1,38 @@
 {
   "icons": [
     {
-      "name": "ai-2-stars",
+      "name": "aed-kit",
       "category": {
-        "id": "ai-vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "ai",
-        "2",
-        "stars",
-        "sparkles",
+        "aed-kit"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ai-2-stars",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
         "ai-2-stars"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -28,19 +45,15 @@
     {
       "name": "ai-3-stars",
       "category": {
-        "id": "ai-vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "ai",
-        "3",
-        "stars",
-        "sparkles",
         "ai-3-stars"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -53,21 +66,15 @@
     {
       "name": "ai-avatar-gen",
       "category": {
-        "id": "ai-vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "ai",
-        "avatar",
-        "gen",
-        "generate",
-        "person",
-        "create",
         "ai-avatar-gen"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -80,21 +87,15 @@
     {
       "name": "ai-magic-brush",
       "category": {
-        "id": "ai-vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "ai",
-        "magic",
-        "brush",
-        "pencil",
-        "create",
-        "paint",
         "ai-magic-brush"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -107,20 +108,15 @@
     {
       "name": "ai-magic-wand",
       "category": {
-        "id": "ai-vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "ai",
-        "magic",
-        "wand",
-        "generate",
-        "star",
         "ai-magic-wand"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -133,20 +129,15 @@
     {
       "name": "ai-prompt",
       "category": {
-        "id": "ai-vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "ai",
-        "prompt",
-        "generate",
-        "terminal",
-        "create",
         "ai-prompt"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -159,19 +150,15 @@
     {
       "name": "ai-text-gen",
       "category": {
-        "id": "ai-vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "ai",
-        "text",
-        "gen",
-        "generate",
         "ai-text-gen"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -184,20 +171,120 @@
     {
       "name": "ai-wand",
       "category": {
-        "id": "ai-vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "ai",
-        "wand",
-        "generate",
-        "magic",
-        "sparkle",
         "ai-wand"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ambulance",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "ambulance"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "asterisk",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "asterisk"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "breeching-inlet",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "breeching-inlet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "buoy",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "buoy"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "carbon-monoxide-alarm",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "carbon-monoxide-alarm"
+      ],
+      "styles": [
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -210,20 +297,78 @@
     {
       "name": "cargo-lift",
       "category": {
-        "id": "vertical-transport",
-        "label": "Vertical Transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "cargo",
-        "lift",
-        "elevator",
-        "escalator",
-        "cargo-lift",
-        "freight-lift"
+        "cargo-lift"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electrical-hazard",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "electrical-hazard"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "emergency-phone",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "emergency-phone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "emergency-phone-medical",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "emergency-phone-medical"
+      ],
+      "styles": [
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -236,19 +381,15 @@
     {
       "name": "escalator-down",
       "category": {
-        "id": "vertical-transport",
-        "label": "Vertical Transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "escalator",
-        "down",
-        "lift",
-        "elevator",
         "escalator-down"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -261,20 +402,15 @@
     {
       "name": "escalator-down-person",
       "category": {
-        "id": "vertical-transport",
-        "label": "Vertical Transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "escalator",
-        "down",
-        "person",
-        "lift",
-        "elevator",
         "escalator-down-person"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -287,19 +423,15 @@
     {
       "name": "escalator-up",
       "category": {
-        "id": "vertical-transport",
-        "label": "Vertical Transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "escalator",
-        "up",
-        "lift",
-        "elevator",
         "escalator-up"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -312,20 +444,414 @@
     {
       "name": "escalator-up-person",
       "category": {
-        "id": "vertical-transport",
-        "label": "Vertical Transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "escalator",
-        "up",
-        "person",
-        "lift",
-        "elevator",
         "escalator-up-person"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "eye-wash-station",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "eye-wash-station"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fight-1",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fight-1"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fight-2",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fight-2"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-alarm",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-alarm"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-alarm-panel",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-alarm-panel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-anti",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-anti"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-emergency-panel",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-emergency-panel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-escape",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-escape"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-extinguisher",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-extinguisher"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-flame",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-flame"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-hose-reel",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-hose-reel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-hydrant",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-hydrant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-sprinkler",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-sprinkler"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-warning",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "fire-warning"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "firecracker",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "firecracker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "firefighter-helmet",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "firefighter-helmet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "first-aid-kit",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "first-aid-kit"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "first-aid-medical",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "first-aid-medical"
+      ],
+      "styles": [
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -338,19 +864,15 @@
     {
       "name": "flag-pole",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "flag",
-        "pole",
-        "priority",
-        "mark",
         "flag-pole"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -363,20 +885,15 @@
     {
       "name": "flag-zone",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "flag",
-        "zone",
-        "mark",
-        "pin",
-        "area",
         "flag-zone"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -389,19 +906,15 @@
     {
       "name": "gps",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "gps",
-        "direction",
-        "navigate",
-        "compass",
-        "geolocate"
+        "gps"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -414,21 +927,120 @@
     {
       "name": "group-trip-pin",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "group",
-        "trip",
-        "pin",
-        "location",
-        "map",
-        "route",
         "group-trip-pin"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "health-monitor",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "health-monitor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heart-pulse",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "heart-pulse"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heat-detector",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "heat-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hospital-medical",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "hospital-medical"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hospital-sign",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "hospital-sign"
+      ],
+      "styles": [
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -441,20 +1053,15 @@
     {
       "name": "location-earth-pin",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "location",
-        "earth",
-        "pin",
-        "globe",
-        "locate",
         "location-earth-pin"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -467,21 +1074,15 @@
     {
       "name": "location-group-pin",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "location",
-        "group",
-        "pin",
-        "locate",
-        "map",
-        "direction",
         "location-group-pin"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -494,20 +1095,15 @@
     {
       "name": "location-pin",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "location",
-        "pin",
-        "locate",
-        "map",
-        "direction",
         "location-pin"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -520,20 +1116,15 @@
     {
       "name": "location-zone",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "location",
-        "zone",
-        "mark",
-        "pin",
-        "area",
         "location-zone"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -546,18 +1137,15 @@
     {
       "name": "map",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "map",
-        "direction",
-        "navigate",
-        "locate"
+        "map"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -570,20 +1158,15 @@
     {
       "name": "map-pin",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "map",
-        "pin",
-        "direction",
-        "navigate",
-        "locate",
         "map-pin"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -596,20 +1179,15 @@
     {
       "name": "map-route",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "map",
-        "route",
-        "direction",
-        "navigate",
-        "locate",
         "map-route"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -622,20 +1200,57 @@
     {
       "name": "map-tree",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "map",
-        "tree",
-        "direction",
-        "navigate",
-        "locate",
         "map-tree"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "medical-cross",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "medical-cross"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "medical-star",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "medical-star"
+      ],
+      "styles": [
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -648,21 +1263,15 @@
     {
       "name": "multiple-signboard",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "multiple",
-        "signboard",
-        "sign",
-        "direction",
-        "route",
-        "way",
         "multiple-signboard"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -675,20 +1284,15 @@
     {
       "name": "passenger-lift-arrow",
       "category": {
-        "id": "vertical-transport",
-        "label": "Vertical Transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "passenger",
-        "lift",
-        "arrow",
-        "elevator",
-        "escalator",
         "passenger-lift-arrow"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -701,20 +1305,57 @@
     {
       "name": "passenger-lift-person",
       "category": {
-        "id": "vertical-transport",
-        "label": "Vertical Transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "passenger",
-        "lift",
-        "person",
-        "elevator",
-        "escalator",
         "passenger-lift-person"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "police-car",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "police-car"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "safety-shower",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "safety-shower"
+      ],
+      "styles": [
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -727,22 +1368,57 @@
     {
       "name": "single-signboard",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "single",
-        "signboard",
-        "sign",
-        "direction",
-        "route",
-        "way",
-        "one",
         "single-signboard"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "smoke-heat-detector",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "smoke-heat-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sos",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "sos"
+      ],
+      "styles": [
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -755,19 +1431,15 @@
     {
       "name": "target-aim",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "target",
-        "aim",
-        "focus",
-        "radar",
         "target-aim"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -780,21 +1452,15 @@
     {
       "name": "vr-guardian",
       "category": {
-        "id": "wayfinding",
-        "label": "Wayfinding"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "vr",
-        "guardian",
-        "zone",
-        "area",
-        "person",
-        "space",
         "vr-guardian"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -807,22 +1473,15 @@
     {
       "name": "vr-panoramic",
       "category": {
-        "id": "ai-vr",
-        "label": "AI & VR"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "vr",
-        "panoramic",
-        "virtual",
-        "reality",
-        "xr",
-        "panorama",
-        "screen",
         "vr-panoramic"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -835,19 +1494,15 @@
     {
       "name": "wheelchair-lift",
       "category": {
-        "id": "vertical-transport",
-        "label": "Vertical Transport"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "wheelchair",
-        "lift",
-        "elevator",
-        "escalator",
         "wheelchair-lift"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
@@ -860,18 +1515,15 @@
     {
       "name": "wrench",
       "category": {
-        "id": "building-construction",
-        "label": "Building & Construction"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "wrench",
-        "tools",
-        "spanner",
-        "repair"
+        "wrench"
       ],
       "styles": [
-        "outline",
-        "filled"
+        "filled",
+        "outline"
       ],
       "sizes": [
         16,
