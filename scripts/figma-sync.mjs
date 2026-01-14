@@ -74,10 +74,10 @@ async function syncIconsFromFigma() {
     const nodeIds = batch.map(v => v.id).join(",");
     
     try {
-      const exportsUrl = `https://api.figma.com/v1/files/${fileKey}/export?ids=${nodeIds}&format=svg`;
-      const exportsData = await figmaFetch(exportsUrl);
+      const imagesUrl = `https://api.figma.com/v1/images/${fileKey}?ids=${nodeIds}&format=svg`;
+      const imagesData = await figmaFetch(imagesUrl);
       
-      if (!exportsData.images) {
+      if (!imagesData.images) {
         console.warn(`⚠️ No images in batch ${Math.floor(i / batchSize) + 1}`);
         failed += batch.length;
         continue;
@@ -85,7 +85,7 @@ async function syncIconsFromFigma() {
       
       // Download each variant in the batch
       for (const variant of batch) {
-        const url = exportsData.images[variant.id];
+        const url = imagesData.images[variant.id];
         if (!url) {
           failed++;
           continue;
@@ -122,7 +122,7 @@ async function syncIconsFromFigma() {
       }
       
       const batchNum = Math.floor(i / batchSize) + 1;
-      const successful = batch.length - batch.filter(v => !exportsData.images[v.id]).length;
+      const successful = batch.length - batch.filter(v => !imagesData.images[v.id]).length;
       console.log(`  Batch ${batchNum}: ${successful}/${batch.length} downloaded`);
       
     } catch (e) {
