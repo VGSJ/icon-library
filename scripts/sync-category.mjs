@@ -54,6 +54,7 @@ async function cleanupCategory(categoryName) {
     }
     
     // Fetch Figma metadata for this category
+    const normalizedCategory = categoryName.toLowerCase().trim();
     const fileKey = env("FIGMA_FILE_KEY");
     const compsetsUrl = `https://api.figma.com/v1/files/${fileKey}/component_sets`;
     const compsetsData = await figmaFetch(compsetsUrl);
@@ -67,7 +68,7 @@ async function cleanupCategory(categoryName) {
       
       // Check if this icon is in the target category
       const desc = comp.description || "";
-      if (desc.toLowerCase().includes(`category: ${categoryName.toLowerCase()}`)) {
+      if (desc.toLowerCase().includes(`category: ${normalizedCategory}`)) {
         figmaIcons.add(baseName);
       }
     }
@@ -105,6 +106,8 @@ async function downloadSvg(url, filePath) {
 }
 
 async function syncCategoryFromFigma(category) {
+  // Normalize category name for consistent matching
+  const normalizedCategory = category.toLowerCase().trim();
   const fileKey = env("FIGMA_FILE_KEY");
   
   // Clean up old SVGs for this category before syncing
@@ -122,7 +125,7 @@ async function syncCategoryFromFigma(category) {
     const categoryIcons = componentSets.filter(cs => {
       if (!cs.name?.startsWith("icon-")) return false;
       const desc = cs.description || "";
-      return desc.toLowerCase().includes(`category: ${category.toLowerCase()}`);
+      return desc.toLowerCase().includes(`category: ${normalizedCategory}`);
     });
     
     console.log(`✅ Found ${categoryIcons.length} icons in "${category}"`);

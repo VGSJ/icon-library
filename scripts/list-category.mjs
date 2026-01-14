@@ -16,6 +16,8 @@ async function figmaFetch(url) {
 }
 
 async function listCategory(categoryName) {
+  // Normalize category name for consistent matching
+  const normalizedCategory = categoryName.toLowerCase().trim();
   const fileKey = env("FIGMA_FILE_KEY");
   
   console.log(`🔍 Fetching Figma metadata for category: ${categoryName}...`);
@@ -31,7 +33,7 @@ async function listCategory(categoryName) {
     const filtered = componentSets.filter(cs => {
       if (!cs.name?.startsWith("icon-")) return false;
       const desc = cs.description || "";
-      return desc.toLowerCase().includes(`category: ${categoryName.toLowerCase()}`);
+      return desc.toLowerCase().includes(`category: ${normalizedCategory}`);
     });
     
     console.log(`\n📦 Found ${filtered.length} icons in "${categoryName}" category:\n`);

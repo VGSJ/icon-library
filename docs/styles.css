@@ -193,4 +193,3 @@ main {
   transition: opacity 140ms ease;
 }
 .toast.show { opacity: 0.92; }
-/* Cache bust: 1768376968 */
