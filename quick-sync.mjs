@@ -27,6 +27,7 @@ async function quickSync() {
     await fs.mkdir(targetDir, { recursive: true });
     
     const sourcePath = path.join(EXPORT_DIR, file);
+    // Keep full filename with icon- prefix: icon-name-style-size.svg
     const targetPath = path.join(targetDir, file);
     
     await fs.copyFile(sourcePath, targetPath);
