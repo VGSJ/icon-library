@@ -37,6 +37,8 @@ h1 { margin: 0 0 12px; font-size: 20px; }
   position: relative;
   display: inline-block;
   width: auto;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
 .select-icon {
@@ -48,6 +50,7 @@ h1 { margin: 0 0 12px; font-size: 20px; }
   height: 14px;
   pointer-events: none;
   opacity: 0.6;
+  z-index: 1;
 }
 
 input[type="search"] {
