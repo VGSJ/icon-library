@@ -1542,6 +1542,36 @@
       ]
     },
     {
+      "name": "baby-stroller",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "baby",
+        "stroller",
+        "pram",
+        "infant",
+        "child",
+        "transport"
+      ],
+      "aliases": [
+        "pram",
+        "baby-carriage"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "badge-verified",
       "category": {
         "id": "communication",
@@ -1812,17 +1842,71 @@
       ]
     },
     {
-      "name": "bedroom-lamp",
+      "name": "bed",
       "category": {
-        "id": "light",
-        "label": "light"
+        "id": "furniture-things",
+        "label": "furniture & things"
       },
       "tags": [
         "bed",
         "bedroom",
         "hotel",
         "sleep",
-        "relax",
+        "relax"
+      ],
+      "aliases": [
+        "single-bed",
+        "sleeping-bed"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bed-double",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "bed",
+        "double",
+        "hotel",
+        "furniture",
+        "bedroom",
+        "relax"
+      ],
+      "aliases": [
+        "double-bed",
+        "hotel-bed"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bedroom-lamp",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
         "bedroom-lamp",
         "table-lamp",
         "light",
@@ -1832,8 +1916,6 @@
         "lamp"
       ],
       "aliases": [
-        "single-bed",
-        "sleeping-bed",
         "bedside-lamp",
         "table-lamp",
         "bedroom-light"
@@ -2241,6 +2323,65 @@
       ]
     },
     {
+      "name": "books",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "library",
+        "books",
+        "bookshelf",
+        "reading",
+        "knowledge"
+      ],
+      "aliases": [
+        "book-shelf",
+        "bookcase"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bookshelf",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "bookshelf",
+        "bookcase",
+        "books",
+        "office",
+        "shelf",
+        "reading"
+      ],
+      "aliases": [
+        "book-shelf",
+        "library-shelf"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "bounding-box-1",
       "category": {
         "id": "editor",
@@ -2469,6 +2610,37 @@
       "aliases": [
         "facility-lock",
         "building-security"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bulletin-board",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "bulletin-board",
+        "board",
+        "tasks",
+        "pin",
+        "notes",
+        "notice"
+      ],
+      "aliases": [
+        "pin-board",
+        "notice-board",
+        "task-board"
       ],
       "styles": [
         "filled",
@@ -2952,6 +3124,35 @@
       "aliases": [
         "celebration",
         "confetti"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chair",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "chair",
+        "seat",
+        "dining",
+        "relax",
+        "furniture"
+      ],
+      "aliases": [
+        "dining-chair",
+        "seating"
       ],
       "styles": [
         "filled",
@@ -4218,6 +4419,93 @@
       ]
     },
     {
+      "name": "coat-rack",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "coat-rack",
+        "hanger",
+        "clothes",
+        "hooks",
+        "storage"
+      ],
+      "aliases": [
+        "coat-stand",
+        "clothes-rack",
+        "hanger-stand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "coffee-table",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "coffee-table",
+        "living-room",
+        "furniture",
+        "table"
+      ],
+      "aliases": [
+        "center-table",
+        "lounge-table"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "coffee-table-chat",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "coffee-table",
+        "chatting",
+        "relax",
+        "living-room",
+        "furniture"
+      ],
+      "aliases": [
+        "chat-table",
+        "lounge-table"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "collapse-diagonal",
       "category": {
         "id": "arrows",
@@ -4400,6 +4688,35 @@
       ]
     },
     {
+      "name": "computer-cart",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "computer-cart",
+        "rolling",
+        "workstation",
+        "mobile",
+        "equipment"
+      ],
+      "aliases": [
+        "rolling-workstation",
+        "mobile-computer-cart"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "cone",
       "category": {
         "id": "geometry",
@@ -4415,6 +4732,35 @@
       "aliases": [
         "conical-shape",
         "3d-cone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "conference-table",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "conference-table",
+        "meeting",
+        "presentation",
+        "workspace",
+        "furniture"
+      ],
+      "aliases": [
+        "meeting-table",
+        "boardroom-table"
       ],
       "styles": [
         "filled",
@@ -5033,30 +5379,111 @@
       ]
     },
     {
-      "name": "desk-lamp",
+      "name": "desk",
       "category": {
-        "id": "light",
-        "label": "light"
+        "id": "furniture-things",
+        "label": "furniture & things"
       },
       "tags": [
         "desk",
         "study",
         "work",
         "table",
-        "furniture",
+        "furniture"
+      ],
+      "aliases": [
+        "study-desk",
+        "work-desk"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "desk-lamp",
+      "category": {
+        "id": "light",
+        "label": "light"
+      },
+      "tags": [
         "desk-lamp",
         "reading",
+        "work",
         "lamp",
         "lighting",
         "task-light",
         "modern"
       ],
       "aliases": [
-        "study-desk",
-        "work-desk",
         "desk-lamp",
         "table-lamp",
         "task-lamp"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "desk-office",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "desk",
+        "office",
+        "workspace",
+        "furniture",
+        "work"
+      ],
+      "aliases": [
+        "office-desk",
+        "workstation"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "desk-office-2",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "desk",
+        "office",
+        "workspace",
+        "furniture",
+        "work"
+      ],
+      "aliases": [
+        "office-desk",
+        "workstation"
       ],
       "styles": [
         "filled",
@@ -5114,6 +5541,35 @@
       "aliases": [
         "question-diamond",
         "unknown-diamond"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "diving-oxygen-tank",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "diving",
+        "oxygen",
+        "tank",
+        "scuba",
+        "underwater"
+      ],
+      "aliases": [
+        "scuba-tank",
+        "oxygen-cylinder"
       ],
       "styles": [
         "filled",
@@ -5759,6 +6215,35 @@
         "corner-duct",
         "duct-elbow",
         "frame-corner"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "dumbbell",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "weight",
+        "gym",
+        "fitness",
+        "strength",
+        "workout"
+      ],
+      "aliases": [
+        "dumbbell-weight",
+        "gym-weight"
       ],
       "styles": [
         "filled",
@@ -6740,6 +7225,36 @@
       ]
     },
     {
+      "name": "filing-cabinet",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "filing-cabinet",
+        "storage",
+        "organization",
+        "furniture",
+        "archive"
+      ],
+      "aliases": [
+        "file-cabinet",
+        "storage-cabinet",
+        "document-cabinet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "filter",
       "category": {
         "id": "actions-general-interface",
@@ -7524,6 +8039,35 @@
       ]
     },
     {
+      "name": "floor-mat",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "floor-mat",
+        "anti-slip",
+        "waterproof",
+        "ergonomic",
+        "mat"
+      ],
+      "aliases": [
+        "safety-mat",
+        "rubber-mat"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "floor-plan",
       "category": {
         "id": "building-construction",
@@ -7764,6 +8308,93 @@
       ]
     },
     {
+      "name": "folding-chair",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "folding-chair",
+        "portable",
+        "outdoor",
+        "camping",
+        "seat"
+      ],
+      "aliases": [
+        "camping-chair",
+        "portable-chair"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "folding-table",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "folding-table",
+        "portable",
+        "collapsible",
+        "furniture",
+        "table"
+      ],
+      "aliases": [
+        "portable-table",
+        "collapsible-table"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "foot-rest",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "foot-rest",
+        "relax",
+        "massage",
+        "comfort",
+        "support"
+      ],
+      "aliases": [
+        "footstool",
+        "foot-massager"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "footstep",
       "category": {
         "id": "building-construction",
@@ -7812,6 +8443,35 @@
         "forklift",
         "lift-truck",
         "warehouse-vehicle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fridge-double-door",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "fridge",
+        "refrigerator",
+        "double-door",
+        "appliance",
+        "kitchen"
+      ],
+      "aliases": [
+        "double-door-fridge",
+        "refrigerator-double"
       ],
       "styles": [
         "filled",
@@ -7954,6 +8614,36 @@
       ],
       "aliases": [
         "gps"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "graduation-cap",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "graduation",
+        "cap",
+        "study",
+        "education",
+        "academic",
+        "student"
+      ],
+      "aliases": [
+        "mortarboard",
+        "graduate-cap"
       ],
       "styles": [
         "filled",
@@ -9094,6 +9784,36 @@
       ]
     },
     {
+      "name": "lab-flask",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "science",
+        "substance",
+        "test",
+        "laboratory",
+        "experiment"
+      ],
+      "aliases": [
+        "flask",
+        "test-flask",
+        "lab-test"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "landed-house",
       "category": {
         "id": "building-construction",
@@ -10157,6 +10877,36 @@
       ]
     },
     {
+      "name": "mail-cart",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "mail-cart",
+        "delivery",
+        "wheeled",
+        "trolley",
+        "transport"
+      ],
+      "aliases": [
+        "delivery-cart",
+        "postal-cart",
+        "mail-trolley"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "mail-invite",
       "category": {
         "id": "document--statistics",
@@ -10962,6 +11712,36 @@
       ]
     },
     {
+      "name": "mobile-desk",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "mobile-desk",
+        "rolling",
+        "foldable",
+        "work",
+        "furniture"
+      ],
+      "aliases": [
+        "rolling-desk",
+        "portable-desk",
+        "foldable-desk"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "mouse-double-click",
       "category": {
         "id": "actions-general-interface",
@@ -11374,6 +12154,35 @@
       ]
     },
     {
+      "name": "office-chair",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "office-chair",
+        "work",
+        "rolling",
+        "seat",
+        "furniture"
+      ],
+      "aliases": [
+        "desk-chair",
+        "swivel-chair"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "oil-rig-tower",
       "category": {
         "id": "building-construction",
@@ -11634,6 +12443,36 @@
         "parking-light",
         "parking-lamp",
         "parking-indicator"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "partition-panel",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "partition",
+        "divider",
+        "panel",
+        "folding-wall",
+        "space",
+        "separation"
+      ],
+      "aliases": [
+        "room-divider",
+        "folding-panel"
       ],
       "styles": [
         "filled",
@@ -11916,6 +12755,35 @@
       ]
     },
     {
+      "name": "pillow",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "pillow",
+        "sleep",
+        "rest",
+        "zzz",
+        "bedroom"
+      ],
+      "aliases": [
+        "sleeping-pillow",
+        "bed-pillow"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "placeholder",
       "category": {
         "id": "editor",
@@ -12035,6 +12903,35 @@
       ]
     },
     {
+      "name": "podium",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "podium",
+        "stage",
+        "platform",
+        "presentation",
+        "stand"
+      ],
+      "aliases": [
+        "stage-podium",
+        "speaker-stand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "police-car",
       "category": {
         "id": "health-safety",
@@ -12101,22 +12998,44 @@
         "label": "actions & general interface"
       },
       "tags": [
-        "printer-cart",
-        "stand",
-        "shelf",
-        "rolling",
-        "workstation",
         "printer",
         "print",
         "output",
         "document"
       ],
       "aliases": [
-        "printer-stand",
-        "printer-trolley",
-        "printer-shelf",
         "print-device",
         "print"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "printer-cart",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "printer-cart",
+        "stand",
+        "shelf",
+        "rolling",
+        "workstation"
+      ],
+      "aliases": [
+        "printer-stand",
+        "printer-trolley",
+        "printer-shelf"
       ],
       "styles": [
         "filled",
@@ -12348,6 +13267,34 @@
         "retry"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "refrigerator",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "fridge",
+        "refrigerator",
+        "appliance",
+        "kitchen"
+      ],
+      "aliases": [
+        "fridge",
+        "cooling-appliance"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -12850,10 +13797,10 @@
       ]
     },
     {
-      "name": "safety-shower",
+      "name": "safe",
       "category": {
-        "id": "health-safety",
-        "label": "health & safety"
+        "id": "furniture-things",
+        "label": "furniture & things"
       },
       "tags": [
         "safe",
@@ -12861,7 +13808,32 @@
         "lock",
         "security",
         "secure",
-        "storage",
+        "storage"
+      ],
+      "aliases": [
+        "safety-safe",
+        "lockbox",
+        "vault"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "safety-shower",
+      "category": {
+        "id": "health-safety",
+        "label": "health & safety"
+      },
+      "tags": [
         "safety",
         "safety-shower",
         "emergency",
@@ -12871,9 +13843,6 @@
         "workplace"
       ],
       "aliases": [
-        "safety-safe",
-        "lockbox",
-        "vault",
         "safety-shower",
         "emergency-shower",
         "wash-station"
@@ -13582,6 +14551,35 @@
       ]
     },
     {
+      "name": "side-table",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "end-table",
+        "side-table",
+        "bedroom",
+        "living-room",
+        "furniture"
+      ],
+      "aliases": [
+        "nightstand",
+        "bedside-table"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "sidebar-collapse",
       "category": {
         "id": "layout-grid",
@@ -13872,6 +14870,36 @@
       ]
     },
     {
+      "name": "smart-refrigerator",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "smart",
+        "refrigerator",
+        "fridge",
+        "appliance",
+        "iot",
+        "kitchen"
+      ],
+      "aliases": [
+        "smart-fridge",
+        "connected-refrigerator"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "smart-toilet",
       "category": {
         "id": "housekeeping",
@@ -13977,6 +15005,35 @@
         "soccer-field",
         "football-field",
         "sports-field"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sofa",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "sofa",
+        "couch",
+        "furniture",
+        "seating",
+        "living-room"
+      ],
+      "aliases": [
+        "couch",
+        "lounge-sofa"
       ],
       "styles": [
         "filled",
@@ -14350,6 +15407,64 @@
       ]
     },
     {
+      "name": "storage-cabinet",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "storage",
+        "cabinet",
+        "drawer",
+        "locker",
+        "organization"
+      ],
+      "aliases": [
+        "locker-cabinet",
+        "drawer-cabinet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "storage-cabinet-drawer",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "storage",
+        "cabinet",
+        "drawer",
+        "locker",
+        "organization"
+      ],
+      "aliases": [
+        "drawer-cabinet",
+        "locker-drawer"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "store-shop",
       "category": {
         "id": "building-construction",
@@ -14694,6 +15809,36 @@
       "aliases": [
         "like",
         "approve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tie",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "tie",
+        "work",
+        "boss",
+        "formal",
+        "business",
+        "clothing"
+      ],
+      "aliases": [
+        "necktie",
+        "business-tie"
       ],
       "styles": [
         "filled",
@@ -15158,6 +16303,34 @@
       ]
     },
     {
+      "name": "umbrella",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "umbrella",
+        "rain",
+        "weather",
+        "protection"
+      ],
+      "aliases": [
+        "rain-umbrella",
+        "sunshade"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "underground-bunker",
       "category": {
         "id": "building-construction",
@@ -15566,6 +16739,35 @@
         "warehouse",
         "storage-room",
         "storeroom"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "washing-machine",
+      "category": {
+        "id": "furniture-things",
+        "label": "furniture & things"
+      },
+      "tags": [
+        "laundry",
+        "washing-machine",
+        "washer",
+        "appliance",
+        "clean"
+      ],
+      "aliases": [
+        "washer",
+        "laundry-machine"
       ],
       "styles": [
         "filled",
