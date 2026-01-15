@@ -11164,6 +11164,39 @@
       ]
     },
     {
+      "name": "facility-management",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "office",
+        "company",
+        "building",
+        "workplace",
+        "commercial",
+        "facility",
+        "person",
+        "block"
+      ],
+      "aliases": [
+        "office-building",
+        "company-building",
+        "corporate-office"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "fan-toggle-switch",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -18601,6 +18634,38 @@
       "aliases": [
         "desk-chair",
         "swivel-chair"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "office-compound",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "buildings",
+        "office",
+        "bms",
+        "commercial",
+        "workplace",
+        "urban",
+        "tower"
+      ],
+      "aliases": [
+        "office-buildings",
+        "commercial-buildings",
+        "business-blocks"
       ],
       "styles": [
         "filled",
