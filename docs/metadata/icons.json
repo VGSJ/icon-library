@@ -93,6 +93,35 @@
       ]
     },
     {
+      "name": "ac-settings-humidity",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "setting",
+        "ac",
+        "gear",
+        "droplet",
+        "humidity",
+        "control"
+      ],
+      "aliases": [
+        "ac-control"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "access-panel-door",
       "category": {
         "id": "security",
@@ -228,6 +257,62 @@
       "aliases": [
         "airplane",
         "aeroplane"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ahu-cooling-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "fan",
+        "air",
+        "hvac",
+        "ahu",
+        "cooling"
+      ],
+      "aliases": [
+        "ahu-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ahu-economiser",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "economiser",
+        "ahu",
+        "energy-saving",
+        "hvac",
+        "ventilation"
+      ],
+      "aliases": [
+        "ahu-economizer"
       ],
       "styles": [
         "filled",
@@ -437,6 +522,309 @@
       ],
       "aliases": [
         "ai-wand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "air-flow",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "wind-flow",
+        "air-flow",
+        "ventilation",
+        "movement",
+        "hvac"
+      ],
+      "aliases": [
+        "airflow",
+        "air-movement"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "air-loop",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "loop",
+        "air",
+        "circulation",
+        "hvac"
+      ],
+      "aliases": [
+        "air-circulation-loop"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "air-nuclear-hazard",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "air",
+        "nuclear-hazard",
+        "radiation",
+        "warning"
+      ],
+      "aliases": [
+        "radioactive-air"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "air-plenum-box",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "air",
+        "plenum",
+        "duct",
+        "box",
+        "fan",
+        "hvac"
+      ],
+      "aliases": [
+        "plenum-box"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "air-purifier-1",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "air-purifier",
+        "air",
+        "filtration",
+        "indoor",
+        "hvac"
+      ],
+      "aliases": [
+        "air-cleaner"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "air-quality-check",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "air-quality",
+        "check",
+        "magnifying-glass",
+        "inspection",
+        "hvac"
+      ],
+      "aliases": [
+        "air-quality-inspection"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "air-source-heat-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "air-source",
+        "cooled",
+        "pump",
+        "heat",
+        "chiller",
+        "hvac"
+      ],
+      "aliases": [
+        "as-hp"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "air-storage-tank",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tank",
+        "storage",
+        "air",
+        "pressure"
+      ],
+      "aliases": [
+        "air-tank"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "air-vent",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "vent",
+        "air",
+        "hvac",
+        "ventilation"
+      ],
+      "aliases": [
+        "air-ventilation"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "aircon-cooling",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "aircon",
+        "cold",
+        "air",
+        "cooling",
+        "hvac"
+      ],
+      "aliases": [
+        "ac-cooling"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "aircon-handler-water",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "aircon",
+        "handler",
+        "water",
+        "hvac",
+        "cooling"
+      ],
+      "aliases": [
+        "ahu-water"
       ],
       "styles": [
         "filled",
@@ -2621,6 +3009,33 @@
       ]
     },
     {
+      "name": "booster-vfd-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "booster-fan",
+        "variable-frequency",
+        "vfd",
+        "ventilation"
+      ],
+      "aliases": [
+        "vfd-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "bounding-box-1",
       "category": {
         "id": "editor",
@@ -2760,6 +3175,34 @@
         "highlight-adjust"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "building-chilled-water-meter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "building",
+        "chilled-water",
+        "meter",
+        "cooling",
+        "hvac"
+      ],
+      "aliases": [
+        "chilled-water-meter"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -2972,6 +3415,33 @@
       "aliases": [
         "coach",
         "transit-bus"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cabin-air-filter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "cabin-air-filter",
+        "air",
+        "filtration",
+        "vehicle"
+      ],
+      "aliases": [
+        "interior-air-filter"
       ],
       "styles": [
         "filled",
@@ -3444,10 +3914,7 @@
         "power",
         "mechanical",
         "motor",
-        "air-conditioner",
-        "rear",
         "car",
-        "cooling",
         "vehicle",
         "transportation",
         "auto",
@@ -3456,7 +3923,6 @@
       "aliases": [
         "engine-power",
         "vehicle-engine",
-        "rear-ac",
         "automobile",
         "passenger-car"
       ],
@@ -3608,6 +4074,32 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "car-rear-air-conditioner",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "air-conditioner",
+        "rear",
+        "car",
+        "cooling"
+      ],
+      "aliases": [
+        "rear-ac"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -3859,6 +4351,33 @@
       ]
     },
     {
+      "name": "ceiling-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "ceiling-fan",
+        "air",
+        "circulation",
+        "indoor"
+      ],
+      "aliases": [
+        "overhead-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "ceiling-light",
       "category": {
         "id": "light",
@@ -4083,7 +4602,30 @@
         "check",
         "tick",
         "confirm",
-        "success",
+        "success"
+      ],
+      "aliases": [
+        "checkmark",
+        "tick"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "check-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
         "check-valve",
         "backflow",
         "valve",
@@ -4091,11 +4633,10 @@
         "safety"
       ],
       "aliases": [
-        "checkmark",
-        "tick",
         "backflow-valve"
       ],
       "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -4812,6 +5353,171 @@
       ]
     },
     {
+      "name": "chilled-water-booster-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "chilled-water",
+        "booster",
+        "pump",
+        "cooling",
+        "hvac"
+      ],
+      "aliases": [
+        "chilled-water-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chilled-water-circulator",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "chilled-water",
+        "pump",
+        "circulator",
+        "cooling"
+      ],
+      "aliases": [
+        "chilled-water-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chilled-water-coil",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "heat-exchange",
+        "chilled-water",
+        "coil",
+        "cooling"
+      ],
+      "aliases": [
+        "chilled-water-coil"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chilled-water-cooling-coil",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "chilled-water",
+        "cooling-coil",
+        "heat-exchange",
+        "hvac"
+      ],
+      "aliases": [
+        "chilled-water-coil"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chilled-water-pressure-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "chilled-water",
+        "valve",
+        "vessel",
+        "pressure",
+        "hvac"
+      ],
+      "aliases": [
+        "chilled-water-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chilled-water-storage-tank",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tank",
+        "storage",
+        "chilled",
+        "water",
+        "cooling"
+      ],
+      "aliases": [
+        "chilled-water-tank"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "church",
       "category": {
         "id": "building-construction",
@@ -5458,6 +6164,32 @@
       ]
     },
     {
+      "name": "clogged-air-filter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "clogged",
+        "air-filter",
+        "blockage",
+        "maintenance"
+      ],
+      "aliases": [
+        "dirty-air-filter"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "close",
       "category": {
         "id": "actions-general-interface",
@@ -5559,6 +6291,85 @@
       "aliases": [
         "chat-table",
         "lounge-table"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cold-deck",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "cold-deck",
+        "cooling",
+        "air",
+        "hvac"
+      ],
+      "aliases": [
+        "cooling-deck"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cold-water-loop",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "loop",
+        "water",
+        "cold",
+        "cooling"
+      ],
+      "aliases": [
+        "chilled-water-loop"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cold-water-storage-tank",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tank",
+        "storage",
+        "cold-water"
+      ],
+      "aliases": [
+        "cold-water-tank"
       ],
       "styles": [
         "filled",
@@ -5784,6 +6595,198 @@
       ]
     },
     {
+      "name": "condenser-coil",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "heat-exchange",
+        "condenser",
+        "coil",
+        "cooling",
+        "hvac"
+      ],
+      "aliases": [
+        "condenser-heat-exchanger"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "condenser-water-booster-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "condenser",
+        "water",
+        "booster",
+        "pump",
+        "cooling"
+      ],
+      "aliases": [
+        "condenser-booster-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "condenser-water-bypass-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "water-bypass",
+        "condenser",
+        "pressure-vessel",
+        "valve"
+      ],
+      "aliases": [
+        "condenser-bypass-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "condenser-water-circulator",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "condenser-water",
+        "pump",
+        "circulator",
+        "cooling"
+      ],
+      "aliases": [
+        "condenser-circulation-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "condenser-water-isolation-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "condenser-water",
+        "vessel",
+        "pressure",
+        "valve",
+        "isolation"
+      ],
+      "aliases": [
+        "condenser-isolation-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "condenser-water-pressure-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "condenser-water",
+        "vessel",
+        "pressure",
+        "valve"
+      ],
+      "aliases": [
+        "condenser-pressure-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "condensing-air-unit",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "air-unit",
+        "condensing",
+        "hvac",
+        "cooling"
+      ],
+      "aliases": [
+        "condensing-unit"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "cone",
       "category": {
         "id": "geometry",
@@ -5985,6 +6988,142 @@
       ]
     },
     {
+      "name": "cooling-air-unit",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "cooling",
+        "air",
+        "unit",
+        "hvac"
+      ],
+      "aliases": [
+        "air-cooling-unit"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cooling-coil",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "heat-exchange",
+        "cooling-coil",
+        "hvac"
+      ],
+      "aliases": [
+        "cooling-coil",
+        "cooling-heat-exchanger"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cooling-pressure-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "cooling",
+        "valve",
+        "vessel",
+        "pressure",
+        "hvac"
+      ],
+      "aliases": [
+        "cooling-relief-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cooling-tower-dcp",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "cooling-tower",
+        "dcp",
+        "heat-rejection",
+        "hvac"
+      ],
+      "aliases": [
+        "district-cooling-plant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cooling-tower-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "cooling-tower",
+        "fan",
+        "heat-rejection",
+        "hvac"
+      ],
+      "aliases": [
+        "tower-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "copy",
       "category": {
         "id": "editor",
@@ -6144,6 +7283,62 @@
         "countryside-house",
         "rural-home",
         "hometown-house"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "crac",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "aircon",
+        "server",
+        "computer-room",
+        "crac",
+        "cooling"
+      ],
+      "aliases": [
+        "computer-room-ac"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "crah",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "aircon",
+        "handler",
+        "server",
+        "computer-room",
+        "crah"
+      ],
+      "aliases": [
+        "computer-room-air-handler"
       ],
       "styles": [
         "filled",
@@ -6446,6 +7641,90 @@
       ]
     },
     {
+      "name": "daylight-sensor",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "daylight",
+        "sensor",
+        "light-sensor",
+        "equipment"
+      ],
+      "aliases": [
+        "light-sensor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "dehumidifier",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "dehumidifier",
+        "air",
+        "climate",
+        "dry",
+        "hvac",
+        "droplet"
+      ],
+      "aliases": [
+        "air-dehumidifier",
+        "air-dryer"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "dehumidifier-2",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "dehumidifier",
+        "air",
+        "climate",
+        "dry"
+      ],
+      "aliases": [
+        "air-dehumidifier"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "delete-tag",
       "category": {
         "id": "editor",
@@ -6667,6 +7946,144 @@
       "aliases": [
         "question-diamond",
         "unknown-diamond"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "differential-pressure-reducing-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "differential",
+        "vessel",
+        "pressure",
+        "valve",
+        "reducing"
+      ],
+      "aliases": [
+        "dp-reducing-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "differential-pressure-relief-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "differential",
+        "vessel",
+        "pressure",
+        "valve",
+        "relief"
+      ],
+      "aliases": [
+        "dp-relief-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "direct-expansion-coil",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "direct-expansion",
+        "cooling-coil",
+        "dx",
+        "hvac"
+      ],
+      "aliases": [
+        "dx-coil"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "discharge-supply-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "discharge-fan",
+        "supply",
+        "fan",
+        "ventilation"
+      ],
+      "aliases": [
+        "discharge-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "district-cooling",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "district-cooling",
+        "cool",
+        "ac",
+        "droplet",
+        "energy"
+      ],
+      "aliases": [
+        "central-cooling"
       ],
       "styles": [
         "filled",
@@ -7031,6 +8448,115 @@
       ]
     },
     {
+      "name": "domestic-hot-water-pressure-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "domestic-hot-water",
+        "pressure-vessel",
+        "valve"
+      ],
+      "aliases": [
+        "dhw-pressure-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "domestic-pressure-vessel-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "domestic",
+        "pressure-vessel",
+        "valve",
+        "water"
+      ],
+      "aliases": [
+        "domestic-pressure-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "domestic-water-loop",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "loop",
+        "water",
+        "domestic",
+        "supply"
+      ],
+      "aliases": [
+        "domestic-water-loop"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "domestic-water-tap",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "water",
+        "faucet",
+        "tap",
+        "domestic",
+        "plumbing"
+      ],
+      "aliases": [
+        "water-tap",
+        "sink-faucet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "dong-coin",
       "category": {
         "id": "payment-rewards",
@@ -7324,6 +8850,63 @@
       ]
     },
     {
+      "name": "dry-cooler-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "fan",
+        "air",
+        "hvac",
+        "dry-cooler",
+        "heat-rejection"
+      ],
+      "aliases": [
+        "air-dry-cooler"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "dual-ahu-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "double",
+        "dual",
+        "ahu",
+        "fan",
+        "air",
+        "hvac"
+      ],
+      "aliases": [
+        "twin-ahu-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "duct-corner-bars",
       "category": {
         "id": "geometry",
@@ -7398,6 +8981,60 @@
       ],
       "aliases": [
         "waste-container"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "dx-cooling-coil",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "direct-expansion",
+        "cooling-coil",
+        "heat-exchange",
+        "hvac"
+      ],
+      "aliases": [
+        "dx-coil"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "dx-heating-coil",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "direct-expansion",
+        "heating",
+        "coil",
+        "hvac"
+      ],
+      "aliases": [
+        "dx-heating-coil"
       ],
       "styles": [
         "filled",
@@ -7500,6 +9137,33 @@
       ]
     },
     {
+      "name": "electric-boiler",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "electric-boiler",
+        "water-heater",
+        "heating",
+        "hvac"
+      ],
+      "aliases": [
+        "electric-water-heater"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "electrical-floor-plan",
       "category": {
         "id": "building-construction",
@@ -7551,6 +9215,34 @@
         "electrical-hazard",
         "electric-danger",
         "high-voltage"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electronic-mixing-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "water",
+        "mixing",
+        "electronic-valve",
+        "control",
+        "hvac"
+      ],
+      "aliases": [
+        "electric-mixing-valve"
       ],
       "styles": [
         "filled",
@@ -7798,6 +9490,32 @@
       ]
     },
     {
+      "name": "engine-air-filter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "engine-air-filter",
+        "air",
+        "filtration",
+        "intake"
+      ],
+      "aliases": [
+        "air-intake-filter"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "enter",
       "category": {
         "id": "arrows",
@@ -7988,6 +9706,34 @@
       ]
     },
     {
+      "name": "evaporative-coil",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "heat-exchange",
+        "evaporative",
+        "coil",
+        "cooling",
+        "hvac"
+      ],
+      "aliases": [
+        "evaporative-heat-exchanger"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "excavator",
       "category": {
         "id": "building-construction",
@@ -8035,6 +9781,33 @@
         "bang"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "exhaust-supply-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "exhaust-air",
+        "supply",
+        "fan",
+        "ventilation"
+      ],
+      "aliases": [
+        "exhaust-fan"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -8350,6 +10123,32 @@
       ],
       "styles": [
         "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fan-toggle-switch",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "toggle",
+        "fan",
+        "switch",
+        "control"
+      ],
+      "aliases": [
+        "fan-switch"
+      ],
+      "styles": [
+        "filled"
       ],
       "sizes": [
         16,
@@ -8852,6 +10651,60 @@
       ]
     },
     {
+      "name": "filtration-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "filtration-pump",
+        "pump",
+        "chiller",
+        "water-treatment"
+      ],
+      "aliases": [
+        "filter-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "final-air-filter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "final-filter",
+        "air",
+        "filtration",
+        "hvac"
+      ],
+      "aliases": [
+        "hepa-filter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "fingerprint",
       "category": {
         "id": "security",
@@ -8886,11 +10739,6 @@
         "label": "fire"
       },
       "tags": [
-        "tank",
-        "storage",
-        "fire-sprinkler",
-        "water",
-        "safety",
         "fire",
         "flame",
         "heat",
@@ -8906,7 +10754,6 @@
         "intrusion-protection"
       ],
       "aliases": [
-        "fire-water-tank",
         "fire",
         "flame",
         "heat",
@@ -9265,6 +11112,34 @@
         "fire-sprinkler",
         "sprinkler-head",
         "water-sprinkler"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-sprinkler-water-tank",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tank",
+        "storage",
+        "fire-sprinkler",
+        "water",
+        "safety"
+      ],
+      "aliases": [
+        "fire-water-tank"
       ],
       "styles": [
         "filled",
@@ -10090,6 +11965,33 @@
       ]
     },
     {
+      "name": "fresh-air-discharge-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "fresh-air",
+        "fan",
+        "discharge",
+        "ventilation"
+      ],
+      "aliases": [
+        "outdoor-air-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "fridge-double-door",
       "category": {
         "id": "furniture-things",
@@ -10162,6 +12064,172 @@
         "minimize-screen"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fume-hood",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "fume-hood",
+        "exhaust",
+        "ventilation",
+        "stove",
+        "hvac"
+      ],
+      "aliases": [
+        "exhaust-hood"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gas-boiler-condensing",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "gas-boiler",
+        "natural-gas",
+        "condensing",
+        "water-heater",
+        "heating"
+      ],
+      "aliases": [
+        "high-efficiency-gas-boiler"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gas-boiler-non-condensing",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "gas-boiler",
+        "natural-gas",
+        "non-condensing",
+        "water-heater",
+        "heating"
+      ],
+      "aliases": [
+        "conventional-gas-boiler"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gas-meter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "meter",
+        "gas",
+        "building-gas-meter",
+        "utility",
+        "measurement"
+      ],
+      "aliases": [
+        "building-gas-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gas-regulator-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "gas",
+        "regulator",
+        "valve",
+        "pressure-vessel"
+      ],
+      "aliases": [
+        "gas-pressure-regulator"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gas-storage-tank",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tank",
+        "storage",
+        "air",
+        "gas"
+      ],
+      "aliases": [
+        "gas-tank"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -10280,6 +12348,31 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "grease-separation-tank",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "separation-tank",
+        "grease",
+        "waste"
+      ],
+      "aliases": [
+        "grease-trap"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -10798,6 +12891,64 @@
       ]
     },
     {
+      "name": "heat-air-condensing-thermostat",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "heat",
+        "air",
+        "unit",
+        "condensing",
+        "temperature",
+        "thermostat",
+        "equipment"
+      ],
+      "aliases": [
+        "condensing-heat-thermostat"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heat-air-condensing-unit",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "heat",
+        "air",
+        "unit",
+        "condensing",
+        "hvac"
+      ],
+      "aliases": [
+        "condensing-heat-unit"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "heat-detector",
       "category": {
         "id": "fire",
@@ -10816,6 +12967,60 @@
         "heat-detector",
         "fire-heat-detector",
         "thermal-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heat-wheel",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "heat-wheel",
+        "heat-exchange",
+        "energy-recovery",
+        "hvac"
+      ],
+      "aliases": [
+        "rotary-heat-exchanger"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heat-wheel-coil",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "heat-exchange",
+        "heat-wheel",
+        "coil",
+        "energy-recovery"
+      ],
+      "aliases": [
+        "rotary-heat-exchanger"
       ],
       "styles": [
         "filled",
@@ -10946,6 +13151,33 @@
       ]
     },
     {
+      "name": "high-plume-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "high-plume",
+        "fan",
+        "outdoor",
+        "exhaust"
+      ],
+      "aliases": [
+        "plume-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "history-clock",
       "category": {
         "id": "time-date",
@@ -10964,6 +13196,34 @@
         "history",
         "time-history",
         "activity-log"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hose-reel-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "hosereel",
+        "valve",
+        "fas",
+        "fire-safety",
+        "water"
+      ],
+      "aliases": [
+        "fire-hose-valve"
       ],
       "styles": [
         "filled",
@@ -11063,6 +13323,172 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hot-steam",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "hot-steam",
+        "steam-water",
+        "hot-spring",
+        "heat",
+        "vapor"
+      ],
+      "aliases": [
+        "steam-heat",
+        "hot-vapor"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hot-water-booster-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "hot-water",
+        "heat",
+        "booster",
+        "pump",
+        "heating"
+      ],
+      "aliases": [
+        "hot-water-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hot-water-circulator",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "hot-water",
+        "pump",
+        "circulator",
+        "heating"
+      ],
+      "aliases": [
+        "hot-water-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hot-water-heating-coil",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "heat",
+        "hot-water",
+        "coil",
+        "heat-exchange",
+        "hvac",
+        "heating"
+      ],
+      "aliases": [
+        "hot-water-coil"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hot-water-meter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "meter",
+        "hot-water",
+        "heating",
+        "hvac"
+      ],
+      "aliases": [
+        "hot-water-flow-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hot-water-steam-loop",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "loop",
+        "water",
+        "hot",
+        "steam",
+        "heating"
+      ],
+      "aliases": [
+        "steam-loop"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -11354,6 +13780,174 @@
       ]
     },
     {
+      "name": "humidity-dissolved",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "humidity",
+        "air",
+        "water",
+        "dissolved",
+        "droplet"
+      ],
+      "aliases": [
+        "dissolved-humidity"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "humidity-dissolved-oxygen",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "humidity",
+        "air",
+        "water",
+        "dissolved-oxygen",
+        "droplet"
+      ],
+      "aliases": [
+        "do-humidity"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "humidity-percentage",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "humidity",
+        "air",
+        "water",
+        "droplet",
+        "percentage",
+        "%"
+      ],
+      "aliases": [
+        "humidity-level"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "humidity-salinity",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "humidity",
+        "air",
+        "water",
+        "salinity",
+        "droplet"
+      ],
+      "aliases": [
+        "salinity-humidity"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hvac-condenser",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "air",
+        "ventilation",
+        "hvac",
+        "condenser",
+        "cooling"
+      ],
+      "aliases": [
+        "air-condenser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "iaq-sensor",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "iaq",
+        "sensor",
+        "air-quality",
+        "monitoring"
+      ],
+      "aliases": [
+        "air-quality-sensor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "immigration-check-in",
       "category": {
         "id": "transport",
@@ -11439,6 +14033,142 @@
       ]
     },
     {
+      "name": "indoor-air-quality",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "iaq",
+        "indoor-air-quality",
+        "air",
+        "ventilation",
+        "monitoring"
+      ],
+      "aliases": [
+        "air-quality-indoor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "indoor-air-quality-house",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "indoor-humidity",
+        "house",
+        "indoor-air-quality",
+        "iaq"
+      ],
+      "aliases": [
+        "home-iaq"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "indoor-fire",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "indoor",
+        "fire",
+        "safety",
+        "hazard"
+      ],
+      "aliases": [
+        "indoor-fire-alarm"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "indoor-humidity",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "indoor-humidity",
+        "house",
+        "air",
+        "moisture"
+      ],
+      "aliases": [
+        "home-humidity"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "indoor-light",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "indoor",
+        "light",
+        "illumination",
+        "building"
+      ],
+      "aliases": [
+        "interior-light"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "industrial-factory",
       "category": {
         "id": "building-construction",
@@ -11498,6 +14228,60 @@
       ]
     },
     {
+      "name": "intake-air-filter-1",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "intake-filter",
+        "air",
+        "filtration",
+        "hvac"
+      ],
+      "aliases": [
+        "air-intake-filter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "intake-air-filter-2",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "intake-filter",
+        "air",
+        "filtration",
+        "hvac"
+      ],
+      "aliases": [
+        "air-intake-filter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "intercom",
       "category": {
         "id": "security",
@@ -11543,6 +14327,33 @@
       "aliases": [
         "key-panel",
         "secure-panel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "irrigation-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "irrigation-pump",
+        "pump",
+        "chiller",
+        "water"
+      ],
+      "aliases": [
+        "irrigation-water-pump"
       ],
       "styles": [
         "filled",
@@ -11942,6 +14753,34 @@
         "window-layout",
         "grid-window",
         "layout-container"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "leak-detector",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "leak-detector",
+        "sensor",
+        "equipment",
+        "water",
+        "gas"
+      ],
+      "aliases": [
+        "leak-sensor"
       ],
       "styles": [
         "filled",
@@ -12692,6 +15531,33 @@
       ]
     },
     {
+      "name": "loop-droplet",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "loop",
+        "droplet",
+        "water",
+        "circulation"
+      ],
+      "aliases": [
+        "water-loop"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "lorry",
       "category": {
         "id": "transport",
@@ -12885,6 +15751,61 @@
       "aliases": [
         "repair-work-2",
         "maintenance-work-2"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "makeup-air-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "make-up-air",
+        "mahu",
+        "return",
+        "fan",
+        "ventilation"
+      ],
+      "aliases": [
+        "mahu-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "makeup-water-pressure-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "makeup-water",
+        "pressure",
+        "vessel",
+        "valve"
+      ],
+      "aliases": [
+        "make-up-water-valve"
       ],
       "styles": [
         "filled",
@@ -13588,6 +16509,34 @@
       ]
     },
     {
+      "name": "meter-device",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "measure",
+        "gauge",
+        "meter",
+        "device",
+        "metering"
+      ],
+      "aliases": [
+        "refrigerant-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "minus",
       "category": {
         "id": "actions-general-interface",
@@ -13647,15 +16596,66 @@
       ]
     },
     {
+      "name": "motor",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "engine",
+        "motor",
+        "mechanical"
+      ],
+      "aliases": [
+        "electric-motor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "motor-power",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "engine",
+        "motor",
+        "power",
+        "mechanical",
+        "energy"
+      ],
+      "aliases": [
+        "power-motor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "motorbike",
       "category": {
         "id": "transport",
         "label": "transport"
       },
       "tags": [
-        "engine",
-        "motor",
-        "mechanical",
         "motorbike",
         "motorcycle",
         "two-wheeler",
@@ -13664,7 +16664,6 @@
         "transport"
       ],
       "aliases": [
-        "electric-motor",
         "motorcycle",
         "two-wheeler",
         "motorbike-bike"
@@ -14184,6 +17183,33 @@
       ]
     },
     {
+      "name": "oil-storage-tank",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tank",
+        "storage",
+        "oil",
+        "fuel"
+      ],
+      "aliases": [
+        "oil-tank"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "orbit-3d",
       "category": {
         "id": "editor",
@@ -14201,6 +17227,91 @@
         "camera-orbit"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "outdoor-heat-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "outdoor",
+        "heat-pump",
+        "heating",
+        "cooling",
+        "hvac"
+      ],
+      "aliases": [
+        "external-heat-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "oxygen",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "oxygen",
+        "o2",
+        "air",
+        "gas",
+        "ventilation"
+      ],
+      "aliases": [
+        "oxy",
+        "o2"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "oxygen-tank",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "oxygen-tank",
+        "o2",
+        "oxygen",
+        "gas",
+        "supply"
+      ],
+      "aliases": [
+        "oxy-tank",
+        "o2-tank"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -14288,6 +17399,35 @@
         "auto-page-size",
         "page-fit",
         "page-resize-auto"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "pahu-exhaust",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "air",
+        "ventilation",
+        "exhaust",
+        "hvac",
+        "pahu"
+      ],
+      "aliases": [
+        "pahu-exhaust",
+        "primary-air-unit"
       ],
       "styles": [
         "filled",
@@ -15141,6 +18281,87 @@
       ]
     },
     {
+      "name": "pre-air-filter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "pre-filter",
+        "air",
+        "filtration",
+        "hvac"
+      ],
+      "aliases": [
+        "prefilter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "preheat-hot-water-pressure-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "pre-heat",
+        "hot-water",
+        "pressure-vessel",
+        "valve"
+      ],
+      "aliases": [
+        "preheat-water-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "pressurization-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "pressurize-fan",
+        "pressurization",
+        "air",
+        "safety"
+      ],
+      "aliases": [
+        "pressure-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "printer",
       "category": {
         "id": "actions-general-interface",
@@ -15310,6 +18531,60 @@
       ]
     },
     {
+      "name": "rain-sensor",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "light-rain",
+        "sensor",
+        "weather",
+        "detection"
+      ],
+      "aliases": [
+        "rain-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rain-water-storage-tank",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tank",
+        "storage",
+        "rain-water",
+        "reuse"
+      ],
+      "aliases": [
+        "rainwater-tank"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "read-receipt",
       "category": {
         "id": "communication",
@@ -15328,6 +18603,33 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rear-door-ahu",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "aircon",
+        "ahu",
+        "rear",
+        "cooling",
+        "hvac"
+      ],
+      "aliases": [
+        "rear-ahu"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -15427,6 +18729,34 @@
       ]
     },
     {
+      "name": "refrigerant-reversing-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "refrigerant",
+        "reversing",
+        "pressure-vessel",
+        "valve",
+        "hvac"
+      ],
+      "aliases": [
+        "four-way-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "refrigerator",
       "category": {
         "id": "furniture-things",
@@ -15441,6 +18771,88 @@
       "aliases": [
         "fridge",
         "cooling-appliance"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "reheat-hot-water-pressure-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "reheat",
+        "hot-water",
+        "pressure-vessel",
+        "valve",
+        "heating"
+      ],
+      "aliases": [
+        "reheat-water-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "reheat-water",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "reheat",
+        "water",
+        "heating",
+        "hvac"
+      ],
+      "aliases": [
+        "water-reheat"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "relief-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "relief-fan",
+        "air",
+        "hvac",
+        "ventilation"
+      ],
+      "aliases": [
+        "pressure-relief-fan"
       ],
       "styles": [
         "filled",
@@ -15500,6 +18912,60 @@
       "aliases": [
         "minimize",
         "shrink"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "return-air-filter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "return-filter",
+        "air",
+        "filtration",
+        "hvac"
+      ],
+      "aliases": [
+        "return-air-filter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "return-hot-water-pressure-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "return-hot-water",
+        "pressure-vessel",
+        "valve",
+        "heating"
+      ],
+      "aliases": [
+        "return-water-pressure-valve"
       ],
       "styles": [
         "filled",
@@ -15594,6 +19060,34 @@
         "roller-door"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "roof-ahu-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "ahu",
+        "fan",
+        "rooftop",
+        "outside",
+        "ventilation"
+      ],
+      "aliases": [
+        "rooftop-fan"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -15961,6 +19455,37 @@
       "aliases": [
         "measurement-settings",
         "ruler-config"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "s-pipe",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "duct",
+        "bend",
+        "elbow",
+        "airflow",
+        "ventilation",
+        "hvac"
+      ],
+      "aliases": [
+        "duct-elbow",
+        "air-duct-bend",
+        "ventilation-bend"
       ],
       "styles": [
         "filled",
@@ -16343,6 +19868,34 @@
       "aliases": [
         "control-point",
         "security-gate"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "seismic-shutoff-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "valve",
+        "caution",
+        "warning",
+        "seismic"
+      ],
+      "aliases": [
+        "caution-valve",
+        "siesmic-valve"
       ],
       "styles": [
         "filled",
@@ -17384,6 +20937,34 @@
       ]
     },
     {
+      "name": "smart-air-purifier-2",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "smart",
+        "air-purifier",
+        "filtration",
+        "indoor",
+        "hvac"
+      ],
+      "aliases": [
+        "smart-air-cleaner"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "smart-refrigerator",
       "category": {
         "id": "furniture-things",
@@ -17685,6 +21266,61 @@
       ]
     },
     {
+      "name": "space-heater-1",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "space",
+        "heater",
+        "heat",
+        "heating",
+        "hvac"
+      ],
+      "aliases": [
+        "space-heater"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "space-heater-2",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "space",
+        "heater",
+        "heat",
+        "heating",
+        "hvac"
+      ],
+      "aliases": [
+        "space-heater-alt"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "spark",
       "category": {
         "id": "actions-general-interface",
@@ -17833,6 +21469,33 @@
       ]
     },
     {
+      "name": "standby-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "standby-fan",
+        "ventilator",
+        "backup",
+        "ventilation"
+      ],
+      "aliases": [
+        "backup-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "standing-lamp-double",
       "category": {
         "id": "light",
@@ -17939,6 +21602,87 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "steam-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "valve",
+        "pipe",
+        "air"
+      ],
+      "aliases": [
+        "air-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "steam-water-drop",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "steam-water",
+        "water",
+        "drop",
+        "steam",
+        "vapor"
+      ],
+      "aliases": [
+        "steam-droplet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "steam-wavy-lines",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "steam",
+        "wavy",
+        "lines",
+        "air",
+        "vapor"
+      ],
+      "aliases": [
+        "steam-air"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -18164,6 +21908,34 @@
       ]
     },
     {
+      "name": "sump-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "sump-pump",
+        "pump",
+        "drainage",
+        "water",
+        "hvac"
+      ],
+      "aliases": [
+        "drainage-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "surveillance-camera-smartphone",
       "category": {
         "id": "security",
@@ -18211,6 +21983,35 @@
         "reorder"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "t-pipe",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "t-pipe",
+        "pipe",
+        "junction",
+        "plumbing",
+        "hvac"
+      ],
+      "aliases": [
+        "tee-pipe",
+        "pipe-tee"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -18398,6 +22199,230 @@
       ]
     },
     {
+      "name": "temperature-cold",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "temperature",
+        "thermometer",
+        "snow",
+        "cold",
+        "cooling"
+      ],
+      "aliases": [
+        "cold-temperature"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "temperature-water-warning",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "temperature",
+        "thermometer",
+        "water",
+        "engine-temperature-warning",
+        "heat"
+      ],
+      "aliases": [
+        "temperature-alert",
+        "overheat-warning"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "terminal-unit",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "terminal",
+        "code",
+        "cli",
+        "command",
+        "developer",
+        "refrigerant",
+        "unit",
+        "control"
+      ],
+      "aliases": [
+        "command-line",
+        "cli",
+        "refrigerant-terminal"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "thermal-chilled-water-storage",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tank",
+        "thermal-storage",
+        "chilled-water",
+        "cooling"
+      ],
+      "aliases": [
+        "chilled-thermal-tank"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "thermal-hot-water-storage",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tank",
+        "thermal-storage",
+        "hot-water",
+        "heating"
+      ],
+      "aliases": [
+        "hot-water-thermal-tank"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "thermometer-1",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "temperature",
+        "thermometer",
+        "measurement"
+      ],
+      "aliases": [
+        "temperature-gauge"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "thermometer-2",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "temperature",
+        "thermometer",
+        "measurement"
+      ],
+      "aliases": [
+        "temperature-gauge-alt"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "thermometer-hot-water",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "temperature",
+        "thermometer",
+        "water",
+        "hot",
+        "heating"
+      ],
+      "aliases": [
+        "hot-water-temperature"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "thumbs-down",
       "category": {
         "id": "communication",
@@ -18445,6 +22470,34 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tidal-wave",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tidal-wave",
+        "wave",
+        "chill",
+        "cold-water",
+        "cooling"
+      ],
+      "aliases": [
+        "cold-wave",
+        "cooling-water"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -18821,6 +22874,33 @@
         "subway",
         "metro",
         "mrt"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "transfer-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "transfer-fan",
+        "air",
+        "circulation",
+        "ventilation"
+      ],
+      "aliases": [
+        "air-transfer-fan"
       ],
       "styles": [
         "filled",
@@ -19252,6 +23332,33 @@
       ]
     },
     {
+      "name": "turbine-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "fan",
+        "turbine",
+        "air",
+        "ventilation"
+      ],
+      "aliases": [
+        "turbine-air-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "turn-down-right",
       "category": {
         "id": "arrows",
@@ -19313,6 +23420,64 @@
       ]
     },
     {
+      "name": "u-pipe",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "u-pipe",
+        "pipe",
+        "bend",
+        "plumbing",
+        "hvac"
+      ],
+      "aliases": [
+        "pipe-bend",
+        "u-bend"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ufad-damper",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "damper",
+        "underground",
+        "ufad",
+        "airflow",
+        "ventilation"
+      ],
+      "aliases": [
+        "underfloor-damper",
+        "ufad-diffuser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "umbrella",
       "category": {
         "id": "furniture-things",
@@ -19359,6 +23524,282 @@
         "bunker",
         "basement",
         "underground-shelter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-diffuser",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "underground",
+        "diffuser",
+        "damper",
+        "air-distribution"
+      ],
+      "aliases": [
+        "floor-diffuser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-diffuser-bypass",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "underground",
+        "diffuser",
+        "damper",
+        "bypass",
+        "airflow"
+      ],
+      "aliases": [
+        "bypass-diffuser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-diffuser-economiser",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "underground",
+        "diffuser",
+        "damper",
+        "economiser",
+        "energy"
+      ],
+      "aliases": [
+        "economiser-diffuser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-diffuser-exhaust",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "underground",
+        "diffuser",
+        "damper",
+        "exhaust",
+        "air"
+      ],
+      "aliases": [
+        "exhaust-diffuser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-diffuser-isolation",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "underground",
+        "diffuser",
+        "damper",
+        "isolation",
+        "control"
+      ],
+      "aliases": [
+        "isolation-diffuser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-diffuser-mixed",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "underground",
+        "diffuser",
+        "damper",
+        "mixed",
+        "airflow"
+      ],
+      "aliases": [
+        "mixed-air-diffuser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-diffuser-outside",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "underground",
+        "diffuser",
+        "damper",
+        "outside-air"
+      ],
+      "aliases": [
+        "outdoor-air-diffuser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-diffuser-relief",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "underground",
+        "diffuser",
+        "damper",
+        "relief-air"
+      ],
+      "aliases": [
+        "relief-diffuser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-diffuser-return",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "underground",
+        "diffuser",
+        "damper",
+        "return-air"
+      ],
+      "aliases": [
+        "return-diffuser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-diffuser-zone",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "underground",
+        "diffuser",
+        "damper",
+        "zone",
+        "control"
+      ],
+      "aliases": [
+        "zone-diffuser"
       ],
       "styles": [
         "filled",
@@ -19869,6 +24310,61 @@
       ]
     },
     {
+      "name": "valve-warning",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "valve",
+        "caution",
+        "warning",
+        "alert"
+      ],
+      "aliases": [
+        "valve-warning",
+        "valve-alert"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "vav",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "vav",
+        "air",
+        "hvac",
+        "variable-air-volume"
+      ],
+      "aliases": [
+        "vav-box"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "vessel-cargo",
       "category": {
         "id": "transport",
@@ -19884,6 +24380,93 @@
       "aliases": [
         "cargo-ship",
         "freight-vessel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "vfd-fan",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "fan",
+        "vfd",
+        "variable-frequency-drive",
+        "hvac",
+        "motor"
+      ],
+      "aliases": [
+        "vfd-fan",
+        "fan-drive"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "vfd-heat-wheel",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "heat-wheel",
+        "vfd",
+        "variable-frequency-drive",
+        "hvac",
+        "energy-recovery"
+      ],
+      "aliases": [
+        "vfd-heat-wheel",
+        "rotary-heat-exchanger"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "vfd-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "pump",
+        "vfd",
+        "variable-frequency-drive",
+        "hvac",
+        "motor"
+      ],
+      "aliases": [
+        "vfd-pump",
+        "pump-drive"
       ],
       "styles": [
         "filled",
@@ -20104,6 +24687,61 @@
       ]
     },
     {
+      "name": "waste-meter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "waste-meter",
+        "utility",
+        "measurement",
+        "disposal"
+      ],
+      "aliases": [
+        "waste-flow-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-circulator-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "water",
+        "pump",
+        "circulator",
+        "circulation",
+        "hvac"
+      ],
+      "aliases": [
+        "circulation-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "water-consumption",
       "category": {
         "id": "housekeeping",
@@ -20119,6 +24757,113 @@
       "aliases": [
         "water-usage",
         "water-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-current-1",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "water-currents",
+        "water",
+        "flow",
+        "circulation"
+      ],
+      "aliases": [
+        "water-flow-1"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-current-2",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "water-currents",
+        "water",
+        "flow",
+        "circulation"
+      ],
+      "aliases": [
+        "water-flow-2"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-distribution-pipe",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "pipe",
+        "water",
+        "distribution",
+        "plumbing",
+        "hvac"
+      ],
+      "aliases": [
+        "water-pipeline"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-drop",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "drop",
+        "water",
+        "liquid",
+        "fluid"
+      ],
+      "aliases": [
+        "water-droplet"
       ],
       "styles": [
         "filled",
@@ -20151,6 +24896,143 @@
         "water-factory",
         "water-plant",
         "water-treatment-plant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-heater-collection",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "water-heater",
+        "collection",
+        "storage",
+        "heating"
+      ],
+      "aliases": [
+        "hot-water-system"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-meter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "meter",
+        "water",
+        "measurement",
+        "flow",
+        "utility"
+      ],
+      "aliases": [
+        "water-flow-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-mixing-valve",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "water",
+        "mixing",
+        "valve",
+        "temperature",
+        "plumbing"
+      ],
+      "aliases": [
+        "mixing-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-source-heat-pump",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "water-source",
+        "pump",
+        "heat",
+        "chiller",
+        "hvac"
+      ],
+      "aliases": [
+        "ws-hp"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-storage-tank",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "tank",
+        "storage",
+        "water"
+      ],
+      "aliases": [
+        "water-tank"
       ],
       "styles": [
         "filled",
@@ -20238,6 +25120,33 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wind-wavy-lines",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "wind",
+        "wavy",
+        "lines",
+        "beach",
+        "air"
+      ],
+      "aliases": [
+        "windy-air"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -20385,6 +25294,32 @@
         "window-tint",
         "tinted-window",
         "glass-tint"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "windy",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "windy",
+        "wind",
+        "air",
+        "ventilation"
+      ],
+      "aliases": [
+        "wind"
       ],
       "styles": [
         "outline"
