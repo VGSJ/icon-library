@@ -4,7 +4,7 @@ import path from "path";
 import { execSync } from "child_process";
 
 const ROOT = process.cwd();
-const RAW_SVG_DIR = path.join(ROOT, "site", "raw-svg");  // Single source of truth
+const RAW_SVG_DIR = path.join(ROOT, "docs", "raw-svg");  // Single source of truth
 
 function env(name) {
   return process.env[name];
@@ -28,7 +28,7 @@ async function cleanupCategory(categoryName) {
   
   try {
     // First, read current metadata to see which icons are in this category
-    const metaFile = path.join(ROOT, "site", "metadata", "icons.json");
+    const metaFile = path.join(ROOT, "docs", "metadata", "icons.json");
     let currentMetadata = { icons: [] };
     try {
       const data = await fs.readFile(metaFile, "utf8");
@@ -244,7 +244,7 @@ async function syncCategoryFromFigma(category) {
       if (style === "outlined") style = "outline";
       
       const filename = `icon-${variant.setName}-${style}-${size}.svg`;
-      const siteFilePath = path.join("site", "raw-svg", style, String(size), filename);
+      const siteFilePath = path.join("docs", "raw-svg", style, String(size), filename);
       
       try {
         await fs.stat(siteFilePath);
@@ -308,9 +308,9 @@ async function syncCategoryFromFigma(category) {
             
             // Generate filename
             const filename = `icon-${variant.setName}-${style}-${size}.svg`;
-            const siteFilePath = path.join("site", "raw-svg", style, String(size), filename);
+            const siteFilePath = path.join("docs", "raw-svg", style, String(size), filename);
             
-            // Download SVG to site/ (single source of truth)
+            // Download SVG to docs/ (single source of truth)
             await downloadSvg(url, siteFilePath);
             downloaded++;
             

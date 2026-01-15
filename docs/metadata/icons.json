@@ -330,6 +330,60 @@
       ]
     },
     {
+      "name": "align-center-horizontal",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "align",
+        "center",
+        "horizontal",
+        "layout",
+        "position"
+      ],
+      "aliases": [
+        "center-horizontal"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "align-center-vertical",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "align",
+        "center",
+        "vertical",
+        "layout",
+        "position"
+      ],
+      "aliases": [
+        "center-vertical"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "ambulance",
       "category": {
         "id": "health-safety",
@@ -348,6 +402,64 @@
         "ambulance",
         "emergency-vehicle",
         "medical-transport"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "angle-45",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "angle",
+        "45",
+        "rotate",
+        "diagonal",
+        "snap"
+      ],
+      "aliases": [
+        "angle-45deg",
+        "rotate-45"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "angle-measure",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "angle",
+        "measure",
+        "rotation",
+        "degree",
+        "arc"
+      ],
+      "aliases": [
+        "angle-tool",
+        "rotation-measure"
       ],
       "styles": [
         "filled",
@@ -1527,6 +1639,93 @@
       ]
     },
     {
+      "name": "bezier-circle",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "bezier",
+        "vector",
+        "nodes",
+        "path",
+        "curve"
+      ],
+      "aliases": [
+        "vector-circle",
+        "path-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bezier-curve",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "bezier",
+        "curve",
+        "vector",
+        "path",
+        "nodes"
+      ],
+      "aliases": [
+        "vector-curve",
+        "bezier-path"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bezier-edit",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "bezier",
+        "vector",
+        "nodes",
+        "edit",
+        "path"
+      ],
+      "aliases": [
+        "edit-path",
+        "node-edit"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "binoculars",
       "category": {
         "id": "wayfinding",
@@ -1801,6 +2000,64 @@
       ]
     },
     {
+      "name": "bounding-box-1",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "bounding-box",
+        "selection",
+        "zone",
+        "frame",
+        "bim"
+      ],
+      "aliases": [
+        "selection-box",
+        "bbox"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bounding-box-2",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "bounding-box",
+        "selection",
+        "zone",
+        "bim",
+        "frame"
+      ],
+      "aliases": [
+        "selection-box",
+        "bbox"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "breeching-inlet",
       "category": {
         "id": "fire",
@@ -1853,6 +2110,35 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "brightness-contrast",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "brightness",
+        "contrast",
+        "highlight",
+        "exposure",
+        "tone"
+      ],
+      "aliases": [
+        "brightness-adjust",
+        "contrast-control",
+        "highlight-adjust"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -2185,6 +2471,37 @@
       "aliases": [
         "cargo-lift",
         "freight-lift"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cast",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "cast",
+        "broadcast",
+        "stream",
+        "screen",
+        "display",
+        "layout"
+      ],
+      "aliases": [
+        "screen-cast",
+        "view-cast",
+        "layout-cast"
       ],
       "styles": [
         "filled",
@@ -3485,6 +3802,34 @@
       ]
     },
     {
+      "name": "clipping-plane-horizontal",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "clipping-plane",
+        "horizontal",
+        "flip",
+        "mirror",
+        "transform"
+      ],
+      "aliases": [
+        "flip-vertical",
+        "mirror-vertical"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "close",
       "category": {
         "id": "actions-general-interface",
@@ -3530,6 +3875,160 @@
         "fullscreen"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "color-drop",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "color",
+        "colour",
+        "palette",
+        "drop",
+        "fill",
+        "swatch"
+      ],
+      "aliases": [
+        "color-drop",
+        "paint-drop",
+        "ink-drop"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "color-drop-half",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "color",
+        "colour",
+        "half",
+        "shade",
+        "contrast",
+        "split"
+      ],
+      "aliases": [
+        "color-half",
+        "half-color",
+        "color-shade",
+        "color-split"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "color-drop-off",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "color",
+        "colour",
+        "hide",
+        "disable",
+        "off",
+        "visibility"
+      ],
+      "aliases": [
+        "color-hide",
+        "color-off",
+        "paint-drop-off",
+        "no-color"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "color-palette",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "color",
+        "colours",
+        "palette",
+        "swatches",
+        "theme",
+        "fill"
+      ],
+      "aliases": [
+        "colors",
+        "color-picker",
+        "swatch"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "compass",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "compass",
+        "draft",
+        "geometry",
+        "measure",
+        "draw"
+      ],
+      "aliases": [
+        "drafting-compass",
+        "geometry-tool"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -3603,6 +4102,36 @@
       ]
     },
     {
+      "name": "contrast",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "contrast",
+        "highlight",
+        "brightness",
+        "exposure",
+        "emphasis"
+      ],
+      "aliases": [
+        "contrast-adjust",
+        "highlight-tone",
+        "exposure"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "conversation",
       "category": {
         "id": "communication",
@@ -3612,6 +4141,35 @@
         "conversation"
       ],
       "aliases": [],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "copy",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "copy",
+        "duplicate",
+        "layer",
+        "front",
+        "arrange"
+      ],
+      "aliases": [
+        "bring-front",
+        "copy-front"
+      ],
       "styles": [
         "filled",
         "outline"
@@ -3769,6 +4327,35 @@
       ]
     },
     {
+      "name": "crop",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "crop",
+        "trim",
+        "frame",
+        "resize",
+        "cut"
+      ],
+      "aliases": [
+        "crop-tool",
+        "image-crop"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "cursor-click",
       "category": {
         "id": "actions-general-interface",
@@ -3901,6 +4488,35 @@
         "i-beam"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "delete-tag",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "delete",
+        "remove",
+        "clear",
+        "tag",
+        "close"
+      ],
+      "aliases": [
+        "remove-tag",
+        "clear-tag"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -4577,6 +5193,63 @@
       ],
       "aliases": [
         "waste-container"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "edit-1",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "edit",
+        "pencil",
+        "pen",
+        "write",
+        "modify"
+      ],
+      "aliases": [
+        "edit-tool",
+        "pencil"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "edit-2",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "edit",
+        "pencil",
+        "write",
+        "modify"
+      ],
+      "aliases": [
+        "edit-pro",
+        "advanced-edit"
       ],
       "styles": [
         "filled",
@@ -6265,6 +6938,66 @@
       ]
     },
     {
+      "name": "focal-length-wide",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "focal-length",
+        "wide-view",
+        "camera",
+        "lens",
+        "fov",
+        "perspective"
+      ],
+      "aliases": [
+        "wide-angle",
+        "wide-fov",
+        "lens-wide"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "focus-circle",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "focus",
+        "target",
+        "circle",
+        "center",
+        "selection"
+      ],
+      "aliases": [
+        "focus-target",
+        "center-focus"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "folder",
       "category": {
         "id": "document--statistics",
@@ -6616,6 +7349,35 @@
       ]
     },
     {
+      "name": "group",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "group",
+        "combine",
+        "merge",
+        "layers",
+        "objects"
+      ],
+      "aliases": [
+        "group-items",
+        "combine-objects"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "group-trip-pin",
       "category": {
         "id": "wayfinding",
@@ -6627,19 +7389,42 @@
         "trip",
         "pin",
         "group",
-        "route",
-        "combine",
-        "merge",
-        "layers",
-        "objects"
+        "route"
       ],
       "aliases": [
-        "group-trip-pin",
-        "group-items",
-        "combine-objects"
+        "group-trip-pin"
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "half-shade",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "shade",
+        "half",
+        "contrast",
+        "toggle",
+        "switch"
+      ],
+      "aliases": [
+        "half-tone",
+        "split-shade",
+        "contrast-toggle"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -8279,6 +9064,35 @@
       ]
     },
     {
+      "name": "magnet",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "magnet",
+        "snap",
+        "attraction",
+        "align",
+        "guide"
+      ],
+      "aliases": [
+        "snap-magnet",
+        "auto-snap"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "mail-invite",
       "category": {
         "id": "document--statistics",
@@ -8525,6 +9339,36 @@
       ],
       "aliases": [
         "map-tree"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "measure-height",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "measure",
+        "height",
+        "elevation",
+        "distance",
+        "3d",
+        "caluculate"
+      ],
+      "aliases": [
+        "height-measure",
+        "elevation-measure"
       ],
       "styles": [
         "filled",
@@ -9416,8 +10260,8 @@
     {
       "name": "office-buildings",
       "category": {
-        "id": "building-construction",
-        "label": "building & construction"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
         "office-buildings"
@@ -9454,6 +10298,64 @@
         "oil-rig",
         "drilling-rig",
         "rig-tower"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "orbit-3d",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "orbit",
+        "rotate",
+        "360",
+        "3d",
+        "view"
+      ],
+      "aliases": [
+        "rotate-3d",
+        "camera-orbit"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "paint-bucket",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "paint",
+        "bucket",
+        "fill",
+        "color",
+        "colour"
+      ],
+      "aliases": [
+        "fill-color",
+        "color-fill",
+        "paint-fill"
       ],
       "styles": [
         "filled",
@@ -9643,6 +10545,35 @@
       ]
     },
     {
+      "name": "pen-tool",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "pen",
+        "draw",
+        "vector",
+        "path",
+        "edit"
+      ],
+      "aliases": [
+        "pen",
+        "bezier-pen"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "pendant-light",
       "category": {
         "id": "light",
@@ -9790,6 +10721,34 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "placeholder",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "placeholder",
+        "dash",
+        "empty",
+        "square",
+        "field"
+      ],
+      "aliases": [
+        "empty-state",
+        "blank"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -10314,16 +11273,34 @@
         "label": "actions & general interface"
       },
       "tags": [
+        "rotate"
+      ],
+      "aliases": [],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rotate-3d",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
         "rotate",
-        "axis-y",
+        "rotation",
         "360",
         "transform",
-        "rotation",
         "turn"
       ],
       "aliases": [
-        "rotate-vertical",
-        "rotate-y-axis",
         "rotate-360",
         "spin"
       ],
@@ -10426,6 +11403,181 @@
       ]
     },
     {
+      "name": "rotate-y",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "rotate",
+        "axis-y",
+        "360",
+        "transform",
+        "rotation"
+      ],
+      "aliases": [
+        "rotate-vertical",
+        "rotate-y-axis"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rotation-z-axis",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "rotation",
+        "3d",
+        "z-axis",
+        "roll",
+        "orbit",
+        "transform"
+      ],
+      "aliases": [
+        "roll-around",
+        "rotate-z",
+        "spin-z"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ruler",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "ruler",
+        "measure",
+        "measurement",
+        "distance",
+        "scale"
+      ],
+      "aliases": [
+        "measure-tool",
+        "dimension"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ruler-calculating",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "ruler",
+        "measure",
+        "takeoff",
+        "quantity",
+        "ar"
+      ],
+      "aliases": [
+        "quantity-takeoff",
+        "measurement-calc"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ruler-distance",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "ruler",
+        "measure",
+        "distance",
+        "dimension",
+        "scale"
+      ],
+      "aliases": [
+        "measurement-ruler",
+        "distance-measure"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ruler-settings",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "ruler",
+        "measure",
+        "settings",
+        "configuration",
+        "units"
+      ],
+      "aliases": [
+        "measurement-settings",
+        "ruler-config"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "safety-shower",
       "category": {
         "id": "health-safety",
@@ -10482,6 +11634,35 @@
       "aliases": [
         "qr-scan",
         "qrcode-scan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "scissors",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "scissors",
+        "cut",
+        "trim",
+        "split",
+        "edit"
+      ],
+      "aliases": [
+        "cut-tool",
+        "trim"
       ],
       "styles": [
         "filled",
@@ -10633,6 +11814,65 @@
         "preferences"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shade",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "shade",
+        "shadow",
+        "lighting",
+        "hatch",
+        "texture"
+      ],
+      "aliases": [
+        "shading",
+        "hatch-shade",
+        "tonal-shade"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shadow",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "shadow",
+        "shade",
+        "lighting",
+        "depth"
+      ],
+      "aliases": [
+        "drop-shadow",
+        "shading",
+        "shadow-adjust"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -10914,6 +12154,36 @@
       ]
     },
     {
+      "name": "signature",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "signature",
+        "sign",
+        "write",
+        "draw",
+        "pen",
+        "pencil"
+      ],
+      "aliases": [
+        "sign",
+        "autograph"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "simple-menu",
       "category": {
         "id": "actions-general-interface",
@@ -11138,6 +12408,36 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sort-alpha",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "sort",
+        "filter",
+        "order",
+        "alphabet",
+        "a-z",
+        "z-a"
+      ],
+      "aliases": [
+        "sort-a-z",
+        "sort-z-a",
+        "alphabetical-sort"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -11803,6 +13103,68 @@
       ]
     },
     {
+      "name": "toggle-switch-off",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "toggle",
+        "switch",
+        "on-off",
+        "enable",
+        "disable",
+        "control"
+      ],
+      "aliases": [
+        "switch",
+        "toggle-on-off",
+        "toggle-button"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "toggle-switch-on",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "toggle",
+        "switch",
+        "on-off",
+        "enable",
+        "disable",
+        "control"
+      ],
+      "aliases": [
+        "switch",
+        "toggle-on-off",
+        "toggle-button"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "toilet-gender",
       "category": {
         "id": "housekeeping",
@@ -11920,6 +13282,32 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "transform-3d",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "gizmo",
+        "transform",
+        "3d",
+        "axis"
+      ],
+      "aliases": [
+        "move-3d"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -12770,6 +14158,64 @@
       ]
     },
     {
+      "name": "window-expand",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "expand",
+        "window",
+        "layout",
+        "maximize",
+        "fullscreen"
+      ],
+      "aliases": [
+        "window-maximize",
+        "expand-window"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "window-minimize",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "minimize",
+        "window",
+        "layout",
+        "collapse",
+        "reduce"
+      ],
+      "aliases": [
+        "collapse-window",
+        "window-collapse"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "window-tint",
       "category": {
         "id": "building-construction",
@@ -12907,6 +14353,35 @@
         "wrench-hand",
         "service-tool",
         "repair-hand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "zoom-area",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "zoom",
+        "focus",
+        "area",
+        "selection",
+        "magnify"
+      ],
+      "aliases": [
+        "zoom-selection",
+        "zoom-box"
       ],
       "styles": [
         "filled",
