@@ -5029,90 +5029,6 @@
       ]
     },
     {
-      "name": "expand-diagonal",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "expand",
-        "enlarge",
-        "diagonal",
-        "arrow",
-        "resize"
-      ],
-      "aliases": [
-        "maximize",
-        "fullscreen"
-      ],
-      "styles": [
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "expand-height",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "expand",
-        "resize",
-        "arrow",
-        "horizontal",
-        "vertical"
-      ],
-      "aliases": [
-        "fullscreen",
-        "enlarge"
-      ],
-      "styles": [
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "expand-width",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "expand",
-        "resize",
-        "arrow",
-        "horizontal",
-        "vertical"
-      ],
-      "aliases": [
-        "fullscreen",
-        "enlarge"
-      ],
-      "styles": [
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
       "name": "export",
       "category": {
         "id": "arrows",
@@ -9468,8 +9384,8 @@
     {
       "name": "office-building",
       "category": {
-        "id": "media-entertainment",
-        "label": "media & entertainment"
+        "id": "building-construction",
+        "label": "building & construction"
       },
       "tags": [
         "block",
@@ -9478,22 +9394,12 @@
         "bms",
         "commercial",
         "workplace",
-        "structure",
-        "company",
-        "camera",
-        "picture",
-        "image",
-        "photo",
-        "capture"
+        "tower"
       ],
       "aliases": [
         "office-building",
         "commercial-building",
-        "building-block",
-        "company-building",
-        "corporate-office",
-        "cam",
-        "photo-camera"
+        "building-block"
       ],
       "styles": [
         "filled",
@@ -9514,18 +9420,9 @@
         "label": "building & construction"
       },
       "tags": [
-        "buildings",
-        "office",
-        "bms",
-        "commercial",
-        "workplace",
-        "urban"
+        "office-buildings"
       ],
-      "aliases": [
-        "office-buildings",
-        "commercial-buildings",
-        "business-blocks"
-      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -10949,118 +10846,6 @@
         "shipment",
         "cargo",
         "freight"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "sign-diamond-down",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "arrow",
-        "diamond",
-        "direction",
-        "navigation"
-      ],
-      "aliases": [
-        "diamond-arrow",
-        "arrow-square-tilted"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "sign-diamond-left",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "arrow",
-        "diamond",
-        "direction",
-        "navigation"
-      ],
-      "aliases": [
-        "diamond-arrow",
-        "arrow-square-tilted"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "sign-diamond-right",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "arrow",
-        "diamond",
-        "direction",
-        "navigation"
-      ],
-      "aliases": [
-        "diamond-arrow",
-        "arrow-square-tilted"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "sign-diamond-up",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "arrow",
-        "diamond",
-        "direction",
-        "navigation"
-      ],
-      "aliases": [
-        "diamond-arrow",
-        "arrow-square-tilted"
       ],
       "styles": [
         "filled",
