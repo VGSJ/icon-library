@@ -10355,8 +10355,8 @@
     {
       "name": "wheelchair-lift",
       "category": {
-        "id": "people",
-        "label": "people"
+        "id": "vertical-transport",
+        "label": "vertical transport"
       },
       "tags": [
         "lift",

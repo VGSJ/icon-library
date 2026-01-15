@@ -55,6 +55,13 @@
         "id": "actions--general-interface",
         "label": "actions & general interface"
       }
+    },
+    {
+      "name": "wheelchair-lift",
+      "category": {
+        "id": "vertical-transport",
+        "label": "vertical transport"
+      }
     }
   ]
 }
