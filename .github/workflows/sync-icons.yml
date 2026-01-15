@@ -1,10 +1,14 @@
-name: Generate Metadata
+name: Sync SVGs to Docs
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'site/raw-svg/**'
+      - 'site/metadata/**'
 
 jobs:
-  generate:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -14,26 +18,20 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Generate metadata from SVGs
-        run: node generate-metadata.mjs
+      - name: Mirror SVGs from site to docs
+        run: cp -r site/raw-svg/* docs/raw-svg/
       
-      - name: Copy metadata to docs folder
-        run: cp site/metadata/icons.json docs/metadata/icons.json
+      - name: Generate and copy metadata
+        run: |
+          node generate-metadata.mjs
+          cp site/metadata/icons.json docs/metadata/icons.json
       
-      - name: Commit if changed
+      - name: Commit and push if changed
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           if ! git diff --quiet; then
-            git add -A
-            git commit -m "ci: update metadata"
+            git add docs/
+            git commit -m "ci: sync site/ to docs/ (GitHub Pages)"
             git push
           fi
-          cp -r site/metadata docs/
-      
-      - name: Commit and push
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add raw-svg/ metadata/ docs/
-          git diff --quiet --exit-code --cached || (git commit -m "chore: sync icons from Figma" && git push)
