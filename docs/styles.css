@@ -116,13 +116,14 @@ button { cursor: pointer; }
 
 .hint { display: none; margin: 12px 0 0; color: var(--muted); font-size: 13px; }
 
-main { padding: 20px 24px 0; }
+main { padding: 20px 24px 0; display: flex; flex-direction: column; flex: 1; min-height: 0; }
 
 .main-wrapper {
   display: flex;
-  height: calc(100vh - 180px);
   gap: 0;
   position: relative;
+  flex: 1;
+  min-height: 0;
 }
 
 .status { color: var(--muted); margin-bottom: 12px; font-size: 13px; }
@@ -133,6 +134,7 @@ main { padding: 20px 24px 0; }
   gap: 12px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  flex: 1;
 }
 
 .card {

@@ -76,8 +76,14 @@ document.querySelectorAll(".format-btn").forEach(btn => {
 // Click outside panel to close
 document.addEventListener("click", (e) => {
   if (!selectedIcon) return;
-  if (e.target.closest(".details-panel") || e.target.closest(".card")) return;
-  closeDetailsPanel();
+  const panel = els.detailsPanel;
+  const card = e.target.closest(".card");
+  const panelContent = e.target.closest(".details-panel");
+  
+  // Only close if clicked outside both the panel and the grid icons
+  if (!panelContent && !card) {
+    closeDetailsPanel();
+  }
 });
 
 // Copy button listener
