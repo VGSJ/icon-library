@@ -489,16 +489,9 @@
         "label": "arrows"
       },
       "tags": [
-        "arrow",
-        "line",
-        "boundary",
-        "edge",
-        "navigation"
+        "arrow"
       ],
-      "aliases": [
-        "jump",
-        "go-to-edge"
-      ],
+      "aliases": [],
       "styles": [
         "outline"
       ],
@@ -518,19 +511,127 @@
       },
       "tags": [
         "arrow",
-        "point",
-        "origin",
-        "connection",
-        "flow",
         "connect",
         "link",
-        "relation"
+        "relation",
+        "flow"
       ],
       "aliases": [
-        "arrow-from-node",
         "connector",
         "link-arrow",
         "editor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-connect-down",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "point",
+        "origin",
+        "connection",
+        "flow"
+      ],
+      "aliases": [
+        "arrow-from-node"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-connect-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "point",
+        "origin",
+        "connection",
+        "flow"
+      ],
+      "aliases": [
+        "arrow-from-node"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-connect-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "point",
+        "origin",
+        "connection",
+        "flow"
+      ],
+      "aliases": [
+        "arrow-from-node"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-connect-up",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "point",
+        "origin",
+        "connection",
+        "flow"
+      ],
+      "aliases": [
+        "arrow-from-node"
       ],
       "styles": [
         "filled",
@@ -723,6 +824,118 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-push-down",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "line",
+        "boundary",
+        "edge",
+        "navigation"
+      ],
+      "aliases": [
+        "jump",
+        "go-to-edge"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-push-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "line",
+        "boundary",
+        "edge",
+        "navigation"
+      ],
+      "aliases": [
+        "jump",
+        "go-to-edge"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-push-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "line",
+        "boundary",
+        "edge",
+        "navigation"
+      ],
+      "aliases": [
+        "jump",
+        "go-to-edge"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "arrow-push-up",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "line",
+        "boundary",
+        "edge",
+        "navigation"
+      ],
+      "aliases": [
+        "jump",
+        "go-to-edge"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -2190,6 +2403,105 @@
         "label": "arrows"
       },
       "tags": [
+        "chevron-large"
+      ],
+      "aliases": [],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-large-down",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "large",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "big-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-large-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "large",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "big-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-large-right-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "large",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "big-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-large-up",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
         "chevron",
         "large",
         "arrow",
@@ -2267,6 +2579,105 @@
     },
     {
       "name": "chevron-small",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron-small"
+      ],
+      "aliases": [],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-small-down",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "small",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "mini-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-small-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "small",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "mini-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-small-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "small",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "mini-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-small-up",
       "category": {
         "id": "arrows",
         "label": "arrows"
@@ -2841,6 +3252,34 @@
       ]
     },
     {
+      "name": "collapse-diagonal",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "expand",
+        "enlarge",
+        "diagonal",
+        "arrow",
+        "resize"
+      ],
+      "aliases": [
+        "maximize",
+        "fullscreen"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "conversation",
       "category": {
         "id": "communication",
@@ -2864,6 +3303,111 @@
     },
     {
       "name": "corner-arrow",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "corner-arrow"
+      ],
+      "aliases": [],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "corner-arrow-down",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "corner",
+        "turn",
+        "bend",
+        "arrow",
+        "direction"
+      ],
+      "aliases": [
+        "turn-arrow",
+        "bent-arrow"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "corner-arrow-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "corner",
+        "turn",
+        "bend",
+        "arrow",
+        "direction"
+      ],
+      "aliases": [
+        "turn-arrow",
+        "bent-arrow"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "corner-arrow-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "corner",
+        "turn",
+        "bend",
+        "arrow",
+        "direction"
+      ],
+      "aliases": [
+        "turn-arrow",
+        "bent-arrow"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "corner-arrow-up",
       "category": {
         "id": "arrows",
         "label": "arrows"
@@ -4027,20 +4571,13 @@
     {
       "name": "expand",
       "category": {
-        "id": "arrows",
-        "label": "arrows"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "expand",
-        "resize",
-        "arrow",
-        "horizontal",
-        "vertical"
+        "expand"
       ],
-      "aliases": [
-        "fullscreen",
-        "enlarge"
-      ],
+      "aliases": [],
       "styles": [
         "outline"
       ],
@@ -4068,6 +4605,62 @@
       "aliases": [
         "maximize",
         "fullscreen"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "expand-height",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "expand",
+        "resize",
+        "arrow",
+        "horizontal",
+        "vertical"
+      ],
+      "aliases": [
+        "fullscreen",
+        "enlarge"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "expand-width",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "expand",
+        "resize",
+        "arrow",
+        "horizontal",
+        "vertical"
+      ],
+      "aliases": [
+        "fullscreen",
+        "enlarge"
       ],
       "styles": [
         "outline"
@@ -8450,8 +9043,8 @@
     {
       "name": "resize-big",
       "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
+        "id": "arrows",
+        "label": "arrows"
       },
       "tags": [
         "resize-big"
@@ -8470,10 +9063,69 @@
       ]
     },
     {
+      "name": "resize-expand",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "resize",
+        "expand",
+        "out",
+        "box",
+        "arrow"
+      ],
+      "aliases": [
+        "maximize",
+        "expand-out",
+        "share"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "resize-shrink",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "resize",
+        "collapse",
+        "in",
+        "box",
+        "arrow"
+      ],
+      "aliases": [
+        "minimize",
+        "shrink"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "resize-small",
       "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
+        "id": "arrows",
+        "label": "arrows"
       },
       "tags": [
         "resize-small"
@@ -8526,11 +9178,6 @@
       },
       "tags": [
         "rotate",
-        "reset",
-        "refresh",
-        "loop",
-        "circular",
-        "arrow",
         "axis-y",
         "360",
         "transform",
@@ -8538,12 +9185,39 @@
         "turn"
       ],
       "aliases": [
-        "redo",
-        "undo",
         "rotate-vertical",
         "rotate-y-axis",
         "rotate-360",
         "spin"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rotate-anticlockwise",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "rotate",
+        "reset",
+        "refresh",
+        "loop",
+        "circular",
+        "arrow"
+      ],
+      "aliases": [
+        "redo",
+        "undo"
       ],
       "styles": [
         "outline"
@@ -8575,6 +9249,35 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rotate-clockwise",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "rotate",
+        "reset",
+        "refresh",
+        "loop",
+        "circular",
+        "arrow"
+      ],
+      "aliases": [
+        "redo",
+        "undo"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -8981,6 +9684,112 @@
     },
     {
       "name": "sign-diamond",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "sign-diamond"
+      ],
+      "aliases": [],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-diamond-down",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "diamond",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "diamond-arrow",
+        "arrow-square-tilted"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-diamond-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "diamond",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "diamond-arrow",
+        "arrow-square-tilted"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-diamond-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "diamond",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "diamond-arrow",
+        "arrow-square-tilted"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-diamond-up",
       "category": {
         "id": "arrows",
         "label": "arrows"
@@ -10007,20 +10816,13 @@
         "label": "arrows"
       },
       "tags": [
-        "undock",
-        "detach",
-        "float",
-        "box",
-        "arrow",
         "undo",
         "turn-left",
         "back",
-        "reverse"
+        "reverse",
+        "arrow"
       ],
       "aliases": [
-        "unpin",
-        "detach",
-        "share",
         "back",
         "reply"
       ],
@@ -10039,13 +10841,73 @@
     {
       "name": "undock",
       "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
+        "id": "arrows",
+        "label": "arrows"
       },
       "tags": [
         "undock"
       ],
       "aliases": [],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "undock-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "undock",
+        "detach",
+        "float",
+        "box",
+        "arrow"
+      ],
+      "aliases": [
+        "unpin",
+        "detach",
+        "share"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "undock-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "undock",
+        "detach",
+        "float",
+        "box",
+        "arrow"
+      ],
+      "aliases": [
+        "unpin",
+        "detach",
+        "share"
+      ],
       "styles": [
         "filled",
         "outline"

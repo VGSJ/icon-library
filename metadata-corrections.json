@@ -83,6 +83,27 @@
         "id": "fire",
         "label": "fire"
       }
+    },
+    {
+      "name": "resize-big",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      }
+    },
+    {
+      "name": "resize-small",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      }
+    },
+    {
+      "name": "undock",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      }
     }
   ]
 }
