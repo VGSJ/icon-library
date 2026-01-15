@@ -422,6 +422,38 @@
       ]
     },
     {
+      "name": "alarm-clock",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "alarm",
+        "clock",
+        "time",
+        "reminder",
+        "alert",
+        "schedule"
+      ],
+      "aliases": [
+        "alarm",
+        "wake-up",
+        "alarm-time",
+        "clock-alarm"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "align-center-horizontal",
       "category": {
         "id": "editor",
@@ -2747,6 +2779,250 @@
       ]
     },
     {
+      "name": "calendar",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "calendar",
+        "date",
+        "schedule",
+        "time",
+        "event"
+      ],
+      "aliases": [
+        "calendar-view",
+        "date-calendar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "calendar-add",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "calendar",
+        "add",
+        "event",
+        "date",
+        "schedule"
+      ],
+      "aliases": [
+        "calendar-plus",
+        "add-event",
+        "new-event"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "calendar-check",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "calendar",
+        "check",
+        "event",
+        "date",
+        "done",
+        "schedule"
+      ],
+      "aliases": [
+        "calendar-done",
+        "event-complete",
+        "calendar-verified"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "calendar-days",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "calendar",
+        "days",
+        "schedule",
+        "date",
+        "time",
+        "planning"
+      ],
+      "aliases": [
+        "calendar-view",
+        "date-grid",
+        "day-calendar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "calendar-remove",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "calendar",
+        "remove",
+        "event",
+        "date",
+        "schedule"
+      ],
+      "aliases": [
+        "calendar-minus",
+        "remove-event",
+        "delete-event"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "calendar-search",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "calendar",
+        "search",
+        "event",
+        "date",
+        "schedule",
+        "find"
+      ],
+      "aliases": [
+        "calendar-find",
+        "search-event",
+        "event-search"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "calendar-time",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "calendar",
+        "time",
+        "appointment",
+        "schedule",
+        "event",
+        "date"
+      ],
+      "aliases": [
+        "time-calendar",
+        "appointment-calendar",
+        "schedule-time"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "calendar-user",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "calendar",
+        "user",
+        "person",
+        "event",
+        "date",
+        "schedule"
+      ],
+      "aliases": [
+        "calendar-person",
+        "user-calendar",
+        "attendee-calendar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "call-incoming",
       "category": {
         "id": "communication",
@@ -4632,6 +4908,68 @@
         "mirror-vertical"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "clock-circle",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "time",
+        "clock",
+        "watch",
+        "schedule",
+        "duration"
+      ],
+      "aliases": [
+        "clock-round",
+        "time-circle",
+        "analog-clock"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "clock-snooze",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "sleep",
+        "night",
+        "clock",
+        "time",
+        "rest",
+        "snooze"
+      ],
+      "aliases": [
+        "sleep-time",
+        "bedtime",
+        "night-clock",
+        "snooze-clock"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -9921,6 +10259,38 @@
       ]
     },
     {
+      "name": "history-clock",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "history",
+        "past",
+        "time",
+        "log",
+        "timeline",
+        "previous",
+        "clock"
+      ],
+      "aliases": [
+        "history",
+        "time-history",
+        "activity-log"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "hospital",
       "category": {
         "id": "building-construction",
@@ -10003,6 +10373,69 @@
         "hospital",
         "clinic-sign",
         "medical-facility"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hourglass",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "time",
+        "duration",
+        "waiting",
+        "delay",
+        "countdown",
+        "loading"
+      ],
+      "aliases": [
+        "hourglass-time",
+        "time-passing",
+        "sand-timer",
+        "wait-time"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hourglass-filled",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "time",
+        "duration",
+        "waiting",
+        "delay",
+        "countdown",
+        "loading"
+      ],
+      "aliases": [
+        "hourglass-solid",
+        "sand-timer-filled",
+        "wait-time-filled"
       ],
       "styles": [
         "filled",
@@ -16420,6 +16853,67 @@
       ]
     },
     {
+      "name": "stopwatch",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "stopwatch",
+        "track",
+        "timer",
+        "duration",
+        "performance"
+      ],
+      "aliases": [
+        "timer-track",
+        "time-tracking",
+        "lap-timer"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "stopwatch-progress",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "stopwatch",
+        "timer",
+        "progress",
+        "tracking",
+        "elapsed-time"
+      ],
+      "aliases": [
+        "timer-progress",
+        "time-progress",
+        "loading-timer",
+        "duration-tracker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "storage-cabinet",
       "category": {
         "id": "furniture-things",
@@ -16852,6 +17346,39 @@
       "aliases": [
         "necktie",
         "business-tie"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "time-hand",
+      "category": {
+        "id": "time-date",
+        "label": "time & date"
+      },
+      "tags": [
+        "time",
+        "clock",
+        "hand",
+        "schedule",
+        "availability",
+        "reminder"
+      ],
+      "aliases": [
+        "time-in-hand",
+        "time-management",
+        "time-hold",
+        "schedule-hand",
+        "availability-time"
       ],
       "styles": [
         "filled",
