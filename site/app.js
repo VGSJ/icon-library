@@ -118,6 +118,14 @@ function normalize(s = "") {
   return s.toLowerCase().trim();
 }
 
+function capitalizeCategory(cat) {
+  // Capitalize first letter of each word
+  return cat
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
 function getCategoryLabel(icon) {
   // Supports both old format (string) and new format ({id,label})
   if (!icon || !icon.category) return "uncategorized";
@@ -278,7 +286,8 @@ function populateCategories() {
   sorted.forEach(({ name, count }) => {
     const btn = document.createElement("button");
     btn.className = "category-btn";
-    btn.innerHTML = `${name} <span class="category-count">${count}</span>`;
+    const displayName = capitalizeCategory(name);
+    btn.innerHTML = `${displayName} <span class="category-count">${count}</span>`;
     btn.addEventListener("click", () => {
       selectedCategory = name;
       document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
