@@ -5453,8 +5453,8 @@
     {
       "name": "group-trip-pin",
       "category": {
-        "id": "editor",
-        "label": "editor"
+        "id": "wayfinding",
+        "label": "wayfinding"
       },
       "tags": [
         "location",
