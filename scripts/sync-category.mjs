@@ -101,6 +101,74 @@ async function cleanupCategory(categoryName) {
   }
 }
 
+async function cleanupOrphanedUncategorized() {
+  // Check for uncategorized icons that don't exist in Figma and delete them
+  try {
+    const fileKey = env("FIGMA_FILE_KEY");
+    const compsetsUrl = `https://api.figma.com/v1/files/${fileKey}/component_sets`;
+    const compsetsData = await figmaFetch(compsetsUrl);
+    const componentSets = compsetsData.meta?.component_sets || [];
+    
+    // Build set of all icons in Figma
+    const figmaIcons = new Set();
+    for (const comp of componentSets) {
+      if (!comp.name?.startsWith("icon-")) continue;
+      let baseName = comp.name.substring(5);
+      if (baseName.includes(",")) baseName = baseName.split(",")[0].trim();
+      figmaIcons.add(baseName);
+    }
+    
+    // Read current metadata
+    const metaFile = path.join(ROOT, "metadata", "icons.json");
+    let metadata = { icons: [] };
+    try {
+      const data = await fs.readFile(metaFile, "utf8");
+      metadata = JSON.parse(data);
+    } catch {
+      return; // No metadata yet
+    }
+    
+    // Find uncategorized icons
+    const uncategorizedIcons = (metadata.icons || []).filter(icon => 
+      icon.category?.id === "uncategorized"
+    );
+    
+    if (uncategorizedIcons.length === 0) {
+      return; // No uncategorized icons
+    }
+    
+    // Check each uncategorized icon against Figma
+    const RAW_SVG_DIR = path.join(ROOT, "raw-svg");
+    let deletedCount = 0;
+    
+    for (const icon of uncategorizedIcons) {
+      if (!figmaIcons.has(icon.name)) {
+        // Icon doesn't exist in Figma - delete it
+        const styles = ["filled", "outline"];
+        const sizes = [16, 24, 32, 40, 48, 64, 72];
+        
+        for (const style of styles) {
+          for (const size of sizes) {
+            const filePath = path.join(RAW_SVG_DIR, style, String(size), `icon-${icon.name}-${style}-${size}.svg`);
+            try {
+              await fs.unlink(filePath);
+              deletedCount++;
+            } catch (e) {
+              // File might not exist
+            }
+          }
+        }
+      }
+    }
+    
+    if (deletedCount > 0) {
+      console.log(`🗑️  Cleaned up ${deletedCount} SVGs for uncategorized icons not in Figma`);
+    }
+  } catch (e) {
+    console.log(`⚠️  Orphan cleanup warning: ${e.message}`);
+  }
+}
+
 async function downloadSvg(url, filePath) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Download failed: ${res.status}`);
@@ -287,6 +355,10 @@ async function syncCategoryFromFigma(category) {
     } catch (e) {
       console.error("❌ Metadata generation failed:", e.message);
     }
+    
+    // Clean up any orphaned uncategorized icons
+    console.log("\n🧹 Checking for orphaned uncategorized icons...");
+    await cleanupOrphanedUncategorized();
     
     console.log("\n🎉 Sync complete!");
     
