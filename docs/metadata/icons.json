@@ -646,6 +646,37 @@
       ]
     },
     {
+      "name": "air-pollution",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "air-pollution",
+        "air-quality",
+        "smog",
+        "emissions",
+        "environment",
+        "pollution"
+      ],
+      "aliases": [
+        "air-pollution",
+        "smog",
+        "air-co"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "air-purifier-1",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -1208,6 +1239,37 @@
         "app-menu",
         "grid-menu",
         "apps-overview"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "aquascaping",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "aquascaping",
+        "aquarium",
+        "aquatic-plants",
+        "underwater",
+        "landscaping",
+        "water-garden"
+      ],
+      "aliases": [
+        "aquascaping",
+        "aquarium-landscape",
+        "aquatic-garden"
       ],
       "styles": [
         "filled",
@@ -2134,6 +2196,37 @@
       ]
     },
     {
+      "name": "axe-chop-wood",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "axe",
+        "chop-wood",
+        "woodcutting",
+        "logging",
+        "forestry",
+        "tool"
+      ],
+      "aliases": [
+        "axe",
+        "wood-axe",
+        "chopping-axe"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "baby-stroller",
       "category": {
         "id": "furniture-things",
@@ -2542,6 +2635,69 @@
         "bedside-lamp",
         "table-lamp",
         "bedroom-light"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bee",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "bee",
+        "flying-bee",
+        "insect",
+        "pollinator",
+        "wildlife",
+        "nature"
+      ],
+      "aliases": [
+        "bee",
+        "flying-bee",
+        "pollinator"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "beech-tree-round",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "tree",
+        "beech",
+        "round",
+        "foliage",
+        "canopy",
+        "nature",
+        "landscaping"
+      ],
+      "aliases": [
+        "beech-tree",
+        "round-tree",
+        "deciduous-tree"
       ],
       "styles": [
         "filled",
@@ -3231,6 +3387,66 @@
         "highlight-adjust"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bug-1",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "bug",
+        "insect",
+        "wildlife",
+        "nature",
+        "pest"
+      ],
+      "aliases": [
+        "bug",
+        "insect",
+        "garden-bug"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bug-2",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "bug",
+        "insect",
+        "wildlife",
+        "nature",
+        "pest"
+      ],
+      "aliases": [
+        "bug",
+        "insect",
+        "garden-bug"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -6497,6 +6713,121 @@
       ]
     },
     {
+      "name": "cloud",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "cloud",
+        "cloudy",
+        "weather",
+        "sky",
+        "atmosphere",
+        "storage",
+        "online",
+        "server",
+        "network",
+        "upload",
+        "data",
+        "sync",
+        "synchronize",
+        "update",
+        "refresh",
+        "off",
+        "offline",
+        "disconnected",
+        "download"
+      ],
+      "aliases": [
+        "cloud",
+        "cloudy",
+        "cloud-storage",
+        "online-cloud",
+        "cloud-up",
+        "upload-cloud",
+        "cloud-syncing",
+        "sync-cloud",
+        "cloud-offline",
+        "no-cloud",
+        "cloud-down",
+        "download-cloud"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cloudy",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "cloudy",
+        "cloud",
+        "weather",
+        "overcast",
+        "sky",
+        "atmosphere"
+      ],
+      "aliases": [
+        "cloudy",
+        "overcast",
+        "cloud-cover"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cloudy-sun",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "cloudy",
+        "sun",
+        "clouds",
+        "weather",
+        "partly-cloudy",
+        "sky"
+      ],
+      "aliases": [
+        "cloudy-sun",
+        "partly-cloudy",
+        "sun-cloud"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "coat-rack",
       "category": {
         "id": "furniture-things",
@@ -7533,6 +7864,38 @@
         "bent-arrow"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "countryside-hills",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "region",
+        "countryside",
+        "hill",
+        "landscape",
+        "rural",
+        "terrain",
+        "nature"
+      ],
+      "aliases": [
+        "countryside",
+        "hills",
+        "rural-landscape"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -8873,6 +9236,35 @@
       ]
     },
     {
+      "name": "dolphin",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "dolphin",
+        "marine",
+        "ocean",
+        "mammal",
+        "wildlife"
+      ],
+      "aliases": [
+        "sea-dolphin",
+        "marine-dolphin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "domestic-hot-water-pressure-valve",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -9503,6 +9895,37 @@
       ]
     },
     {
+      "name": "earth-globe",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "world",
+        "globe",
+        "earth",
+        "planet",
+        "environment",
+        "global"
+      ],
+      "aliases": [
+        "earth",
+        "globe",
+        "world"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "eco-fuel-barrel",
       "category": {
         "id": "power-electrical",
@@ -9548,6 +9971,38 @@
       "aliases": [
         "eco-can",
         "green-fuel-can"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ecology-leaf-book",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "ecology",
+        "leaf",
+        "book",
+        "garden",
+        "manual",
+        "guide",
+        "sustainability"
+      ],
+      "aliases": [
+        "garden-manual",
+        "ecology-guide",
+        "plant-handbook"
       ],
       "styles": [
         "filled",
@@ -11223,6 +11678,38 @@
       ]
     },
     {
+      "name": "farmer-harvest",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "farmer",
+        "harvest",
+        "planting",
+        "agriculture",
+        "farming",
+        "crops",
+        "cultivation"
+      ],
+      "aliases": [
+        "farmer-harvest",
+        "agriculture-worker",
+        "planting-farmer"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "female-toilet",
       "category": {
         "id": "housekeeping",
@@ -11267,6 +11754,69 @@
         "fence",
         "boundary-fence",
         "perimeter-fence"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fertiliser-spray",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "fertiliser",
+        "spray",
+        "gardening",
+        "plant-care",
+        "nutrients",
+        "agriculture"
+      ],
+      "aliases": [
+        "fertiliser-spray",
+        "plant-spray",
+        "garden-fertiliser"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "field-moisture",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "field-moisture",
+        "water",
+        "leaf",
+        "soil",
+        "irrigation",
+        "agriculture",
+        "hydration"
+      ],
+      "aliases": [
+        "soil-moisture",
+        "moisture-level",
+        "field-hydration"
       ],
       "styles": [
         "filled",
@@ -12381,6 +12931,35 @@
       ]
     },
     {
+      "name": "fishing",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "fishing",
+        "angling",
+        "fish",
+        "leisure",
+        "sea"
+      ],
+      "aliases": [
+        "angling",
+        "fishery"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "fix-leak",
       "category": {
         "id": "housekeeping",
@@ -12662,6 +13241,37 @@
       ],
       "aliases": [
         "flow-diagram"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "flower",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "flower",
+        "garden",
+        "plant",
+        "bloom",
+        "nature",
+        "landscaping"
+      ],
+      "aliases": [
+        "garden-flower",
+        "flowering-plant",
+        "outdoor-flower"
       ],
       "styles": [
         "filled",
@@ -13311,6 +13921,162 @@
       ]
     },
     {
+      "name": "garden-fountain",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "fountain",
+        "garden",
+        "water-feature",
+        "landscape",
+        "outdoor",
+        "decoration"
+      ],
+      "aliases": [
+        "garden-fountain",
+        "water-fountain",
+        "outdoor-fountain"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "garden-sprinkler",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "garden",
+        "sprinkler",
+        "water",
+        "irrigation",
+        "watering",
+        "lawn",
+        "plant-care"
+      ],
+      "aliases": [
+        "garden-sprinkler",
+        "lawn-sprinkler",
+        "water-sprinkler"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gardener-1",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "gardener",
+        "farmer",
+        "planting",
+        "agriculture",
+        "garden",
+        "cultivation"
+      ],
+      "aliases": [
+        "gardener",
+        "farmer",
+        "agricultural-worker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gardener-2",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "gardener",
+        "farmer",
+        "planting",
+        "agriculture",
+        "garden",
+        "cultivation"
+      ],
+      "aliases": [
+        "gardener",
+        "farmer",
+        "agricultural-worker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gardening-shovel",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "shovel",
+        "gardening",
+        "tool",
+        "digging",
+        "garden",
+        "landscaping"
+      ],
+      "aliases": [
+        "shovel",
+        "garden-shovel",
+        "digging-tool"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "gas-barrel",
       "category": {
         "id": "power-electrical",
@@ -13568,6 +14334,37 @@
       ]
     },
     {
+      "name": "global-warming",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "global-warming",
+        "globe",
+        "fire",
+        "climate-change",
+        "heat",
+        "environment"
+      ],
+      "aliases": [
+        "global-warming",
+        "climate-change",
+        "earth-heating"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "gps",
       "category": {
         "id": "wayfinding",
@@ -13625,6 +14422,37 @@
       ]
     },
     {
+      "name": "gravity-apple-fall",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "gravity",
+        "apple",
+        "fruit-fall",
+        "falling",
+        "physics",
+        "nature"
+      ],
+      "aliases": [
+        "gravity-apple",
+        "falling-apple",
+        "fruit-fall"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "grease-separation-tank",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -13668,6 +14496,37 @@
         "green-factory",
         "eco-factory",
         "sustainable-factory"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "greenhouse",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "greenhouse",
+        "garden",
+        "indoor",
+        "plants",
+        "cultivation",
+        "horticulture"
+      ],
+      "aliases": [
+        "greenhouse",
+        "glasshouse",
+        "indoor-garden"
       ],
       "styles": [
         "filled",
@@ -13959,6 +14818,38 @@
       "aliases": [
         "hand-pointer",
         "finger-point"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hand-sprinkler-hose",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "hand-sprinkler",
+        "watering",
+        "hose",
+        "drench-hose",
+        "irrigation",
+        "garden",
+        "plant-care"
+      ],
+      "aliases": [
+        "hand-sprinkler",
+        "garden-hose",
+        "watering-hose"
       ],
       "styles": [
         "filled",
@@ -15492,6 +16383,38 @@
       ]
     },
     {
+      "name": "indoor-plant-nursery",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "indoor-plant",
+        "nursery",
+        "houseplant",
+        "plant",
+        "greenery",
+        "cultivation",
+        "interior"
+      ],
+      "aliases": [
+        "indoor-nursery",
+        "plant-nursery",
+        "house-plant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "industrial-factory",
       "category": {
         "id": "building-construction",
@@ -16105,6 +17028,37 @@
         "window-layout",
         "grid-window",
         "layout-container"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "leaf",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "leaf",
+        "plant",
+        "nature",
+        "ecology",
+        "environment",
+        "green"
+      ],
+      "aliases": [
+        "leaf",
+        "foliage",
+        "plant-leaf"
       ],
       "styles": [
         "filled",
@@ -17325,19 +18279,10 @@
       "tags": [
         "direction",
         "navigate",
-        "locate",
-        "maple-leaf",
-        "leaf",
-        "tree",
-        "nature",
-        "foliage",
-        "autumn"
+        "locate"
       ],
       "aliases": [
-        "map",
-        "maple-leaf",
-        "leaf-maple",
-        "autumn-leaf"
+        "map"
       ],
       "styles": [
         "filled",
@@ -17418,6 +18363,37 @@
       ],
       "aliases": [
         "map-tree"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "maple-leaf",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "maple-leaf",
+        "leaf",
+        "tree",
+        "nature",
+        "foliage",
+        "autumn"
+      ],
+      "aliases": [
+        "maple-leaf",
+        "leaf-maple",
+        "autumn-leaf"
       ],
       "styles": [
         "filled",
@@ -18093,6 +19069,66 @@
       ]
     },
     {
+      "name": "moon",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "moon",
+        "night",
+        "sky",
+        "lunar",
+        "astronomy"
+      ],
+      "aliases": [
+        "moon",
+        "lunar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "moon-star",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "moon",
+        "star",
+        "night",
+        "dark-mode",
+        "sky",
+        "astronomy"
+      ],
+      "aliases": [
+        "moon-star",
+        "night-mode",
+        "dark-mode"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "motor",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -18507,6 +19543,38 @@
       ]
     },
     {
+      "name": "oak-tree-spread",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "tree",
+        "oak",
+        "spread",
+        "canopy",
+        "foliage",
+        "nature",
+        "landscaping"
+      ],
+      "aliases": [
+        "oak-tree",
+        "spreading-tree",
+        "deciduous-tree"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "occupancy-sensor",
       "category": {
         "id": "people",
@@ -18536,6 +19604,38 @@
       ]
     },
     {
+      "name": "ocean-wave",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "wave",
+        "beach",
+        "ocean",
+        "sea",
+        "water",
+        "coastal",
+        "nature"
+      ],
+      "aliases": [
+        "ocean-wave",
+        "sea-wave",
+        "beach-wave"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "octagon-alert",
       "category": {
         "id": "actions-general-interface",
@@ -18551,6 +19651,35 @@
       "aliases": [
         "exclamation-octagon",
         "stop-alert"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "octopus",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "octopus",
+        "marine",
+        "ocean",
+        "cephalopod",
+        "wildlife"
+      ],
+      "aliases": [
+        "sea-octopus",
+        "marine-octopus"
       ],
       "styles": [
         "filled",
@@ -19063,6 +20192,33 @@
       ]
     },
     {
+      "name": "palm-tree",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "palm",
+        "tree",
+        "tropical",
+        "plant"
+      ],
+      "aliases": [
+        "palm-tree"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "park-cafe",
       "category": {
         "id": "building-construction",
@@ -19080,6 +20236,37 @@
         "park-cafe",
         "outdoor-cafe",
         "cafe-park"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "park-trees",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "trees",
+        "park",
+        "nature",
+        "landscape",
+        "greenery",
+        "outdoor"
+      ],
+      "aliases": [
+        "park-trees",
+        "trees-park",
+        "green-park"
       ],
       "styles": [
         "filled",
@@ -19298,6 +20485,35 @@
       ]
     },
     {
+      "name": "penguin",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "penguin",
+        "bird",
+        "antarctic",
+        "wildlife",
+        "cold"
+      ],
+      "aliases": [
+        "penguin-bird",
+        "antarctic-penguin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "people-count-sensor",
       "category": {
         "id": "security",
@@ -19482,6 +20698,36 @@
       ]
     },
     {
+      "name": "picnic-bench",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "picnic-bench",
+        "outdoor",
+        "bench",
+        "park",
+        "seating",
+        "landscape"
+      ],
+      "aliases": [
+        "picnic-table",
+        "outdoor-bench",
+        "park-bench"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "piechart-line",
       "category": {
         "id": "document--statistics",
@@ -19561,6 +20807,69 @@
       "aliases": [
         "sleeping-pillow",
         "bed-pillow"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "pine-forest",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "forest",
+        "pine-trees",
+        "woodland",
+        "evergreen",
+        "nature",
+        "landscape"
+      ],
+      "aliases": [
+        "pine-forest",
+        "conifer-forest",
+        "evergreen-forest"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "pine-tree",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "pine-tree",
+        "spruce",
+        "christmas-tree",
+        "evergreen",
+        "conifer",
+        "nature",
+        "forest"
+      ],
+      "aliases": [
+        "pine-tree",
+        "spruce-tree",
+        "xmas-tree"
       ],
       "styles": [
         "filled",
@@ -19676,6 +20985,101 @@
       "aliases": [
         "flight-ticket",
         "boarding-pass"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "plant-health",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "plant-health",
+        "organic-plant",
+        "healthy",
+        "growth",
+        "sustainability",
+        "gardening",
+        "ecology"
+      ],
+      "aliases": [
+        "plant-health",
+        "organic-plant",
+        "healthy-plant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "plant-storage-delivery",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "plant",
+        "storage",
+        "delivery",
+        "logistics",
+        "nursery",
+        "transport",
+        "gardening"
+      ],
+      "aliases": [
+        "plant-storage",
+        "plant-delivery",
+        "nursery-logistics"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "planting-seed",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "planting",
+        "seed",
+        "nurture",
+        "growth",
+        "gardening",
+        "cultivation"
+      ],
+      "aliases": [
+        "seed-planting",
+        "plant-seed",
+        "nurture-plant"
       ],
       "styles": [
         "filled",
@@ -19856,6 +21260,133 @@
         "police-car",
         "patrol-car",
         "law-enforcement-vehicle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "potted-flower",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "flower",
+        "pot",
+        "indoor",
+        "plant",
+        "houseplant",
+        "decoration"
+      ],
+      "aliases": [
+        "potted-flower",
+        "indoor-plant",
+        "flower-pot"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "potted-orchid",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "orchid",
+        "flower",
+        "pot",
+        "indoor",
+        "plant",
+        "houseplant",
+        "decorative"
+      ],
+      "aliases": [
+        "potted-orchid",
+        "orchid-plant",
+        "indoor-orchid"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "potted-plant",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "pot",
+        "plant",
+        "garden",
+        "greenery",
+        "foliage",
+        "gardening",
+        "indoor"
+      ],
+      "aliases": [
+        "potted-plant",
+        "plant-pot",
+        "garden-plant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "potted-sprout",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "sprout",
+        "potted-plant",
+        "seedling",
+        "growth",
+        "plant",
+        "gardening",
+        "nurture"
+      ],
+      "aliases": [
+        "potted-sprout",
+        "seedling-pot",
+        "young-plant"
       ],
       "styles": [
         "filled",
@@ -20413,6 +21944,37 @@
       ]
     },
     {
+      "name": "rainy-cloud",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "rainy",
+        "rain",
+        "cloud",
+        "weather",
+        "precipitation",
+        "storm"
+      ],
+      "aliases": [
+        "rainy",
+        "rain-cloud",
+        "rainy-weather"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "read-receipt",
       "category": {
         "id": "communication",
@@ -20512,6 +22074,37 @@
       ],
       "aliases": [
         "reception-desk"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "recycle",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "recycle",
+        "recycling",
+        "waste",
+        "sustainability",
+        "environment",
+        "eco"
+      ],
+      "aliases": [
+        "recycle",
+        "recycling",
+        "eco-recycle"
       ],
       "styles": [
         "filled",
@@ -21739,6 +23332,37 @@
       ]
     },
     {
+      "name": "seed-plant",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "seed",
+        "plant",
+        "growth",
+        "planting",
+        "germination",
+        "gardening"
+      ],
+      "aliases": [
+        "seed",
+        "plant-seed",
+        "germination"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "seismic-shutoff-valve",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -22939,6 +24563,66 @@
       ]
     },
     {
+      "name": "snow-drizzle",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "snow",
+        "drizzle",
+        "cloud",
+        "weather",
+        "precipitation",
+        "cold"
+      ],
+      "aliases": [
+        "snow-cloud",
+        "drizzle-snow",
+        "light-snow"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "snowflakes",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "snow",
+        "winter",
+        "cold",
+        "freeze",
+        "ice",
+        "chill"
+      ],
+      "aliases": [
+        "snow",
+        "snowflake"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "soccer-field",
       "category": {
         "id": "building-construction",
@@ -23451,6 +25135,68 @@
       "aliases": [
         "broadcast",
         "loudspeaker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sprout",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "sprout",
+        "seedling",
+        "plant",
+        "growth",
+        "germination",
+        "gardening"
+      ],
+      "aliases": [
+        "sprout",
+        "seedling",
+        "young-plant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "squirrel",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "squirrel",
+        "wildlife",
+        "animal",
+        "nature",
+        "forest",
+        "park"
+      ],
+      "aliases": [
+        "squirrel",
+        "wild-animal",
+        "forest-animal"
       ],
       "styles": [
         "filled",
@@ -24052,6 +25798,131 @@
       ]
     },
     {
+      "name": "sun",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "sun",
+        "sunlight",
+        "solar",
+        "weather",
+        "day",
+        "energy"
+      ],
+      "aliases": [
+        "sun",
+        "sunlight",
+        "solar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sun-down",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "sun",
+        "sunset",
+        "sun-down",
+        "dusk",
+        "evening",
+        "weather"
+      ],
+      "aliases": [
+        "sunset",
+        "sun-down",
+        "evening-sun"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sun-up",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "sun",
+        "sunrise",
+        "sun-up",
+        "daylight",
+        "morning",
+        "weather"
+      ],
+      "aliases": [
+        "sunrise",
+        "sun-up",
+        "morning-sun"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sunrise-sunset",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "sunrise",
+        "sunset",
+        "sun",
+        "daylight",
+        "dusk",
+        "dawn",
+        "weather"
+      ],
+      "aliases": [
+        "sunrise-sunset",
+        "day-cycle",
+        "sun-cycle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "surveillance-camera-smartphone",
       "category": {
         "id": "security",
@@ -24434,6 +26305,37 @@
       ]
     },
     {
+      "name": "terrace-outdoor",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "terrace",
+        "outdoor",
+        "patio",
+        "balcony",
+        "exterior",
+        "landscape"
+      ],
+      "aliases": [
+        "terrace",
+        "outdoor-terrace",
+        "patio"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "thermal-chilled-water-storage",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -24612,6 +26514,37 @@
       "aliases": [
         "like",
         "approve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "thunderstorm",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "thunderstorm",
+        "storm",
+        "lightning",
+        "rain",
+        "cloud",
+        "weather"
+      ],
+      "aliases": [
+        "thunder",
+        "lightning-storm",
+        "storm-cloud"
       ],
       "styles": [
         "filled",
@@ -25142,6 +27075,68 @@
       ]
     },
     {
+      "name": "tree-cutting",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "tree-cutting",
+        "deforestation",
+        "logging",
+        "forestry",
+        "environment",
+        "wood"
+      ],
+      "aliases": [
+        "tree-cutting",
+        "deforest",
+        "logging"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tree-height",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "tree",
+        "height",
+        "measurement",
+        "vegetation",
+        "landscape",
+        "forestry"
+      ],
+      "aliases": [
+        "tree-height",
+        "tree-measurement",
+        "vegetation-height"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "tree-hierarchy",
       "category": {
         "id": "document--statistics",
@@ -25155,6 +27150,69 @@
       ],
       "aliases": [
         "flow-diagram"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tree-inspection",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "tree",
+        "inspection",
+        "visual-assessment",
+        "assess",
+        "arborist",
+        "maintenance",
+        "safety"
+      ],
+      "aliases": [
+        "tree-inspection",
+        "tree-assessment",
+        "visual-tree-check"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tree-log",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "trunk",
+        "log",
+        "wood",
+        "timber",
+        "forestry",
+        "cut-tree"
+      ],
+      "aliases": [
+        "log",
+        "tree-trunk",
+        "timber"
       ],
       "styles": [
         "filled",
@@ -25445,6 +27503,38 @@
       ]
     },
     {
+      "name": "tube-pipe",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "duct",
+        "pipe",
+        "conduit",
+        "tube",
+        "flow",
+        "airflow",
+        "infrastructure"
+      ],
+      "aliases": [
+        "duct",
+        "pipe",
+        "conduit",
+        "flow-duct"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "tunnel-section",
       "category": {
         "id": "building-construction",
@@ -25551,6 +27641,35 @@
         "turnstile",
         "access-gate",
         "entry-gantry"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "turtle",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "turtle",
+        "reptile",
+        "shell",
+        "slow",
+        "nature"
+      ],
+      "aliases": [
+        "tortoise",
+        "sea-turtle"
       ],
       "styles": [
         "filled",
@@ -27194,6 +29313,37 @@
       ]
     },
     {
+      "name": "water-protection-fish",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "fish",
+        "water-protection",
+        "aquatic",
+        "wildlife",
+        "environment",
+        "conservation"
+      ],
+      "aliases": [
+        "water-protection-fish",
+        "protected-fish",
+        "aquatic-life"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "water-source-heat-pump",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -27248,6 +29398,37 @@
       ]
     },
     {
+      "name": "watering-can",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "watering-can",
+        "garden",
+        "watering",
+        "plant-care",
+        "gardening",
+        "irrigation"
+      ],
+      "aliases": [
+        "watering-can",
+        "garden-can",
+        "plant-watering"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "wave-energy",
       "category": {
         "id": "power-electrical",
@@ -27263,6 +29444,69 @@
       "aliases": [
         "ocean-energy",
         "wave-power"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "weather-satellite-radar",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "satellite",
+        "weather",
+        "forecast",
+        "radar",
+        "cloud",
+        "atmosphere",
+        "climate"
+      ],
+      "aliases": [
+        "weather-satellite",
+        "radar-weather",
+        "forecast-radar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "weed-grass",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "weed",
+        "grass",
+        "plant",
+        "unwanted",
+        "garden",
+        "landscaping"
+      ],
+      "aliases": [
+        "weed",
+        "grass-weed",
+        "invasive-plant"
       ],
       "styles": [
         "filled",
@@ -27606,6 +29850,70 @@
       "aliases": [
         "alert-eye",
         "warning-eye"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "woodland-cabin",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "house",
+        "home",
+        "cabin",
+        "woods",
+        "forest",
+        "nature",
+        "shelter"
+      ],
+      "aliases": [
+        "cabin",
+        "woodland-house",
+        "forest-cabin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "worm",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "worm",
+        "organic",
+        "soil",
+        "compost",
+        "earthworm",
+        "gardening",
+        "ecology"
+      ],
+      "aliases": [
+        "worm",
+        "earthworm",
+        "compost-worm"
       ],
       "styles": [
         "filled",
