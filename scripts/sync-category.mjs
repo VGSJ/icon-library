@@ -309,9 +309,16 @@ async function syncCategoryFromFigma(category) {
             // Generate filename
             const filename = `icon-${variant.setName}-${style}-${size}.svg`;
             const siteFilePath = path.join("site", "raw-svg", style, String(size), filename);
+            const docsFilePath = path.join("docs", "raw-svg", style, String(size), filename);
             
-            // Download SVG
+            // Download SVG to site/
             await downloadSvg(url, siteFilePath);
+            
+            // Also copy to docs/ for GitHub Pages
+            const docsDir = path.dirname(docsFilePath);
+            await fs.mkdir(docsDir, { recursive: true });
+            await fs.copyFile(siteFilePath, docsFilePath);
+            
             downloaded++;
             
             if (downloaded % 20 === 0) {
