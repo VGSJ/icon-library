@@ -104,6 +104,13 @@
         "id": "arrows",
         "label": "arrows"
       }
+    },
+    {
+      "name": "office-buildings",
+      "category": {
+        "id": "building--construction",
+        "label": "building & construction"
+      }
     }
   ]
 }

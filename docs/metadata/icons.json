@@ -10260,8 +10260,8 @@
     {
       "name": "office-buildings",
       "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
+        "id": "building--construction",
+        "label": "building & construction"
       },
       "tags": [
         "office-buildings"
