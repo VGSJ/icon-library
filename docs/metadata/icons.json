@@ -3199,6 +3199,70 @@
       ]
     },
     {
+      "name": "chart-legend-dot",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "legend",
+        "chart",
+        "key",
+        "labels",
+        "data",
+        "code",
+        "dot",
+        "connector"
+      ],
+      "aliases": [
+        "chart-key",
+        "data-legend",
+        "graph-legend"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chart-legend-dotline",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "legend",
+        "chart",
+        "key",
+        "labels",
+        "data",
+        "code",
+        "dot",
+        "connector"
+      ],
+      "aliases": [
+        "chart-key",
+        "data-legend",
+        "graph-legend"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "chat",
       "category": {
         "id": "communication",
@@ -7209,6 +7273,59 @@
       "aliases": [
         "project-docs",
         "file-format"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "file-ifc",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "3d",
+        "format",
+        "import"
+      ],
+      "aliases": [
+        "project-docs",
+        "file-format"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "file-image",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "upload",
+        "attach",
+        "empty",
+        "image"
+      ],
+      "aliases": [
+        "image",
+        "photo"
       ],
       "styles": [
         "outline"
@@ -16435,6 +16552,134 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "trending-1-down",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "trending",
+        "trend",
+        "chart",
+        "growth",
+        "analytics",
+        "increase",
+        "up",
+        "down"
+      ],
+      "aliases": [
+        "trending-1",
+        "trend-up",
+        "growth-chart",
+        "upward-trend"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "trending-1-up",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "trending",
+        "trend",
+        "chart",
+        "growth",
+        "analytics",
+        "increase",
+        "up",
+        "down"
+      ],
+      "aliases": [
+        "trending-1",
+        "trend-up",
+        "growth-chart",
+        "upward-trend"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "trending-2-down",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "trending",
+        "trend",
+        "chart",
+        "growth",
+        "analytics",
+        "increase"
+      ],
+      "aliases": [
+        "trending-2",
+        "trend-up",
+        "growth-chart",
+        "upward-trend"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "trending-2-up",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "trending",
+        "trend",
+        "chart",
+        "growth",
+        "analytics",
+        "increase"
+      ],
+      "aliases": [
+        "trending-2",
+        "trend-up",
+        "growth-chart",
+        "upward-trend"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
