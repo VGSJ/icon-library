@@ -96,7 +96,7 @@ main { padding: 20px 24px 0; }
 }
 
 .preview {
-  border-radius: 10px;
+  border-radius: 4px;
   display: -webkit-grid;
   display: grid;
   -webkit-place-items: center;
@@ -154,7 +154,7 @@ main { padding: 20px 24px 0; }
   background: transparent;
   color: var(--fg);
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 4px;
   text-align: left;
   font-size: 14px;
   transition: background 140ms ease;
@@ -191,7 +191,7 @@ main {
   background: var(--primary);
   color: #fff;
   padding: 10px 14px;
-  border-radius: 999px;
+  border-radius: 4px;
   font-size: 13px;
   opacity: 0;
   pointer-events: none;
