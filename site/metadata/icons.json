@@ -631,8 +631,8 @@
     {
       "name": "arrow-from-point",
       "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
+        "id": "arrows",
+        "label": "arrows"
       },
       "tags": [
         "arrow-from-point"
@@ -820,8 +820,8 @@
     {
       "name": "arrow-to-line",
       "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
+        "id": "arrows",
+        "label": "arrows"
       },
       "tags": [
         "arrow-to-line"
@@ -6959,8 +6959,8 @@
     {
       "name": "map",
       "category": {
-        "id": "nature-landscaping",
-        "label": "nature & landscaping"
+        "id": "wayfinding",
+        "label": "wayfinding"
       },
       "tags": [
         "direction",

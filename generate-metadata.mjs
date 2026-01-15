@@ -22,6 +22,34 @@ async function figmaFetch(url) {
   return res.json();
 }
 
+// Heuristic categorization based on keywords in icon name and tags
+function inferCategoryFromKeywords(iconName, tags = []) {
+  const text = `${iconName} ${tags.join(" ")}`.toLowerCase();
+  
+  const categoryKeywords = {
+    "wayfinding": ["map", "pin", "location", "route", "navigate", "direction", "compass", "gps"],
+    "light": ["light", "lamp", "bulb", "brightness", "illumin"],
+    "fire": ["fire", "flame", "burn", "extinguish", "alarm", "hydrant", "sprinkle"],
+    "security": ["lock", "shield", "key", "secure", "password", "scan", "fingerprint", "face-id", "secure"],
+    "communication": ["message", "chat", "call", "email", "conversation", "talk", "phone"],
+    "document & statistics": ["document", "file", "chart", "graph", "stats", "report", "pdf", "spreadsheet"],
+    "health & safety": ["medical", "hospital", "health", "heart", "medicine", "doctor", "clinic", "aed"],
+    "housekeeping": ["clean", "broom", "trash", "trash-bin", "waste", "dust", "mop"],
+    "vertical transport": ["lift", "elevator", "escalator", "stairs", "ramp", "wheelchair"],
+    "arrows": ["arrow", "chevron", "direction"],
+    "actions & general interface": ["check", "close", "menu", "settings", "refresh", "edit", "add", "delete", "copy", "paste"]
+  };
+  
+  for (const [category, keywords] of Object.entries(categoryKeywords)) {
+    if (keywords.some(kw => text.includes(kw))) {
+      const id = category.toLowerCase().replace(/\s+/g, "-").replace(/&/g, "-").replace(/-+/g, "-");
+      return { id, label: category };
+    }
+  }
+  
+  return null;
+}
+
 async function applyCorrections(iconList) {
   const correctionsFile = path.join(ROOT, "metadata-corrections.json");
   try {
@@ -38,6 +66,23 @@ async function applyCorrections(iconList) {
   } catch (e) {
     // Corrections file not found or invalid - that's okay
   }
+  
+  // Apply keyword-based heuristics for uncategorized icons
+  let heuristicMatches = 0;
+  iconList.forEach(icon => {
+    if (icon.category.id === "uncategorized" || icon.category.label === "Uncategorized") {
+      const inferredCategory = inferCategoryFromKeywords(icon.name, icon.tags);
+      if (inferredCategory) {
+        icon.category = inferredCategory;
+        heuristicMatches++;
+      }
+    }
+  });
+  
+  if (heuristicMatches > 0) {
+    console.log(`🧠 Applied keyword heuristics to ${heuristicMatches} icons`);
+  }
+  
   return iconList;
 }
 
