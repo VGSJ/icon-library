@@ -119,10 +119,17 @@ function normalize(s = "") {
 }
 
 function capitalizeCategory(cat) {
-  // Capitalize first letter of each word
+  // Known abbreviations that should be ALL CAPS
+  const abbreviations = new Set(['ai', 'vr', 'led', 'hvac', 'aed', 'cctv', 'gps', 'qr', 'ahu', 'pv']);
+  
   return cat
     .split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .map(word => {
+      if (abbreviations.has(word.toLowerCase())) {
+        return word.toUpperCase();
+      }
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
     .join(' ');
 }
 
