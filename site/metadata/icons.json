@@ -483,27 +483,6 @@
       ]
     },
     {
-      "name": "arrow",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "arrow"
-      ],
-      "aliases": [],
-      "styles": [
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
       "name": "arrow-connect",
       "category": {
         "id": "arrows",
@@ -719,27 +698,6 @@
       ],
       "styles": [
         "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "arrow-from-point",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "arrow-from-point"
-      ],
-      "aliases": [],
-      "styles": [
         "outline"
       ],
       "sizes": [
@@ -1020,27 +978,6 @@
       ],
       "styles": [
         "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "arrow-to-line",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "arrow-to-line"
-      ],
-      "aliases": [],
-      "styles": [
         "outline"
       ],
       "sizes": [
@@ -2397,27 +2334,6 @@
       ]
     },
     {
-      "name": "chevron-large",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "chevron-large"
-      ],
-      "aliases": [],
-      "styles": [
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
       "name": "chevron-large-down",
       "category": {
         "id": "arrows",
@@ -2567,27 +2483,6 @@
       ],
       "styles": [
         "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "chevron-small",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "chevron-small"
-      ],
-      "aliases": [],
-      "styles": [
         "outline"
       ],
       "sizes": [
@@ -3291,27 +3186,6 @@
       "aliases": [],
       "styles": [
         "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "corner-arrow",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "corner-arrow"
-      ],
-      "aliases": [],
-      "styles": [
         "outline"
       ],
       "sizes": [
@@ -9041,28 +8915,6 @@
       ]
     },
     {
-      "name": "resize-big",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "resize-big"
-      ],
-      "aliases": [],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
       "name": "resize-expand",
       "category": {
         "id": "arrows",
@@ -9109,28 +8961,6 @@
         "minimize",
         "shrink"
       ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "resize-small",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "resize-small"
-      ],
-      "aliases": [],
       "styles": [
         "filled",
         "outline"
@@ -10826,28 +10656,6 @@
         "back",
         "reply"
       ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "undock",
-      "category": {
-        "id": "arrows",
-        "label": "arrows"
-      },
-      "tags": [
-        "undock"
-      ],
-      "aliases": [],
       "styles": [
         "filled",
         "outline"
