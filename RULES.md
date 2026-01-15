@@ -38,7 +38,7 @@
 - Always include 3-5 lines of context before/after changes
 - Test locally before pushing: `npm run dev`
 - Update related files together (e.g., workflow + package.json + scripts)
-- Keep repository is optimized and efficient
+- Keep repository optimized and efficient
 
 ## File Modifications
 - **DO NOT** modify `.env` file (contains Figma credentials)
