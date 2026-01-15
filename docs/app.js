@@ -3,7 +3,6 @@ const els = {
   status: document.getElementById("status"),
   search: document.getElementById("search"),
   style: document.getElementById("style"),
-  size: document.getElementById("size"),
   categories: document.getElementById("categories"),
   detailsPanel: document.getElementById("detailsPanel"),
   closePanel: document.getElementById("closePanel"),
@@ -16,7 +15,7 @@ const els = {
 let selectedCategory = null; // Track selected category filter
 let selectedIcon = null; // Track selected icon in details panel
 let detailsFormat = "svg"; // Track selected format
-let detailsSize = "32"; // Track selected size
+const ICON_SIZE = 32; // Fixed icon size for grid
 
 /* --------------------------------------------------
    Details Panel
@@ -24,7 +23,6 @@ let detailsSize = "32"; // Track selected size
 function openDetailsPanel(icon) {
   selectedIcon = icon;
   detailsFormat = "svg";
-  detailsSize = "32";
   
   els.detailsPanel.classList.remove("hidden");
   els.iconName.textContent = icon.name;
@@ -44,9 +42,8 @@ function updateDetailsPreview() {
   els.previewBox.innerHTML = "…";
   
   const style = els.style.value || "outline";
-  const size = parseInt(detailsSize);
   
-  fetchSvg(selectedIcon.name, style, size)
+  fetchSvg(selectedIcon.name, style, 32)
     .then((svg) => {
       const container = document.createElement("div");
       container.innerHTML = svg;
@@ -63,11 +60,6 @@ function updateDetailsButtons() {
   document.querySelectorAll(".format-btn").forEach(btn => {
     btn.classList.toggle("active", btn.dataset.format === detailsFormat);
   });
-  
-  // Update size buttons
-  document.querySelectorAll(".size-btn").forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.size === detailsSize);
-  });
 }
 
 els.closePanel?.addEventListener("click", closeDetailsPanel);
@@ -81,13 +73,11 @@ document.querySelectorAll(".format-btn").forEach(btn => {
   });
 });
 
-// Size button listeners
-document.querySelectorAll(".size-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    detailsSize = btn.dataset.size;
-    updateDetailsButtons();
-    updateDetailsPreview();
-  });
+// Click outside panel to close
+document.addEventListener("click", (e) => {
+  if (!selectedIcon) return;
+  if (e.target.closest(".details-panel") || e.target.closest(".card")) return;
+  closeDetailsPanel();
 });
 
 // Copy button listener
@@ -95,7 +85,7 @@ els.copyBtn?.addEventListener("click", async () => {
   if (!selectedIcon) return;
   
   try {
-    const svg = await fetchSvg(selectedIcon.name, els.style.value || "outline", parseInt(detailsSize));
+    const svg = await fetchSvg(selectedIcon.name, els.style.value || "outline", ICON_SIZE);
     const ok = await copyText(svg);
     if (ok) {
       showToast(`Copied: ${selectedIcon.name}`);
@@ -113,11 +103,10 @@ els.downloadBtn?.addEventListener("click", async () => {
   
   try {
     const style = els.style.value || "outline";
-    const size = parseInt(detailsSize);
-    const svg = await fetchSvg(selectedIcon.name, style, size);
+    const svg = await fetchSvg(selectedIcon.name, style, ICON_SIZE);
     
     let content = svg;
-    let filename = `${selectedIcon.name}-${style}-${size}.${detailsFormat}`;
+    let filename = `${selectedIcon.name}-${style}-${ICON_SIZE}.${detailsFormat}`;
     let mimeType = "image/svg+xml";
     
     if (detailsFormat === "png") {
@@ -340,11 +329,6 @@ function renderCard(icon, style, size) {
   const preview = document.createElement("div");
   preview.className = "preview";
   preview.innerHTML = "…";
-  
-  // Set preview size dynamically: icon size + 20px padding (10px on each side)
-  const previewSize = size + 20;
-  preview.style.width = `${previewSize}px`;
-  preview.style.height = `${previewSize}px`;
 
   const info = document.createElement("div");
 
@@ -431,7 +415,6 @@ function populateCategories() {
 function rerender() {
   const query = els.search.value;
   const style = els.style.value;
-  const size = Number(els.size.value);
 
   let filtered = allIcons.filter((icon) => iconMatches(icon, query));
   
@@ -456,10 +439,10 @@ function rerender() {
       // Skip this icon for the selected style (don't show error)
       // Find the first available style for this icon
       if (icon.styles && icon.styles.length > 0) {
-        els.grid.appendChild(renderCard(icon, icon.styles[0], size));
+        els.grid.appendChild(renderCard(icon, icon.styles[0], ICON_SIZE));
       }
     } else {
-      els.grid.appendChild(renderCard(icon, style, size));
+      els.grid.appendChild(renderCard(icon, style, ICON_SIZE));
     }
   }
 }
@@ -490,6 +473,5 @@ async function main() {
 -------------------------------------------------- */
 els.search.addEventListener("input", rerender);
 els.style.addEventListener("change", rerender);
-els.size.addEventListener("change", rerender);
 
 main();

@@ -118,11 +118,17 @@ button { cursor: pointer; }
 
 main { padding: 20px 24px 0; }
 
+.main-wrapper {
+  display: flex;
+  height: calc(100vh - 180px);
+  gap: 0;
+  position: relative;
+}
+
 .status { color: var(--muted); margin-bottom: 12px; font-size: 13px; }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 12px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -151,8 +157,8 @@ main { padding: 20px 24px 0; }
   background: var(--bg);
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
 }
 
 .preview > * {
@@ -251,11 +257,11 @@ main {
 
 /* Details Panel Styles */
 .details-panel {
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   width: 320px;
-  height: 100vh;
+  height: 100%;
   background: var(--bg);
   border-left: 1px solid var(--border);
   overflow-y: auto;
