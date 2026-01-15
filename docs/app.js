@@ -261,6 +261,15 @@ function normalize(s = "") {
 }
 
 function capitalizeCategory(cat) {
+  // Category display name overrides
+  const displayNames = {
+    'heating ventilation air conditioning': 'HVAC'
+  };
+  
+  if (displayNames[cat]) {
+    return displayNames[cat];
+  }
+  
   // Known abbreviations that should be ALL CAPS
   const abbreviations = new Set(['ai', 'vr', 'led', 'hvac', 'aed', 'cctv', 'gps', 'qr', 'ahu', 'pv']);
   
