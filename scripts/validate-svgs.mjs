@@ -4,8 +4,8 @@ import fs from "fs/promises";
 import path from "path";
 
 const ROOT = process.cwd();
-const metaFile = path.join(ROOT, "site", "metadata", "icons.json");
-const rawSvgDir = path.join(ROOT, "site", "raw-svg");
+const metaFile = path.join(ROOT, "docs", "metadata", "icons.json");
+const rawSvgDir = path.join(ROOT, "docs", "raw-svg");
 
 async function validateSVGs() {
   try {
