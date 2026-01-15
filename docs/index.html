@@ -13,18 +13,28 @@
       <div class="controls">
         <input id="search" type="search" placeholder="Search icons (e.g. cctv, valve, ahu)..." />
 
-        <select id="style">
-          <option value="outline">Outline</option>
-          <option value="filled">Filled</option>
-        </select>
+        <div class="select-wrapper">
+          <select id="style">
+            <option value="outline">Outline</option>
+            <option value="filled">Filled</option>
+          </select>
+          <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
 
-        <select id="size">
-          <option value="16">16</option>
-          <option value="24" selected>24</option>
-          <option value="32">32</option>
-          <option value="40">40</option>
-          <option value="48">48</option>
-        </select>
+        <div class="select-wrapper">
+          <select id="size">
+            <option value="16">16</option>
+            <option value="24" selected>24</option>
+            <option value="32">32</option>
+            <option value="40">40</option>
+            <option value="48">48</option>
+          </select>
+          <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
       </div>
 
       <p class="hint">
