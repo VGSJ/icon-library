@@ -25,7 +25,7 @@ body {
 }
 
 .header {
-  padding: 12px 24px;
+  padding: 16px 24px;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -271,7 +271,6 @@ main { padding: 0; display: flex; flex-direction: column; flex: 1; min-height: 0
 .details-panel {
   width: 320px;
   height: 100%;
-  padding: 20px 20px;
   background: var(--bg);
   border-left: 1px solid var(--border);
   overflow-y: auto;
@@ -293,7 +292,7 @@ main { padding: 0; display: flex; flex-direction: column; flex: 1; min-height: 0
 }
 
 .details-content {
-  padding: 20px;
+  padding: 0px;
 }
 
 .icon-name {

@@ -3498,7 +3498,7 @@
       ]
     },
     {
-      "name": "chevron-double-large",
+      "name": "chevron-double-large-down",
       "category": {
         "id": "arrows",
         "label": "arrows"
@@ -3525,7 +3525,166 @@
       ]
     },
     {
-      "name": "chevron-double-small",
+      "name": "chevron-double-large-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "double",
+        "arrow",
+        "navigation",
+        "large"
+      ],
+      "aliases": [
+        "double-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-double-large-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "double",
+        "arrow",
+        "navigation",
+        "large"
+      ],
+      "aliases": [
+        "double-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-double-large-up",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "double",
+        "arrow",
+        "navigation",
+        "large"
+      ],
+      "aliases": [
+        "double-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-double-small-down",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "double",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "double-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-double-small-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "double",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "double-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-double-small-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "chevron",
+        "double",
+        "arrow",
+        "navigation"
+      ],
+      "aliases": [
+        "double-chevron"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "chevron-double-small-up",
       "category": {
         "id": "arrows",
         "label": "arrows"
@@ -6860,6 +7019,90 @@
       "aliases": [
         "exclamation-mark",
         "bang"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "expand-diagonal",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "expand",
+        "enlarge",
+        "diagonal",
+        "arrow",
+        "resize"
+      ],
+      "aliases": [
+        "maximize",
+        "fullscreen"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "expand-height",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "expand",
+        "resize",
+        "arrow",
+        "horizontal",
+        "vertical"
+      ],
+      "aliases": [
+        "fullscreen",
+        "enlarge"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "expand-width",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "expand",
+        "resize",
+        "arrow",
+        "horizontal",
+        "vertical"
+      ],
+      "aliases": [
+        "fullscreen",
+        "enlarge"
       ],
       "styles": [
         "outline"
@@ -15035,6 +15278,118 @@
         "right-sidebar",
         "sidebar-layout",
         "layout-sidebar-right"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-diamond-down",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "diamond",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "diamond-arrow",
+        "arrow-square-tilted"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-diamond-left",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "diamond",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "diamond-arrow",
+        "arrow-square-tilted"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-diamond-right",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "diamond",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "diamond-arrow",
+        "arrow-square-tilted"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-diamond-up",
+      "category": {
+        "id": "arrows",
+        "label": "arrows"
+      },
+      "tags": [
+        "arrow",
+        "diamond",
+        "direction",
+        "navigation"
+      ],
+      "aliases": [
+        "diamond-arrow",
+        "arrow-square-tilted"
       ],
       "styles": [
         "filled",
