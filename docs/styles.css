@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  font-family: aptos, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: poppins;
   background: var(--bg);
   color: var(--fg);
 }
@@ -87,7 +87,7 @@ main { padding: 20px 24px 0; }
 .card {
   border: 1px solid var(--border);
   background: var(--card);
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 12px;
   display: grid;
   grid-template-columns: 44px 1fr;
