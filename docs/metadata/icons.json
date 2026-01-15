@@ -124,7 +124,7 @@
       "name": "ai-2-stars",
       "category": {
         "id": "ai-vr",
-        "label": "AI & VR"
+        "label": "ai & vr"
       },
       "tags": [
         "stars",
@@ -149,7 +149,7 @@
       "name": "ai-3-stars",
       "category": {
         "id": "ai-vr",
-        "label": "AI & VR"
+        "label": "ai & vr"
       },
       "tags": [
         "stars",
@@ -174,7 +174,7 @@
       "name": "ai-avatar-gen",
       "category": {
         "id": "ai-vr",
-        "label": "AI & VR"
+        "label": "ai & vr"
       },
       "tags": [
         "generate",
@@ -201,7 +201,7 @@
       "name": "ai-magic-brush",
       "category": {
         "id": "ai-vr",
-        "label": "AI & VR"
+        "label": "ai & vr"
       },
       "tags": [
         "magic",
@@ -229,7 +229,7 @@
       "name": "ai-magic-wand",
       "category": {
         "id": "ai-vr",
-        "label": "AI & VR"
+        "label": "ai & vr"
       },
       "tags": [
         "generate",
@@ -255,7 +255,7 @@
       "name": "ai-prompt",
       "category": {
         "id": "ai-vr",
-        "label": "AI & VR"
+        "label": "ai & vr"
       },
       "tags": [
         "generate",
@@ -282,7 +282,7 @@
       "name": "ai-text-gen",
       "category": {
         "id": "ai-vr",
-        "label": "AI & VR"
+        "label": "ai & vr"
       },
       "tags": [
         "generate",
@@ -307,7 +307,7 @@
       "name": "ai-wand",
       "category": {
         "id": "ai-vr",
-        "label": "AI & VR"
+        "label": "ai & vr"
       },
       "tags": [
         "generate",
@@ -1530,7 +1530,7 @@
       "name": "binoculars",
       "category": {
         "id": "wayfinding",
-        "label": "Wayfinding"
+        "label": "wayfinding"
       },
       "tags": [
         "binoculars",
@@ -5032,7 +5032,7 @@
       "name": "expand",
       "category": {
         "id": "uncategorized",
-        "label": "Uncategorized"
+        "label": "uncategorized"
       },
       "tags": [
         "expand"
@@ -10991,7 +10991,7 @@
       "name": "sign-diamond",
       "category": {
         "id": "uncategorized",
-        "label": "Uncategorized"
+        "label": "uncategorized"
       },
       "tags": [
         "sign-diamond"
@@ -12732,7 +12732,7 @@
       "name": "vr-panoramic",
       "category": {
         "id": "ai-vr",
-        "label": "AI & VR"
+        "label": "ai & vr"
       },
       "tags": [
         "virtual",
