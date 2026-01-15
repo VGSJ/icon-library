@@ -12150,7 +12150,7 @@
       ]
     },
     {
-      "name": "section-analysis-alt",
+      "name": "section-split",
       "category": {
         "id": "geometry",
         "label": "geometry"
@@ -12160,6 +12160,36 @@
         "analysis",
         "cut",
         "slice",
+        "view",
+        "geometry"
+      ],
+      "aliases": [
+        "cutting-view",
+        "section-cut"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "section-xray",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "section",
+        "analysis",
+        "transparent",
+        "seethrough",
         "view",
         "geometry"
       ],
