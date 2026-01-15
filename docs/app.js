@@ -15,6 +15,7 @@ const els = {
 let selectedCategory = null; // Track selected category filter
 let selectedIcon = null; // Track selected icon in details panel
 let detailsFormat = "svg"; // Track selected format
+let detailsSize = 32; // Track selected size for details preview
 const ICON_SIZE = 32; // Fixed icon size for grid
 
 /* --------------------------------------------------
@@ -23,6 +24,7 @@ const ICON_SIZE = 32; // Fixed icon size for grid
 function openDetailsPanel(icon) {
   selectedIcon = icon;
   detailsFormat = "svg";
+  detailsSize = 32;
   
   els.detailsPanel.classList.remove("hidden");
   els.iconName.textContent = icon.name;
@@ -43,7 +45,7 @@ function updateDetailsPreview() {
   
   const style = els.style.value || "outline";
   
-  fetchSvg(selectedIcon.name, style, 32)
+  fetchSvg(selectedIcon.name, style, detailsSize)
     .then((svg) => {
       const container = document.createElement("div");
       container.innerHTML = svg;
@@ -60,6 +62,11 @@ function updateDetailsButtons() {
   document.querySelectorAll(".format-btn").forEach(btn => {
     btn.classList.toggle("active", btn.dataset.format === detailsFormat);
   });
+  
+  // Update size buttons
+  document.querySelectorAll(".size-btn").forEach(btn => {
+    btn.classList.toggle("active", parseInt(btn.dataset.size) === detailsSize);
+  });
 }
 
 els.closePanel?.addEventListener("click", closeDetailsPanel);
@@ -68,6 +75,15 @@ els.closePanel?.addEventListener("click", closeDetailsPanel);
 document.querySelectorAll(".format-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     detailsFormat = btn.dataset.format;
+    updateDetailsButtons();
+    updateDetailsPreview();
+  });
+});
+
+// Size button listeners
+document.querySelectorAll(".size-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    detailsSize = parseInt(btn.dataset.size);
     updateDetailsButtons();
     updateDetailsPreview();
   });
