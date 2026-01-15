@@ -181,6 +181,37 @@
       ]
     },
     {
+      "name": "access-point",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "access-point",
+        "wireless",
+        "wifi",
+        "network",
+        "hub",
+        "router"
+      ],
+      "aliases": [
+        "access-point",
+        "wifi-access",
+        "wireless-hub"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "access-reader",
       "category": {
         "id": "security",
@@ -914,6 +945,35 @@
       "aliases": [
         "airplane-top",
         "aircraft-view"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "airplay",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "airplay",
+        "stream",
+        "cast",
+        "screen",
+        "wireless"
+      ],
+      "aliases": [
+        "apple-airplay",
+        "screen-cast"
       ],
       "styles": [
         "filled",
@@ -2257,6 +2317,36 @@
       ]
     },
     {
+      "name": "bacnet-controller",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "bacnet",
+        "bms",
+        "controller",
+        "hvac",
+        "building-automation"
+      ],
+      "aliases": [
+        "building-controller",
+        "hvac-controller",
+        "bms-controller"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "badge-verified",
       "category": {
         "id": "communication",
@@ -2544,6 +2634,202 @@
         "basement-stairs",
         "underground-stairs",
         "lower-level-stairs"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "battery-charging",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "battery",
+        "power",
+        "energy",
+        "charge"
+      ],
+      "aliases": [
+        "power-battery",
+        "energy-cell"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "battery-empty",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "battery",
+        "power",
+        "energy",
+        "charge"
+      ],
+      "aliases": [
+        "power-battery",
+        "energy-cell"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "battery-faulty",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "battery",
+        "power",
+        "energy",
+        "charge"
+      ],
+      "aliases": [
+        "power-battery",
+        "energy-cell"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "battery-full-charge",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "battery",
+        "power",
+        "energy",
+        "charge"
+      ],
+      "aliases": [
+        "power-battery",
+        "energy-cell"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "battery-low-charge",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "battery",
+        "power",
+        "energy",
+        "charge"
+      ],
+      "aliases": [
+        "power-battery",
+        "energy-cell"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "battery-medium-charge",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "battery",
+        "power",
+        "energy",
+        "charge"
+      ],
+      "aliases": [
+        "power-battery",
+        "energy-cell"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "battery-plugged",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "battery",
+        "power",
+        "energy",
+        "charge"
+      ],
+      "aliases": [
+        "power-battery",
+        "energy-cell"
       ],
       "styles": [
         "filled",
@@ -2857,6 +3143,36 @@
       ]
     },
     {
+      "name": "bezier-motion",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "bezier",
+        "animation",
+        "motion",
+        "spring",
+        "easing",
+        "transition"
+      ],
+      "aliases": [
+        "motion-curve",
+        "animation-easing"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "bike",
       "category": {
         "id": "transport",
@@ -3035,6 +3351,34 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bluetooth",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "bluetooth",
+        "wireless",
+        "connectivity",
+        "pairing",
+        "protocol"
+      ],
+      "aliases": [
+        "bluetooth",
+        "bt"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -3292,6 +3636,93 @@
       "aliases": [
         "selection-box",
         "bbox"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "branch",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "branch",
+        "split",
+        "fork",
+        "flow",
+        "version"
+      ],
+      "aliases": [
+        "fork",
+        "split-branch"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "branch-add",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "branch",
+        "add",
+        "divide",
+        "split",
+        "fork"
+      ],
+      "aliases": [
+        "add-branch",
+        "create-branch"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "branching",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "branching",
+        "dividing",
+        "splitting",
+        "fork",
+        "flow"
+      ],
+      "aliases": [
+        "branch-split",
+        "fork-flow"
       ],
       "styles": [
         "filled",
@@ -6713,7 +7144,7 @@
       ]
     },
     {
-      "name": "cloud",
+      "name": "cloud-download",
       "category": {
         "id": "system-technology",
         "label": "system & technology"
@@ -6724,34 +7155,103 @@
         "weather",
         "sky",
         "atmosphere",
+        "download",
         "storage",
-        "online",
-        "server",
-        "network",
-        "upload",
         "data",
-        "sync",
-        "synchronize",
-        "update",
-        "refresh",
-        "off",
-        "offline",
-        "disconnected",
-        "download"
+        "network"
       ],
       "aliases": [
         "cloud",
         "cloudy",
-        "cloud-storage",
-        "online-cloud",
-        "cloud-up",
-        "upload-cloud",
-        "cloud-syncing",
-        "sync-cloud",
-        "cloud-offline",
-        "no-cloud",
         "cloud-down",
         "download-cloud"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cloud-off",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "cloud",
+        "off",
+        "offline",
+        "disconnected",
+        "network"
+      ],
+      "aliases": [
+        "cloud-offline",
+        "no-cloud"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cloud-sync",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "sync",
+        "cloud",
+        "synchronize",
+        "update",
+        "refresh"
+      ],
+      "aliases": [
+        "cloud-syncing",
+        "sync-cloud"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cloud-upload",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "cloud",
+        "upload",
+        "storage",
+        "data",
+        "network"
+      ],
+      "aliases": [
+        "cloud-up",
+        "upload-cloud"
       ],
       "styles": [
         "filled",
@@ -6847,6 +7347,34 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "code-brackets",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "brackets",
+        "code",
+        "programming",
+        "syntax",
+        "developer"
+      ],
+      "aliases": [
+        "code",
+        "curly-brackets"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -8342,6 +8870,68 @@
       ]
     },
     {
+      "name": "database-1",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "storage",
+        "server",
+        "data",
+        "database",
+        "persistence",
+        "value"
+      ],
+      "aliases": [
+        "storage-server",
+        "data-server",
+        "database-server"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "database-2",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "airplay",
+        "stream",
+        "cast",
+        "screen",
+        "wireless"
+      ],
+      "aliases": [
+        "apple-airplay",
+        "screen-cast",
+        "coin",
+        "money"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "daylight-sensor",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -8815,6 +9405,37 @@
       ],
       "aliases": [
         "discharge-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "display-port",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "display-port",
+        "hdmi",
+        "video",
+        "output",
+        "connector",
+        "interface"
+      ],
+      "aliases": [
+        "display-port",
+        "hdmi-port",
+        "video-port"
       ],
       "styles": [
         "filled",
@@ -11073,6 +11694,37 @@
       ]
     },
     {
+      "name": "ethernet-switch",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "ethernet",
+        "switch",
+        "network",
+        "lan",
+        "hardware",
+        "routing"
+      ],
+      "aliases": [
+        "ethernet-switch",
+        "network-switch",
+        "lan-switch"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "euro-coin",
       "category": {
         "id": "payment-rewards",
@@ -12358,20 +13010,12 @@
         "burn",
         "hazard",
         "emergency",
-        "fas",
-        "firewall",
-        "security",
-        "network-security",
-        "gateway",
-        "intrusion-protection"
+        "fas"
       ],
       "aliases": [
         "fire",
         "flame",
-        "heat",
-        "firewall",
-        "security-gateway",
-        "secure-network"
+        "heat"
       ],
       "styles": [
         "filled",
@@ -12850,6 +13494,36 @@
         "firefighter-helmet",
         "fire-helmet",
         "safety-helmet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "firewall",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "firewall",
+        "security",
+        "network-security",
+        "gateway",
+        "intrusion-protection"
+      ],
+      "aliases": [
+        "firewall",
+        "security-gateway",
+        "secure-network"
       ],
       "styles": [
         "filled",
@@ -13919,6 +14593,35 @@
       ]
     },
     {
+      "name": "game-controller",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "controller",
+        "game",
+        "playstation",
+        "gaming",
+        "console"
+      ],
+      "aliases": [
+        "gamepad",
+        "console-controller"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "garden-fountain",
       "category": {
         "id": "nature-landscaping",
@@ -14242,6 +14945,36 @@
       ]
     },
     {
+      "name": "gateway",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "gateway",
+        "network",
+        "bridge",
+        "routing",
+        "connectivity",
+        "infrastructure"
+      ],
+      "aliases": [
+        "gateway",
+        "network-gateway"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "geothermal-power-plant",
       "category": {
         "id": "building-construction",
@@ -14349,6 +15082,66 @@
         "global-warming",
         "climate-change",
         "earth-heating"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "globe",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "globe",
+        "internet",
+        "web",
+        "www",
+        "network"
+      ],
+      "aliases": [
+        "world",
+        "online",
+        "web-globe"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "globe-lock",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "globe",
+        "internet",
+        "web",
+        "www",
+        "secure",
+        "security"
+      ],
+      "aliases": [
+        "secure-web",
+        "https-globe"
       ],
       "styles": [
         "filled",
@@ -14908,6 +15701,35 @@
         "hanging-lamp",
         "pendant-lamp",
         "ceiling-light"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hardware",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "hardware",
+        "physical",
+        "device",
+        "equipment",
+        "system"
+      ],
+      "aliases": [
+        "hardware",
+        "physical-hardware"
       ],
       "styles": [
         "filled",
@@ -16676,28 +17498,75 @@
         "label": "security"
       },
       "tags": [
+        "key",
+        "access",
+        "unlock",
+        "security",
+        "authentication"
+      ],
+      "aliases": [
+        "access-key",
+        "security-key"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "keyboard",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
         "keyboard",
         "input",
         "typing",
         "hardware",
-        "device",
+        "device"
+      ],
+      "aliases": [
+        "keypad",
+        "typing-keyboard"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "keypad",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
         "keypad",
         "number-pad",
         "pin",
         "code",
-        "authentication",
-        "key",
-        "access",
-        "unlock",
-        "security"
+        "input",
+        "authentication"
       ],
       "aliases": [
         "keypad",
-        "typing-keyboard",
         "number-pad",
-        "pin-pad",
-        "access-key",
-        "security-key"
+        "pin-pad"
       ],
       "styles": [
         "filled",
@@ -16790,6 +17659,35 @@
         "lantern",
         "portable-lamp",
         "camping-lantern"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "laptop-phone",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "laptop",
+        "phone",
+        "device",
+        "responsive",
+        "cross-device"
+      ],
+      "aliases": [
+        "multi-device",
+        "responsive-devices"
       ],
       "styles": [
         "filled",
@@ -18613,6 +19511,35 @@
       ]
     },
     {
+      "name": "merge",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "merge",
+        "pull-request",
+        "push-request",
+        "combine",
+        "branch"
+      ],
+      "aliases": [
+        "merge-branch",
+        "pull-request"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "message-annotation",
       "category": {
         "id": "communication",
@@ -19067,6 +19994,36 @@
       ]
     },
     {
+      "name": "modbus-controller",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "modbus",
+        "plc",
+        "controller",
+        "fieldbus",
+        "automation"
+      ],
+      "aliases": [
+        "plc-controller",
+        "modbus-plc",
+        "fieldbus-controller"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "moon",
       "category": {
         "id": "nature-landscaping",
@@ -19212,6 +20169,40 @@
       ]
     },
     {
+      "name": "mouse",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "mouse",
+        "left-button",
+        "click",
+        "left-right",
+        "input",
+        "pointer",
+        "device",
+        "hardware"
+      ],
+      "aliases": [
+        "mouse-click-left",
+        "left-click",
+        "computer-mouse",
+        "pointing-device"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "mouse-double-click",
       "category": {
         "id": "actions-general-interface",
@@ -19219,16 +20210,11 @@
       },
       "tags": [
         "mouse",
-        "pointer",
-        "input",
-        "device",
-        "hardware",
         "double-click",
-        "click"
+        "click",
+        "input"
       ],
       "aliases": [
-        "computer-mouse",
-        "pointing-device",
         "mouse-click-x2",
         "double-click"
       ],
@@ -19248,20 +20234,13 @@
     {
       "name": "mouse-left",
       "category": {
-        "id": "actions-general-interface",
-        "label": "actions & general interface"
+        "id": "uncategorized",
+        "label": "Uncategorized"
       },
       "tags": [
-        "mouse",
-        "left-button",
-        "click",
-        "input",
-        "left-right"
+        "mouse-left"
       ],
-      "aliases": [
-        "mouse-click-left",
-        "left-click"
-      ],
+      "aliases": [],
       "styles": [
         "outline"
       ],
@@ -19273,6 +20252,64 @@
         48,
         64,
         72
+      ]
+    },
+    {
+      "name": "mouse-scroll-down",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "mouse",
+        "scroll",
+        "scroll-up",
+        "scroll-down",
+        "input"
+      ],
+      "aliases": [
+        "mouse-wheel",
+        "scroll-mouse"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "mouse-scroll-up",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "mouse",
+        "scroll",
+        "scroll-up",
+        "scroll-down",
+        "input"
+      ],
+      "aliases": [
+        "mouse-wheel",
+        "scroll-mouse"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
       ]
     },
     {
@@ -19316,6 +20353,98 @@
       ],
       "aliases": [
         "multiple-signboard"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "network",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "network",
+        "relationship",
+        "connection",
+        "binary",
+        "graph",
+        "box",
+        "disc",
+        "console",
+        "stream"
+      ],
+      "aliases": [
+        "connections",
+        "data-network",
+        "video-player"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "network-connection",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "network",
+        "relationship",
+        "connection",
+        "link",
+        "nodes"
+      ],
+      "aliases": [
+        "network-link",
+        "connection-graph"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "nfc",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "nfc",
+        "near-field-communication",
+        "wireless",
+        "contactless",
+        "protocol"
+      ],
+      "aliases": [
+        "nfc",
+        "near-field-communication"
       ],
       "styles": [
         "filled",
@@ -20206,6 +21335,34 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "parameter-brackets",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "parameter",
+        "brackets",
+        "code",
+        "config",
+        "function"
+      ],
+      "aliases": [
+        "function-params",
+        "code-parameter"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -21428,6 +22585,36 @@
       ]
     },
     {
+      "name": "power",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "power",
+        "on",
+        "off",
+        "power-button",
+        "startup",
+        "shutdown"
+      ],
+      "aliases": [
+        "power",
+        "power-button",
+        "turn-on"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "power-cord",
       "category": {
         "id": "power--electrical",
@@ -21438,20 +22625,11 @@
         "socket",
         "power-cord",
         "cord",
-        "electrical",
-        "power",
-        "on",
-        "off",
-        "power-button",
-        "startup",
-        "shutdown"
+        "electrical"
       ],
       "aliases": [
         "power-cable",
-        "electric-cord",
-        "power",
-        "power-button",
-        "turn-on"
+        "electric-cord"
       ],
       "styles": [
         "filled",
@@ -21748,6 +22926,37 @@
       ]
     },
     {
+      "name": "processor",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "processor",
+        "chip",
+        "cpu",
+        "microchip",
+        "hardware",
+        "computing"
+      ],
+      "aliases": [
+        "processor",
+        "chip",
+        "cpu"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "pyramid",
       "category": {
         "id": "geometry",
@@ -21763,6 +22972,35 @@
       "aliases": [
         "triangular-pyramid",
         "tetrahedron"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "qr-code",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "qr",
+        "qrcode",
+        "scan",
+        "code",
+        "matrix"
+      ],
+      "aliases": [
+        "qr",
+        "qr-scan"
       ],
       "styles": [
         "filled",
@@ -22286,6 +23524,35 @@
       ]
     },
     {
+      "name": "remote-control",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "remote",
+        "control",
+        "device",
+        "infrared",
+        "wireless"
+      ],
+      "aliases": [
+        "remote",
+        "controller"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "renewable-water-energy",
       "category": {
         "id": "power-electrical",
@@ -22474,6 +23741,35 @@
         "road-tunnel",
         "traffic-tunnel",
         "underground-road"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rocket-launch",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "launch",
+        "rocket",
+        "deploy",
+        "start",
+        "release"
+      ],
+      "aliases": [
+        "deploy",
+        "go-live"
       ],
       "styles": [
         "filled",
@@ -22787,6 +24083,36 @@
         "roll-around",
         "rotate-z",
         "spin-z"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "router",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "router",
+        "network",
+        "routing",
+        "traffic",
+        "connectivity",
+        "infrastructure"
+      ],
+      "aliases": [
+        "router",
+        "network-router"
       ],
       "styles": [
         "filled",
@@ -23124,6 +24450,35 @@
       ]
     },
     {
+      "name": "sandbox",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "sandbox",
+        "safe",
+        "isolated",
+        "test",
+        "environment"
+      ],
+      "aliases": [
+        "safe-mode",
+        "test-sandbox"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "scan-qrcode",
       "category": {
         "id": "security",
@@ -23447,6 +24802,125 @@
       ]
     },
     {
+      "name": "server-hardware",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "server",
+        "rack-server",
+        "hardware",
+        "data-center",
+        "compute"
+      ],
+      "aliases": [
+        "rack-server",
+        "physical-server",
+        "compute-server"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "server-rack",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "rack",
+        "server-rack",
+        "hardware",
+        "data-center",
+        "infrastructure"
+      ],
+      "aliases": [
+        "server-rack",
+        "rack-hardware",
+        "equipment-rack"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "server-tower",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "server",
+        "tower-server",
+        "hardware",
+        "standalone",
+        "compute"
+      ],
+      "aliases": [
+        "tower-server",
+        "server-tower",
+        "standalone-server"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "settings",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "settings",
+        "configuration",
+        "preferences",
+        "options",
+        "gear"
+      ],
+      "aliases": [
+        "config",
+        "preferences"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "settings-adjust",
       "category": {
         "id": "actions--general-interface",
@@ -23456,17 +24930,11 @@
         "settings",
         "adjust",
         "configure",
-        "sliders",
-        "configuration",
-        "preferences",
-        "options",
-        "gear"
+        "sliders"
       ],
       "aliases": [
         "settings-sliders",
-        "adjust-controls",
-        "config",
-        "preferences"
+        "adjust-controls"
       ],
       "styles": [
         "outline"
@@ -24501,6 +25969,64 @@
       ]
     },
     {
+      "name": "smartphone-1",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "smartphone",
+        "mobile",
+        "device",
+        "phone",
+        "ios"
+      ],
+      "aliases": [
+        "mobile-phone",
+        "iphone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "smartphone-2",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "smartphone",
+        "mobile",
+        "device",
+        "phone",
+        "ios"
+      ],
+      "aliases": [
+        "mobile-phone",
+        "iphone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "smoke-heat-detector",
       "category": {
         "id": "fire",
@@ -25147,6 +26673,34 @@
       ]
     },
     {
+      "name": "split",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "split",
+        "divide",
+        "separate",
+        "branch",
+        "fork"
+      ],
+      "aliases": [
+        "divide",
+        "split-flow"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "sprout",
       "category": {
         "id": "nature-landscaping",
@@ -25673,6 +27227,35 @@
       ]
     },
     {
+      "name": "storage-drive",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "storage",
+        "hdd",
+        "ssd",
+        "disk",
+        "drive"
+      ],
+      "aliases": [
+        "hard-drive",
+        "solid-state-drive"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "store-shop",
       "category": {
         "id": "building-construction",
@@ -25754,6 +27337,36 @@
         "double-street-light",
         "twin-lamp-post",
         "street-light-double"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "studio-display",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "studio-display",
+        "monitor",
+        "screen",
+        "thunderbolt",
+        "display",
+        "hardware"
+      ],
+      "aliases": [
+        "external-monitor",
+        "thunderbolt-display"
       ],
       "styles": [
         "filled",
@@ -26008,6 +27621,35 @@
       ]
     },
     {
+      "name": "system-cloud",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "cloud",
+        "storage",
+        "online",
+        "server",
+        "network"
+      ],
+      "aliases": [
+        "cloud-storage",
+        "online-cloud"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "t-pipe",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -26116,6 +27758,64 @@
         "table-lamp",
         "desk-lamp",
         "bedside-lamp"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tablet-1",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "tablet",
+        "device",
+        "touchscreen",
+        "mobile",
+        "pad"
+      ],
+      "aliases": [
+        "tablet-device",
+        "ipad"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tablet-2",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "tablet",
+        "device",
+        "touchscreen",
+        "mobile",
+        "pad"
+      ],
+      "aliases": [
+        "tablet-device",
+        "ipad"
       ],
       "styles": [
         "filled",
@@ -26270,24 +27970,47 @@
       ]
     },
     {
-      "name": "terminal-unit",
+      "name": "terminal",
       "category": {
-        "id": "heating-ventilation-air-conditioning",
-        "label": "heating ventilation air conditioning"
+        "id": "system-technology",
+        "label": "system & technology"
       },
       "tags": [
         "terminal",
         "code",
         "cli",
         "command",
-        "developer",
-        "refrigerant",
-        "unit",
-        "control"
+        "developer"
       ],
       "aliases": [
         "command-line",
-        "cli",
+        "cli"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "terminal-unit",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "refrigerant",
+        "unit",
+        "control",
+        "terminal"
+      ],
+      "aliases": [
         "refrigerant-terminal"
       ],
       "styles": [
@@ -29488,6 +31211,35 @@
       ]
     },
     {
+      "name": "webcam",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "webcam",
+        "camera",
+        "view",
+        "video",
+        "streaming"
+      ],
+      "aliases": [
+        "web-camera",
+        "camera-view"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "weed-grass",
       "category": {
         "id": "nature-landscaping",
@@ -29592,6 +31344,35 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wifi",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "wifi",
+        "wireless",
+        "network",
+        "connectivity",
+        "internet"
+      ],
+      "aliases": [
+        "wifi",
+        "wi-fi",
+        "wlan"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
