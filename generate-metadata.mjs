@@ -225,6 +225,17 @@ async function generateMetadata() {
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
   
+  // Normalize category IDs: map "document-statistics" to "document & statistics"
+  iconList = iconList.map(icon => {
+    if (icon.category.id === "document-statistics") {
+      return {
+        ...icon,
+        category: { id: "document--statistics", label: "document & statistics" }
+      };
+    }
+    return icon;
+  });
+  
   // Apply corrections from metadata-corrections.json
   iconList = await applyCorrections(iconList);
   

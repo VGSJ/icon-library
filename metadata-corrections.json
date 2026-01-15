@@ -76,6 +76,13 @@
         "id": "wayfinding",
         "label": "wayfinding"
       }
+    },
+    {
+      "name": "fire",
+      "category": {
+        "id": "fire",
+        "label": "fire"
+      }
     }
   ]
 }

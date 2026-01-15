@@ -424,7 +424,7 @@
     {
       "name": "archive-box",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -455,7 +455,7 @@
     {
       "name": "archive-inbox",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -1040,8 +1040,8 @@
     {
       "name": "bar-chart",
       "category": {
-        "id": "document-statistics",
-        "label": "document-statistics"
+        "id": "document--statistics",
+        "label": "document & statistics"
       },
       "tags": [
         "chart",
@@ -1071,8 +1071,8 @@
     {
       "name": "bar-chart-horizontal",
       "category": {
-        "id": "document-statistics",
-        "label": "document-statistics"
+        "id": "document--statistics",
+        "label": "document & statistics"
       },
       "tags": [
         "chart",
@@ -1102,8 +1102,8 @@
     {
       "name": "bar-chart-vertical",
       "category": {
-        "id": "document-statistics",
-        "label": "document-statistics"
+        "id": "document--statistics",
+        "label": "document & statistics"
       },
       "tags": [
         "chart",
@@ -1230,7 +1230,7 @@
     {
       "name": "blank-paper",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -1262,7 +1262,7 @@
     {
       "name": "blank-paper-copy",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -1356,7 +1356,7 @@
     {
       "name": "book-guide",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -2017,7 +2017,7 @@
     {
       "name": "checklist",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -2047,7 +2047,7 @@
     {
       "name": "checklist-search",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -2634,7 +2634,7 @@
     {
       "name": "clipboard",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -2663,7 +2663,7 @@
     {
       "name": "clipboard-add",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -2694,7 +2694,7 @@
     {
       "name": "clipboard-chart",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -2725,7 +2725,7 @@
     {
       "name": "clipboard-check",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -2756,7 +2756,7 @@
     {
       "name": "clipboard-remove",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -2786,7 +2786,7 @@
     {
       "name": "clipboard-sync",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3160,7 +3160,7 @@
     {
       "name": "document-add",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3190,7 +3190,7 @@
     {
       "name": "document-add-text",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3221,7 +3221,7 @@
     {
       "name": "document-bag",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3254,7 +3254,7 @@
     {
       "name": "document-locked",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3288,7 +3288,7 @@
     {
       "name": "document-locked-lines",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3322,7 +3322,7 @@
     {
       "name": "document-stats",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3356,7 +3356,7 @@
     {
       "name": "document-text",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3388,7 +3388,7 @@
     {
       "name": "document-verified",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3652,7 +3652,7 @@
     {
       "name": "eform",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3744,7 +3744,7 @@
     {
       "name": "email",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -3867,7 +3867,7 @@
     {
       "name": "error-report",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -4404,7 +4404,7 @@
     {
       "name": "file-cvs",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -4437,7 +4437,7 @@
     {
       "name": "file-properties",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -4608,8 +4608,8 @@
     {
       "name": "fire",
       "category": {
-        "id": "system-technology",
-        "label": "system & technology"
+        "id": "fire",
+        "label": "fire"
       },
       "tags": [
         "tank",
@@ -5228,7 +5228,7 @@
     {
       "name": "folder",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -5257,7 +5257,7 @@
     {
       "name": "folder-add",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -5286,7 +5286,7 @@
     {
       "name": "folder-lock",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -5315,7 +5315,7 @@
     {
       "name": "folder-move",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -5343,7 +5343,7 @@
     {
       "name": "folder-open",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -6845,7 +6845,7 @@
     {
       "name": "mail-invite",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -7708,7 +7708,7 @@
     {
       "name": "notebook-1",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -7739,7 +7739,7 @@
     {
       "name": "notebook-2",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -7770,7 +7770,7 @@
     {
       "name": "notebook-alert",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -9386,7 +9386,7 @@
     {
       "name": "stapled-notebook",
       "category": {
-        "id": "document-statistics",
+        "id": "document--statistics",
         "label": "document & statistics"
       },
       "tags": [
@@ -9769,8 +9769,8 @@
     {
       "name": "timeline-gantt",
       "category": {
-        "id": "document-statistics",
-        "label": "document-statistics"
+        "id": "document--statistics",
+        "label": "document & statistics"
       },
       "tags": [
         "timeline",
