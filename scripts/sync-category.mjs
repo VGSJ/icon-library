@@ -23,38 +23,33 @@ async function figmaFetch(url) {
 async function cleanupCategory(categoryName) {
   // Before syncing, remove old SVGs for this category to ensure clean update
   // This ensures renamed/deleted icons in Figma are removed locally
-  const icons = new Map();
+  // ONLY delete icons that belong to THIS category, not other categories
+  
   const RAW_SVG_DIR = path.join(ROOT, "raw-svg");
   
   try {
-    // Scan current SVGs
-    const styles = await fs.readdir(RAW_SVG_DIR);
-    for (const style of styles) {
-      const stylePath = path.join(RAW_SVG_DIR, style);
-      const stat = await fs.stat(stylePath);
-      if (!stat.isDirectory()) continue;
-      
-      const sizes = await fs.readdir(stylePath);
-      for (const size of sizes) {
-        const sizePath = path.join(stylePath, size);
-        const sstat = await fs.stat(sizePath);
-        if (!sstat.isDirectory()) continue;
-        
-        const files = await fs.readdir(sizePath);
-        for (const file of files) {
-          if (!file.endsWith(".svg")) continue;
-          const match = file.match(/^icon-(.+?)-(outline|outlined|filled|fill)-(\d+)(?:px)?\.svg$/);
-          if (!match) continue;
-          
-          const iconName = match[1];
-          if (!icons.has(iconName)) icons.set(iconName, []);
-          icons.get(iconName).push(path.join(stylePath, size, file));
-        }
+    // First, read current metadata to see which icons are in this category
+    const metaFile = path.join(ROOT, "metadata", "icons.json");
+    let currentMetadata = { icons: [] };
+    try {
+      const data = await fs.readFile(metaFile, "utf8");
+      currentMetadata = JSON.parse(data);
+    } catch {
+      // Metadata might not exist yet
+    }
+    
+    // Get icons currently marked as belonging to this category
+    const normalizedCategory = categoryName.toLowerCase().trim();
+    const categoryId = normalizedCategory.replace(/\s+/g, "-").replace(/&/g, "-").replace(/-+/g, "-");
+    
+    const iconsInThisCategory = new Set();
+    for (const icon of currentMetadata.icons || []) {
+      if (icon.category?.id === categoryId) {
+        iconsInThisCategory.add(icon.name);
       }
     }
     
-    // Fetch Figma metadata for this category
-    const normalizedCategory = categoryName.toLowerCase().trim();
+    // Fetch Figma metadata for this category NOW
     const fileKey = env("FIGMA_FILE_KEY");
     const compsetsUrl = `https://api.figma.com/v1/files/${fileKey}/component_sets`;
     const compsetsData = await figmaFetch(compsetsUrl);
@@ -73,23 +68,32 @@ async function cleanupCategory(categoryName) {
       }
     }
     
-    // Delete local SVGs for icons no longer in this category in Figma
+    // Delete SVGs ONLY for icons that are:
+    // 1. Currently in this category locally
+    // 2. NO LONGER in this category in Figma
     let deletedCount = 0;
-    for (const [iconName, files] of icons) {
+    for (const iconName of iconsInThisCategory) {
       if (!figmaIcons.has(iconName)) {
-        for (const file of files) {
-          try {
-            await fs.unlink(file);
-            deletedCount++;
-          } catch (e) {
-            // File might already be deleted
+        // Icon was in this category but is now gone from Figma
+        // Delete all its SVG files
+        const styles = ["filled", "outline"];
+        for (const style of styles) {
+          const sizes = [16, 24, 32, 40, 48, 64, 72];
+          for (const size of sizes) {
+            const filePath = path.join(RAW_SVG_DIR, style, String(size), `icon-${iconName}-${style}-${size}.svg`);
+            try {
+              await fs.unlink(filePath);
+              deletedCount++;
+            } catch (e) {
+              // File might not exist (different style, size, or naming)
+            }
           }
         }
       }
     }
     
     if (deletedCount > 0) {
-      console.log(`🗑️  Cleaned up ${deletedCount} SVGs no longer in '${categoryName}' category`);
+      console.log(`🗑️  Cleaned up ${deletedCount} SVGs for icons removed from '${categoryName}' category`);
     }
   } catch (e) {
     // Cleanup is optional - don't fail if it errors
