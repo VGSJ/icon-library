@@ -656,6 +656,36 @@
       ]
     },
     {
+      "name": "apps-grid",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "menu",
+        "grid",
+        "overview",
+        "apps",
+        "launcher"
+      ],
+      "aliases": [
+        "app-menu",
+        "grid-menu",
+        "apps-overview"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "ar-cube",
       "category": {
         "id": "geometry",
@@ -1380,6 +1410,37 @@
       ],
       "aliases": [
         "up-square"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "ratio",
+        "aspect",
+        "proportion",
+        "size",
+        "layout",
+        "scale"
+      ],
+      "aliases": [
+        "aspect-ratio",
+        "size-ratio",
+        "layout-ratio"
       ],
       "styles": [
         "filled",
@@ -2636,6 +2697,36 @@
       ]
     },
     {
+      "name": "carousel",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "reels",
+        "carousel",
+        "slide",
+        "horizontal",
+        "content"
+      ],
+      "aliases": [
+        "slider",
+        "content-carousel",
+        "reels-view"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "cast",
       "category": {
         "id": "editor",
@@ -2653,6 +2744,37 @@
         "screen-cast",
         "view-cast",
         "layout-cast"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "category-menu",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "category",
+        "classify",
+        "cluster",
+        "menu",
+        "app",
+        "grouping"
+      ],
+      "aliases": [
+        "categories",
+        "app-categories",
+        "cluster-menu"
       ],
       "styles": [
         "filled",
@@ -7676,6 +7798,94 @@
       ]
     },
     {
+      "name": "grid-6-horizontal",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "grid",
+        "six",
+        "horizontal",
+        "frame",
+        "layout"
+      ],
+      "aliases": [
+        "grid-6",
+        "six-grid-horizontal"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "grid-6-vertical",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "grid",
+        "six",
+        "vertical",
+        "frame",
+        "layout"
+      ],
+      "aliases": [
+        "grid-6-vertical",
+        "six-grid-vertical"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "grid-frame",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "grid",
+        "frame",
+        "layout",
+        "structure",
+        "container"
+      ],
+      "aliases": [
+        "grid-layout",
+        "grid-container",
+        "frame-grid"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "group",
       "category": {
         "id": "editor",
@@ -8699,6 +8909,242 @@
         "lantern",
         "portable-lamp",
         "camping-lantern"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "layer-double",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "layer",
+        "double",
+        "stack",
+        "two",
+        "layout"
+      ],
+      "aliases": [
+        "two-layers",
+        "double-layer"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "layer-multiple",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "layer",
+        "multiple",
+        "stack",
+        "collection",
+        "layout"
+      ],
+      "aliases": [
+        "three-layers",
+        "multi-layer"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "layer-single",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "layer",
+        "single",
+        "stack",
+        "one",
+        "layout"
+      ],
+      "aliases": [
+        "one-layer",
+        "single-layer"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "layout-rows-3",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "layout",
+        "rows",
+        "grid",
+        "three-rows",
+        "structure"
+      ],
+      "aliases": [
+        "grid-rows-3",
+        "layout-three-rows"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "layout-rows-3-3",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "layout",
+        "rows",
+        "grid",
+        "collection",
+        "structure"
+      ],
+      "aliases": [
+        "grid-rows-3-3",
+        "layout-collection",
+        "layout-two-rows"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "layout-sidebar",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "layout",
+        "sidebar",
+        "grid",
+        "window",
+        "panel"
+      ],
+      "aliases": [
+        "sidebar-layout",
+        "layout-panel",
+        "window-sidebar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "layout-topbar",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "layout",
+        "topbar",
+        "grid",
+        "window",
+        "header"
+      ],
+      "aliases": [
+        "topbar-layout",
+        "layout-header",
+        "window-topbar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "layout-window",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "layout",
+        "window",
+        "grid",
+        "collection",
+        "container"
+      ],
+      "aliases": [
+        "window-layout",
+        "grid-window",
+        "layout-container"
       ],
       "styles": [
         "filled",
@@ -9859,6 +10305,36 @@
       ]
     },
     {
+      "name": "menu-collection",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "menu",
+        "collection",
+        "apps",
+        "overview",
+        "grid"
+      ],
+      "aliases": [
+        "collection-menu",
+        "apps-collection",
+        "menu-overview"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "menu-hamburger",
       "category": {
         "id": "actions-general-interface",
@@ -10714,6 +11190,37 @@
         "camera-orbit"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "page-auto-size",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "auto-size",
+        "automatic",
+        "page",
+        "size",
+        "layout",
+        "resize"
+      ],
+      "aliases": [
+        "auto-page-size",
+        "page-fit",
+        "page-resize-auto"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -12605,6 +13112,128 @@
       ]
     },
     {
+      "name": "sidebar-collapse",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "collapse",
+        "sidebar",
+        "hide",
+        "layout",
+        "panel"
+      ],
+      "aliases": [
+        "sidebar-hide",
+        "collapse-panel",
+        "hide-sidebar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sidebar-expand",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "expand",
+        "sidebar",
+        "show",
+        "layout",
+        "panel"
+      ],
+      "aliases": [
+        "sidebar-show",
+        "expand-panel",
+        "show-sidebar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sidebar-left",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "sidebar",
+        "left",
+        "grid",
+        "layout",
+        "frame",
+        "navigation"
+      ],
+      "aliases": [
+        "left-sidebar",
+        "sidebar-layout",
+        "layout-sidebar-left"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sidebar-right",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "sidebar",
+        "right",
+        "grid",
+        "layout",
+        "frame",
+        "navigation"
+      ],
+      "aliases": [
+        "right-sidebar",
+        "sidebar-layout",
+        "layout-sidebar-right"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "sign-in",
       "category": {
         "id": "actions-general-interface",
@@ -13421,6 +14050,36 @@
         "candles",
         "candle-set",
         "table-candle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "table-grid",
+      "category": {
+        "id": "layout-grid",
+        "label": "layout & grid"
+      },
+      "tags": [
+        "table",
+        "grid",
+        "rows",
+        "columns",
+        "data",
+        "layout"
+      ],
+      "aliases": [
+        "data-table",
+        "grid-table"
       ],
       "styles": [
         "filled",
