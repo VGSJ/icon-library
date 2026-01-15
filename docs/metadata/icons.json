@@ -7194,6 +7194,62 @@
       ]
     },
     {
+      "name": "file-excel",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "sheet",
+        "numbers",
+        "microsoft",
+        "csv",
+        "download"
+      ],
+      "aliases": [
+        "project-docs",
+        "file-format"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "file-pdf",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "document",
+        "format",
+        "adobe",
+        "pdf",
+        "download"
+      ],
+      "aliases": [
+        "project-docs",
+        "file-format"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "file-properties",
       "category": {
         "id": "document--statistics",
@@ -7214,6 +7270,61 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "file-revit",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "3d",
+        "revit",
+        "architecture",
+        "import",
+        "download"
+      ],
+      "aliases": [
+        "project-docs",
+        "file-format"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "file-word",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "word",
+        "document",
+        "download",
+        "docx"
+      ],
+      "aliases": [
+        "project-docs",
+        "file-format"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -8090,6 +8201,32 @@
         "layout-plan",
         "floor-plan",
         "building-plan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "flow-chart",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "mindmap",
+        "hierarchy",
+        "structure"
+      ],
+      "aliases": [
+        "flow-diagram"
       ],
       "styles": [
         "filled",
@@ -9183,6 +9320,35 @@
         "heat-detector",
         "fire-heat-detector",
         "thermal-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "heatmap",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "heatmap",
+        "data",
+        "visualization",
+        "analytics",
+        "statistics"
+      ],
+      "aliases": [
+        "data-heatmap",
+        "intensity-map"
       ],
       "styles": [
         "filled",
@@ -12755,6 +12921,70 @@
       ]
     },
     {
+      "name": "piechart-line",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "pie-chart",
+        "line-chart",
+        "graph",
+        "data",
+        "analytics",
+        "statistics",
+        "hybrid-chart"
+      ],
+      "aliases": [
+        "pie-line-chart",
+        "combined-chart",
+        "mixed-chart",
+        "pie-graph"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "piechart-slice",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "pie-chart",
+        "slice",
+        "segment",
+        "chart",
+        "data",
+        "analytics"
+      ],
+      "aliases": [
+        "pie-slice",
+        "chart-slice",
+        "pie-segment"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "pillow",
       "category": {
         "id": "furniture-things",
@@ -15874,11 +16104,46 @@
         "schedule-tracker"
       ],
       "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
         16,
-        24
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "timeline-roadmap",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "timeline",
+        "steps",
+        "plan",
+        "roadmap",
+        "progress"
+      ],
+      "aliases": [
+        "process-timeline",
+        "step-timeline",
+        "workflow-steps",
+        "gantt-chart"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
       ]
     },
     {
@@ -16140,6 +16405,33 @@
       "aliases": [
         "delete-trash",
         "remove-bin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "tree-hierarchy",
+      "category": {
+        "id": "document--statistics",
+        "label": "document & statistics"
+      },
+      "tags": [
+        "parent-child",
+        "hierarchy",
+        "structure",
+        "layers"
+      ],
+      "aliases": [
+        "flow-diagram"
       ],
       "styles": [
         "filled",
