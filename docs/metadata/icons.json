@@ -1513,6 +1513,35 @@
       ]
     },
     {
+      "name": "award",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "award",
+        "ribbon",
+        "prize",
+        "performance",
+        "achievement"
+      ],
+      "aliases": [
+        "prize-ribbon",
+        "achievement-award"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "badge-verified",
       "category": {
         "id": "communication",
@@ -2488,6 +2517,35 @@
       ]
     },
     {
+      "name": "calculator",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "calculate",
+        "calculator",
+        "count",
+        "math",
+        "total"
+      ],
+      "aliases": [
+        "calc",
+        "compute"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "call-incoming",
       "category": {
         "id": "communication",
@@ -2713,6 +2771,35 @@
         "slider",
         "content-carousel",
         "reels-view"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cash",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "money",
+        "bill",
+        "dollar",
+        "cash",
+        "currency"
+      ],
+      "aliases": [
+        "banknote",
+        "paper-money"
       ],
       "styles": [
         "filled",
@@ -5333,6 +5420,64 @@
       ]
     },
     {
+      "name": "dollar-coin",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "dollar",
+        "currency",
+        "money",
+        "coin",
+        "usd"
+      ],
+      "aliases": [
+        "usd-coin",
+        "dollar-currency"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "dong-coin",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "dong",
+        "currency",
+        "money",
+        "coin",
+        "vnd"
+      ],
+      "aliases": [
+        "vnd-coin",
+        "dong-currency"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "door-barrier",
       "category": {
         "id": "security",
@@ -6079,6 +6224,34 @@
       ],
       "aliases": [
         "escalator-up-person"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "euro-coin",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "euro",
+        "currency",
+        "money",
+        "coin"
+      ],
+      "aliases": [
+        "eur-coin",
+        "euro-currency"
       ],
       "styles": [
         "filled",
@@ -7739,6 +7912,35 @@
       ]
     },
     {
+      "name": "gift",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "gift",
+        "present",
+        "reward",
+        "bonus",
+        "surprise"
+      ],
+      "aliases": [
+        "present-box",
+        "reward-gift"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "gps",
       "category": {
         "id": "wayfinding",
@@ -7962,6 +8164,37 @@
         "contrast-toggle"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hand-coin",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "value",
+        "money",
+        "coin",
+        "hand",
+        "pay",
+        "earn"
+      ],
+      "aliases": [
+        "earn-money",
+        "receive-payment",
+        "value-hand"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -11201,6 +11434,65 @@
       ]
     },
     {
+      "name": "package",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "package",
+        "box",
+        "parcel",
+        "shipment",
+        "delivery"
+      ],
+      "aliases": [
+        "box",
+        "parcel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "package-delivery",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "package",
+        "delivery",
+        "shipment",
+        "supermarket",
+        "order"
+      ],
+      "aliases": [
+        "delivery-box",
+        "shipped-package",
+        "order-delivery"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "page-auto-size",
       "category": {
         "id": "layout-grid",
@@ -11774,6 +12066,35 @@
       ]
     },
     {
+      "name": "pound-coin",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "pound",
+        "currency",
+        "money",
+        "coin",
+        "gbp"
+      ],
+      "aliases": [
+        "gbp-coin",
+        "pound-currency"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "printer",
       "category": {
         "id": "actions-general-interface",
@@ -11936,6 +12257,36 @@
       "aliases": [
         "seen",
         "message-read"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "receipt",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "payment",
+        "receipt",
+        "bill",
+        "invoice",
+        "transaction"
+      ],
+      "aliases": [
+        "invoice",
+        "payment-receipt",
+        "billing"
       ],
       "styles": [
         "filled",
@@ -12540,6 +12891,35 @@
       ]
     },
     {
+      "name": "sale-sign",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "percent",
+        "sale",
+        "discount",
+        "promotion",
+        "offer"
+      ],
+      "aliases": [
+        "sale-percent",
+        "discount-rate"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "scan-qrcode",
       "category": {
         "id": "security",
@@ -13098,6 +13478,96 @@
         "shipment",
         "cargo",
         "freight"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shopping-bag",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "bag",
+        "personal-belonging",
+        "purchase",
+        "retail",
+        "buy"
+      ],
+      "aliases": [
+        "store-bag",
+        "shopping-bag"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shopping-basket",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "basket",
+        "shopping",
+        "grocery",
+        "cart",
+        "purchase",
+        "buy",
+        "supermarket"
+      ],
+      "aliases": [
+        "shopping-basket"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shopping-trolley",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "trolley",
+        "cart",
+        "shopping",
+        "checkout",
+        "purchase",
+        "supermarket",
+        "grocery"
+      ],
+      "aliases": [
+        "shopping-basket",
+        "cart"
       ],
       "styles": [
         "filled",
@@ -15577,6 +16047,35 @@
         "y-axis-plane",
         "front-plane",
         "depth-plane"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "yen-coin",
+      "category": {
+        "id": "payment-rewards",
+        "label": "payment & rewards"
+      },
+      "tags": [
+        "yen",
+        "currency",
+        "money",
+        "coin",
+        "jpy"
+      ],
+      "aliases": [
+        "jpy-coin",
+        "yen-currency"
       ],
       "styles": [
         "filled",
