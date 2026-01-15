@@ -5,9 +5,143 @@ const els = {
   style: document.getElementById("style"),
   size: document.getElementById("size"),
   categories: document.getElementById("categories"),
+  detailsPanel: document.getElementById("detailsPanel"),
+  closePanel: document.getElementById("closePanel"),
+  iconName: document.getElementById("iconName"),
+  previewBox: document.getElementById("previewBox"),
+  copyBtn: document.getElementById("copyBtn"),
+  downloadBtn: document.getElementById("downloadBtn"),
 };
 
 let selectedCategory = null; // Track selected category filter
+let selectedIcon = null; // Track selected icon in details panel
+let detailsFormat = "svg"; // Track selected format
+let detailsSize = "32"; // Track selected size
+
+/* --------------------------------------------------
+   Details Panel
+-------------------------------------------------- */
+function openDetailsPanel(icon) {
+  selectedIcon = icon;
+  detailsFormat = "svg";
+  detailsSize = "32";
+  
+  els.detailsPanel.classList.remove("hidden");
+  els.iconName.textContent = icon.name;
+  
+  updateDetailsPreview();
+  updateDetailsButtons();
+}
+
+function closeDetailsPanel() {
+  els.detailsPanel.classList.add("hidden");
+  selectedIcon = null;
+}
+
+function updateDetailsPreview() {
+  if (!selectedIcon) return;
+  
+  els.previewBox.innerHTML = "…";
+  
+  const style = els.style.value || "outline";
+  const size = parseInt(detailsSize);
+  
+  fetchSvg(selectedIcon.name, style, size)
+    .then((svg) => {
+      const container = document.createElement("div");
+      container.innerHTML = svg;
+      els.previewBox.innerHTML = "";
+      els.previewBox.appendChild(container.firstElementChild || container);
+    })
+    .catch(() => {
+      els.previewBox.innerHTML = "SVG not found";
+    });
+}
+
+function updateDetailsButtons() {
+  // Update format buttons
+  document.querySelectorAll(".format-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.format === detailsFormat);
+  });
+  
+  // Update size buttons
+  document.querySelectorAll(".size-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.size === detailsSize);
+  });
+}
+
+els.closePanel?.addEventListener("click", closeDetailsPanel);
+
+// Format button listeners
+document.querySelectorAll(".format-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    detailsFormat = btn.dataset.format;
+    updateDetailsButtons();
+    updateDetailsPreview();
+  });
+});
+
+// Size button listeners
+document.querySelectorAll(".size-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    detailsSize = btn.dataset.size;
+    updateDetailsButtons();
+    updateDetailsPreview();
+  });
+});
+
+// Copy button listener
+els.copyBtn?.addEventListener("click", async () => {
+  if (!selectedIcon) return;
+  
+  try {
+    const svg = await fetchSvg(selectedIcon.name, els.style.value || "outline", parseInt(detailsSize));
+    const ok = await copyText(svg);
+    if (ok) {
+      showToast(`Copied: ${selectedIcon.name}`);
+    } else {
+      openManualCopy(svg);
+    }
+  } catch (e) {
+    showToast(`Error: ${e.message}`);
+  }
+});
+
+// Download button listener
+els.downloadBtn?.addEventListener("click", async () => {
+  if (!selectedIcon) return;
+  
+  try {
+    const style = els.style.value || "outline";
+    const size = parseInt(detailsSize);
+    const svg = await fetchSvg(selectedIcon.name, style, size);
+    
+    let content = svg;
+    let filename = `${selectedIcon.name}-${style}-${size}.${detailsFormat}`;
+    let mimeType = "image/svg+xml";
+    
+    if (detailsFormat === "png") {
+      // For PNG, we would need a server-side conversion or canvas approach
+      // For now, just download SVG
+      showToast("PNG download coming soon");
+      return;
+    }
+    
+    const blob = new Blob([content], { type: mimeType });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    showToast(`Downloaded: ${filename}`);
+  } catch (e) {
+    showToast(`Error: ${e.message}`);
+  }
+});
 
 /* --------------------------------------------------
    Toast
@@ -201,7 +335,7 @@ function renderCard(icon, style, size) {
   const card = document.createElement("button");
   card.type = "button";
   card.className = "card";
-  card.title = "Click to copy SVG";
+  card.title = "Click to view details";
 
   const preview = document.createElement("div");
   preview.className = "preview";
@@ -237,18 +371,7 @@ function renderCard(icon, style, size) {
     });
 
   card.addEventListener("click", async () => {
-    const path = svgPath(icon.name, style, size);
-    try {
-      const svg = await fetchSvg(icon.name, style, size);
-      const ok = await copyText(svg);
-      if (ok) {
-        showToast(`Copied SVG: ${icon.name} (${style} ${size})`);
-      } else {
-        openManualCopy(svg);
-      }
-    } catch (_) {
-      showToast(`Missing: ${path}`);
-    }
+    openDetailsPanel(icon);
   });
 
   return card;

@@ -53,6 +53,50 @@
         <div id="status" class="status">Loading icons…</div>
         <div id="grid" class="grid" aria-live="polite"></div>
       </main>
+
+      <div id="detailsPanel" class="details-panel hidden">
+        <div class="details-header">
+          <button id="closePanel" class="close-btn">✕</button>
+        </div>
+        
+        <div class="details-content">
+          <h2 id="iconName" class="icon-name"></h2>
+          
+          <div class="details-preview">
+            <div id="previewBox" class="preview-box"></div>
+          </div>
+          
+          <div class="details-actions">
+            <button id="copyBtn" class="action-btn copy-btn">
+              <img src="./raw-svg/outline/16/icon-copy-outline-16.svg" alt="" />
+              Copy
+            </button>
+            <button id="downloadBtn" class="action-btn download-btn">
+              <img src="./raw-svg/outline/16/icon-download-outline-16.svg" alt="" />
+              Download
+            </button>
+          </div>
+          
+          <div class="details-section">
+            <label class="section-label">File Type</label>
+            <div class="format-buttons">
+              <button class="format-btn active" data-format="svg">SVG</button>
+              <button class="format-btn" data-format="png">PNG</button>
+            </div>
+          </div>
+          
+          <div class="details-section">
+            <label class="section-label">Size</label>
+            <div class="size-buttons">
+              <button class="size-btn" data-size="16">16</button>
+              <button class="size-btn" data-size="24">24</button>
+              <button class="size-btn active" data-size="32">32</button>
+              <button class="size-btn" data-size="40">40</button>
+              <button class="size-btn" data-size="48">48</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="./app.js"></script>
