@@ -8093,6 +8093,35 @@
       ]
     },
     {
+      "name": "hexagon-2",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "hexagon",
+        "geometry",
+        "polygon",
+        "2d",
+        "shape"
+      ],
+      "aliases": [
+        "six-sided",
+        "hex-shape"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "hospital",
       "category": {
         "id": "building-construction",
