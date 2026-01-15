@@ -362,6 +362,36 @@
       ]
     },
     {
+      "name": "antenna-connection",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "antenna",
+        "connection",
+        "signal",
+        "communication",
+        "network",
+        "receiver"
+      ],
+      "aliases": [
+        "antenna",
+        "signal-antenna",
+        "network-antenna"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "apple",
       "category": {
         "id": "housekeeping",
@@ -1188,6 +1218,64 @@
       ]
     },
     {
+      "name": "balcony",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "balcony",
+        "building",
+        "exterior",
+        "outdoor",
+        "terrace",
+        "architecture"
+      ],
+      "aliases": [
+        "balcony",
+        "building-balcony",
+        "exterior-balcony"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bank",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "bank",
+        "finance",
+        "building",
+        "institution"
+      ],
+      "aliases": [
+        "financial-institution"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "bar-chart",
       "category": {
         "id": "document--statistics",
@@ -1310,6 +1398,67 @@
       ]
     },
     {
+      "name": "basement",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "basement",
+        "underground",
+        "lower-level",
+        "storage",
+        "building"
+      ],
+      "aliases": [
+        "basement",
+        "underground-floor",
+        "lower-floor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "basement-stairs",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "basement",
+        "underground",
+        "stairs",
+        "staircase",
+        "access",
+        "lower-level"
+      ],
+      "aliases": [
+        "basement-stairs",
+        "underground-stairs",
+        "lower-level-stairs"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "bedroom-lamp",
       "category": {
         "id": "light",
@@ -1364,6 +1513,35 @@
       "aliases": [
         "bell-off",
         "notification-mute"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "binoculars",
+      "category": {
+        "id": "wayfinding",
+        "label": "Wayfinding"
+      },
+      "tags": [
+        "binoculars",
+        "view",
+        "observe",
+        "zoom",
+        "navigation"
+      ],
+      "aliases": [
+        "field-glasses",
+        "binocular"
       ],
       "styles": [
         "filled",
@@ -1461,6 +1639,38 @@
         "blocked",
         "banned",
         "access-denied"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "blueprint-plan",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "blueprint",
+        "plan",
+        "architect",
+        "measurement",
+        "drawing",
+        "layout",
+        "construction"
+      ],
+      "aliases": [
+        "blueprint",
+        "floor-plan",
+        "architectural-plan"
       ],
       "styles": [
         "filled",
@@ -1609,6 +1819,68 @@
         "breeching-inlet",
         "fire-inlet",
         "fire-department-connection"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "brick-wall",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "brick-wall",
+        "bricks",
+        "wall",
+        "masonry",
+        "construction",
+        "structure"
+      ],
+      "aliases": [
+        "brick-wall",
+        "masonry-wall",
+        "brickwork"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "building-facade",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "facade",
+        "building",
+        "area",
+        "exterior",
+        "structure",
+        "architecture"
+      ],
+      "aliases": [
+        "building-facade",
+        "exterior-wall",
+        "facade-area"
       ],
       "styles": [
         "filled",
@@ -1816,6 +2088,37 @@
       ],
       "aliases": [
         "surveillance-camera"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "camp-tent",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "camp",
+        "tent",
+        "outdoor",
+        "shelter",
+        "temporary",
+        "structure"
+      ],
+      "aliases": [
+        "tent",
+        "camping-tent",
+        "outdoor-shelter"
       ],
       "styles": [
         "filled",
@@ -2626,6 +2929,37 @@
       ]
     },
     {
+      "name": "church",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "church",
+        "religious",
+        "worship",
+        "building",
+        "architecture",
+        "faith"
+      ],
+      "aliases": [
+        "church",
+        "religious-building",
+        "place-of-worship"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "circle-add",
       "category": {
         "id": "actions-general-interface",
@@ -2869,6 +3203,38 @@
       "aliases": [
         "question-circle",
         "help-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "civic-building",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "bank",
+        "town-hall",
+        "city-hall",
+        "civic",
+        "public-building",
+        "government",
+        "administration"
+      ],
+      "aliases": [
+        "bank",
+        "town-hall",
+        "cityhall"
       ],
       "styles": [
         "filled",
@@ -3175,6 +3541,68 @@
       ]
     },
     {
+      "name": "construction-crane",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "construction",
+        "crane",
+        "lifting",
+        "machinery",
+        "building",
+        "site"
+      ],
+      "aliases": [
+        "crane",
+        "construction-crane",
+        "tower-crane"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "construction-truck",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "construction",
+        "truck",
+        "vehicle",
+        "heavy-equipment",
+        "site",
+        "transport"
+      ],
+      "aliases": [
+        "construction-truck",
+        "work-truck",
+        "site-truck"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "conversation",
       "category": {
         "id": "communication",
@@ -3298,6 +3726,38 @@
         "bent-arrow"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "countryside-house",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "country",
+        "countryside",
+        "house",
+        "tree",
+        "hometown",
+        "rural",
+        "home"
+      ],
+      "aliases": [
+        "countryside-house",
+        "rural-home",
+        "hometown-house"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -4040,6 +4500,69 @@
       ]
     },
     {
+      "name": "drill",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "drill",
+        "construction",
+        "tool",
+        "power-tool",
+        "drilling",
+        "maintenance"
+      ],
+      "aliases": [
+        "drill",
+        "power-drill",
+        "construction-drill"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "drill-maintenance",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "drill",
+        "maintenance",
+        "fix",
+        "repair",
+        "tool",
+        "service",
+        "construction"
+      ],
+      "aliases": [
+        "drill-maintenance",
+        "repair-drill",
+        "service-tool"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "dumpster",
       "category": {
         "id": "housekeeping",
@@ -4085,6 +4608,38 @@
         "eform",
         "electronic-form",
         "digital-form"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electrical-floor-plan",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "floor-plan",
+        "electrical",
+        "lighting",
+        "wiring",
+        "layout",
+        "building",
+        "schematic"
+      ],
+      "aliases": [
+        "electrical-plan",
+        "lighting-plan",
+        "electrical-floor-plan"
       ],
       "styles": [
         "filled",
@@ -4402,6 +4957,37 @@
       ],
       "aliases": [
         "escalator-up-person"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "excavator",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "excavator",
+        "construction",
+        "machinery",
+        "digging",
+        "earthwork",
+        "equipment"
+      ],
+      "aliases": [
+        "excavator",
+        "digger",
+        "construction-excavator"
       ],
       "styles": [
         "filled",
@@ -4805,6 +5391,37 @@
       ]
     },
     {
+      "name": "fence",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "fence",
+        "barrier",
+        "boundary",
+        "enclosure",
+        "perimeter",
+        "security"
+      ],
+      "aliases": [
+        "fence",
+        "boundary-fence",
+        "perimeter-fence"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "fight-1",
       "category": {
         "id": "health-safety",
@@ -5085,17 +5702,12 @@
         "water",
         "safety",
         "fire",
-        "engine",
-        "truck",
-        "firetruck",
-        "emergency",
-        "rescue",
-        "vehicle",
         "flame",
         "heat",
         "hot",
         "burn",
         "hazard",
+        "emergency",
         "fas",
         "firewall",
         "security",
@@ -5105,9 +5717,6 @@
       ],
       "aliases": [
         "fire-water-tank",
-        "fire-engine",
-        "fire-truck",
-        "emergency-truck",
         "fire",
         "flame",
         "heat",
@@ -5243,6 +5852,38 @@
         "fire-alarm",
         "fire-call",
         "manual-call-point"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fire-engine-truck",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "fire",
+        "engine",
+        "truck",
+        "firetruck",
+        "emergency",
+        "rescue",
+        "vehicle"
+      ],
+      "aliases": [
+        "fire-engine",
+        "fire-truck",
+        "emergency-truck"
       ],
       "styles": [
         "filled",
@@ -5693,6 +6334,42 @@
       ]
     },
     {
+      "name": "floor-plan",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "floor",
+        "floorplan",
+        "layout",
+        "building",
+        "architecture",
+        "interior",
+        "plan",
+        "floor-plan",
+        "design"
+      ],
+      "aliases": [
+        "floorplan",
+        "building-floor",
+        "layout-plan",
+        "floor-plan",
+        "building-plan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "folder",
       "category": {
         "id": "document--statistics",
@@ -5837,6 +6514,68 @@
       ]
     },
     {
+      "name": "footstep",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "footstep",
+        "footprint",
+        "walking",
+        "path",
+        "movement",
+        "access"
+      ],
+      "aliases": [
+        "footstep",
+        "footprint",
+        "walk"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "forklift",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "forklift",
+        "vehicle",
+        "warehouse",
+        "lifting",
+        "logistics",
+        "industrial"
+      ],
+      "aliases": [
+        "forklift",
+        "lift-truck",
+        "warehouse-vehicle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "fullscreen",
       "category": {
         "id": "actions-general-interface",
@@ -5891,6 +6630,38 @@
       ]
     },
     {
+      "name": "geothermal-power-plant",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "geothermal",
+        "power-plant",
+        "factory",
+        "energy",
+        "renewable",
+        "industrial",
+        "electricity"
+      ],
+      "aliases": [
+        "geothermal-plant",
+        "geothermal-factory",
+        "renewable-power-plant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "gps",
       "category": {
         "id": "wayfinding",
@@ -5904,6 +6675,38 @@
       ],
       "aliases": [
         "gps"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "green-factory",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "green-factory",
+        "factory",
+        "sustainable",
+        "eco",
+        "industrial",
+        "manufacturing",
+        "environment"
+      ],
+      "aliases": [
+        "green-factory",
+        "eco-factory",
+        "sustainable-factory"
       ],
       "styles": [
         "filled",
@@ -6254,10 +7057,10 @@
       ]
     },
     {
-      "name": "hospital-medical",
+      "name": "hospital",
       "category": {
-        "id": "health-safety",
-        "label": "health & safety"
+        "id": "building-construction",
+        "label": "building & construction"
       },
       "tags": [
         "hospital",
@@ -6266,14 +7069,42 @@
         "medical",
         "healthcare",
         "building",
-        "facility",
+        "facility"
+      ],
+      "aliases": [
+        "hospital",
+        "clinic",
+        "medical-building"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hospital-medical",
+      "category": {
+        "id": "health-safety",
+        "label": "health & safety"
+      },
+      "tags": [
+        "health",
+        "medical",
+        "hospital",
+        "healthcare",
+        "clinic",
         "emergency",
         "treatment"
       ],
       "aliases": [
         "hospital",
-        "clinic",
-        "medical-building",
         "medical-center",
         "healthcare-facility"
       ],
@@ -6322,10 +7153,10 @@
       ]
     },
     {
-      "name": "house-lock",
+      "name": "house",
       "category": {
-        "id": "security",
-        "label": "security"
+        "id": "building-construction",
+        "label": "building & construction"
       },
       "tags": [
         "house",
@@ -6333,17 +7164,198 @@
         "residential",
         "building",
         "property",
-        "dwelling",
-        "lock",
-        "ids",
-        "security"
+        "dwelling"
       ],
       "aliases": [
         "house",
         "home",
-        "residential-house",
+        "residential-house"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "house-door",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "home",
+        "house",
+        "door",
+        "entrance",
+        "residential",
+        "access"
+      ],
+      "aliases": [
+        "house-door",
+        "home-door",
+        "front-door"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "house-flood",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "house",
+        "flood",
+        "flooded",
+        "water-damage",
+        "disaster",
+        "emergency",
+        "property"
+      ],
+      "aliases": [
+        "flooded-house",
+        "house-flooding",
+        "water-damaged-house"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "house-lock",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "house",
+        "lock",
+        "ids",
+        "home",
+        "security"
+      ],
+      "aliases": [
         "home-lock",
         "residential-lock"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "house-open",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "home",
+        "house",
+        "open",
+        "access",
+        "entrance",
+        "residential"
+      ],
+      "aliases": [
+        "house-open",
+        "home-open",
+        "open-house"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "house-roof",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "home",
+        "house",
+        "roof",
+        "residential",
+        "building",
+        "property"
+      ],
+      "aliases": [
+        "house-roof",
+        "home-roof",
+        "residential-roof"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "house-settings",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "house",
+        "manage",
+        "setting",
+        "control",
+        "property",
+        "home",
+        "configuration"
+      ],
+      "aliases": [
+        "house-settings",
+        "home-settings",
+        "property-settings"
       ],
       "styles": [
         "filled",
@@ -6400,6 +7412,37 @@
       ],
       "aliases": [
         "download-square"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "industrial-factory",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "factory",
+        "industrial",
+        "manufacturing",
+        "plant",
+        "facility",
+        "production"
+      ],
+      "aliases": [
+        "factory",
+        "industrial-plant",
+        "manufacturing-building"
       ],
       "styles": [
         "filled",
@@ -6529,6 +7572,37 @@
         "pin-pad",
         "access-key",
         "security-key"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "landed-house",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "landed-house",
+        "property",
+        "private",
+        "residential",
+        "home",
+        "housing"
+      ],
+      "aliases": [
+        "landed-house",
+        "private-house",
+        "residential-property"
       ],
       "styles": [
         "filled",
@@ -7410,6 +8484,37 @@
       ],
       "aliases": [
         "men-restroom"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "mall-community-centre",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "mall",
+        "facility",
+        "community-centre",
+        "public-building",
+        "commercial",
+        "gathering"
+      ],
+      "aliases": [
+        "mall",
+        "community-centre",
+        "public-facility"
       ],
       "styles": [
         "filled",
@@ -8381,6 +9486,174 @@
       ]
     },
     {
+      "name": "office-building",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "block",
+        "building",
+        "office",
+        "bms",
+        "commercial",
+        "workplace",
+        "structure",
+        "company",
+        "camera",
+        "picture",
+        "image",
+        "photo",
+        "capture"
+      ],
+      "aliases": [
+        "office-building",
+        "commercial-building",
+        "building-block",
+        "company-building",
+        "corporate-office",
+        "cam",
+        "photo-camera"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "office-buildings",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "buildings",
+        "office",
+        "bms",
+        "commercial",
+        "workplace",
+        "urban"
+      ],
+      "aliases": [
+        "office-buildings",
+        "commercial-buildings",
+        "business-blocks"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "oil-rig-tower",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "oil-rig",
+        "rig",
+        "tower",
+        "drilling",
+        "energy",
+        "industrial",
+        "offshore"
+      ],
+      "aliases": [
+        "oil-rig",
+        "drilling-rig",
+        "rig-tower"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "paint-roller",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "paint-roller",
+        "painting",
+        "construction",
+        "renovation",
+        "wall",
+        "coating",
+        "tool"
+      ],
+      "aliases": [
+        "paint-roller",
+        "roller",
+        "painting-tool"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "park-cafe",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "outdoor",
+        "park",
+        "cafe",
+        "seating",
+        "public-space",
+        "leisure"
+      ],
+      "aliases": [
+        "park-cafe",
+        "outdoor-cafe",
+        "cafe-park"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "parking-light",
       "category": {
         "id": "light",
@@ -8637,6 +9910,69 @@
         "photo-light",
         "studio-light",
         "photography-light"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "playground-slide",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "playground",
+        "outdoor",
+        "slide",
+        "play-area",
+        "recreation",
+        "park",
+        "children"
+      ],
+      "aliases": [
+        "playground-slide",
+        "outdoor-slide",
+        "kids-slide"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "playground-swing",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "play",
+        "swing",
+        "playground",
+        "outdoor",
+        "recreation",
+        "children"
+      ],
+      "aliases": [
+        "playground-swing",
+        "swing-set",
+        "kids-swing"
       ],
       "styles": [
         "filled",
@@ -8960,6 +10296,105 @@
       "aliases": [
         "minimize",
         "shrink"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "road-tunnel",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "tunnel",
+        "road",
+        "underground",
+        "transport",
+        "infrastructure",
+        "passage"
+      ],
+      "aliases": [
+        "road-tunnel",
+        "traffic-tunnel",
+        "underground-road"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "roller-shutter-door",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "door",
+        "shutter",
+        "roller",
+        "roller-door",
+        "security",
+        "entrance",
+        "industrial"
+      ],
+      "aliases": [
+        "roller-shutter",
+        "shutter-door",
+        "roller-door"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rooftop",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "roof",
+        "rooftop",
+        "top",
+        "building",
+        "structure",
+        "exterior",
+        "architecture",
+        "ahu",
+        "fan",
+        "outside",
+        "ventilation"
+      ],
+      "aliases": [
+        "roof",
+        "rooftop",
+        "building-top",
+        "rooftop-fan"
       ],
       "styles": [
         "filled",
@@ -9513,6 +10948,46 @@
       ]
     },
     {
+      "name": "shipment-cargo",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "ship",
+        "boat",
+        "vessel",
+        "sea",
+        "ocean",
+        "travel",
+        "shipment",
+        "cargo",
+        "logistics",
+        "transport",
+        "delivery",
+        "freight"
+      ],
+      "aliases": [
+        "boat",
+        "vessel",
+        "ferry",
+        "shipment",
+        "cargo",
+        "freight"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "sign-diamond",
       "category": {
         "id": "uncategorized",
@@ -9872,6 +11347,38 @@
       ]
     },
     {
+      "name": "soccer-field",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "field",
+        "soccer",
+        "football",
+        "play",
+        "sports",
+        "outdoor",
+        "pitch"
+      ],
+      "aliases": [
+        "soccer-field",
+        "football-field",
+        "sports-field"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "solar-pv-inverter-switchboard",
       "category": {
         "id": "light",
@@ -9935,6 +11442,36 @@
       ]
     },
     {
+      "name": "space-area",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "space",
+        "area",
+        "zone",
+        "layout",
+        "allocation",
+        "building"
+      ],
+      "aliases": [
+        "space-area",
+        "area-zone",
+        "spatial-area"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "spark",
       "category": {
         "id": "actions-general-interface",
@@ -9981,6 +11518,68 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "stage-riser",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "stage",
+        "riser",
+        "platform",
+        "elevation",
+        "construction",
+        "structure",
+        "event"
+      ],
+      "aliases": [
+        "stage-riser",
+        "platform-stage",
+        "raised-platform"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "stairs-floor",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "stairs",
+        "floor",
+        "staircase",
+        "level",
+        "vertical-access",
+        "building"
+      ],
+      "aliases": [
+        "stairs",
+        "staircase",
+        "floor-stairs"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -10095,6 +11694,37 @@
       "aliases": [
         "status-circle",
         "indicator-dot"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "store-shop",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "store",
+        "shop",
+        "business",
+        "retail",
+        "commercial",
+        "storefront"
+      ],
+      "aliases": [
+        "store",
+        "shop",
+        "retail-store"
       ],
       "styles": [
         "filled",
@@ -10499,6 +12129,70 @@
       ]
     },
     {
+      "name": "town-office-buildings",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "buildings",
+        "office",
+        "bms",
+        "town",
+        "commercial",
+        "urban",
+        "facility"
+      ],
+      "aliases": [
+        "office-buildings",
+        "town-buildings",
+        "commercial-blocks"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "traffic-cone",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "traffic-cone",
+        "cone",
+        "bollard",
+        "urban",
+        "roadwork",
+        "safety",
+        "warning"
+      ],
+      "aliases": [
+        "traffic-cone",
+        "road-cone",
+        "safety-cone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "transition-push",
       "category": {
         "id": "arrows",
@@ -10611,6 +12305,38 @@
       ]
     },
     {
+      "name": "tunnel-section",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "tunnel",
+        "wing",
+        "section",
+        "cross-section",
+        "infrastructure",
+        "underground",
+        "structure"
+      ],
+      "aliases": [
+        "tunnel-section",
+        "tunnel-wing",
+        "tunnel-cross-section"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "turn-down-right",
       "category": {
         "id": "arrows",
@@ -10629,6 +12355,70 @@
         "bend-right"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "turnstile-access",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "turnstile",
+        "gantry",
+        "access",
+        "entry",
+        "control",
+        "security",
+        "gate"
+      ],
+      "aliases": [
+        "turnstile",
+        "access-gate",
+        "entry-gantry"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "underground-bunker",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "underground",
+        "bunker",
+        "basement",
+        "shelter",
+        "structure",
+        "safety",
+        "subterranean"
+      ],
+      "aliases": [
+        "bunker",
+        "basement",
+        "underground-shelter"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -10820,6 +12610,68 @@
       ]
     },
     {
+      "name": "utility-pole",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "utility-pole",
+        "pole",
+        "power-line",
+        "electricity",
+        "infrastructure",
+        "outdoor"
+      ],
+      "aliases": [
+        "utility-pole",
+        "power-pole",
+        "electric-pole"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "value-handle",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "value-handle",
+        "control",
+        "adjustment",
+        "input",
+        "parameter",
+        "slider",
+        "tuning"
+      ],
+      "aliases": [
+        "value-handle",
+        "control-handle",
+        "adjustment-handle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "vibration-sensor",
       "category": {
         "id": "security",
@@ -10937,6 +12789,37 @@
       ]
     },
     {
+      "name": "warehouse-storage",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "warehouse",
+        "storage",
+        "storeroom",
+        "logistics",
+        "inventory",
+        "facility"
+      ],
+      "aliases": [
+        "warehouse",
+        "storage-room",
+        "storeroom"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "waste-basket",
       "category": {
         "id": "housekeeping",
@@ -10981,6 +12864,38 @@
       "aliases": [
         "water-usage",
         "water-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "water-factory",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "water-factory",
+        "factory",
+        "water",
+        "treatment",
+        "industrial",
+        "utility",
+        "facility"
+      ],
+      "aliases": [
+        "water-factory",
+        "water-plant",
+        "water-treatment-plant"
       ],
       "styles": [
         "filled",
@@ -11086,6 +13001,68 @@
       ]
     },
     {
+      "name": "window-blinds",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "window",
+        "blinds",
+        "array",
+        "shading",
+        "cover",
+        "facade",
+        "interior"
+      ],
+      "aliases": [
+        "window-blinds",
+        "blinds",
+        "window-shade"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "window-tint",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "window",
+        "tint",
+        "array",
+        "glass",
+        "shading",
+        "facade",
+        "solar-control"
+      ],
+      "aliases": [
+        "window-tint",
+        "tinted-window",
+        "glass-tint"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "wine-glass",
       "category": {
         "id": "housekeeping",
@@ -11150,22 +13127,48 @@
       },
       "tags": [
         "wrench",
+        "tool",
+        "maintenance",
+        "repair",
+        "construction",
+        "mechanical"
+      ],
+      "aliases": [
+        "wrench",
+        "spanner",
+        "repair-tool"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wrench-hand",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "wrench",
         "hand",
         "fix",
         "service",
         "maintenance",
         "repair",
-        "tool",
-        "construction",
-        "mechanical"
+        "tool"
       ],
       "aliases": [
         "wrench-hand",
         "service-tool",
-        "repair-hand",
-        "wrench",
-        "spanner",
-        "repair-tool"
+        "repair-hand"
       ],
       "styles": [
         "filled",
