@@ -188,7 +188,7 @@ async function generateMetadata() {
         if (line.startsWith("category:")) {
           const val = line.substring(9).trim();
           const id = val.toLowerCase().replace(/\s+/g, "-").replace(/&/g, "-").replace(/-+/g, "-");
-          icons.get(baseName).category = { id, label: val };
+          icons.get(baseName).category = { id, label: val.toLowerCase() };
           matched++;
           hasCategoryLine = true;
         } else if (line.startsWith("tags:")) {
