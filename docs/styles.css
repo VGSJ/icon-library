@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  font-family: poppins;
+  font-family: aptos, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   background: var(--bg);
   color: var(--fg);
 }
