@@ -19,7 +19,9 @@ jobs:
           node-version: '18'
       
       - name: Mirror SVGs from site to docs
-        run: rsync -av --delete site/raw-svg/ docs/raw-svg/
+        run: |
+          rm -rf docs/raw-svg
+          cp -r site/raw-svg docs/
       
       - name: Generate and copy metadata
         run: |
