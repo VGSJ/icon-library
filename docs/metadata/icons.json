@@ -213,6 +213,35 @@
       ]
     },
     {
+      "name": "aeroplane",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "plane",
+        "aeroplane",
+        "aircraft",
+        "flight",
+        "aviation"
+      ],
+      "aliases": [
+        "airplane",
+        "aeroplane"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "ai-2-stars",
       "category": {
         "id": "ai-vr",
@@ -408,6 +437,93 @@
       ],
       "aliases": [
         "ai-wand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "aircraft-parking",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "aircraft",
+        "airplane",
+        "parking",
+        "apron",
+        "airport"
+      ],
+      "aliases": [
+        "airplane-parking",
+        "aircraft-stand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "aircraft-top",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "aircraft",
+        "airplane",
+        "top",
+        "aerial",
+        "aviation"
+      ],
+      "aliases": [
+        "airplane-top",
+        "aircraft-view"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "airport-gate",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "gate",
+        "onboarding",
+        "airport",
+        "terminal",
+        "boarding"
+      ],
+      "aliases": [
+        "boarding-gate",
+        "airport-gate"
       ],
       "styles": [
         "filled",
@@ -1633,6 +1749,37 @@
       ]
     },
     {
+      "name": "baggage-trolley",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "trolley",
+        "baggage",
+        "luggage",
+        "cart",
+        "airport",
+        "travel"
+      ],
+      "aliases": [
+        "luggage-trolley",
+        "baggage-cart",
+        "airport-trolley"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "balcony",
       "category": {
         "id": "building-construction",
@@ -2096,6 +2243,37 @@
       "aliases": [
         "edit-path",
         "node-edit"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bike",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "bicycle",
+        "bike",
+        "two-wheeler",
+        "cycle",
+        "pedal",
+        "transport"
+      ],
+      "aliases": [
+        "bike",
+        "pedal-bike",
+        "cycling"
       ],
       "styles": [
         "filled",
@@ -2750,6 +2928,95 @@
       ]
     },
     {
+      "name": "bus-lorry",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "bus",
+        "vehicle",
+        "lorry",
+        "transport",
+        "transit"
+      ],
+      "aliases": [
+        "bus-truck",
+        "heavy-vehicle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "bus-van",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "bus",
+        "public-transport",
+        "vehicle",
+        "transit",
+        "commute"
+      ],
+      "aliases": [
+        "coach",
+        "transit-bus"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cable-car",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "cable car",
+        "gondola",
+        "aerial",
+        "lift",
+        "transport",
+        "mountain"
+      ],
+      "aliases": [
+        "gondola",
+        "aerial-cable-car",
+        "ropeway"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "calculator",
       "category": {
         "id": "payment-rewards",
@@ -3166,17 +3433,198 @@
       ]
     },
     {
+      "name": "car",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "car-engine",
+        "energy",
+        "power",
+        "mechanical",
+        "motor",
+        "air-conditioner",
+        "rear",
+        "car",
+        "cooling",
+        "vehicle",
+        "transportation",
+        "auto",
+        "transport"
+      ],
+      "aliases": [
+        "engine-power",
+        "vehicle-engine",
+        "rear-ac",
+        "automobile",
+        "passenger-car"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "car-accident",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "car-accident",
+        "vehicle-accident",
+        "crash",
+        "collision",
+        "incident"
+      ],
+      "aliases": [
+        "vehicle-accident",
+        "traffic-accident"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "car-breakdown",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "car",
+        "breakdown",
+        "alert",
+        "failure",
+        "roadside"
+      ],
+      "aliases": [
+        "car-alert",
+        "vehicle-breakdown"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "car-cab",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "car",
+        "cab",
+        "vehicle",
+        "taxi",
+        "transport"
+      ],
+      "aliases": [
+        "taxi",
+        "cab",
+        "car-taxi"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "car-crash",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "car",
+        "crash",
+        "accident",
+        "collision",
+        "damage"
+      ],
+      "aliases": [
+        "car-accident",
+        "car-break"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "car-fire",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "car",
+        "fire",
+        "alert",
+        "emergency",
+        "hazard"
+      ],
+      "aliases": [
+        "car-alert",
+        "vehicle-fire"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "carbon-monoxide-alarm",
       "category": {
         "id": "fire",
         "label": "fire"
       },
       "tags": [
-        "car",
-        "vehicle",
-        "transportation",
-        "auto",
-        "transport",
         "carbon-monoxide",
         "co-alarm",
         "gas",
@@ -3186,8 +3634,6 @@
         "emergency"
       ],
       "aliases": [
-        "automobile",
-        "passenger-car",
         "carbon-monoxide-alarm",
         "co-alarm",
         "gas-detector"
@@ -3248,6 +3694,37 @@
         "slider",
         "content-carousel",
         "reels-view"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "carpark",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "parking",
+        "car",
+        "vehicle",
+        "sign",
+        "park",
+        "P"
+      ],
+      "aliases": [
+        "park",
+        "car-park",
+        "parking-lot"
       ],
       "styles": [
         "filled",
@@ -5457,6 +5934,35 @@
       ]
     },
     {
+      "name": "control-tower",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "airport",
+        "control-tower",
+        "aviation",
+        "air-traffic",
+        "tower"
+      ],
+      "aliases": [
+        "airport-tower",
+        "atc-tower"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "conversation",
       "category": {
         "id": "communication",
@@ -5955,6 +6461,36 @@
       "aliases": [
         "remove-tag",
         "clear-tag"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "delivery-truck",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "truck",
+        "delivery",
+        "shipping",
+        "logistics",
+        "van",
+        "cargo"
+      ],
+      "aliases": [
+        "shipping-truck",
+        "delivery-van"
       ],
       "styles": [
         "filled",
@@ -8988,6 +9524,128 @@
       ]
     },
     {
+      "name": "flight-path",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "flight",
+        "airport",
+        "airplane",
+        "aeroplane",
+        "travel",
+        "trajectory",
+        "fly",
+        "path",
+        "route",
+        "air"
+      ],
+      "aliases": [
+        "flight-route",
+        "air-route",
+        "airplane-path"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "flight-plane",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "flight",
+        "plane",
+        "aviation",
+        "air-travel"
+      ],
+      "aliases": [
+        "airplane-flight",
+        "air-flight"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "flight-schedule",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "flight",
+        "schedule",
+        "calendar",
+        "timetable",
+        "aviation"
+      ],
+      "aliases": [
+        "flight-calendar",
+        "flight-timetable"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "flight-status",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "plane",
+        "flight",
+        "status",
+        "tracking",
+        "aviation",
+        "world"
+      ],
+      "aliases": [
+        "flight-tracking",
+        "plane-status"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "floor-mat",
       "category": {
         "id": "furniture-things",
@@ -10201,6 +10859,35 @@
       ]
     },
     {
+      "name": "helicopter",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "helicopter",
+        "fly",
+        "aircraft",
+        "aviation",
+        "air"
+      ],
+      "aliases": [
+        "chopper",
+        "rotorcraft"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "hexagon-1",
       "category": {
         "id": "geometry",
@@ -10653,6 +11340,35 @@
         "house-settings",
         "home-settings",
         "property-settings"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "immigration-check-in",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "immigration",
+        "check-in",
+        "passport",
+        "border",
+        "airport"
+      ],
+      "aliases": [
+        "global-passport",
+        "border-control"
       ],
       "styles": [
         "filled",
@@ -11613,6 +12329,37 @@
       ]
     },
     {
+      "name": "lighthouse",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "lighthouse",
+        "beacon",
+        "navigation",
+        "maritime",
+        "signal",
+        "coastal"
+      ],
+      "aliases": [
+        "beacon",
+        "navigation-light",
+        "sea-beacon"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "link-1",
       "category": {
         "id": "actions-general-interface",
@@ -11931,6 +12678,36 @@
       "aliases": [
         "secure-lock",
         "intrusion-protection"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "lorry",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "lorry",
+        "truck",
+        "goods",
+        "cargo",
+        "freight",
+        "transport"
+      ],
+      "aliases": [
+        "truck",
+        "goods-lorry"
       ],
       "styles": [
         "filled",
@@ -12856,6 +13633,41 @@
         "rolling-desk",
         "portable-desk",
         "foldable-desk"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "motorbike",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "engine",
+        "motor",
+        "mechanical",
+        "motorbike",
+        "motorcycle",
+        "two-wheeler",
+        "bike",
+        "vehicle",
+        "transport"
+      ],
+      "aliases": [
+        "electric-motor",
+        "motorcycle",
+        "two-wheeler",
+        "motorbike-bike"
       ],
       "styles": [
         "filled",
@@ -14062,6 +14874,93 @@
       ]
     },
     {
+      "name": "plane-landing",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "plane",
+        "landing",
+        "flight",
+        "arrival",
+        "aviation"
+      ],
+      "aliases": [
+        "flight-landing",
+        "aircraft-landing"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "plane-takeoff",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "plane",
+        "takeoff",
+        "flight",
+        "departure",
+        "aviation"
+      ],
+      "aliases": [
+        "flight-takeoff",
+        "aircraft-takeoff"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "plane-ticket",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "plane",
+        "ticket",
+        "flight",
+        "boarding",
+        "travel"
+      ],
+      "aliases": [
+        "flight-ticket",
+        "boarding-pass"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "playground-slide",
       "category": {
         "id": "building-construction",
@@ -14615,6 +15514,35 @@
       ]
     },
     {
+      "name": "road-runway",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "road",
+        "runway",
+        "path",
+        "infrastructure",
+        "transport"
+      ],
+      "aliases": [
+        "airstrip",
+        "roadway"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "road-tunnel",
       "category": {
         "id": "building-construction",
@@ -15127,6 +16055,62 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sailing-anchor",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "sailing",
+        "anchor",
+        "ship",
+        "harbor",
+        "nautical"
+      ],
+      "aliases": [
+        "anchor",
+        "mooring"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sailing-anchor-2",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "sailing",
+        "anchor",
+        "ship",
+        "harbor",
+        "nautical"
+      ],
+      "aliases": [
+        "anchor",
+        "mooring"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -15726,10 +16710,10 @@
       ]
     },
     {
-      "name": "shipment-cargo",
+      "name": "ship",
       "category": {
-        "id": "building-construction",
-        "label": "building & construction"
+        "id": "transport",
+        "label": "transport"
       },
       "tags": [
         "ship",
@@ -15737,7 +16721,123 @@
         "vessel",
         "sea",
         "ocean",
-        "travel",
+        "travel"
+      ],
+      "aliases": [
+        "boat",
+        "vessel",
+        "ferry"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ship-hull",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "ship",
+        "hull",
+        "navy",
+        "boat",
+        "vessel",
+        "maritime"
+      ],
+      "aliases": [
+        "boat-hull",
+        "ship-body",
+        "naval-hull"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ship-steering-wheel",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "ship",
+        "steering wheel",
+        "helm",
+        "maritime",
+        "navigation",
+        "control"
+      ],
+      "aliases": [
+        "ship-helm",
+        "marine-wheel",
+        "helm-wheel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ship-transport",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "ship",
+        "transport",
+        "vessel",
+        "logistics",
+        "sea"
+      ],
+      "aliases": [
+        "ship-logistics",
+        "maritime-transport"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shipment-cargo",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
         "shipment",
         "cargo",
         "logistics",
@@ -15746,9 +16846,6 @@
         "freight"
       ],
       "aliases": [
-        "boat",
-        "vessel",
-        "ferry",
         "shipment",
         "cargo",
         "freight"
@@ -17272,6 +18369,35 @@
       ]
     },
     {
+      "name": "taxi",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "taxi",
+        "cab",
+        "car",
+        "vehicle",
+        "transport"
+      ],
+      "aliases": [
+        "cab",
+        "taxi-car"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "thumbs-down",
       "category": {
         "id": "communication",
@@ -17647,6 +18773,68 @@
       ]
     },
     {
+      "name": "traffic-light",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "traffic-light",
+        "signal",
+        "light",
+        "intersection",
+        "road",
+        "control"
+      ],
+      "aliases": [
+        "signal-light",
+        "stoplight",
+        "traffic-signal"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "train",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "train",
+        "mrt",
+        "subway",
+        "rail",
+        "transit",
+        "transport"
+      ],
+      "aliases": [
+        "subway",
+        "metro",
+        "mrt"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "transform-3d",
       "category": {
         "id": "editor",
@@ -17899,6 +19087,98 @@
       "aliases": [
         "alert-triangle",
         "exclamation-triangle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "truck",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "truck",
+        "lorry",
+        "goods",
+        "cargo",
+        "freight",
+        "transport"
+      ],
+      "aliases": [
+        "lorry",
+        "goods-truck",
+        "cargo-truck"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "truck-deliver",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "truck",
+        "motion",
+        "moving",
+        "transport",
+        "logistics",
+        "delivery"
+      ],
+      "aliases": [
+        "moving-truck",
+        "truck-moving",
+        "delivery-motion"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "truck-wood",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "truck",
+        "lorry",
+        "wood",
+        "cargo",
+        "freight",
+        "transport"
+      ],
+      "aliases": [
+        "wood-truck",
+        "timber-truck"
       ],
       "styles": [
         "filled",
@@ -18575,6 +19855,35 @@
         "value-handle",
         "control-handle",
         "adjustment-handle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "vessel-cargo",
+      "category": {
+        "id": "transport",
+        "label": "transport"
+      },
+      "tags": [
+        "vessel",
+        "cargo",
+        "ship",
+        "freight",
+        "logistics"
+      ],
+      "aliases": [
+        "cargo-ship",
+        "freight-vessel"
       ],
       "styles": [
         "filled",
