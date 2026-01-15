@@ -324,7 +324,7 @@ function rerender() {
     return;
   }
 
-  els.status.textContent = `${filtered.length} icon(s)`;
+  els.status.textContent = "Select an icon to copy the SVG.";
 
   // For each icon, check which styles are available and only render those
   for (const icon of filtered) {
@@ -354,7 +354,7 @@ async function main() {
   try {
     const data = await loadIconsJson();
     allIcons = data.icons || [];
-    els.status.textContent = `Loaded ${allIcons.length} icon(s).`;
+    els.status.textContent = "Select an icon to copy the SVG.";
     populateCategories();
     rerender();
   } catch (e) {

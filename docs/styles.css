@@ -70,11 +70,11 @@ select {
 
 button { cursor: pointer; }
 
-.hint { margin: 12px 0 0; color: var(--muted); font-size: 13px; }
+.hint { display: none; margin: 12px 0 0; color: var(--muted); font-size: 13px; }
 
 main { padding: 20px 24px 0; }
 
-.status { color: var(--muted); margin-bottom: 12px; }
+.status { color: var(--muted); margin-bottom: 12px; font-size: 13px; }
 
 .grid {
   display: grid;
