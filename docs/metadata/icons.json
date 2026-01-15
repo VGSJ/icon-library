@@ -1342,6 +1342,33 @@
       ]
     },
     {
+      "name": "arduino-circuit",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "arduino",
+        "circuit",
+        "electronics",
+        "controller"
+      ],
+      "aliases": [
+        "microcontroller-board"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "arrow-connect",
       "category": {
         "id": "arrows",
@@ -2038,6 +2065,35 @@
         "file-attach"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "automatic-transfer-switch",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "switch",
+        "transfer",
+        "automatic",
+        "ats",
+        "power"
+      ],
+      "aliases": [
+        "ats-switch",
+        "auto-transfer-switch"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -3456,6 +3512,35 @@
       ]
     },
     {
+      "name": "cable-adapter",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "cable",
+        "adapter",
+        "cord",
+        "connector",
+        "electrical"
+      ],
+      "aliases": [
+        "power-adapter",
+        "cable-converter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "cable-car",
       "category": {
         "id": "transport",
@@ -3476,6 +3561,34 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cable-split",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "cable",
+        "split",
+        "connector",
+        "wiring",
+        "electrical"
+      ],
+      "aliases": [
+        "cable-branch",
+        "wire-splitter"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -3909,11 +4022,6 @@
         "label": "transport"
       },
       "tags": [
-        "car-engine",
-        "energy",
-        "power",
-        "mechanical",
-        "motor",
         "car",
         "vehicle",
         "transportation",
@@ -3921,8 +4029,6 @@
         "transport"
       ],
       "aliases": [
-        "engine-power",
-        "vehicle-engine",
         "automobile",
         "passenger-car"
       ],
@@ -4042,6 +4148,35 @@
       "aliases": [
         "car-accident",
         "car-break"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "car-engine-energy",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "car-engine",
+        "energy",
+        "power",
+        "mechanical",
+        "motor"
+      ],
+      "aliases": [
+        "engine-power",
+        "vehicle-engine"
       ],
       "styles": [
         "filled",
@@ -4486,6 +4621,35 @@
         "chandelier",
         "decorative-light",
         "ceiling-luminaire"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "charger",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "charger",
+        "charge",
+        "power",
+        "electricity",
+        "device"
+      ],
+      "aliases": [
+        "power-charger",
+        "battery-charger"
       ],
       "styles": [
         "filled",
@@ -5792,6 +5956,121 @@
       "aliases": [
         "question-circle",
         "help-circle"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circuit-board-motor",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "circuit-board",
+        "motor",
+        "electronics",
+        "control"
+      ],
+      "aliases": [
+        "motor-controller-board"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circuit-breaker",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "circuit-breaker",
+        "switch",
+        "protection",
+        "electrical"
+      ],
+      "aliases": [
+        "breaker-switch",
+        "power-breaker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circuit-disconnect",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "switch",
+        "circuit",
+        "relay",
+        "disconnect",
+        "electrical",
+        "safety"
+      ],
+      "aliases": [
+        "disconnect-switch",
+        "circuit-break"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "circuit-isolator",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "switch",
+        "circuit",
+        "relay",
+        "isolate",
+        "electrical",
+        "safety"
+      ],
+      "aliases": [
+        "isolator-switch",
+        "circuit-isolator"
       ],
       "styles": [
         "filled",
@@ -7641,6 +7920,65 @@
       ]
     },
     {
+      "name": "danger-fuel-barrel",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "danger",
+        "fuel",
+        "barrel",
+        "fmis",
+        "hazardous"
+      ],
+      "aliases": [
+        "hazardous-fuel-barrel",
+        "fuel-warning"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "danger-fuel-can",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "danger",
+        "fuel",
+        "can",
+        "fmis",
+        "jerry-can",
+        "hazardous"
+      ],
+      "aliases": [
+        "hazardous-fuel",
+        "fuel-warning"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "daylight-sensor",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -7654,6 +7992,35 @@
       ],
       "aliases": [
         "light-sensor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ddc-control-panel",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "ddc",
+        "control-panel",
+        "automation",
+        "electrical",
+        "building"
+      ],
+      "aliases": [
+        "ddc-panel",
+        "control-board"
       ],
       "styles": [
         "filled",
@@ -8016,6 +8383,35 @@
       ]
     },
     {
+      "name": "dimmer-switch",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "dimmer",
+        "light",
+        "on-off",
+        "thermostat",
+        "control"
+      ],
+      "aliases": [
+        "dimmer-switch",
+        "light-control"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "direct-expansion-coil",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -8056,6 +8452,35 @@
       ],
       "aliases": [
         "discharge-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "distribution-board",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electric",
+        "power",
+        "distribution-board",
+        "electrical",
+        "panel"
+      ],
+      "aliases": [
+        "power-distribution",
+        "db-panel"
       ],
       "styles": [
         "filled",
@@ -9049,6 +9474,94 @@
       ]
     },
     {
+      "name": "dynamo-power",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "dynamo",
+        "power",
+        "energy",
+        "generator",
+        "mechanical"
+      ],
+      "aliases": [
+        "dynamo-generator",
+        "kinetic-power"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "eco-fuel-barrel",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "eco-fuel",
+        "barrel",
+        "renewable",
+        "fmis",
+        "fuel"
+      ],
+      "aliases": [
+        "green-fuel-barrel",
+        "eco-energy"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "eco-fuel-can",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "eco",
+        "green-fuel",
+        "renewable",
+        "fuel",
+        "can",
+        "jerry-can"
+      ],
+      "aliases": [
+        "eco-can",
+        "green-fuel-can"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "edit-1",
       "category": {
         "id": "editor",
@@ -9164,6 +9677,63 @@
       ]
     },
     {
+      "name": "electric-generator",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electric",
+        "generator",
+        "power",
+        "energy",
+        "electricity"
+      ],
+      "aliases": [
+        "power-generator",
+        "genset"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electric-motor",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electronics-motor",
+        "electric",
+        "motor",
+        "energy",
+        "mechanical"
+      ],
+      "aliases": [
+        "electric-motor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "electrical-floor-plan",
       "category": {
         "id": "building-construction",
@@ -9229,6 +9799,120 @@
       ]
     },
     {
+      "name": "electrical-switchboard",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "panel",
+        "electrical-switchboard",
+        "power",
+        "control",
+        "distribution"
+      ],
+      "aliases": [
+        "switchboard",
+        "electrical-panel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electrical-transformer-1",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electrical",
+        "transformer",
+        "power",
+        "voltage",
+        "substation"
+      ],
+      "aliases": [
+        "transformer-1"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electrical-transformer-2",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electrical",
+        "transformer",
+        "power",
+        "voltage",
+        "substation"
+      ],
+      "aliases": [
+        "transformer-2"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electronic-fuse",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electronic",
+        "fuse",
+        "protection",
+        "circuit",
+        "safety"
+      ],
+      "aliases": [
+        "power-fuse",
+        "circuit-fuse"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "electronic-mixing-valve",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -9243,6 +9927,202 @@
       ],
       "aliases": [
         "electric-mixing-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electronics-capacitor",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electronics",
+        "capacitor",
+        "power",
+        "energy",
+        "component",
+        "electronics-capacitor"
+      ],
+      "aliases": [
+        "power-capacitor",
+        "electrical-capacitor",
+        "capacitor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electronics-diode",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electronics",
+        "diode",
+        "component",
+        "semiconductor"
+      ],
+      "aliases": [
+        "diode"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electronics-ground",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electronics",
+        "ground",
+        "power",
+        "earth",
+        "electrical"
+      ],
+      "aliases": [
+        "grounding",
+        "earth-ground"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electronics-led",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electronics",
+        "led",
+        "diode",
+        "light",
+        "component"
+      ],
+      "aliases": [
+        "led"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electronics-resistor",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "power",
+        "electronics",
+        "resistor",
+        "component",
+        "electrical"
+      ],
+      "aliases": [
+        "power-resistor",
+        "electrical-resistor"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electronics-schottky-diode",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electronics",
+        "schottky-diode",
+        "component",
+        "semiconductor"
+      ],
+      "aliases": [
+        "schottky-diode"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "electronics-zener-diode",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electronics",
+        "zener-diode",
+        "component",
+        "voltage-regulation"
+      ],
+      "aliases": [
+        "zener-diode"
       ],
       "styles": [
         "filled",
@@ -9490,6 +10370,35 @@
       ]
     },
     {
+      "name": "energy-storage-tank",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "tank",
+        "storage",
+        "power",
+        "energy",
+        "battery"
+      ],
+      "aliases": [
+        "energy-tank",
+        "power-storage"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "engine-air-filter",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -9678,6 +10587,39 @@
       ]
     },
     {
+      "name": "ethernet-port",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "ethernet",
+        "port",
+        "network",
+        "lan",
+        "connection",
+        "rj45",
+        "wired"
+      ],
+      "aliases": [
+        "lan-port",
+        "rj45-port",
+        "ethernet-port",
+        "rj45"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "euro-coin",
       "category": {
         "id": "payment-rewards",
@@ -9692,6 +10634,95 @@
       "aliases": [
         "eur-coin",
         "euro-currency"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ev-charger",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "ev",
+        "electric",
+        "charger",
+        "vehicle",
+        "power"
+      ],
+      "aliases": [
+        "electric-vehicle-charger",
+        "ev-charging"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ev-charging-port-cn-eu",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "ev",
+        "charging-port",
+        "electric-vehicle",
+        "china",
+        "eu",
+        "power"
+      ],
+      "aliases": [
+        "ev-port-eu",
+        "ev-charger-cn"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ev-charging-port-us-jp",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "ev",
+        "charging-port",
+        "electric-vehicle",
+        "usa",
+        "japan",
+        "power"
+      ],
+      "aliases": [
+        "ev-port-us",
+        "ev-charger-jp"
       ],
       "styles": [
         "filled",
@@ -11965,6 +12996,35 @@
       ]
     },
     {
+      "name": "fossil-energy",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "fossil-energy",
+        "fossil",
+        "gas-tank",
+        "oil",
+        "fuel"
+      ],
+      "aliases": [
+        "fossil-fuel",
+        "oil-energy"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "fresh-air-discharge-fan",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -12007,6 +13067,121 @@
       "aliases": [
         "double-door-fridge",
         "refrigerator-double"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fuel-filter-warning",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "fuel-filter",
+        "warning",
+        "filter",
+        "alert",
+        "maintenance"
+      ],
+      "aliases": [
+        "filter-warning",
+        "fuel-alert"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fuel-gas",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "fuel",
+        "gas",
+        "petrol",
+        "energy",
+        "power"
+      ],
+      "aliases": [
+        "gasoline",
+        "petrol-fuel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fuel-jerry-can",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "fuel",
+        "can",
+        "jerry-can",
+        "fmis",
+        "storage"
+      ],
+      "aliases": [
+        "fuel-can",
+        "jerrycan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fuel-jerry-can-alt",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "fuel",
+        "can",
+        "jerry-can",
+        "fmis",
+        "storage"
+      ],
+      "aliases": [
+        "fuel-can-alt"
       ],
       "styles": [
         "filled",
@@ -12089,6 +13264,35 @@
       ],
       "aliases": [
         "exhaust-hood"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "gas-barrel",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "air-fuel",
+        "gas-barrel",
+        "fuel",
+        "fmis",
+        "storage"
+      ],
+      "aliases": [
+        "gas-tank",
+        "fuel-barrel"
       ],
       "styles": [
         "filled",
@@ -12259,6 +13463,35 @@
         "geothermal-plant",
         "geothermal-factory",
         "renewable-power-plant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "geothermal-thermal-meter",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "geothermal",
+        "thermal",
+        "power",
+        "thermometer",
+        "energy"
+      ],
+      "aliases": [
+        "thermal-power-meter",
+        "geothermal-energy"
       ],
       "styles": [
         "filled",
@@ -12767,6 +14000,35 @@
       ]
     },
     {
+      "name": "hazardous",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "hazardous",
+        "hazmat",
+        "warning",
+        "dangerous",
+        "material"
+      ],
+      "aliases": [
+        "hazmat",
+        "hazardous-material"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "headset",
       "category": {
         "id": "communication",
@@ -13167,6 +14429,34 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "high-voltage",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "high-voltage",
+        "voltage",
+        "power",
+        "electricity",
+        "warning"
+      ],
+      "aliases": [
+        "high-voltage-sign",
+        "electrical-voltage"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -14282,6 +15572,35 @@
       ]
     },
     {
+      "name": "integrated-circuit",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "electronics",
+        "integrated-circuit",
+        "ic",
+        "chip",
+        "component"
+      ],
+      "aliases": [
+        "ic-chip",
+        "microchip"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "intercom",
       "category": {
         "id": "security",
@@ -15199,6 +16518,35 @@
       ]
     },
     {
+      "name": "lightning-bolt",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "lightning",
+        "power",
+        "bolt",
+        "electric",
+        "energy"
+      ],
+      "aliases": [
+        "electric-bolt",
+        "power-lightning"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "link-1",
       "category": {
         "id": "actions-general-interface",
@@ -15707,6 +17055,64 @@
       ]
     },
     {
+      "name": "main-isolator-switch",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "main-isolator",
+        "switch",
+        "power",
+        "safety",
+        "electrical"
+      ],
+      "aliases": [
+        "isolator-switch",
+        "main-switch"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "main-switchboard",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "panel",
+        "main-switchboard",
+        "electric",
+        "power",
+        "distribution"
+      ],
+      "aliases": [
+        "main-power-panel",
+        "msb"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "maintenance-construction",
       "category": {
         "id": "security",
@@ -15979,6 +17385,35 @@
       ],
       "aliases": [
         "map-tree"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "mcc-panel",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "panel",
+        "mcc",
+        "motor-control",
+        "electrical",
+        "power"
+      ],
+      "aliases": [
+        "motor-control-center",
+        "mcc"
       ],
       "styles": [
         "filled",
@@ -16523,6 +17958,35 @@
       ],
       "aliases": [
         "refrigerant-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "meter-gauge",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "meter",
+        "gauge",
+        "dashboard",
+        "measurement",
+        "monitoring"
+      ],
+      "aliases": [
+        "power-gauge",
+        "energy-meter"
       ],
       "styles": [
         "filled",
@@ -17210,6 +18674,36 @@
       ]
     },
     {
+      "name": "oil-water-barrel",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "water-barrel",
+        "oil-tank",
+        "oil",
+        "fuel",
+        "fmis",
+        "storage"
+      ],
+      "aliases": [
+        "oil-barrel",
+        "fuel-tank"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "orbit-3d",
       "category": {
         "id": "editor",
@@ -17803,6 +19297,36 @@
       ]
     },
     {
+      "name": "petro-can",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "petro",
+        "oil",
+        "fuel",
+        "fmis",
+        "can",
+        "jerry-can"
+      ],
+      "aliases": [
+        "oil-can",
+        "fuel-can"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "phone",
       "category": {
         "id": "communication",
@@ -18164,6 +19688,35 @@
       ]
     },
     {
+      "name": "plug",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "plug",
+        "socket",
+        "power-cord",
+        "cord",
+        "electrical"
+      ],
+      "aliases": [
+        "power-cable-2",
+        "electric-cord-2"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "plus",
       "category": {
         "id": "actions-general-interface",
@@ -18267,6 +19820,187 @@
       "aliases": [
         "gbp-coin",
         "pound-currency"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "power-cord",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "plug",
+        "socket",
+        "power-cord",
+        "cord",
+        "electrical",
+        "power",
+        "on",
+        "off",
+        "power-button",
+        "startup",
+        "shutdown"
+      ],
+      "aliases": [
+        "power-cable",
+        "electric-cord",
+        "power",
+        "power-button",
+        "turn-on"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "power-meter",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "power-meter",
+        "electrical",
+        "building",
+        "energy",
+        "measurement"
+      ],
+      "aliases": [
+        "electrical-meter",
+        "energy-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "power-off",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "power",
+        "control",
+        "thunder",
+        "electrical",
+        "electricity"
+      ],
+      "aliases": [
+        "no-power"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "power-outlet",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "power",
+        "power-outlet-type",
+        "socket",
+        "electrical"
+      ],
+      "aliases": [
+        "electrical-outlet",
+        "wall-socket"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "power-outlet-type-f",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "power-outlet",
+        "type-f",
+        "socket",
+        "port",
+        "electrical"
+      ],
+      "aliases": [
+        "schuko-outlet",
+        "eu-power-outlet"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "power-panel",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "panel",
+        "power",
+        "electrical",
+        "distribution",
+        "control"
+      ],
+      "aliases": [
+        "electrical-panel",
+        "power-board"
       ],
       "styles": [
         "filled",
@@ -18520,6 +20254,35 @@
         "radio-checked"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "radioactive",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "radioactive",
+        "radiation",
+        "nuclear",
+        "warning",
+        "hazard"
+      ],
+      "aliases": [
+        "radiation",
+        "nuclear-hazard"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -18853,6 +20616,35 @@
       ],
       "aliases": [
         "pressure-relief-fan"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "renewable-water-energy",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "renewable",
+        "water",
+        "energy",
+        "hydro",
+        "power"
+      ],
+      "aliases": [
+        "hydro-power",
+        "water-energy"
       ],
       "styles": [
         "filled",
@@ -21114,6 +22906,149 @@
       ]
     },
     {
+      "name": "socket-plug-4",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "socket",
+        "plug",
+        "port",
+        "electrical",
+        "power"
+      ],
+      "aliases": [
+        "power-socket-4",
+        "plug-socket-4"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "socket-strip",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "socket-strip",
+        "plug",
+        "power",
+        "extension",
+        "electrical"
+      ],
+      "aliases": [
+        "power-strip",
+        "extension-socket"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "socket-three-plug",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "socket-three",
+        "plug",
+        "port",
+        "electrical",
+        "power"
+      ],
+      "aliases": [
+        "triple-socket",
+        "three-pin-socket"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "socket-three-plug-2",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "socket-three",
+        "plug-2",
+        "port",
+        "electrical",
+        "power"
+      ],
+      "aliases": [
+        "three-pin-socket-2"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "socket-three-plug-3",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "socket-three",
+        "plug-3",
+        "port",
+        "electrical",
+        "power"
+      ],
+      "aliases": [
+        "three-pin-socket-3"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "sofa",
       "category": {
         "id": "furniture-things",
@@ -21129,6 +23064,93 @@
       "aliases": [
         "couch",
         "lounge-sofa"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "solar-panel-pv",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "solar-panel",
+        "pv",
+        "renewable",
+        "energy",
+        "electricity"
+      ],
+      "aliases": [
+        "photovoltaic-panel",
+        "pv-solar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "solar-panel-pvt",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "solar-panel",
+        "pvt",
+        "sun",
+        "renewable",
+        "energy"
+      ],
+      "aliases": [
+        "pvt-solar",
+        "solar-thermal-panel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "solar-pv-generator",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "pv",
+        "generator",
+        "solar",
+        "renewable",
+        "power"
+      ],
+      "aliases": [
+        "solar-generator",
+        "pv-system"
       ],
       "styles": [
         "filled",
@@ -21585,6 +23607,35 @@
       ]
     },
     {
+      "name": "static-transfer-switch",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "switch",
+        "transfer",
+        "static",
+        "sts",
+        "power"
+      ],
+      "aliases": [
+        "sts-switch",
+        "static-switch"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "status-dot",
       "category": {
         "id": "actions-general-interface",
@@ -21983,6 +24034,35 @@
         "reorder"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "switchboard-panel",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "panel",
+        "switch-board",
+        "electric",
+        "power",
+        "distribution"
+      ],
+      "aliases": [
+        "electrical-switchboard",
+        "power-panel"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -23958,6 +26038,34 @@
       ]
     },
     {
+      "name": "unplugged",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "unplug",
+        "not-plugged-in",
+        "disconnected",
+        "power"
+      ],
+      "aliases": [
+        "no-power",
+        "disconnected-plug"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "user",
       "category": {
         "id": "people",
@@ -24714,6 +26822,34 @@
       ]
     },
     {
+      "name": "water-barrel",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "water-barrel",
+        "fabric-barrel",
+        "storage",
+        "container"
+      ],
+      "aliases": [
+        "water-drum",
+        "storage-barrel"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "water-circulator-pump",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -25033,6 +27169,35 @@
       ],
       "aliases": [
         "water-tank"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wave-energy",
+      "category": {
+        "id": "power-electrical",
+        "label": "power & electrical"
+      },
+      "tags": [
+        "wave",
+        "energy",
+        "renewable",
+        "ocean",
+        "power"
+      ],
+      "aliases": [
+        "ocean-energy",
+        "wave-power"
       ],
       "styles": [
         "filled",
