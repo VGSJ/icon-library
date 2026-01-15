@@ -4569,6 +4569,27 @@
       ]
     },
     {
+      "name": "expand",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "expand"
+      ],
+      "aliases": [],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "expand-diagonal",
       "category": {
         "id": "arrows",
@@ -9649,6 +9670,28 @@
         "security-alert",
         "breach-warning"
       ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "sign-diamond",
+      "category": {
+        "id": "uncategorized",
+        "label": "Uncategorized"
+      },
+      "tags": [
+        "sign-diamond"
+      ],
+      "aliases": [],
       "styles": [
         "filled",
         "outline"

@@ -1,12 +1,10 @@
-name: Sync Figma Icons
+name: Generate Metadata
 
 on:
-  schedule:
-    - cron: '0 9 * * *'
   workflow_dispatch:
 
 jobs:
-  sync:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,18 +14,21 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Sync icons from Figma
-        env:
-          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
-        run: npm run icons:sync
+      - name: Generate metadata from SVGs
+        run: node generate-metadata.mjs
       
-      - name: Copy to docs folder
+      - name: Copy metadata to docs folder
+        run: cp site/metadata/icons.json docs/metadata/icons.json
+      
+      - name: Commit if changed
         run: |
-          rm -rf docs
-          mkdir -p docs
-          cp site/app.js site/index.html site/styles.css docs/
-          cp -r site/raw-svg docs/
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          if ! git diff --quiet; then
+            git add -A
+            git commit -m "ci: update metadata"
+            git push
+          fi
           cp -r site/metadata docs/
       
       - name: Commit and push

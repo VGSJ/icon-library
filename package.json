@@ -3,7 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "icons:sync": "node scripts/figma-sync.mjs",
     "icons:list": "node scripts/list-category.mjs",
     "icons:sync-category": "node scripts/sync-category.mjs",
     "dev": "npx http-server site -p 8080 -c-1"

@@ -4,6 +4,7 @@ import path from "path";
 import { execSync } from "child_process";
 
 const ROOT = process.cwd();
+const RAW_SVG_DIR = path.join(ROOT, "site", "raw-svg");  // Single source of truth
 
 function env(name) {
   return process.env[name];
@@ -25,11 +26,9 @@ async function cleanupCategory(categoryName) {
   // This ensures renamed/deleted icons in Figma are removed locally
   // ONLY delete icons that belong to THIS category, not other categories
   
-  const RAW_SVG_DIR = path.join(ROOT, "raw-svg");
-  
   try {
     // First, read current metadata to see which icons are in this category
-    const metaFile = path.join(ROOT, "metadata", "icons.json");
+    const metaFile = path.join(ROOT, "site", "metadata", "icons.json");
     let currentMetadata = { icons: [] };
     try {
       const data = await fs.readFile(metaFile, "utf8");
@@ -138,7 +137,6 @@ async function cleanupOrphanedUncategorized() {
     }
     
     // Check each uncategorized icon against Figma
-    const RAW_SVG_DIR = path.join(ROOT, "raw-svg");
     let deletedCount = 0;
     
     for (const icon of uncategorizedIcons) {
@@ -311,20 +309,9 @@ async function syncCategoryFromFigma(category) {
             // Generate filename
             const filename = `icon-${variant.setName}-${style}-${size}.svg`;
             const siteFilePath = path.join("site", "raw-svg", style, String(size), filename);
-            const rawFilePath = path.join("raw-svg", style, String(size), filename);
             
-            // Skip if file already exists in site (optimization for incremental syncs)
-            try {
-              await fs.stat(siteFilePath);
-              // File exists, skip download
-              downloaded++;
-              continue;
-            } catch {
-              // File doesn't exist, proceed with download
-            }
-            
+            // Download SVG
             await downloadSvg(url, siteFilePath);
-            await downloadSvg(url, rawFilePath);
             downloaded++;
             
             if (downloaded % 20 === 0) {
