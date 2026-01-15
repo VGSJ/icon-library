@@ -40,12 +40,11 @@
           <div id="grid" class="grid" aria-live="polite"></div>
           
           <div id="detailsPanel" class="details-panel hidden">
-            <div class="details-header">
-              <button id="closePanel" class="close-btn">✕</button>
-            </div>
-            
             <div class="details-content">
-              <h2 id="iconName" class="icon-name"></h2>
+              <div class="icon-name-header">
+                <h2 id="iconName" class="icon-name"></h2>
+                <button id="closePanel" class="close-btn">✕</button>
+              </div>
               
               <div class="details-preview">
                 <div id="previewBox" class="preview-box"></div>
@@ -71,12 +70,9 @@
               </div>
               
               <div class="details-section">
-                <label class="section-label">Size</label>
-                <div class="size-buttons">
-                  <button class="size-btn" data-size="16">16px</button>
-                  <button class="size-btn" data-size="24">24px</button>
-                  <button class="size-btn active" data-size="32">32px</button>
-                  <button class="size-btn" data-size="48">48px</button>
+                <label class="section-label">Size (px)</label>
+                <div id="sizeButtons" class="size-buttons">
+                  <!-- Populated by JS -->
                 </div>
               </div>
             </div>

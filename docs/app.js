@@ -10,6 +10,7 @@ const els = {
   previewBox: document.getElementById("previewBox"),
   copyBtn: document.getElementById("copyBtn"),
   downloadBtn: document.getElementById("downloadBtn"),
+  sizeButtons: document.getElementById("sizeButtons"),
 };
 
 let selectedCategory = null; // Track selected category filter
@@ -24,7 +25,8 @@ const ICON_SIZE = 32; // Fixed icon size for grid
 function openDetailsPanel(icon) {
   selectedIcon = icon;
   detailsFormat = "svg";
-  detailsSize = 32;
+  // Set default size to first available size, or 32 if none available
+  detailsSize = (icon.sizes && icon.sizes.length > 0) ? icon.sizes[0] : 32;
   
   els.detailsPanel.classList.remove("hidden");
   els.iconName.textContent = icon.name;
@@ -63,10 +65,26 @@ function updateDetailsButtons() {
     btn.classList.toggle("active", btn.dataset.format === detailsFormat);
   });
   
-  // Update size buttons
-  document.querySelectorAll(".size-btn").forEach(btn => {
-    btn.classList.toggle("active", parseInt(btn.dataset.size) === detailsSize);
-  });
+  // Generate size buttons from icon's available sizes
+  if (selectedIcon && selectedIcon.sizes) {
+    els.sizeButtons.innerHTML = "";
+    selectedIcon.sizes.forEach(size => {
+      const btn = document.createElement("button");
+      btn.className = "size-btn";
+      btn.textContent = `${size}`;
+      btn.dataset.size = size;
+      if (size === detailsSize) {
+        btn.classList.add("active");
+      }
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        detailsSize = size;
+        updateDetailsButtons();
+        updateDetailsPreview();
+      });
+      els.sizeButtons.appendChild(btn);
+    });
+  }
 }
 
 els.closePanel?.addEventListener("click", closeDetailsPanel);
@@ -75,15 +93,6 @@ els.closePanel?.addEventListener("click", closeDetailsPanel);
 document.querySelectorAll(".format-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     detailsFormat = btn.dataset.format;
-    updateDetailsButtons();
-    updateDetailsPreview();
-  });
-});
-
-// Size button listeners
-document.querySelectorAll(".size-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    detailsSize = parseInt(btn.dataset.size);
     updateDetailsButtons();
     updateDetailsPreview();
   });
@@ -107,7 +116,7 @@ els.copyBtn?.addEventListener("click", async () => {
   if (!selectedIcon) return;
   
   try {
-    const svg = await fetchSvg(selectedIcon.name, els.style.value || "outline", ICON_SIZE);
+    const svg = await fetchSvg(selectedIcon.name, els.style.value || "outline", detailsSize);
     const ok = await copyText(svg);
     if (ok) {
       showToast(`Copied: ${selectedIcon.name}`);
@@ -125,10 +134,10 @@ els.downloadBtn?.addEventListener("click", async () => {
   
   try {
     const style = els.style.value || "outline";
-    const svg = await fetchSvg(selectedIcon.name, style, ICON_SIZE);
+    const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
     
     let content = svg;
-    let filename = `${selectedIcon.name}-${style}-${ICON_SIZE}.${detailsFormat}`;
+    let filename = `${selectedIcon.name}-${style}-${detailsSize}.${detailsFormat}`;
     let mimeType = "image/svg+xml";
     
     if (detailsFormat === "png") {
