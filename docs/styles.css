@@ -133,10 +133,11 @@ main { padding: 20px 24px 0; }
   background: var(--card);
   border-radius: 4px;
   padding: 12px;
-  display: grid;
-  grid-template-columns: 44px 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
   align-items: center;
+  text-align: center;
 }
 
 .preview {
@@ -149,6 +150,8 @@ main { padding: 20px 24px 0; }
   background: var(--bg);
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
+  width: 60px;
+  height: 60px;
 }
 
 .preview > * {
