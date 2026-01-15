@@ -5,7 +5,7 @@
   "scripts": {
     "icons:list": "node scripts/list-category.mjs",
     "icons:sync-category": "node scripts/sync-category.mjs",
-    "dev": "npx http-server site -p 8080 -c-1"
+    "dev": "npx http-server docs -p 8080 -c-1"
   },
   "dependencies": {
     "dotenv": "^17.2.3"

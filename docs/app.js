@@ -5,7 +5,6 @@ const els = {
   style: document.getElementById("style"),
   categories: document.getElementById("categories"),
   detailsPanel: document.getElementById("detailsPanel"),
-  closePanel: document.getElementById("closePanel"),
   iconName: document.getElementById("iconName"),
   previewBox: document.getElementById("previewBox"),
   copyBtn: document.getElementById("copyBtn"),
@@ -22,22 +21,24 @@ const ICON_SIZE = 32; // Fixed icon size for grid
 /* --------------------------------------------------
    Details Panel
 -------------------------------------------------- */
-function openDetailsPanel(icon) {
+function openDetailsPanel(icon, previewElement) {
+  if (!icon || !previewElement) return; // Guard against null/undefined
+  
+  // Remove selected state from previously selected preview
+  document.querySelectorAll(".preview.selected").forEach(p => p.classList.remove("selected"));
+  
   selectedIcon = icon;
   detailsFormat = "svg";
-  // Set default size to first available size, or 32 if none available
-  detailsSize = (icon.sizes && icon.sizes.length > 0) ? icon.sizes[0] : 32;
+  // Set default size to 24, or first available size, or 32 if none available
+  detailsSize = (icon.sizes?.includes(24)) ? 24 : (icon.sizes?.length > 0) ? icon.sizes[0] : 32;
   
-  els.detailsPanel.classList.remove("hidden");
   els.iconName.textContent = icon.name;
+  
+  // Mark the clicked preview as selected
+  previewElement.classList.add("selected");
   
   updateDetailsPreview();
   updateDetailsButtons();
-}
-
-function closeDetailsPanel() {
-  els.detailsPanel.classList.add("hidden");
-  selectedIcon = null;
 }
 
 function updateDetailsPreview() {
@@ -87,8 +88,6 @@ function updateDetailsButtons() {
   }
 }
 
-els.closePanel?.addEventListener("click", closeDetailsPanel);
-
 // Format button listeners
 document.querySelectorAll(".format-btn").forEach(btn => {
   btn.addEventListener("click", () => {
@@ -96,19 +95,6 @@ document.querySelectorAll(".format-btn").forEach(btn => {
     updateDetailsButtons();
     updateDetailsPreview();
   });
-});
-
-// Click outside panel to close
-document.addEventListener("click", (e) => {
-  if (!selectedIcon) return;
-  const panel = els.detailsPanel;
-  const card = e.target.closest(".card");
-  const panelContent = e.target.closest(".details-panel");
-  
-  // Only close if clicked outside both the panel and the grid icons
-  if (!panelContent && !card) {
-    closeDetailsPanel();
-  }
 });
 
 // Copy button listener
@@ -169,11 +155,13 @@ els.downloadBtn?.addEventListener("click", async () => {
 const toast = document.createElement("div");
 toast.className = "toast";
 document.body.appendChild(toast);
+let toastTimeout;
 
 function showToast(msg) {
+  clearTimeout(toastTimeout);
   toast.textContent = msg;
   toast.classList.add("show");
-  setTimeout(() => toast.classList.remove("show"), 1400);
+  toastTimeout = setTimeout(() => toast.classList.remove("show"), 1400);
 }
 
 /* --------------------------------------------------
@@ -294,52 +282,39 @@ function getCategoryLabel(icon) {
   return icon.category.label || "uncategorized";
 }
 
-function svgPath(name, style, size) {
-  // Convert name to filename: ai-2-stars → icon-ai-2-stars-filled-16.svg
-  // Normalize style names (fill -> filled, outlined -> outline)
-  let normalizedStyle = style;
-  if (normalizedStyle === "fill") normalizedStyle = "filled";
-  if (normalizedStyle === "outlined") normalizedStyle = "outline";
-  return `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}.svg`;
+function normalizeStyle(style) {
+  if (style === "fill") return "filled";
+  if (style === "outlined") return "outline";
+  return style;
 }
 
 async function fetchSvg(name, style, size) {
-  // Normalize style name
-  let normalizedStyle = style;
-  if (normalizedStyle === "fill") normalizedStyle = "filled";
-  if (normalizedStyle === "outlined") normalizedStyle = "outline";
+  const normalizedStyle = normalizeStyle(style);
   
-  // Try primary path first
-  let path = svgPath(name, style, size);
-  let res = await fetch(path);
+  // Try multiple path patterns in order
+  const paths = [
+    `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}.svg`,
+    `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}px.svg`,
+    `./raw-svg/${normalizedStyle}/${size}px/icon-${name}-${normalizedStyle}-${size}px.svg`
+  ];
   
-  // If not found, try with 'px' suffix in filename (same folder)
-  if (!res.ok) {
-    const sizeWithPx = `${size}px`;
-    path = `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${sizeWithPx}.svg`;
-    res = await fetch(path);
+  for (const path of paths) {
+    const res = await fetch(path);
+    if (res.ok) return res.text();
   }
   
-  // If still not found, try with 'px' in both folder and filename
-  if (!res.ok) {
-    const sizeWithPx = `${size}px`;
-    path = `./raw-svg/${normalizedStyle}/${sizeWithPx}/icon-${name}-${normalizedStyle}-${sizeWithPx}.svg`;
-    res = await fetch(path);
-  }
-  
-  if (!res.ok) throw new Error(`Missing SVG for ${name} (${style}/${size})`);
-  return res.text();
+  throw new Error(`Missing SVG for ${name} (${style}/${size})`);
 }
 
 function iconMatches(icon, query) {
-  if (!query) return true;
+  if (!icon || !query) return !query; // No query = match all; no icon = no match
   const q = normalize(query);
 
   const categoryLabel = getCategoryLabel(icon);
 
   const hay = [
-    icon.name,
-    categoryLabel,
+    icon.name || "",
+    categoryLabel || "",
     ...(icon.tags || []),
   ]
     .map(normalize)
@@ -352,25 +327,16 @@ function iconMatches(icon, query) {
    Rendering
 -------------------------------------------------- */
 function renderCard(icon, style, size) {
-  const card = document.createElement("button");
-  card.type = "button";
-  card.className = "card";
-  card.title = "Click to view details";
-
-  const preview = document.createElement("div");
+  const preview = document.createElement("button");
+  preview.type = "button";
   preview.className = "preview";
+  preview.title = "Click to view details";
   preview.innerHTML = "…";
 
-  const info = document.createElement("div");
-
-  const name = document.createElement("div");
-  name.className = "name";
-  name.textContent = icon.name;
-
-  info.appendChild(name);
-
-  card.appendChild(preview);
-  card.appendChild(info);
+  // Add click listener before fetching SVG
+  preview.addEventListener("click", async () => {
+    openDetailsPanel(icon, preview);
+  });
 
   fetchSvg(icon.name, style, size)
     .then((svg) => {
@@ -385,11 +351,7 @@ function renderCard(icon, style, size) {
       // This handles cases where a style doesn't exist for this icon
     });
 
-  card.addEventListener("click", async () => {
-    openDetailsPanel(icon);
-  });
-
-  return card;
+  return preview;
 }
 
 /* --------------------------------------------------
@@ -458,24 +420,25 @@ function rerender() {
 
   if (filtered.length === 0) {
     els.status.textContent = "No matching icons.";
+    selectedIcon = null;
     return;
   }
 
   els.status.textContent = "Select an icon to copy the SVG.";
 
-  // For each icon, check which styles are available and only render those
+  // For each icon, render with selected style or first available style
   for (const icon of filtered) {
-    // Check if this icon has the selected style
-    if (icon.styles && !icon.styles.includes(style)) {
-      // Skip this icon for the selected style (don't show error)
-      // Find the first available style for this icon
-      if (icon.styles && icon.styles.length > 0) {
-        els.grid.appendChild(renderCard(icon, icon.styles[0], ICON_SIZE));
-      }
-    } else {
-      els.grid.appendChild(renderCard(icon, style, ICON_SIZE));
-    }
+    const iconStyle = (icon.styles?.includes(style)) ? style : (icon.styles?.length > 0 ? icon.styles[0] : style);
+    els.grid.appendChild(renderCard(icon, iconStyle, ICON_SIZE));
   }
+  
+  // Select the first icon by default after rerender
+  setTimeout(() => {
+    const firstPreview = document.querySelector(".preview");
+    if (firstPreview && filtered.length > 0) {
+      openDetailsPanel(filtered[0], firstPreview);
+    }
+  }, 0);
 }
 
 /* --------------------------------------------------
@@ -491,9 +454,8 @@ async function main() {
   try {
     const data = await loadIconsJson();
     allIcons = data.icons || [];
-    els.status.textContent = "Select an icon to copy the SVG.";
     populateCategories();
-    rerender();
+    rerender();  // Auto-selects first icon via rerender()
   } catch (e) {
     els.status.textContent = `Error: ${e.message}`;
   }
@@ -502,7 +464,12 @@ async function main() {
 /* --------------------------------------------------
    Events
 -------------------------------------------------- */
-els.search.addEventListener("input", rerender);
-els.style.addEventListener("change", rerender);
+els.search?.addEventListener("input", rerender);
+els.style?.addEventListener("change", rerender);
+
+// Ensure all DOM elements exist before trying to use them
+Object.entries(els).forEach(([key, el]) => {
+  if (!el) console.warn(`Missing DOM element: #${key}`);
+});
 
 main();

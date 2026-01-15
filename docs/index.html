@@ -35,30 +35,21 @@
       </nav>
 
       <main>
-        <div id="status" class="status">Loading icons…</div>
+        <div id="status" class="status" style="display: none;"></div>
         <div class="main-wrapper">
           <div id="grid" class="grid" aria-live="polite"></div>
           
-          <div id="detailsPanel" class="details-panel hidden">
+          <div id="detailsPanel" class="details-panel">
             <div class="details-content">
-              <div class="icon-name-header">
-                <h2 id="iconName" class="icon-name"></h2>
-                <button id="closePanel" class="close-btn">✕</button>
-              </div>
+              <h2 id="iconName" class="icon-name"></h2>
               
               <div class="details-preview">
                 <div id="previewBox" class="preview-box"></div>
               </div>
               
               <div class="details-actions">
-                <button id="copyBtn" class="action-btn copy-btn">
-                  <img src="./raw-svg/outline/16/icon-copy-outline-16.svg" alt="" />
-                  Copy
-                </button>
-                <button id="downloadBtn" class="action-btn download-btn">
-                  <img src="./raw-svg/outline/16/icon-download-outline-16.svg" alt="" />
-                  Download
-                </button>
+                <button id="copyBtn" class="action-btn copy-btn">Copy</button>
+                <button id="downloadBtn" class="action-btn download-btn">Download</button>
               </div>
               
               <div class="details-section">
@@ -79,9 +70,6 @@
           </div>
         </div>
       </main>
-          </div>
-        </div>
-      </div>
     </div>
 
     <script type="module" src="./app.js"></script>
