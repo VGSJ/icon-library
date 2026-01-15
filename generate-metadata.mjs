@@ -3,7 +3,7 @@ import fs from "fs/promises";
 import path from "path";
 
 const ROOT = process.cwd();
-const RAW_SVG_DIR = path.join(ROOT, "site", "raw-svg");  // Single source of truth
+const RAW_SVG_DIR = path.join(ROOT, "docs", "raw-svg");  // Single source of truth
 
 function env(name) {
   return process.env[name];
@@ -248,19 +248,11 @@ async function generateMetadata() {
     console.log(`  ${cat}: ${count}`);
   });
   
-  // Write metadata to site/metadata (single source of truth)
-  const siteMetaDir = path.join(ROOT, "site", "metadata");
-  await fs.mkdir(siteMetaDir, { recursive: true });
+  // Write metadata to docs/metadata (GitHub Pages source)
+  const metaDir = path.join(ROOT, "docs", "metadata");
+  await fs.mkdir(metaDir, { recursive: true });
   await fs.writeFile(
-    path.join(siteMetaDir, "icons.json"),
-    JSON.stringify({ icons: iconList }, null, 2)
-  );
-  
-  // Copy to docs/metadata for GitHub Pages
-  const docsMetaDir = path.join(ROOT, "docs", "metadata");
-  await fs.mkdir(docsMetaDir, { recursive: true });
-  await fs.writeFile(
-    path.join(docsMetaDir, "icons.json"),
+    path.join(metaDir, "icons.json"),
     JSON.stringify({ icons: iconList }, null, 2)
   );
   

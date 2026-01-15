@@ -5032,7 +5032,7 @@
       "name": "expand",
       "category": {
         "id": "uncategorized",
-        "label": "uncategorized"
+        "label": "Uncategorized"
       },
       "tags": [
         "expand"
@@ -9172,7 +9172,8 @@
         "mouse",
         "left-button",
         "click",
-        "input"
+        "input",
+        "left-right"
       ],
       "aliases": [
         "mouse-click-left",
@@ -10374,8 +10375,8 @@
     {
       "name": "rooftop",
       "category": {
-        "id": "heating-ventilation-air-conditioning",
-        "label": "heating ventilation air conditioning"
+        "id": "building-construction",
+        "label": "building & construction"
       },
       "tags": [
         "roof",
@@ -10384,17 +10385,12 @@
         "building",
         "structure",
         "exterior",
-        "architecture",
-        "ahu",
-        "fan",
-        "outside",
-        "ventilation"
+        "architecture"
       ],
       "aliases": [
         "roof",
         "rooftop",
-        "building-top",
-        "rooftop-fan"
+        "building-top"
       ],
       "styles": [
         "filled",
@@ -10991,7 +10987,7 @@
       "name": "sign-diamond",
       "category": {
         "id": "uncategorized",
-        "label": "uncategorized"
+        "label": "Uncategorized"
       },
       "tags": [
         "sign-diamond"
