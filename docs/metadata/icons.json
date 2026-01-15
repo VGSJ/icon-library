@@ -11049,17 +11049,15 @@
       },
       "tags": [
         "ethernet",
-        "port",
-        "network",
         "lan",
-        "connection",
+        "network",
+        "port",
         "rj45",
         "wired"
       ],
       "aliases": [
-        "lan-port",
-        "rj45-port",
         "ethernet-port",
+        "lan-port",
         "rj45"
       ],
       "styles": [
@@ -21432,8 +21430,8 @@
     {
       "name": "power-cord",
       "category": {
-        "id": "system-technology",
-        "label": "system & technology"
+        "id": "power--electrical",
+        "label": "power & electrical"
       },
       "tags": [
         "plug",

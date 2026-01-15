@@ -111,6 +111,13 @@
         "id": "building--construction",
         "label": "building & construction"
       }
+    },
+    {
+      "name": "power-cord",
+      "category": {
+        "id": "power--electrical",
+        "label": "power & electrical"
+      }
     }
   ]
 }
