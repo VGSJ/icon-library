@@ -1962,6 +1962,35 @@
       ]
     },
     {
+      "name": "benefits",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "benefit",
+        "benefits",
+        "utilities",
+        "perks",
+        "advantages"
+      ],
+      "aliases": [
+        "perks",
+        "employee-benefits"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "bezier-circle",
       "category": {
         "id": "editor",
@@ -6719,6 +6748,35 @@
       ]
     },
     {
+      "name": "emergency-exit",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "exit",
+        "emergency",
+        "evacuation",
+        "safety",
+        "escape"
+      ],
+      "aliases": [
+        "fire-exit",
+        "emergency-door"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "emergency-phone",
       "category": {
         "id": "health-safety",
@@ -6770,6 +6828,88 @@
         "medical-emergency-phone",
         "emergency-call-medical",
         "sos-medical-phone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "emoji-heart-eyes",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "emoji",
+        "smile",
+        "heart-eyes",
+        "love",
+        "face",
+        "emotion"
+      ],
+      "aliases": [
+        "heart-eyes",
+        "love-face"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "emoji-neutral",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "emoji",
+        "neutral",
+        "emotion"
+      ],
+      "aliases": [
+        "empty",
+        "no-emotion"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16
+      ]
+    },
+    {
+      "name": "emoji-smile",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "emoji",
+        "smile",
+        "happy",
+        "face",
+        "emotion"
+      ],
+      "aliases": [
+        "smiley",
+        "happy-face"
       ],
       "styles": [
         "filled",
@@ -10268,6 +10408,35 @@
       ]
     },
     {
+      "name": "kayaking",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "kayaking",
+        "paddle",
+        "water-sport",
+        "river",
+        "sea"
+      ],
+      "aliases": [
+        "kayak",
+        "canoeing"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "key",
       "category": {
         "id": "security",
@@ -12597,6 +12766,35 @@
       ]
     },
     {
+      "name": "occupancy-sensor",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "occupancy",
+        "sensor",
+        "presence",
+        "detection",
+        "people"
+      ],
+      "aliases": [
+        "presence-sensor",
+        "motion-sensor"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "octagon-alert",
       "category": {
         "id": "actions-general-interface",
@@ -13177,6 +13375,35 @@
         "occupancy-counter",
         "occupancy-sensor",
         "people-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "person-walking",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "walk",
+        "walking",
+        "person",
+        "pedestrian",
+        "movement"
+      ],
+      "aliases": [
+        "walk",
+        "pedestrian"
       ],
       "styles": [
         "filled",
@@ -14387,6 +14614,34 @@
       ]
     },
     {
+      "name": "sad-emoji",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "sad",
+        "unhappy",
+        "face",
+        "emotion"
+      ],
+      "aliases": [
+        "frown",
+        "emoji"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "safe",
       "category": {
         "id": "furniture-things",
@@ -14997,6 +15252,33 @@
       "aliases": [
         "security-alert",
         "breach-warning"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shift-handover",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "shift",
+        "handover",
+        "change",
+        "rotate"
+      ],
+      "aliases": [
+        "change-shift"
       ],
       "styles": [
         "filled",
@@ -15916,6 +16198,35 @@
       "aliases": [
         "broadcast",
         "loudspeaker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "staff-id",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "staff",
+        "id",
+        "employee",
+        "badge",
+        "identification"
+      ],
+      "aliases": [
+        "staff-id",
+        "employee-id"
       ],
       "styles": [
         "filled",
@@ -17399,6 +17710,122 @@
       ]
     },
     {
+      "name": "user",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "user",
+        "avatar",
+        "account",
+        "profile",
+        "person"
+      ],
+      "aliases": [
+        "me",
+        "profile-user"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "user-2",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "people",
+        "users",
+        "group",
+        "team",
+        "members"
+      ],
+      "aliases": [
+        "user-group",
+        "multiple-users"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "user-add",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "user",
+        "add",
+        "people",
+        "invite",
+        "create"
+      ],
+      "aliases": [
+        "add-user",
+        "invite-user"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "user-added",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "user",
+        "added",
+        "people",
+        "success",
+        "member"
+      ],
+      "aliases": [
+        "user-added",
+        "member-added"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "user-face-scanicon-user-face-scan",
       "category": {
         "id": "security",
@@ -17410,17 +17837,155 @@
         "id",
         "access",
         "face-recognition",
-        "biometric",
-        "avatar",
-        "account",
-        "profile",
-        "person"
+        "biometric"
       ],
       "aliases": [
         "face-id",
-        "user-biometric",
-        "me",
-        "profile-user"
+        "user-biometric"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "user-network",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "user",
+        "network",
+        "connection",
+        "people",
+        "link"
+      ],
+      "aliases": [
+        "user-connection",
+        "people-network"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "user-remove-1",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "user",
+        "remove",
+        "people",
+        "delete",
+        "member"
+      ],
+      "aliases": [
+        "remove-user",
+        "delete-user"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "user-remove-2",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "user",
+        "remove",
+        "people",
+        "delete",
+        "member"
+      ],
+      "aliases": [
+        "remove-user-1"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "users-double",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "users",
+        "multiple",
+        "two",
+        "group",
+        "people"
+      ],
+      "aliases": [
+        "two-users",
+        "multiple-users"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "users-group",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "users",
+        "group",
+        "multiple",
+        "three",
+        "people"
+      ],
+      "aliases": [
+        "group-users",
+        "team"
       ],
       "styles": [
         "filled",
@@ -17792,6 +18357,35 @@
       ]
     },
     {
+      "name": "wheelchair",
+      "category": {
+        "id": "people",
+        "label": "people"
+      },
+      "tags": [
+        "wheelchair",
+        "user",
+        "accessibility",
+        "disabled",
+        "mobility"
+      ],
+      "aliases": [
+        "disabled-user",
+        "accessibility-user"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "wheelchair-lift",
       "category": {
         "id": "vertical-transport",
@@ -17801,17 +18395,10 @@
         "lift",
         "elevator",
         "escalator",
-        "accessible",
-        "wheelchair",
-        "user",
-        "accessibility",
-        "disabled",
-        "mobility"
+        "accessible"
       ],
       "aliases": [
-        "wheelchair-lift",
-        "disabled-user",
-        "accessibility-user"
+        "wheelchair-lift"
       ],
       "styles": [
         "filled",
