@@ -376,9 +376,9 @@ function populateCategories() {
     categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
   });
 
-  // Sort by count descending
+  // Sort alphabetically by name
   const sorted = Object.entries(categoryCounts)
-    .sort((a, b) => b[1] - a[1])
+    .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([name, count]) => ({ name, count }));
 
   // Add "All icons" at the top
