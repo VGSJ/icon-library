@@ -1,6 +1,98 @@
 {
   "icons": [
     {
+      "name": "3d-cube",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "3d",
+        "scale",
+        "resize",
+        "size",
+        "transform",
+        "cube"
+      ],
+      "aliases": [
+        "3d-scale",
+        "scale-3d",
+        "resize-3d"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "3d-grid-perspective",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "3d",
+        "model",
+        "perspective",
+        "grid",
+        "space",
+        "depth"
+      ],
+      "aliases": [
+        "perspective-grid",
+        "3d-grid",
+        "3d-space"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "3d-rotate",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "3d",
+        "rotate",
+        "orientation",
+        "view",
+        "transform",
+        "cube"
+      ],
+      "aliases": [
+        "3d-rotate",
+        "rotate-3d",
+        "orientation-3d"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "access-panel-door",
       "category": {
         "id": "security",
@@ -553,6 +645,65 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ar-cube",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "ar",
+        "cube",
+        "rubik",
+        "geometry",
+        "3d",
+        "spatial"
+      ],
+      "aliases": [
+        "ar-geometry",
+        "cube-ar"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ar-vr",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "ar",
+        "augmented-reality",
+        "vr",
+        "virtual-reality",
+        "immersive",
+        "spatial"
+      ],
+      "aliases": [
+        "mixed-reality",
+        "xr"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -4040,6 +4191,35 @@
       ]
     },
     {
+      "name": "cone",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "cone",
+        "geometry",
+        "3d",
+        "shape",
+        "solid"
+      ],
+      "aliases": [
+        "conical-shape",
+        "3d-cone"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "construction-crane",
       "category": {
         "id": "building-construction",
@@ -4342,6 +4522,122 @@
       "aliases": [
         "crop-tool",
         "image-crop"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cube-exploded",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "cube",
+        "exploded-view",
+        "separated",
+        "3d",
+        "components"
+      ],
+      "aliases": [
+        "exploded-cube",
+        "separated-cube"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cube-focus",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "cube",
+        "focus",
+        "center",
+        "target",
+        "3d"
+      ],
+      "aliases": [
+        "focus-cube",
+        "center-cube"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cube-rotate",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "cube",
+        "rotate",
+        "rotation",
+        "360",
+        "3d"
+      ],
+      "aliases": [
+        "rotate-cube",
+        "cube-spin"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "cuboid",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "cuboid",
+        "rectangle",
+        "3d",
+        "box",
+        "prism"
+      ],
+      "aliases": [
+        "rectangular-prism",
+        "3d-rectangle"
       ],
       "styles": [
         "filled",
@@ -5165,6 +5461,37 @@
         "drill-maintenance",
         "repair-drill",
         "service-tool"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "duct-corner-bars",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "duct",
+        "corner",
+        "bars",
+        "frame",
+        "edge",
+        "structure"
+      ],
+      "aliases": [
+        "corner-duct",
+        "duct-elbow",
+        "frame-corner"
       ],
       "styles": [
         "filled",
@@ -7723,6 +8050,35 @@
         "heat-detector",
         "fire-heat-detector",
         "thermal-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hexagon-1",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "hexagon",
+        "geometry",
+        "polygon",
+        "2d",
+        "shape"
+      ],
+      "aliases": [
+        "six-sided",
+        "hex-shape"
       ],
       "styles": [
         "filled",
@@ -10918,6 +11274,35 @@
       ]
     },
     {
+      "name": "pyramid",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "pyramid",
+        "geometry",
+        "3d",
+        "shape",
+        "solid"
+      ],
+      "aliases": [
+        "triangular-pyramid",
+        "tetrahedron"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "quantity",
       "category": {
         "id": "actions-general-interface",
@@ -11691,6 +12076,67 @@
       "aliases": [
         "magnifying-glass",
         "search-find"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "section-analysis",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "section",
+        "analysis",
+        "cut",
+        "slice",
+        "inspect",
+        "cross-section"
+      ],
+      "aliases": [
+        "section-view",
+        "cut-analysis",
+        "slice-view"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "section-analysis-alt",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "section",
+        "analysis",
+        "cut",
+        "slice",
+        "view",
+        "geometry"
+      ],
+      "aliases": [
+        "cutting-view",
+        "section-cut"
       ],
       "styles": [
         "filled",
@@ -14353,6 +14799,96 @@
         "wrench-hand",
         "service-tool",
         "repair-hand"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "x-plane",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "x-plane",
+        "axis-x",
+        "horizontal",
+        "lateral-axis",
+        "3d"
+      ],
+      "aliases": [
+        "x-axis-plane",
+        "side-plane",
+        "horizontal-plane"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "y-plane",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "y-plane",
+        "axis-y",
+        "depth",
+        "longitudinal-axis",
+        "3d"
+      ],
+      "aliases": [
+        "y-axis-plane",
+        "front-plane",
+        "depth-plane"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "z-plane",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "z-plane",
+        "axis-z",
+        "elevation",
+        "vertical-axis",
+        "3d"
+      ],
+      "aliases": [
+        "z-axis-plane",
+        "height-plane",
+        "vertical-plane"
       ],
       "styles": [
         "filled",
