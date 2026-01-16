@@ -392,7 +392,7 @@ function populateCategories() {
 
   // Create "All icons" button
   const allBtn = document.createElement("button");
-  allBtn.className = "category-btn active";
+  allBtn.className = "category-btn" + (selectedCategory === null ? " active" : "");
   allBtn.innerHTML = `${allItem.name} <span class="category-count">${allItem.count}</span>`;
   allBtn.addEventListener("click", () => {
     selectedCategory = null;
@@ -405,7 +405,7 @@ function populateCategories() {
   // Create category buttons
   sorted.forEach(({ name, count }) => {
     const btn = document.createElement("button");
-    btn.className = "category-btn";
+    btn.className = "category-btn" + (selectedCategory === name ? " active" : "");
     const displayName = capitalizeCategory(name);
     btn.innerHTML = `${displayName} <span class="category-count">${count}</span>`;
     btn.addEventListener("click", () => {
