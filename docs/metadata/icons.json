@@ -20460,6 +20460,36 @@
       ]
     },
     {
+      "name": "middle-mouse-sideways",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "mouse",
+        "left-button",
+        "click",
+        "input",
+        "left-right"
+      ],
+      "aliases": [
+        "mouse-click-left",
+        "left-click"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        64,
+        72
+      ]
+    },
+    {
       "name": "minus",
       "category": {
         "id": "actions-general-interface",
@@ -20701,17 +20731,12 @@
       },
       "tags": [
         "mouse",
-        "left-button",
-        "click",
-        "left-right",
-        "input",
         "pointer",
+        "input",
         "device",
         "hardware"
       ],
       "aliases": [
-        "mouse-click-left",
-        "left-click",
         "computer-mouse",
         "pointing-device"
       ],
@@ -20766,6 +20791,123 @@
         "mouse-left"
       ],
       "aliases": [],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        64,
+        72
+      ]
+    },
+    {
+      "name": "mouse-left-sideways",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "mouse",
+        "left-button",
+        "click",
+        "input",
+        "left-right"
+      ],
+      "aliases": [
+        "mouse-click-left",
+        "left-click"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        64,
+        72
+      ]
+    },
+    {
+      "name": "mouse-left-updown",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "mouse",
+        "left-button",
+        "click",
+        "input"
+      ],
+      "aliases": [
+        "mouse-click-left",
+        "left-click"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        64,
+        72
+      ]
+    },
+    {
+      "name": "mouse-right-sideways",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "mouse",
+        "left-button",
+        "click",
+        "left-right"
+      ],
+      "aliases": [
+        "mouse-click-left",
+        "left-click"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        64,
+        72
+      ]
+    },
+    {
+      "name": "mouse-right-updown",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "mouse",
+        "left-button",
+        "click",
+        "input"
+      ],
+      "aliases": [
+        "mouse-click-left",
+        "left-click"
+      ],
       "styles": [
         "outline"
       ],
@@ -27852,7 +27994,63 @@
       ]
     },
     {
-      "name": "status-dot",
+      "name": "status-dot-lg",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "status",
+        "dot",
+        "circle",
+        "indicator"
+      ],
+      "aliases": [
+        "status-circle",
+        "indicator-dot"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "status-dot-md",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "status",
+        "dot",
+        "circle",
+        "indicator"
+      ],
+      "aliases": [
+        "status-circle",
+        "indicator-dot"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "status-dot-sm",
       "category": {
         "id": "actions-general-interface",
         "label": "actions & general interface"
