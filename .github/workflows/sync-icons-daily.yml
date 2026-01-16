@@ -28,8 +28,7 @@ jobs:
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
           FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
-        run: |
-          node scripts/detect-icon-changes.mjs > sync-report.md
+        run: node scripts/detect-icon-changes.mjs > sync-report.md
           
       - name: Check sync report
         id: check
