@@ -227,7 +227,7 @@ async function syncCategoryFromFigma(category) {
     
     console.log(`📥 Found ${variants.length} variants to download`);
     
-    // Filter to only variants that need downloading (don't exist in site/raw-svg)
+    // Filter to only variants that need downloading (don't exist in docs/raw-svg)
     const variantsToDownload = [];
     let skipped = 0;
     
