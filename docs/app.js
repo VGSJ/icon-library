@@ -89,6 +89,28 @@ function updateDetailsButtons() {
   }
 }
 
+// Convert SVG to PNG using canvas
+async function svgToPng(svgText, size) {
+  return new Promise((resolve, reject) => {
+    const canvas = document.createElement("canvas");
+    canvas.width = size;
+    canvas.height = size;
+    const ctx = canvas.getContext("2d");
+    
+    const img = new Image();
+    img.onload = () => {
+      ctx.drawImage(img, 0, 0, size, size);
+      canvas.toBlob(resolve, "image/png");
+    };
+    img.onerror = () => reject(new Error("Failed to convert SVG to PNG"));
+    
+    // Convert SVG to data URL
+    const blob = new Blob([svgText], { type: "image/svg+xml" });
+    const url = URL.createObjectURL(blob);
+    img.src = url;
+  });
+}
+
 // Format button listeners
 document.querySelectorAll(".format-btn").forEach(btn => {
   btn.addEventListener("click", () => {
@@ -103,12 +125,23 @@ els.copyBtn?.addEventListener("click", async () => {
   if (!selectedIcon) return;
   
   try {
-    const svg = await fetchSvg(selectedIcon.name, els.style.value || "outline", detailsSize);
-    const ok = await copyText(svg);
-    if (ok) {
-      showToast(`Copied: ${selectedIcon.name}`);
+    const style = els.style.value || "outline";
+    const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
+    
+    if (detailsFormat === "png") {
+      const pngBlob = await svgToPng(svg, detailsSize);
+      const pngData = await pngBlob.arrayBuffer();
+      await navigator.clipboard.write([
+        new ClipboardItem({ "image/png": pngBlob })
+      ]);
+      showToast(`Copied PNG: ${selectedIcon.name}`);
     } else {
-      openManualCopy(svg);
+      const ok = await copyText(svg);
+      if (ok) {
+        showToast(`Copied: ${selectedIcon.name}`);
+      } else {
+        openManualCopy(svg);
+      }
     }
   } catch (e) {
     showToast(`Error: ${e.message}`);
@@ -122,19 +155,15 @@ els.downloadBtn?.addEventListener("click", async () => {
   try {
     const style = els.style.value || "outline";
     const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
+    const filename = `${selectedIcon.name}-${style}-${detailsSize}.${detailsFormat}`;
     
-    let content = svg;
-    let filename = `${selectedIcon.name}-${style}-${detailsSize}.${detailsFormat}`;
-    let mimeType = "image/svg+xml";
-    
+    let blob;
     if (detailsFormat === "png") {
-      // For PNG, we would need a server-side conversion or canvas approach
-      // For now, just download SVG
-      showToast("PNG download coming soon");
-      return;
+      blob = await svgToPng(svg, detailsSize);
+    } else {
+      blob = new Blob([svg], { type: "image/svg+xml" });
     }
     
-    const blob = new Blob([content], { type: mimeType });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
