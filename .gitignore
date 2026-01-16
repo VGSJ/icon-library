@@ -1,2 +1,4 @@
 .env
 figma-export/.DS_Store
+.DS_Store
+node_modules/
