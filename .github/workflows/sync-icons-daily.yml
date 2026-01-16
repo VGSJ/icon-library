@@ -23,58 +23,36 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run icon sync detection
-        id: sync
+      - name: Detect icon changes from Figma
+        id: detect
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
           FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
         run: node scripts/detect-icon-changes.mjs > sync-report.md
         continue-on-error: true
-          
-      - name: Check sync report
-        id: check
-        run: |
-          if grep -q "new_categories_found" sync-report.md; then
-            echo "has_new_categories=true" >> $GITHUB_OUTPUT
-          else
-            echo "has_new_categories=false" >> $GITHUB_OUTPUT
-          fi
-        continue-on-error: true
 
-      - name: Auto-sync: Remove deleted icons
-        env:
-          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
-        run: node scripts/auto-remove-icons.mjs
-        continue-on-error: true
-
-      - name: Auto-sync: Add new icons
-        env:
-          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
-        run: node scripts/auto-add-icons.mjs
-        continue-on-error: true
-
-      - name: Regenerate metadata
+      - name: Regenerate metadata from Figma
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
           FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
         run: node generate-metadata.mjs
         continue-on-error: true
 
-      - name: Commit auto changes
+      - name: Commit changes if any
         run: |
           git config user.name "Icon Sync Bot"
           git config user.email "bot@icon-library.local"
           git add -A
           if ! git diff --cached --quiet; then
-            git commit -m "chore: auto sync icons from Figma [skip ci]"
+            git commit -m "chore: sync metadata from Figma [skip ci]"
             git push
+          else
+            echo "No changes to commit"
           fi
         continue-on-error: true
 
-      - name: Report status
+      - name: Report sync status
         run: |
-          echo "Sync workflow completed"
-          cat sync-report.md 2>/dev/null || echo "No sync report found"
+          echo "=== Sync Report ==="
+          cat sync-report.md 2>/dev/null || echo "Sync completed"
         continue-on-error: true
