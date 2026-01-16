@@ -93,6 +93,35 @@
       ]
     },
     {
+      "name": "4k-quality",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "4k",
+        "quality",
+        "resolution",
+        "video",
+        "ultra-hd"
+      ],
+      "aliases": [
+        "ultra-hd",
+        "4k-video"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "ac-settings-humidity",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -2213,6 +2242,36 @@
       "aliases": [
         "ats-switch",
         "auto-transfer-switch"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "av-media",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "audio",
+        "video",
+        "media",
+        "playback",
+        "sound",
+        "av"
+      ],
+      "aliases": [
+        "av-equipment",
+        "media-playback"
       ],
       "styles": [
         "filled",
@@ -4632,6 +4691,35 @@
       ]
     },
     {
+      "name": "camera-off",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "camera",
+        "off",
+        "picture",
+        "image",
+        "disabled"
+      ],
+      "aliases": [
+        "cam-off",
+        "camera-disable"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "camp-tent",
       "category": {
         "id": "building-construction",
@@ -6750,6 +6838,35 @@
         "bank",
         "town-hall",
         "cityhall"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "clapperboard",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "video",
+        "clapperboard",
+        "film",
+        "movie",
+        "production"
+      ],
+      "aliases": [
+        "film-slate",
+        "movie-clapper"
       ],
       "styles": [
         "filled",
@@ -9322,6 +9439,35 @@
       ],
       "aliases": [
         "dp-relief-valve"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "digital-camera",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "camera",
+        "picture",
+        "image",
+        "photo",
+        "capture"
+      ],
+      "aliases": [
+        "cam",
+        "photo-camera"
       ],
       "styles": [
         "filled",
@@ -12269,6 +12415,35 @@
       ]
     },
     {
+      "name": "facebook",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "facebook",
+        "social",
+        "media",
+        "network",
+        "platform"
+      ],
+      "aliases": [
+        "fb",
+        "facebook-logo"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "facility-management",
       "category": {
         "id": "building-construction",
@@ -12349,6 +12524,64 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fast-forward",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "fast-forward",
+        "forward",
+        "skip",
+        "media",
+        "playback"
+      ],
+      "aliases": [
+        "skip-forward",
+        "forward-media"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fastforward-30s",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "skip",
+        "30s",
+        "seconds",
+        "forward",
+        "rewind",
+        "playback"
+      ],
+      "aliases": [
+        "skip-30-sec",
+        "jump-30s"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -15156,6 +15389,35 @@
       ]
     },
     {
+      "name": "google",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "google",
+        "search",
+        "web",
+        "platform",
+        "service"
+      ],
+      "aliases": [
+        "google-logo",
+        "google-search"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "gps",
       "category": {
         "id": "wayfinding",
@@ -15759,6 +16021,35 @@
       "aliases": [
         "hazmat",
         "hazardous-material"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "hd-quality",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "hd",
+        "quality",
+        "resolution",
+        "video",
+        "high-definition"
+      ],
+      "aliases": [
+        "hd-video",
+        "high-definition"
       ],
       "styles": [
         "filled",
@@ -16982,6 +17273,66 @@
       ]
     },
     {
+      "name": "images",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "images",
+        "photos",
+        "pictures",
+        "gallery",
+        "media"
+      ],
+      "aliases": [
+        "photo-gallery",
+        "picture-collection"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "images-search",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "images",
+        "photos",
+        "pictures",
+        "search",
+        "gallery",
+        "media"
+      ],
+      "aliases": [
+        "image-search",
+        "photo-search",
+        "search-images"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "immigration-check-in",
       "category": {
         "id": "transport",
@@ -17283,6 +17634,35 @@
         "inspection"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "instagram",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "instagram",
+        "social",
+        "media",
+        "photo",
+        "platform"
+      ],
+      "aliases": [
+        "ig",
+        "instagram-logo"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -18473,6 +18853,35 @@
         "external-link"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "linkedin",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "linkedin",
+        "social",
+        "media",
+        "professional",
+        "network"
+      ],
+      "aliases": [
+        "linkedin-logo",
+        "li"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -19878,6 +20287,35 @@
       ]
     },
     {
+      "name": "messenger",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "messenger",
+        "chat",
+        "message",
+        "social",
+        "communication"
+      ],
+      "aliases": [
+        "facebook-messenger",
+        "messenger-app"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "meter-device",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -19921,6 +20359,93 @@
       "aliases": [
         "power-gauge",
         "energy-meter"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "microphone",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "microphone",
+        "mic",
+        "audio",
+        "sound",
+        "recording"
+      ],
+      "aliases": [
+        "mic",
+        "audio-input"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "microphone-mute",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "microphone",
+        "mute",
+        "off",
+        "audio",
+        "sound"
+      ],
+      "aliases": [
+        "mic-mute",
+        "microphone-off"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "microsoft",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "microsoft",
+        "tech",
+        "platform",
+        "software",
+        "company"
+      ],
+      "aliases": [
+        "microsoft-logo",
+        "ms"
       ],
       "styles": [
         "filled",
@@ -20340,6 +20865,35 @@
       ]
     },
     {
+      "name": "multimedia",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "multimedia",
+        "media",
+        "image",
+        "video",
+        "content"
+      ],
+      "aliases": [
+        "mixed-media",
+        "media-gallery"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "multiple-signboard",
       "category": {
         "id": "wayfinding",
@@ -20367,26 +20921,21 @@
       ]
     },
     {
-      "name": "network",
+      "name": "music-playlist",
       "category": {
         "id": "media-entertainment",
         "label": "media & entertainment"
       },
       "tags": [
-        "network",
-        "relationship",
-        "connection",
-        "binary",
-        "graph",
-        "box",
-        "disc",
-        "console",
-        "stream"
+        "audio",
+        "music",
+        "playlist",
+        "musical-note",
+        "songs"
       ],
       "aliases": [
-        "connections",
-        "data-network",
-        "video-player"
+        "music-list",
+        "audio-playlist"
       ],
       "styles": [
         "filled",
@@ -20411,11 +20960,43 @@
         "relationship",
         "connection",
         "link",
-        "nodes"
+        "nodes",
+        "binary",
+        "graph"
       ],
       "aliases": [
         "network-link",
-        "connection-graph"
+        "connection-graph",
+        "connections",
+        "data-network"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "network-video-recorder",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "box",
+        "disc",
+        "console",
+        "network",
+        "stream"
+      ],
+      "aliases": [
+        "video-player"
       ],
       "styles": [
         "filled",
@@ -21578,6 +22159,36 @@
       ]
     },
     {
+      "name": "pause",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "pause",
+        "stop",
+        "hold",
+        "media",
+        "video",
+        "audio"
+      ],
+      "aliases": [
+        "pause-playback",
+        "hold-media"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "pen-tool",
       "category": {
         "id": "editor",
@@ -21872,6 +22483,35 @@
         "park-bench"
       ],
       "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "picture-in-picture",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "picture-in-picture",
+        "pip",
+        "video",
+        "overlay",
+        "multitask"
+      ],
+      "aliases": [
+        "pip-mode",
+        "mini-player"
+      ],
+      "styles": [
+        "filled",
         "outline"
       ],
       "sizes": [
@@ -22235,6 +22875,65 @@
         "seed-planting",
         "plant-seed",
         "nurture-plant"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "play-circle",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "play",
+        "circle",
+        "video",
+        "media",
+        "start"
+      ],
+      "aliases": [
+        "play-video",
+        "play-button"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "play-go",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "play",
+        "go",
+        "start",
+        "media",
+        "video",
+        "audio"
+      ],
+      "aliases": [
+        "start",
+        "playback"
       ],
       "styles": [
         "filled",
@@ -23324,6 +24023,35 @@
       ]
     },
     {
+      "name": "record",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "record",
+        "recording",
+        "video",
+        "audio",
+        "capture"
+      ],
+      "aliases": [
+        "start-record",
+        "record-button"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "recycle",
       "category": {
         "id": "nature-landscaping",
@@ -23684,6 +24412,74 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rewind",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "rewind",
+        "forward",
+        "5s",
+        "skip",
+        "seconds",
+        "playback",
+        "backward",
+        "media",
+        "10s",
+        "15s"
+      ],
+      "aliases": [
+        "skip-5-sec",
+        "jump-5s",
+        "rewind-media",
+        "skip-backward",
+        "skip-10-sec",
+        "jump-10s",
+        "jump-15s"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rewind-30s",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "skip",
+        "30s",
+        "seconds",
+        "forward",
+        "rewind",
+        "playback"
+      ],
+      "aliases": [
+        "skip-30-sec",
+        "jump-30s"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -24523,6 +25319,35 @@
       "aliases": [
         "cut-tool",
         "trim"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "screen-share",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "screen",
+        "share",
+        "sharing",
+        "display",
+        "presentation"
+      ],
+      "aliases": [
+        "screen-sharing",
+        "share-screen"
       ],
       "styles": [
         "filled",
@@ -25442,6 +26267,34 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "shuffle",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "shuffle",
+        "random",
+        "mix",
+        "playback",
+        "media"
+      ],
+      "aliases": [
+        "random-play",
+        "shuffle-play"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -27108,6 +27961,35 @@
       ]
     },
     {
+      "name": "stop-circle",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "stop",
+        "circle",
+        "video",
+        "media",
+        "playback"
+      ],
+      "aliases": [
+        "stop-video",
+        "stop-button"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "stopwatch",
       "category": {
         "id": "time-date",
@@ -28338,6 +29220,35 @@
       ]
     },
     {
+      "name": "tiktok",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "tiktok",
+        "social",
+        "media",
+        "video",
+        "platform"
+      ],
+      "aliases": [
+        "tiktok-app",
+        "tt"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "time-hand",
       "category": {
         "id": "time-date",
@@ -29394,6 +30305,34 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "twitter",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "twitter",
+        "x",
+        "social",
+        "media",
+        "platform"
+      ],
+      "aliases": [
+        "x",
+        "twitter-x"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -30524,6 +31463,248 @@
       ]
     },
     {
+      "name": "video-camera",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "video",
+        "camera",
+        "movie",
+        "play",
+        "conference",
+        "recording"
+      ],
+      "aliases": [
+        "video-cam",
+        "webcam",
+        "movie-camera"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "video-camera-2",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "video",
+        "camera",
+        "movie",
+        "recording",
+        "conference"
+      ],
+      "aliases": [
+        "video-camera-2",
+        "webcam-alt"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "voice",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "voice",
+        "audio",
+        "sound",
+        "speech",
+        "microphone"
+      ],
+      "aliases": [
+        "speech",
+        "audio-voice"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "volume-high",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "volume",
+        "speaker",
+        "loud",
+        "sound",
+        "music",
+        "audio"
+      ],
+      "aliases": [
+        "sound-on",
+        "volume-full",
+        "speaker-high"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "volume-low",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "volume",
+        "speaker",
+        "low",
+        "sound",
+        "music",
+        "audio"
+      ],
+      "aliases": [
+        "volume-down",
+        "speaker-low"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "volume-medium",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "volume",
+        "speaker",
+        "medium",
+        "sound",
+        "music",
+        "audio"
+      ],
+      "aliases": [
+        "volume-half",
+        "speaker-medium"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "volume-mute",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "volume",
+        "mute",
+        "speaker",
+        "sound",
+        "audio",
+        "off"
+      ],
+      "aliases": [
+        "sound-off",
+        "volume-off",
+        "mute-speaker"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "volume-up",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "volume",
+        "up",
+        "increase",
+        "sound",
+        "audio",
+        "speaker"
+      ],
+      "aliases": [
+        "volume-increase",
+        "sound-up",
+        "speaker-up"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "vr-guardian",
       "category": {
         "id": "wayfinding",
@@ -30597,6 +31778,35 @@
         "wall-lamp-up",
         "wall-up-light",
         "wall-sconce-up"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "wallpaper",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "image",
+        "wallpaper",
+        "landscape",
+        "background",
+        "os"
+      ],
+      "aliases": [
+        "desktop-wallpaper",
+        "background-image"
       ],
       "styles": [
         "filled",
@@ -31299,6 +32509,35 @@
       ]
     },
     {
+      "name": "whatsapp",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "whatsapp",
+        "chat",
+        "message",
+        "social",
+        "communication"
+      ],
+      "aliases": [
+        "whatsapp-app",
+        "wa"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "wheelchair",
       "category": {
         "id": "people",
@@ -31845,6 +33084,35 @@
       "aliases": [
         "jpy-coin",
         "yen-currency"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "youtube",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "youtube",
+        "video",
+        "media",
+        "streaming",
+        "platform"
+      ],
+      "aliases": [
+        "youtube-logo",
+        "yt"
       ],
       "styles": [
         "filled",
