@@ -13,9 +13,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Load current icons
 const metadataPath = path.join(__dirname, '../docs/metadata/icons.json');
-const currentIcons = new Set(
-  JSON.parse(fs.readFileSync(metadataPath, 'utf-8')).map(icon => icon.name)
-);
+const metadataFile = JSON.parse(fs.readFileSync(metadataPath, 'utf-8'));
+const currentMetadata = metadataFile.icons || metadataFile;
+const currentIcons = new Set(currentMetadata.map(icon => icon.name));
 
 console.log('📥 Checking for new icons in Figma...\n');
 
