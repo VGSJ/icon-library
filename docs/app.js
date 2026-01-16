@@ -89,17 +89,19 @@ function updateDetailsButtons() {
   }
 }
 
-// Convert SVG to PNG using canvas
+// Convert SVG to PNG using canvas with higher resolution for better quality
 async function svgToPng(svgText, size) {
   return new Promise((resolve, reject) => {
+    // Render at 3x resolution for better quality, then export at requested size
+    const scale = 3;
     const canvas = document.createElement("canvas");
-    canvas.width = size;
-    canvas.height = size;
+    canvas.width = size * scale;
+    canvas.height = size * scale;
     const ctx = canvas.getContext("2d");
     
     const img = new Image();
     img.onload = () => {
-      ctx.drawImage(img, 0, 0, size, size);
+      ctx.drawImage(img, 0, 0, size * scale, size * scale);
       canvas.toBlob(resolve, "image/png");
     };
     img.onerror = () => reject(new Error("Failed to convert SVG to PNG"));

@@ -21211,12 +21211,17 @@
       },
       "tags": [
         "mouse",
-        "pointer",
+        "left-button",
+        "click",
         "input",
+        "left-right",
+        "pointer",
         "device",
         "hardware"
       ],
       "aliases": [
+        "mouse-click-left",
+        "left-click",
         "computer-mouse",
         "pointing-device"
       ],
@@ -21247,88 +21252,6 @@
       "aliases": [
         "mouse-click-x2",
         "double-click"
-      ],
-      "styles": [
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48,
-        64,
-        72
-      ]
-    },
-    {
-      "name": "mouse-left",
-      "category": {
-        "id": "uncategorized",
-        "label": "Uncategorized"
-      },
-      "tags": [
-        "mouse-left"
-      ],
-      "aliases": [],
-      "styles": [
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48,
-        64,
-        72
-      ]
-    },
-    {
-      "name": "mouse-left-sideways",
-      "category": {
-        "id": "actions-general-interface",
-        "label": "actions & general interface"
-      },
-      "tags": [
-        "mouse",
-        "left-button",
-        "click",
-        "input",
-        "left-right"
-      ],
-      "aliases": [
-        "mouse-click-left",
-        "left-click"
-      ],
-      "styles": [
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48,
-        64,
-        72
-      ]
-    },
-    {
-      "name": "mouse-left-updown",
-      "category": {
-        "id": "actions-general-interface",
-        "label": "actions & general interface"
-      },
-      "tags": [
-        "mouse",
-        "left-button",
-        "click",
-        "input"
-      ],
-      "aliases": [
-        "mouse-click-left",
-        "left-click"
       ],
       "styles": [
         "outline"
