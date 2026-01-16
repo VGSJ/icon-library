@@ -11,9 +11,10 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Load current metadata
-const currentMetadata = JSON.parse(
+const metadataFile = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../docs/metadata/icons.json'), 'utf-8')
 );
+const currentMetadata = metadataFile.icons || metadataFile;
 
 // Create a map of current icons
 const currentIcons = new Map(currentMetadata.map(icon => [icon.name, icon]));
