@@ -15,8 +15,8 @@ const els = {
 
 let selectedCategory = null; // Track selected category filter
 let selectedIcon = null; // Track selected icon in details panel
-let detailsFormat = "svg"; // Track selected format
-let detailsSize = 32; // Track selected size for details preview
+let detailsFormat = localStorage.getItem("detailsFormat") || "svg"; // Track selected format
+let detailsSize = parseInt(localStorage.getItem("detailsSize") || "32"); // Track selected size for details preview
 const ICON_SIZE = 32; // Fixed icon size for grid
 
 /* --------------------------------------------------
@@ -29,9 +29,14 @@ function openDetailsPanel(icon, previewElement) {
   document.querySelectorAll(".preview.selected").forEach(p => p.classList.remove("selected"));
   
   selectedIcon = icon;
-  detailsFormat = "svg";
-  // Set default size to 24, or first available size, or 32 if none available
-  detailsSize = (icon.sizes?.includes(24)) ? 24 : (icon.sizes?.length > 0) ? icon.sizes[0] : 32;
+  // Keep the user's previously selected format (from localStorage)
+  // detailsFormat is already loaded from localStorage on init
+  // Set size to 24, or first available size, or use saved size if available
+  if (icon.sizes && icon.sizes.includes(detailsSize)) {
+    // Keep the saved size if it's available for this icon
+  } else {
+    detailsSize = (icon.sizes?.includes(24)) ? 24 : (icon.sizes?.length > 0) ? icon.sizes[0] : 32;
+  }
   
   els.iconName.textContent = icon.name;
   
@@ -81,6 +86,7 @@ function updateDetailsButtons() {
       btn.addEventListener("click", (e) => {
         e.stopPropagation();
         detailsSize = size;
+        localStorage.setItem("detailsSize", detailsSize);
         updateDetailsButtons();
         updateDetailsPreview();
       });
@@ -117,6 +123,7 @@ async function svgToPng(svgText, size) {
 document.querySelectorAll(".format-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     detailsFormat = btn.dataset.format;
+    localStorage.setItem("detailsFormat", detailsFormat);
     updateDetailsButtons();
     updateDetailsPreview();
   });
