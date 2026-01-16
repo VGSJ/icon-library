@@ -154,6 +154,9 @@ async function generateMetadata() {
     console.log(`✅ Found ${componentSets.length} component sets with metadata`);
     
     // Merge Figma metadata into icons
+    // Build a map of icon names -> sizes from component names
+    const figmaSizes = new Map();
+    
     let matched = 0;
     for (const comp of componentSets) {
       if (!comp.name?.startsWith("icon-")) continue;
@@ -164,6 +167,18 @@ async function generateMetadata() {
       // If the name has comma-separated variants info, take just the base name
       if (baseName.includes(",")) {
         baseName = baseName.split(",")[0].trim();
+      }
+      
+      // Extract size from component name: "emoji-neutral/16", "emoji-neutral/24", etc.
+      // Format: icon-{name}/{style}/{size} or icon-{name}/{size}
+      const componentName = comp.name;
+      const sizeMatch = componentName.match(/\/(\d+)(?:px)?$/);
+      if (sizeMatch) {
+        const size = parseInt(sizeMatch[1]);
+        if (!figmaSizes.has(baseName)) {
+          figmaSizes.set(baseName, new Set());
+        }
+        figmaSizes.get(baseName).add(size);
       }
       
       // Try to find matching icon in our map
@@ -204,6 +219,14 @@ async function generateMetadata() {
         }
       }
     }
+    
+    // Merge Figma sizes into icon sizes
+    for (const [iconName, figmaSizesSet] of figmaSizes) {
+      if (icons.has(iconName)) {
+        figmaSizesSet.forEach(size => icons.get(iconName).sizes.add(size));
+      }
+    }
+    
     console.log(`✅ Matched ${matched} icons with Figma metadata`);
   } catch (e) {
     console.warn(`⚠️ Could not fetch Figma metadata: ${e.message}`);

@@ -234,7 +234,7 @@ async function syncCategoryFromFigma(category) {
     for (const variant of variants) {
       const parts = variant.name.split(", ").reduce((acc, part) => {
         const [key, val] = part.split("=");
-        acc[key?.trim()] = val?.trim();
+        acc[key?.trim().toLowerCase()] = val?.trim();
         return acc;
       }, {});
       
@@ -292,10 +292,10 @@ async function syncCategoryFromFigma(category) {
           }
           
           try {
-            // Parse variant name: "type=filled, size=16"
+            // Parse variant name: "type=filled, Size=16"
             const parts = variant.name.split(", ").reduce((acc, part) => {
               const [key, val] = part.split("=");
-              acc[key?.trim()] = val?.trim();
+              acc[key?.trim().toLowerCase()] = val?.trim();
               return acc;
             }, {});
             
