@@ -2385,7 +2385,6 @@
         "bacnet",
         "bms",
         "controller",
-        "hvac",
         "building-automation"
       ],
       "aliases": [
@@ -9719,7 +9718,7 @@
         "label": "furniture & things"
       },
       "tags": [
-        "diving",
+        "dive",
         "oxygen",
         "tank",
         "scuba",
@@ -31070,7 +31069,7 @@
         "umbrella",
         "rain",
         "weather",
-        "protection"
+        "shelter"
       ],
       "aliases": [
         "rain-umbrella",
