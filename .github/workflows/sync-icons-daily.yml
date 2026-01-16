@@ -27,6 +27,7 @@ jobs:
         id: sync
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
         run: |
           node scripts/detect-icon-changes.mjs > sync-report.md
           
@@ -40,12 +41,21 @@ jobs:
           fi
 
       - name: Auto-sync: Remove deleted icons
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
         run: node scripts/auto-remove-icons.mjs
 
       - name: Auto-sync: Add new icons
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
         run: node scripts/auto-add-icons.mjs
 
       - name: Regenerate metadata
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
         run: node generate-metadata.mjs
 
       - name: Commit auto changes
