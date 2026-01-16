@@ -2,6 +2,7 @@ const els = {
   grid: document.getElementById("grid"),
   status: document.getElementById("status"),
   search: document.getElementById("search"),
+  clearSearchBtn: document.getElementById("clearSearchBtn"),
   style: document.getElementById("style"),
   categories: document.getElementById("categories"),
   detailsPanel: document.getElementById("detailsPanel"),
@@ -369,9 +370,12 @@ function renderCard(icon, style, size) {
 let allIcons = [];
 
 function populateCategories() {
-  // Get unique categories and their counts
+  // Calculate category counts based on current search filter
+  const query = els.search?.value || "";
+  const filteredBySearch = allIcons.filter((icon) => iconMatches(icon, query));
+  
   const categoryCounts = {};
-  allIcons.forEach(icon => {
+  filteredBySearch.forEach(icon => {
     const cat = getCategoryLabel(icon);
     categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
   });
@@ -382,7 +386,7 @@ function populateCategories() {
     .map(([name, count]) => ({ name, count }));
 
   // Add "All icons" at the top
-  const allItem = { name: "All icons", count: allIcons.length };
+  const allItem = { name: "All icons", count: filteredBySearch.length };
 
   els.categories.innerHTML = "";
 
@@ -419,6 +423,14 @@ function rerender() {
   const style = els.style.value;
 
   let filtered = allIcons.filter((icon) => iconMatches(icon, query));
+  
+  // Update category counts based on current search
+  populateCategories();
+  
+  // Show/hide clear button based on search input
+  if (els.clearSearchBtn) {
+    els.clearSearchBtn.style.display = query ? "flex" : "none";
+  }
   
   // Filter by selected category if one is chosen
   if (selectedCategory) {
@@ -475,6 +487,12 @@ async function main() {
 -------------------------------------------------- */
 els.search?.addEventListener("input", rerender);
 els.style?.addEventListener("change", rerender);
+
+// Clear search button
+els.clearSearchBtn?.addEventListener("click", () => {
+  els.search.value = "";
+  rerender();
+});
 
 // Ensure all DOM elements exist before trying to use them
 Object.entries(els).forEach(([key, el]) => {
