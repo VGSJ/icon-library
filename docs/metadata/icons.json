@@ -3828,6 +3828,36 @@
       ]
     },
     {
+      "name": "brick-meter",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "submeter",
+        "meter",
+        "measurement",
+        "energy",
+        "relationship",
+        "hierarchy"
+      ],
+      "aliases": [
+        "has-submeter",
+        "includes-submeter",
+        "child-meter"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "brick-wall",
       "category": {
         "id": "building-construction",
@@ -8221,6 +8251,36 @@
       ]
     },
     {
+      "name": "controls",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "control",
+        "controls",
+        "command",
+        "influence",
+        "regulation",
+        "relationship"
+      ],
+      "aliases": [
+        "controls",
+        "is-controller-of",
+        "governs"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "conversation",
       "category": {
         "id": "communication",
@@ -12593,6 +12653,36 @@
       ]
     },
     {
+      "name": "feeds",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "feeds",
+        "supply",
+        "flow",
+        "delivers",
+        "relationship",
+        "connection"
+      ],
+      "aliases": [
+        "feeds",
+        "supplies",
+        "provides-to"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "female-toilet",
       "category": {
         "id": "housekeeping",
@@ -16006,6 +16096,246 @@
       ]
     },
     {
+      "name": "has-component",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "component",
+        "part",
+        "subcomponent",
+        "composition",
+        "relationship",
+        "structure"
+      ],
+      "aliases": [
+        "has-component",
+        "has-part",
+        "includes-component"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "has-external-reference",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "external",
+        "reference",
+        "link",
+        "identifier",
+        "mapping",
+        "relationship"
+      ],
+      "aliases": [
+        "has-external-reference",
+        "external-ref",
+        "references-external"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "has-measurement",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "measure",
+        "measurement",
+        "metric",
+        "value",
+        "relationship",
+        "data"
+      ],
+      "aliases": [
+        "has-measurement",
+        "measured-by",
+        "includes-measurement"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "has-quantity",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "quantity",
+        "measurement",
+        "value",
+        "numeric",
+        "relationship",
+        "property"
+      ],
+      "aliases": [
+        "has-quantity",
+        "quantity-of",
+        "includes-quantity"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "has-submeter",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "submeter",
+        "meter",
+        "measurement",
+        "energy",
+        "relationship",
+        "hierarchy"
+      ],
+      "aliases": [
+        "has-submeter",
+        "includes-submeter",
+        "child-meter"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "has-substance",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "substance",
+        "material",
+        "medium",
+        "fluid",
+        "gas",
+        "relationship"
+      ],
+      "aliases": [
+        "has-substance",
+        "contains-substance",
+        "uses-substance"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "has-tag",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "tag",
+        "label",
+        "classification",
+        "metadata",
+        "relationship",
+        "annotation"
+      ],
+      "aliases": [
+        "has-tag",
+        "tagged-with",
+        "includes-tag"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "has-unit",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "unit",
+        "measurement",
+        "metric",
+        "value",
+        "relationship",
+        "scale"
+      ],
+      "aliases": [
+        "has-unit",
+        "unit-of",
+        "measured-in"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "hazardous",
       "category": {
         "id": "power-electrical",
@@ -17832,6 +18162,126 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "is-connected-to",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "connected",
+        "connection",
+        "link",
+        "network",
+        "relationship",
+        "topology"
+      ],
+      "aliases": [
+        "is-connected-to",
+        "connected-to",
+        "linked-to"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "is-location-of",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "location",
+        "located",
+        "spatial",
+        "relationship",
+        "containment",
+        "place"
+      ],
+      "aliases": [
+        "is-location-of",
+        "located-at",
+        "has-location"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "is-part-of",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "part",
+        "component",
+        "subpart",
+        "composition",
+        "relationship",
+        "structure"
+      ],
+      "aliases": [
+        "is-part-of",
+        "part-of",
+        "belongs-to"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "is-point-of",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "point",
+        "datapoint",
+        "sensor",
+        "signal",
+        "relationship",
+        "telemetry"
+      ],
+      "aliases": [
+        "is-point-of",
+        "point-of",
+        "belongs-to"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -20579,6 +21029,36 @@
       ]
     },
     {
+      "name": "monitors",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "monitor",
+        "monitors",
+        "observe",
+        "watch",
+        "tracking",
+        "relationship"
+      ],
+      "aliases": [
+        "monitors",
+        "is-monitor-of",
+        "observes"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "moon",
       "category": {
         "id": "nature-landscaping",
@@ -21793,6 +22273,35 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "owns",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "own",
+        "ownership",
+        "owner",
+        "possession",
+        "relationship"
+      ],
+      "aliases": [
+        "owns",
+        "is-owner-of",
+        "has-ownership"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -24441,6 +24950,35 @@
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "replaces",
+      "category": {
+        "id": "brickschema-relationships",
+        "label": "brickschema relationships"
+      },
+      "tags": [
+        "replace",
+        "replacement",
+        "substitute",
+        "supersede",
+        "relationship"
+      ],
+      "aliases": [
+        "replaces",
+        "is-replacement-of",
+        "supersedes"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
