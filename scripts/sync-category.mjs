@@ -21,6 +21,32 @@ async function figmaFetch(url) {
   return res.json();
 }
 
+async function getComponentTimestamps(fileKey) {
+  try {
+    const compsetsUrl = `https://api.figma.com/v1/files/${fileKey}/component_sets`;
+    const compsetsData = await figmaFetch(compsetsUrl);
+    const componentSets = compsetsData.meta?.component_sets || [];
+    
+    const timestamps = {};
+    for (const comp of componentSets) {
+      if (comp.name?.startsWith("icon-")) {
+        let baseName = comp.name.substring(5);
+        if (baseName.includes(",")) baseName = baseName.split(",")[0].trim();
+        
+        timestamps[baseName] = {
+          modifiedAt: comp.updated_at,
+          name: comp.name
+        };
+      }
+    }
+    
+    return timestamps;
+  } catch (e) {
+    console.warn(`⚠️ Could not fetch component timestamps: ${e.message}`);
+    return {};
+  }
+}
+
 // Get file modification time in milliseconds
 async function getFileModTime(filePath) {
   try {
@@ -189,6 +215,7 @@ async function syncCategoryFromFigma(category) {
   // Normalize category name for consistent matching
   const normalizedCategory = category.toLowerCase().trim();
   const fileKey = env("FIGMA_FILE_KEY");
+  const CHANGE_DETECTION_DATE = new Date("2026-01-19T09:00:00+08:00").getTime(); // Jan 19, 9am SGT
   
   // Clean up old SVGs for this category before syncing
   await cleanupCategory(category);
@@ -200,6 +227,10 @@ async function syncCategoryFromFigma(category) {
     const compsetsData = await figmaFetch(compsetsUrl);
     
     const componentSets = compsetsData.meta?.component_sets || [];
+    
+    // Get timestamps for all components
+    console.log(`⏰ Fetching component timestamps from Figma...`);
+    const componentTimestamps = await getComponentTimestamps(fileKey);
     
     // Find all icons in this category
     const categoryIcons = componentSets.filter(cs => {
@@ -235,10 +266,12 @@ async function syncCategoryFromFigma(category) {
     
     traverse(fileData.document);
     
-    console.log(`📥 Found ${variants.length} variants to download`);
+    console.log(`📥 Found ${variants.length} variants to process`);
     
-    // Filter to only variants that need downloading (don't exist in docs/raw-svg)
+    // Detect changes by comparing Figma timestamps with local files
+    console.log(`\n📊 Detecting SVG changes...\n`);
     const variantsToDownload = [];
+    const variantsUpdated = [];
     let skipped = 0;
     
     for (const variant of variants) {
@@ -256,20 +289,62 @@ async function syncCategoryFromFigma(category) {
       const filename = `icon-${variant.setName}-${style}-${size}.svg`;
       const siteFilePath = path.join("docs", "raw-svg", style, String(size), filename);
       
+      variant.style = style;
+      variant.size = size;
+      
+      // Check if file exists and compare timestamps
       try {
-        await fs.stat(siteFilePath);
-        skipped++;
+        const stat = await fs.stat(siteFilePath);
+        const localMtime = stat.mtimeMs;
+        
+        // Get Figma component timestamp
+        const componentTimestamp = componentTimestamps[variant.setName];
+        if (componentTimestamp) {
+          const figmaModTime = new Date(componentTimestamp.modifiedAt).getTime();
+          
+          if (figmaModTime > localMtime) {
+            // SVG was updated in Figma since we downloaded it
+            variantsUpdated.push({
+              ...variant,
+              figmaTime: componentTimestamp.modifiedAt,
+              localTime: new Date(localMtime).toISOString()
+            });
+            variantsToDownload.push(variant);
+            console.log(`   ♻️  Updated: ${filename}`);
+          } else {
+            // File is current
+            skipped++;
+          }
+        } else {
+          // No timestamp found, skip
+          skipped++;
+        }
       } catch {
-        variant.style = style;
-        variant.size = size;
+        // File doesn't exist - this is a new SVG
         variantsToDownload.push(variant);
+        console.log(`   🆕 New: ${filename}`);
       }
     }
     
-    if (skipped > 0) {
-      console.log(`⏭️  Skipping ${skipped} existing SVGs`);
+    console.log(`\n📈 Change Summary:`);
+    console.log(`   🆕 New SVGs: ${variantsToDownload.length - variantsUpdated.length}`);
+    console.log(`   ♻️  Updated SVGs: ${variantsUpdated.length}`);
+    console.log(`   ✅ Current SVGs: ${skipped}`);
+    
+    if (variantsUpdated.length > 0) {
+      console.log(`\n📝 Details of Updated SVGs:`);
+      variantsUpdated.slice(0, 10).forEach(v => {
+        const figmaDate = new Date(v.figmaTime).toLocaleString('en-US', { timeZone: 'Asia/Singapore' });
+        const localDate = new Date(v.localTime).toLocaleString('en-US', { timeZone: 'Asia/Singapore' });
+        console.log(`   • icon-${v.setName}-${v.style}-${v.size}`);
+        console.log(`     Figma: ${figmaDate} | Local: ${localDate}`);
+      });
+      if (variantsUpdated.length > 10) {
+        console.log(`   ... and ${variantsUpdated.length - 10} more`);
+      }
     }
-    console.log(`📥 Downloading ${variantsToDownload.length} new/updated SVGs`);
+    
+    console.log(`\n⏳ Downloading ${variantsToDownload.length} SVGs...`);
     
     // Download SVGs in batches
     const batchSize = 50;

@@ -7322,6 +7322,35 @@
       ]
     },
     {
+      "name": "cloud",
+      "category": {
+        "id": "nature-landscaping",
+        "label": "nature & landscaping"
+      },
+      "tags": [
+        "cloud",
+        "cloudy",
+        "weather",
+        "sky",
+        "atmosphere"
+      ],
+      "aliases": [
+        "cloud",
+        "cloudy"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "cloud-download",
       "category": {
         "id": "system-technology",
@@ -7329,18 +7358,12 @@
       },
       "tags": [
         "cloud",
-        "cloudy",
-        "weather",
-        "sky",
-        "atmosphere",
         "download",
         "storage",
         "data",
         "network"
       ],
       "aliases": [
-        "cloud",
-        "cloudy",
         "cloud-down",
         "download-cloud"
       ],
@@ -10256,6 +10279,37 @@
       "aliases": [
         "security-shutter",
         "metal-gate"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "door-close",
+      "category": {
+        "id": "building-construction",
+        "label": "building & construction"
+      },
+      "tags": [
+        "door",
+        "closed",
+        "room",
+        "entrance",
+        "access",
+        "interior"
+      ],
+      "aliases": [
+        "door-closed",
+        "closed-door",
+        "room-door"
       ],
       "styles": [
         "filled",
@@ -19311,7 +19365,7 @@
       ]
     },
     {
-      "name": "light-dimmer-switch",
+      "name": "light-dimmer",
       "category": {
         "id": "light",
         "label": "light"
@@ -30011,6 +30065,35 @@
       ],
       "aliases": [
         "hot-water-temperature"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "three-module",
+      "category": {
+        "id": "geometry",
+        "label": "geometry"
+      },
+      "tags": [
+        "module",
+        "three",
+        "layout",
+        "grid",
+        "structure"
+      ],
+      "aliases": [
+        "three-blocks",
+        "three-sections"
       ],
       "styles": [
         "filled",
