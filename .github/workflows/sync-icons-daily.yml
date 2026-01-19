@@ -23,15 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Detect icon changes from Figma
-        id: detect
-        env:
-          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
-        run: node scripts/detect-icon-changes.mjs > sync-report.md
-        continue-on-error: true
-
-      - name: Sync all categories from Figma to get new icons
+      - name: Sync all categories from Figma (includes change detection)
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
           FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
@@ -91,10 +83,4 @@ jobs:
           else
             echo "No changes to commit"
           fi
-        continue-on-error: true
-
-      - name: Report sync status
-        run: |
-          echo "=== Sync Report ==="
-          cat sync-report.md 2>/dev/null || echo "Sync completed"
         continue-on-error: true
