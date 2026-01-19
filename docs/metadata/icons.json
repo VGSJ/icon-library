@@ -6281,6 +6281,37 @@
       ]
     },
     {
+      "name": "chilled-water-ai-optimise",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "chilled-water",
+        "booster",
+        "pump",
+        "cooling",
+        "hvac",
+        "chiller",
+        "ai",
+        "optimize"
+      ],
+      "aliases": [
+        "chilled-water-pump"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "chilled-water-booster-pump",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -6291,7 +6322,8 @@
         "booster",
         "pump",
         "cooling",
-        "hvac"
+        "hvac",
+        "chiller"
       ],
       "aliases": [
         "chilled-water-pump"
@@ -6426,9 +6458,9 @@
       "tags": [
         "tank",
         "storage",
-        "chilled",
         "water",
-        "cooling"
+        "cooling",
+        "chiller"
       ],
       "aliases": [
         "chilled-water-tank"
@@ -7917,7 +7949,8 @@
         "water",
         "booster",
         "pump",
-        "cooling"
+        "cooling",
+        "chiller"
       ],
       "aliases": [
         "condenser-booster-pump"
@@ -8269,28 +8302,6 @@
         "governs"
       ],
       "styles": [
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "conversation",
-      "category": {
-        "id": "communication",
-        "label": "communication"
-      },
-      "tags": [
-        "conversation"
-      ],
-      "aliases": [],
-      "styles": [
-        "filled",
         "outline"
       ],
       "sizes": [
@@ -13487,14 +13498,12 @@
     {
       "name": "fire-engine-truck",
       "category": {
-        "id": "building-construction",
-        "label": "building & construction"
+        "id": "fire",
+        "label": "fire"
       },
       "tags": [
-        "fire",
         "engine",
         "truck",
-        "firetruck",
         "emergency",
         "rescue",
         "vehicle"
@@ -13987,6 +13996,86 @@
       ]
     },
     {
+      "name": "flag-afghanistan",
+      "category": {
+        "id": "flags",
+        "label": "flags"
+      },
+      "tags": [
+        "afghanistan",
+        "af"
+      ],
+      "aliases": [
+        "af-flag"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        32
+      ]
+    },
+    {
+      "name": "flag-france",
+      "category": {
+        "id": "flags",
+        "label": "flags"
+      },
+      "tags": [
+        "france",
+        "french"
+      ],
+      "aliases": [
+        "fr-flag"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        32
+      ]
+    },
+    {
+      "name": "flag-indonesia",
+      "category": {
+        "id": "flags",
+        "label": "flags"
+      },
+      "tags": [
+        "indo"
+      ],
+      "aliases": [
+        "id-flag"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        32
+      ]
+    },
+    {
+      "name": "flag-philippines",
+      "category": {
+        "id": "flags",
+        "label": "flags"
+      },
+      "tags": [
+        "pl",
+        "philippines",
+        "filipino"
+      ],
+      "aliases": [
+        "pl-flag"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        32
+      ]
+    },
+    {
       "name": "flag-pole",
       "category": {
         "id": "wayfinding",
@@ -14010,6 +14099,87 @@
         32,
         40,
         48
+      ]
+    },
+    {
+      "name": "flag-sg",
+      "category": {
+        "id": "flags",
+        "label": "flags"
+      },
+      "tags": [
+        "singapore",
+        "spore",
+        "sg"
+      ],
+      "aliases": [
+        "sg-flag"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        32
+      ]
+    },
+    {
+      "name": "flag-uae",
+      "category": {
+        "id": "flags",
+        "label": "flags"
+      },
+      "tags": [
+        "united arab emirates"
+      ],
+      "aliases": [
+        "uae-flag"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        32
+      ]
+    },
+    {
+      "name": "flag-usa",
+      "category": {
+        "id": "flags",
+        "label": "flags"
+      },
+      "tags": [
+        "us",
+        "united states",
+        "america"
+      ],
+      "aliases": [
+        "usa-flag"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        32
+      ]
+    },
+    {
+      "name": "flag-vietnam",
+      "category": {
+        "id": "flags",
+        "label": "flags"
+      },
+      "tags": [
+        "vn",
+        "vietnamese"
+      ],
+      "aliases": [
+        "vn-flag"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        32
       ]
     },
     {
@@ -17030,7 +17200,8 @@
         "heat",
         "booster",
         "pump",
-        "heating"
+        "heating",
+        "chiller"
       ],
       "aliases": [
         "hot-water-pump"
@@ -20660,28 +20831,6 @@
       ]
     },
     {
-      "name": "message-text",
-      "category": {
-        "id": "communication",
-        "label": "communication"
-      },
-      "tags": [
-        "message-text"
-      ],
-      "aliases": [],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
       "name": "message-typing-left",
       "category": {
         "id": "communication",
@@ -21130,7 +21279,8 @@
       "tags": [
         "engine",
         "motor",
-        "mechanical"
+        "mechanical",
+        "pump"
       ],
       "aliases": [
         "electric-motor"
@@ -21158,7 +21308,8 @@
         "motor",
         "power",
         "mechanical",
-        "energy"
+        "energy",
+        "pump"
       ],
       "aliases": [
         "power-motor"
@@ -21214,17 +21365,12 @@
       },
       "tags": [
         "mouse",
-        "left-button",
-        "click",
-        "input",
-        "left-right",
         "pointer",
+        "input",
         "device",
         "hardware"
       ],
       "aliases": [
-        "mouse-click-left",
-        "left-click",
         "computer-mouse",
         "pointing-device"
       ],
@@ -21255,6 +21401,65 @@
       "aliases": [
         "mouse-click-x2",
         "double-click"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        64,
+        72
+      ]
+    },
+    {
+      "name": "mouse-left-sideways",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "mouse",
+        "left-button",
+        "click",
+        "input",
+        "left-right"
+      ],
+      "aliases": [
+        "mouse-click-left",
+        "left-click"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        64,
+        72
+      ]
+    },
+    {
+      "name": "mouse-left-updown",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "mouse",
+        "left-button",
+        "click",
+        "input"
+      ],
+      "aliases": [
+        "mouse-click-left",
+        "left-click"
       ],
       "styles": [
         "outline"
@@ -21498,6 +21703,35 @@
       ]
     },
     {
+      "name": "network",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "network",
+        "relationship",
+        "connection",
+        "binary",
+        "graph"
+      ],
+      "aliases": [
+        "connections",
+        "data-network"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "network-connection",
       "category": {
         "id": "system-technology",
@@ -21508,15 +21742,11 @@
         "relationship",
         "connection",
         "link",
-        "nodes",
-        "binary",
-        "graph"
+        "nodes"
       ],
       "aliases": [
         "network-link",
-        "connection-graph",
-        "connections",
-        "data-network"
+        "connection-graph"
       ],
       "styles": [
         "filled",
@@ -22372,6 +22602,37 @@
         "auto-page-size",
         "page-fit",
         "page-resize-auto"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "pahu-ai-optimise",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "air",
+        "ventilation",
+        "exhaust",
+        "hvac",
+        "pahu",
+        "ai",
+        "optimize"
+      ],
+      "aliases": [
+        "pahu-exhaust",
+        "primary-air-unit"
       ],
       "styles": [
         "filled",
@@ -26233,6 +26494,34 @@
       ]
     },
     {
+      "name": "sensor-fault",
+      "category": {
+        "id": "system-technology",
+        "label": "system & technology"
+      },
+      "tags": [
+        "fault",
+        "incident",
+        "alert",
+        "detect"
+      ],
+      "aliases": [
+        "asset-fault",
+        "device-fault"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "server-hardware",
       "category": {
         "id": "system-technology",
@@ -28935,7 +29224,8 @@
         "pump",
         "drainage",
         "water",
-        "hvac"
+        "hvac",
+        "chiller"
       ],
       "aliases": [
         "drainage-pump"

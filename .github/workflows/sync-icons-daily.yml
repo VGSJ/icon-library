@@ -31,6 +31,48 @@ jobs:
         run: node scripts/detect-icon-changes.mjs > sync-report.md
         continue-on-error: true
 
+      - name: Sync all categories from Figma to get new icons
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+        run: |
+          categories=(
+            "heating ventilation air conditioning"
+            "actions & general interface"
+            "arrows"
+            "power & electrical"
+            "nature & landscaping"
+            "building & construction"
+            "system & technology"
+            "document & statistics"
+            "editor"
+            "media & entertainment"
+            "security"
+            "transport"
+            "furniture & things"
+            "light"
+            "communication"
+            "layout & grid"
+            "health & safety"
+            "people"
+            "geometry"
+            "housekeeping"
+            "fire"
+            "brickschema relationships"
+            "time & date"
+            "payment & rewards"
+            "wayfinding"
+            "ai & vr"
+            "vertical transport"
+            "flags"
+          )
+          
+          for category in "${categories[@]}"; do
+            echo "Syncing $category..."
+            node scripts/sync-category.mjs "$category" || echo "Warning: Failed to sync $category"
+          done
+        continue-on-error: true
+
       - name: Regenerate metadata from Figma
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
