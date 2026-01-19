@@ -1,24 +1,16 @@
 import "dotenv/config";
 import fs from "fs/promises";
 import path from "path";
+import { 
+  env, 
+  validateEnvironment, 
+  figmaFetch, 
+  parseDate, 
+  getCategoryId 
+} from "./scripts/utils.mjs";
 
 const ROOT = process.cwd();
 const RAW_SVG_DIR = path.join(ROOT, "docs", "raw-svg");  // Single source of truth
-
-function env(name) {
-  return process.env[name];
-}
-
-async function figmaFetch(url) {
-  const token = env("FIGMA_TOKEN");
-  if (!token) throw new Error("FIGMA_TOKEN not set");
-  
-  const res = await fetch(url, {
-    headers: { "X-Figma-Token": token }
-  });
-  if (!res.ok) throw new Error(`Figma API: ${res.status}`);
-  return res.json();
-}
 
 // Heuristic categorization based on keywords in icon name and tags
 function inferCategoryFromKeywords(iconName, tags = []) {

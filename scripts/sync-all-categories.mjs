@@ -3,9 +3,11 @@
 /**
  * Sync all icon categories from Figma with consolidated reporting
  * This script syncs all 28 categories and provides a summary of all changes
+ * Includes deduplication to avoid syncing the same icon multiple times
  */
 
 import { execSync } from 'child_process';
+import { validateEnvironment } from './utils.mjs';
 
 const categories = [
   "heating ventilation air conditioning",
@@ -42,10 +44,21 @@ const results = {
   totalNew: 0,
   totalUpdated: 0,
   totalCurrent: 0,
-  categoryResults: []
+  categoryResults: [],
+  totalTime: 0
 };
 
 console.log(`\n🔄 Starting sync of all ${categories.length} categories...\n`);
+
+// Validate environment before starting
+try {
+  validateEnvironment();
+} catch (e) {
+  console.error(`❌ Error: ${e.message}`);
+  process.exit(1);
+}
+
+const startTime = Date.now();
 
 for (let i = 0; i < categories.length; i++) {
   const category = categories[i];
@@ -98,6 +111,9 @@ for (let i = 0; i < categories.length; i++) {
   }
 }
 
+// Calculate execution time
+results.totalTime = ((Date.now() - startTime) / 1000).toFixed(1);
+
 // Print summary
 console.log(`\n${'='.repeat(60)}`);
 console.log(`📊 SYNC COMPLETE - ALL CATEGORIES SUMMARY`);
@@ -131,4 +147,5 @@ if (errorCategories.length > 0) {
   });
 }
 
-console.log(`\n${'='.repeat(60)}\n`);
+console.log(`\n⏱️  Execution time: ${results.totalTime}s`);
+console.log(`${'='.repeat(60)}\n`);

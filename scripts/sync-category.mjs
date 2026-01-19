@@ -2,24 +2,49 @@ import "dotenv/config";
 import fs from "fs/promises";
 import path from "path";
 import { execSync } from "child_process";
+import { 
+  env, 
+  validateEnvironment, 
+  figmaFetch, 
+  parseDate, 
+  normalizeCategory, 
+  getCategoryId 
+} from "./utils.mjs";
 
 const ROOT = process.cwd();
 const RAW_SVG_DIR = path.join(ROOT, "docs", "raw-svg");  // Single source of truth
 
-function env(name) {
-  return process.env[name];
-}
-
-async function figmaFetch(url) {
-  const token = env("FIGMA_TOKEN");
-  if (!token) throw new Error("FIGMA_TOKEN not set");
-  
-  const res = await fetch(url, {
-    headers: { "X-Figma-Token": token }
-  });
-  if (!res.ok) throw new Error(`Figma API ${res.status}: ${res.statusText}`);
-  return res.json();
-}
+// List of all valid categories
+const VALID_CATEGORIES = [
+  "heating ventilation air conditioning",
+  "actions & general interface",
+  "arrows",
+  "power & electrical",
+  "nature & landscaping",
+  "building & construction",
+  "system & technology",
+  "document & statistics",
+  "editor",
+  "media & entertainment",
+  "security",
+  "transport",
+  "furniture & things",
+  "light",
+  "communication",
+  "layout & grid",
+  "health & safety",
+  "people",
+  "geometry",
+  "housekeeping",
+  "fire",
+  "brickschema relationships",
+  "time & date",
+  "payment & rewards",
+  "wayfinding",
+  "ai & vr",
+  "vertical transport",
+  "flags"
+];
 
 async function getComponentTimestamps(fileKey) {
   try {
@@ -212,15 +237,30 @@ async function downloadSvg(url, filePath) {
 }
 
 async function syncCategoryFromFigma(category) {
-  // Normalize category name for consistent matching
-  const normalizedCategory = category.toLowerCase().trim();
+  // Validate environment variables first, before any work
+  validateEnvironment();
+  
+  // Validate category parameter
+  const normalizedCategory = normalizeCategory(category);
+  const validCategories = VALID_CATEGORIES.map(c => normalizeCategory(c));
+  
+  if (!validCategories.includes(normalizedCategory)) {
+    console.error(`❌ Invalid category: "${category}"`);
+    console.error(`\nValid categories are:`);
+    VALID_CATEGORIES.forEach(c => console.error(`  • ${c}`));
+    process.exit(1);
+  }
+  
+  // Find the actual category name (preserves original casing)
+  const actualCategory = VALID_CATEGORIES.find(c => normalizeCategory(c) === normalizedCategory);
+  
   const fileKey = env("FIGMA_FILE_KEY");
   const CHANGE_DETECTION_DATE = new Date("2026-01-19T09:00:00+08:00").getTime(); // Jan 19, 9am SGT
   
   // Clean up old SVGs for this category before syncing
-  await cleanupCategory(category);
+  await cleanupCategory(actualCategory);
   
-  console.log(`🔍 Fetching component sets for "${category}" category...`);
+  console.log(`🔍 Fetching component sets for "${actualCategory}" category...`);
   
   try {
     const compsetsUrl = `https://api.figma.com/v1/files/${fileKey}/component_sets`;
@@ -300,20 +340,26 @@ async function syncCategoryFromFigma(category) {
         // Get Figma component timestamp
         const componentTimestamp = componentTimestamps[variant.setName];
         if (componentTimestamp) {
-          const figmaModTime = new Date(componentTimestamp.modifiedAt).getTime();
-          
-          if (figmaModTime > localMtime) {
-            // SVG was updated in Figma since we downloaded it
-            variantsUpdated.push({
-              ...variant,
-              figmaTime: componentTimestamp.modifiedAt,
-              localTime: new Date(localMtime).toISOString()
-            });
+          try {
+            const figmaModTime = parseDate(componentTimestamp.modifiedAt);
+            
+            if (figmaModTime > localMtime) {
+              // SVG was updated in Figma since we downloaded it
+              variantsUpdated.push({
+                ...variant,
+                figmaTime: componentTimestamp.modifiedAt,
+                localTime: new Date(localMtime).toISOString()
+              });
+              variantsToDownload.push(variant);
+              console.log(`   ♻️  Updated: ${filename}`);
+            } else {
+              // File is current
+              skipped++;
+            }
+          } catch (dateError) {
+            // Invalid timestamp, treat as potentially updated (safer)
+            console.warn(`   ⚠️  Invalid timestamp for ${filename}, treating as updated`);
             variantsToDownload.push(variant);
-            console.log(`   ♻️  Updated: ${filename}`);
-          } else {
-            // File is current
-            skipped++;
           }
         } else {
           // No timestamp found, skip
@@ -346,10 +392,12 @@ async function syncCategoryFromFigma(category) {
     
     console.log(`\n⏳ Downloading ${variantsToDownload.length} SVGs...`);
     
-    // Download SVGs in batches
+    // Download SVGs in batches with retry logic
     const batchSize = 50;
+    const maxRetries = 2;
     let downloaded = 0;
     let failed = 0;
+    const failedVariants = []; // Track failed downloads for retry
     
     if (variantsToDownload.length === 0) {
       console.log(`✅ All SVGs up-to-date`);
@@ -357,67 +405,108 @@ async function syncCategoryFromFigma(category) {
       console.log(`\n⏳ Downloading in batches of ${batchSize}...`);
     }
     
-    for (let i = 0; i < variantsToDownload.length; i += batchSize) {
-      const batch = variantsToDownload.slice(i, i + batchSize);
-      const nodeIds = batch.map(v => v.id).join(",");
+    let variantsForDownload = [...variantsToDownload];
+    let retryAttempt = 0;
+    
+    while (variantsForDownload.length > 0 && retryAttempt <= maxRetries) {
+      if (retryAttempt > 0) {
+        console.log(`\n🔄 Retry attempt ${retryAttempt}/${maxRetries} for ${variantsForDownload.length} failed downloads...`);
+        // Exponential backoff
+        const delay = Math.min(1000 * Math.pow(2, retryAttempt), 10000);
+        await new Promise(resolve => setTimeout(resolve, delay));
+      }
       
-      try {
-        const imagesUrl = `https://api.figma.com/v1/images/${fileKey}?ids=${nodeIds}&format=svg`;
-        const imagesData = await figmaFetch(imagesUrl);
+      const stillFailing = [];
+      
+      for (let i = 0; i < variantsForDownload.length; i += batchSize) {
+        const batch = variantsForDownload.slice(i, i + batchSize);
+        const nodeIds = batch.map(v => v.id).join(",");
         
-        if (!imagesData.images) {
-          console.warn(`⚠️ No images in batch ${Math.floor(i / batchSize) + 1}`);
-          failed += batch.length;
-          continue;
-        }
-        
-        for (const variant of batch) {
-          const url = imagesData.images[variant.id];
-          if (!url) {
-            failed++;
+        try {
+          const imagesUrl = `https://api.figma.com/v1/images/${fileKey}?ids=${nodeIds}&format=svg`;
+          const imagesData = await figmaFetch(imagesUrl);
+          
+          if (!imagesData.images) {
+            console.warn(`⚠️ No images in batch ${Math.floor(i / batchSize) + 1}`);
+            stillFailing.push(...batch);
+            failed += batch.length;
             continue;
           }
           
-          try {
-            // Download SVG content
-            const res = await fetch(url);
-            if (!res.ok) throw new Error(`Download failed: ${res.status}`);
-            const buffer = await res.arrayBuffer();
-            
-            // Write file
-            const filename = `icon-${variant.setName}-${variant.style}-${variant.size}.svg`;
-            const siteFilePath = path.join("docs", "raw-svg", variant.style, String(variant.size), filename);
-            await fs.mkdir(path.dirname(siteFilePath), { recursive: true });
-            await fs.writeFile(siteFilePath, Buffer.from(buffer));
-            downloaded++;
-            
-            if (downloaded % 20 === 0) {
-              console.log(`  ✅ Downloaded ${downloaded} SVGs...`);
+          for (const variant of batch) {
+            const url = imagesData.images[variant.id];
+            if (!url) {
+              stillFailing.push(variant);
+              failed++;
+              continue;
             }
-          } catch (e) {
-            failed++;
+            
+            try {
+              // Download SVG content with timeout
+              const controller = new AbortController();
+              const timeout = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+              
+              const res = await fetch(url, { signal: controller.signal });
+              clearTimeout(timeout);
+              
+              if (!res.ok) {
+                stillFailing.push(variant);
+                failed++;
+                continue;
+              }
+              
+              const buffer = await res.arrayBuffer();
+              
+              // Write file
+              const filename = `icon-${variant.setName}-${variant.style}-${variant.size}.svg`;
+              const siteFilePath = path.join("docs", "raw-svg", variant.style, String(variant.size), filename);
+              await fs.mkdir(path.dirname(siteFilePath), { recursive: true });
+              await fs.writeFile(siteFilePath, Buffer.from(buffer));
+              downloaded++;
+              
+              if (downloaded % 20 === 0) {
+                console.log(`  ✅ Downloaded ${downloaded} SVGs...`);
+              }
+            } catch (e) {
+              stillFailing.push(variant);
+              failed++;
+            }
           }
+          
+          const batchNum = Math.floor(i / batchSize) + 1;
+          const successful = batch.length - batch.filter(v => stillFailing.includes(v)).length;
+          console.log(`  Batch ${batchNum}: ${successful}/${batch.length} downloaded`);
+          
+        } catch (e) {
+          console.error(`❌ Batch failed: ${e.message}`);
+          stillFailing.push(...batch);
+          failed += batch.length;
         }
-        
-        const batchNum = Math.floor(i / batchSize) + 1;
-        const successful = batch.length - batch.filter(v => !imagesData.images[v.id]).length;
-        console.log(`  Batch ${batchNum}: ${successful}/${batch.length} downloaded`);
-        
-      } catch (e) {
-        console.error(`❌ Batch failed: ${e.message}`);
-        failed += batch.length;
       }
+      
+      variantsForDownload = stillFailing;
+      retryAttempt++;
     }
     
     console.log(`\n✅ Downloaded ${downloaded} SVGs`);
-    if (failed > 0) console.log(`⚠️ Failed or skipped: ${failed}`);
+    if (failed > 0) {
+      console.log(`⚠️ Failed or skipped: ${failed} (after ${maxRetries} retries)`);
+    }
     
     // Regenerate metadata
     console.log("\n📝 Generating metadata...");
     try {
-      execSync("node generate-metadata.mjs", { cwd: process.cwd(), stdio: "inherit" });
+      execSync("node generate-metadata.mjs", { 
+        cwd: process.cwd(), 
+        stdio: "inherit",
+        timeout: 120000 // 2 minute timeout
+      });
     } catch (e) {
       console.error("❌ Metadata generation failed:", e.message);
+      if (e.killed) {
+        console.error("❌ Metadata generation timed out after 120 seconds");
+      }
+      throw e;
     }
     
     // Clean up any orphaned uncategorized icons
