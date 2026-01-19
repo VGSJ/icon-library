@@ -12692,6 +12692,64 @@
       ]
     },
     {
+      "name": "fastforward-10s",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "skip",
+        "10s",
+        "seconds",
+        "forward",
+        "rewind",
+        "playback"
+      ],
+      "aliases": [
+        "skip-10-sec",
+        "jump-10s"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fastforward-15s",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "skip",
+        "15s",
+        "seconds",
+        "forward",
+        "rewind",
+        "playback"
+      ],
+      "aliases": [
+        "skip-10-sec",
+        "jump-15s"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "fastforward-30s",
       "category": {
         "id": "media-entertainment",
@@ -12708,6 +12766,35 @@
       "aliases": [
         "skip-30-sec",
         "jump-30s"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "fastforward-5s",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "rewind",
+        "forward",
+        "5s",
+        "skip",
+        "seconds",
+        "playback"
+      ],
+      "aliases": [
+        "skip-5-sec",
+        "jump-5s"
       ],
       "styles": [
         "outline"
@@ -25351,27 +25438,75 @@
       },
       "tags": [
         "rewind",
-        "forward",
-        "5s",
-        "skip",
-        "seconds",
-        "playback",
         "backward",
         "media",
-        "10s",
-        "15s"
+        "playback",
+        "skip"
       ],
       "aliases": [
-        "skip-5-sec",
-        "jump-5s",
         "rewind-media",
-        "skip-backward",
-        "skip-10-sec",
-        "jump-10s",
-        "jump-15s"
+        "skip-backward"
       ],
       "styles": [
         "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rewind-10s",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "skip",
+        "10s",
+        "seconds",
+        "forward",
+        "rewind",
+        "playback"
+      ],
+      "aliases": [
+        "skip-10-sec",
+        "jump-10s"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rewind-15s",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "skip",
+        "15s",
+        "seconds",
+        "forward",
+        "rewind",
+        "playback"
+      ],
+      "aliases": [
+        "skip-10-sec",
+        "jump-15s"
+      ],
+      "styles": [
         "outline"
       ],
       "sizes": [
@@ -25399,6 +25534,35 @@
       "aliases": [
         "skip-30-sec",
         "jump-30s"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "rewind-5s",
+      "category": {
+        "id": "media-entertainment",
+        "label": "media & entertainment"
+      },
+      "tags": [
+        "rewind",
+        "forward",
+        "5s",
+        "skip",
+        "seconds",
+        "playback"
+      ],
+      "aliases": [
+        "skip-5-sec",
+        "jump-5s"
       ],
       "styles": [
         "outline"
