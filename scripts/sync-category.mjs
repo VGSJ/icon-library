@@ -2,18 +2,12 @@ import "dotenv/config";
 import fs from "fs/promises";
 import path from "path";
 import { execSync } from "child_process";
-import crypto from "crypto";
 
 const ROOT = process.cwd();
 const RAW_SVG_DIR = path.join(ROOT, "docs", "raw-svg");  // Single source of truth
 
 function env(name) {
   return process.env[name];
-}
-
-// Calculate hash of file or string content for change detection
-async function calculateHash(content) {
-  return crypto.createHash("md5").update(content).digest("hex");
 }
 
 async function figmaFetch(url) {
@@ -25,6 +19,16 @@ async function figmaFetch(url) {
   });
   if (!res.ok) throw new Error(`Figma API ${res.status}: ${res.statusText}`);
   return res.json();
+}
+
+// Get file modification time in milliseconds
+async function getFileModTime(filePath) {
+  try {
+    const stat = await fs.stat(filePath);
+    return stat.mtimeMs;
+  } catch {
+    return null;
+  }
 }
 
 async function cleanupCategory(categoryName) {
@@ -233,10 +237,9 @@ async function syncCategoryFromFigma(category) {
     
     console.log(`📥 Found ${variants.length} variants to download`);
     
-    // Filter to only variants that need downloading (don't exist or have changed in docs/raw-svg)
+    // Filter to only variants that need downloading (don't exist in docs/raw-svg)
     const variantsToDownload = [];
     let skipped = 0;
-    let contentChanged = 0;
     
     for (const variant of variants) {
       const parts = variant.name.split(", ").reduce((acc, part) => {
@@ -254,19 +257,9 @@ async function syncCategoryFromFigma(category) {
       const siteFilePath = path.join("docs", "raw-svg", style, String(size), filename);
       
       try {
-        // File exists locally - check if content has changed
-        const localContent = await fs.readFile(siteFilePath, "utf-8");
-        const localHash = await calculateHash(localContent);
-        variant.localHash = localHash;
-        variant.localPath = siteFilePath;
-        variant.style = style;
-        variant.size = size;
-        
-        // Mark for content comparison (will check hash against Figma version)
-        variantsToDownload.push(variant);
-        skipped++; // Initially count as skipped, will update count after hash comparison
+        await fs.stat(siteFilePath);
+        skipped++;
       } catch {
-        // File doesn't exist - definitely need to download
         variant.style = style;
         variant.size = size;
         variantsToDownload.push(variant);
@@ -274,21 +267,19 @@ async function syncCategoryFromFigma(category) {
     }
     
     if (skipped > 0) {
-      console.log(`🔍 Checking ${skipped} existing SVGs for content changes...`);
+      console.log(`⏭️  Skipping ${skipped} existing SVGs`);
     }
-    console.log(`📥 Processing ${variantsToDownload.length} variants...`);
+    console.log(`📥 Downloading ${variantsToDownload.length} new/updated SVGs`);
     
     // Download SVGs in batches
     const batchSize = 50;
     let downloaded = 0;
     let failed = 0;
-    let unchanged = 0;
-    let updated = 0;
     
     if (variantsToDownload.length === 0) {
       console.log(`✅ All SVGs up-to-date`);
     } else {
-      console.log(`\n⏳ Processing in batches of ${batchSize}...`);
+      console.log(`\n⏳ Downloading in batches of ${batchSize}...`);
     }
     
     for (let i = 0; i < variantsToDownload.length; i += batchSize) {
@@ -313,29 +304,16 @@ async function syncCategoryFromFigma(category) {
           }
           
           try {
-            // Download the SVG content from Figma
+            // Download SVG content
             const res = await fetch(url);
             if (!res.ok) throw new Error(`Download failed: ${res.status}`);
-            const remoteContent = await res.text();
-            const remoteHash = await calculateHash(remoteContent);
+            const buffer = await res.arrayBuffer();
             
-            // If file existed locally, check if content has changed
-            if (variant.localHash) {
-              if (variant.localHash === remoteHash) {
-                // Content is identical - skip
-                unchanged++;
-                continue;
-              } else {
-                // Content changed - mark as update
-                updated++;
-              }
-            }
-            
-            // Write/update the file
+            // Write file
             const filename = `icon-${variant.setName}-${variant.style}-${variant.size}.svg`;
             const siteFilePath = path.join("docs", "raw-svg", variant.style, String(variant.size), filename);
             await fs.mkdir(path.dirname(siteFilePath), { recursive: true });
-            await fs.writeFile(siteFilePath, remoteContent);
+            await fs.writeFile(siteFilePath, Buffer.from(buffer));
             downloaded++;
             
             if (downloaded % 20 === 0) {
@@ -348,7 +326,7 @@ async function syncCategoryFromFigma(category) {
         
         const batchNum = Math.floor(i / batchSize) + 1;
         const successful = batch.length - batch.filter(v => !imagesData.images[v.id]).length;
-        console.log(`  Batch ${batchNum}: ${successful}/${batch.length} processed`);
+        console.log(`  Batch ${batchNum}: ${successful}/${batch.length} downloaded`);
         
       } catch (e) {
         console.error(`❌ Batch failed: ${e.message}`);
@@ -357,8 +335,6 @@ async function syncCategoryFromFigma(category) {
     }
     
     console.log(`\n✅ Downloaded ${downloaded} SVGs`);
-    if (unchanged > 0) console.log(`⏭️  Skipped ${unchanged} unchanged SVGs`);
-    if (updated > 0) console.log(`🔄 Updated ${updated} SVGs with content changes`);
     if (failed > 0) console.log(`⚠️ Failed or skipped: ${failed}`);
     
     // Regenerate metadata
