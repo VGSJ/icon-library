@@ -5527,6 +5527,54 @@
         "label": "actions & general interface"
       },
       "tags": [
+        "check"
+      ],
+      "aliases": [],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "check-large",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "check",
+        "tick",
+        "confirm",
+        "success"
+      ],
+      "aliases": [
+        "checkmark",
+        "tick"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "check-small",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
         "check",
         "tick",
         "confirm",
@@ -6354,60 +6402,6 @@
       ],
       "aliases": [
         "chilled-water-pump"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "chilled-water-coil",
-      "category": {
-        "id": "heating-ventilation-air-conditioning",
-        "label": "heating ventilation air conditioning"
-      },
-      "tags": [
-        "heat-exchange",
-        "chilled-water",
-        "coil",
-        "cooling"
-      ],
-      "aliases": [
-        "chilled-water-coil"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
-      "name": "chilled-water-cooling-coil",
-      "category": {
-        "id": "heating-ventilation-air-conditioning",
-        "label": "heating ventilation air conditioning"
-      },
-      "tags": [
-        "chilled-water",
-        "cooling-coil",
-        "heat-exchange",
-        "hvac"
-      ],
-      "aliases": [
-        "chilled-water-coil"
       ],
       "styles": [
         "filled",
@@ -7294,7 +7288,35 @@
       ]
     },
     {
-      "name": "close",
+      "name": "close-large",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "close",
+        "remove",
+        "delete",
+        "dismiss",
+        "x"
+      ],
+      "aliases": [
+        "close-x",
+        "remove-x"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "close-small",
       "category": {
         "id": "actions-general-interface",
         "label": "actions & general interface"
@@ -8374,8 +8396,7 @@
         "hvac"
       ],
       "aliases": [
-        "cooling-coil",
-        "cooling-heat-exchanger"
+        "cooling-coil"
       ],
       "styles": [
         "filled",
@@ -11483,7 +11504,35 @@
       ]
     },
     {
-      "name": "ellipsis",
+      "name": "ellipsis-horizontal",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "menu",
+        "dots",
+        "ellipsis",
+        "more",
+        "options"
+      ],
+      "aliases": [
+        "menu-dots",
+        "more-options"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "ellipsis-vertical",
       "category": {
         "id": "actions-general-interface",
         "label": "actions & general interface"
@@ -16922,33 +16971,6 @@
       ]
     },
     {
-      "name": "heat-wheel",
-      "category": {
-        "id": "heating-ventilation-air-conditioning",
-        "label": "heating ventilation air conditioning"
-      },
-      "tags": [
-        "heat-wheel",
-        "heat-exchange",
-        "energy-recovery",
-        "hvac"
-      ],
-      "aliases": [
-        "rotary-heat-exchanger"
-      ],
-      "styles": [
-        "filled",
-        "outline"
-      ],
-      "sizes": [
-        16,
-        24,
-        32,
-        40,
-        48
-      ]
-    },
-    {
       "name": "heat-wheel-coil",
       "category": {
         "id": "heating-ventilation-air-conditioning",
@@ -17393,12 +17415,11 @@
         "label": "heating ventilation air conditioning"
       },
       "tags": [
-        "heat",
+        "heat-exchange",
         "hot-water",
         "coil",
-        "heat-exchange",
-        "hvac",
-        "heating"
+        "heating",
+        "hvac"
       ],
       "aliases": [
         "hot-water-coil"
@@ -21233,7 +21254,36 @@
       ]
     },
     {
-      "name": "minus",
+      "name": "minus-large",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "minus",
+        "remove",
+        "dash",
+        "subtract",
+        "-",
+        "delete"
+      ],
+      "aliases": [
+        "hyphen",
+        "subtract"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "minus-small",
       "category": {
         "id": "actions-general-interface",
         "label": "actions & general interface"
@@ -24019,7 +24069,35 @@
       ]
     },
     {
-      "name": "plus",
+      "name": "plus-large",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "plus",
+        "add",
+        "create",
+        "increase",
+        "+"
+      ],
+      "aliases": [
+        "add",
+        "increment"
+      ],
+      "styles": [
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "plus-small",
       "category": {
         "id": "actions-general-interface",
         "label": "actions & general interface"
