@@ -266,9 +266,16 @@ async function generateMetadata() {
   // Write metadata to docs/metadata (GitHub Pages source)
   const metaDir = path.join(ROOT, "docs", "metadata");
   await fs.mkdir(metaDir, { recursive: true });
+  
+  // Include timestamp for cache-busting (forces browsers to fetch fresh copy)
+  const metadata = {
+    timestamp: new Date().toISOString(),
+    icons: iconList
+  };
+  
   await fs.writeFile(
     path.join(metaDir, "icons.json"),
-    JSON.stringify({ icons: iconList }, null, 2)
+    JSON.stringify(metadata, null, 2)
   );
   
   console.log(`✅ Generated metadata for ${iconList.length} icons with Figma categories`);

@@ -339,11 +339,15 @@ function normalizeStyle(style) {
 async function fetchSvg(name, style, size) {
   const normalizedStyle = normalizeStyle(style);
   
+  // Cache-bust with timestamp to prevent stale SVGs from being cached by browser
+  // This ensures updated SVGs from Figma sync are always fetched fresh
+  const cachebust = `v=${Date.now()}`;
+  
   // Try multiple path patterns in order
   const paths = [
-    `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}.svg`,
-    `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}px.svg`,
-    `./raw-svg/${normalizedStyle}/${size}px/icon-${name}-${normalizedStyle}-${size}px.svg`
+    `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}.svg?${cachebust}`,
+    `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}px.svg?${cachebust}`,
+    `./raw-svg/${normalizedStyle}/${size}px/icon-${name}-${normalizedStyle}-${size}px.svg?${cachebust}`
   ];
   
   for (const path of paths) {
@@ -504,9 +508,13 @@ function rerender() {
    Init
 -------------------------------------------------- */
 async function loadIconsJson() {
-  const res = await fetch("./metadata/icons.json");
+  // Cache-bust metadata to ensure fresh data after syncs
+  const cachebust = `v=${Date.now()}`;
+  const res = await fetch(`./metadata/icons.json?${cachebust}`);
   if (!res.ok) throw new Error("Failed to load icons.json");
-  return res.json();
+  const data = await res.json();
+  // Handle both old and new metadata format
+  return data.icons ? { icons: data.icons } : data;
 }
 
 async function main() {

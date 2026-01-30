@@ -1,4 +1,5 @@
 {
+  "timestamp": "2026-01-30T04:57:56.819Z",
   "icons": [
     {
       "name": "3d-cube",
@@ -6600,7 +6601,8 @@
         "x",
         "cross",
         "remove",
-        "dismiss"
+        "dismiss",
+        "delete"
       ],
       "aliases": [
         "close-circle",
@@ -7294,7 +7296,7 @@
         "label": "actions & general interface"
       },
       "tags": [
-        "close",
+        "cross",
         "remove",
         "delete",
         "dismiss",
@@ -7322,7 +7324,7 @@
         "label": "actions & general interface"
       },
       "tags": [
-        "close",
+        "cross",
         "remove",
         "delete",
         "dismiss",
@@ -9286,7 +9288,8 @@
         "remove",
         "clear",
         "tag",
-        "close"
+        "close",
+        "cross"
       ],
       "aliases": [
         "remove-tag",
@@ -18727,7 +18730,9 @@
         "pin",
         "code",
         "input",
-        "authentication"
+        "authenticate",
+        "numpad",
+        "intercom"
       ],
       "aliases": [
         "keypad",
@@ -19141,11 +19146,11 @@
         "label": "heating ventilation air conditioning"
       },
       "tags": [
-        "leak-detector",
+        "leak",
+        "detect",
         "sensor",
-        "equipment",
         "water",
-        "gas"
+        "smart"
       ],
       "aliases": [
         "leak-sensor"

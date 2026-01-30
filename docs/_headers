@@ -1,0 +1,17 @@
+/*
+  Cache-Control: public, max-age=3600
+
+/raw-svg/*
+  Cache-Control: public, max-age=86400
+
+/metadata/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/app.js
+  Cache-Control: public, max-age=3600
+
+/styles.css
+  Cache-Control: public, max-age=3600
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
