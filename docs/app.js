@@ -35,7 +35,12 @@ function openDetailsPanel(icon, previewElement) {
   if (icon.sizes && icon.sizes.includes(detailsSize)) {
     // Keep the saved size if it's available for this icon
   } else {
-    detailsSize = icon.sizes?.includes(24) ? 24 : icon.sizes?.length > 0 ? icon.sizes[0] : 32;
+    detailsSize =
+      icon.sizes && icon.sizes.includes(24)
+        ? 24
+        : icon.sizes && icon.sizes.length > 0
+          ? icon.sizes[0]
+          : 32;
   }
 
   els.iconName.textContent = icon.name;
@@ -130,60 +135,64 @@ document.querySelectorAll(".format-btn").forEach((btn) => {
 });
 
 // Copy button listener
-els.copyBtn?.addEventListener("click", async () => {
-  if (!selectedIcon) return;
+if (els.copyBtn) {
+  els.copyBtn.addEventListener("click", async () => {
+    if (!selectedIcon) return;
 
-  try {
-    const style = els.style.value || "outline";
-    const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
+    try {
+      const style = els.style.value || "outline";
+      const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
 
-    if (detailsFormat === "png") {
-      const pngBlob = await svgToPng(svg, detailsSize);
-      await navigator.clipboard.write([new ClipboardItem({ "image/png": pngBlob })]);
-      showToast(`Copied PNG: ${selectedIcon.name}`);
-    } else {
-      const ok = await copyText(svg);
-      if (ok) {
-        showToast(`Copied: ${selectedIcon.name}`);
+      if (detailsFormat === "png") {
+        const pngBlob = await svgToPng(svg, detailsSize);
+        await navigator.clipboard.write([new ClipboardItem({ "image/png": pngBlob })]);
+        showToast(`Copied PNG: ${selectedIcon.name}`);
       } else {
-        openManualCopy(svg);
+        const ok = await copyText(svg);
+        if (ok) {
+          showToast(`Copied: ${selectedIcon.name}`);
+        } else {
+          openManualCopy(svg);
+        }
       }
+    } catch (e) {
+      showToast(`Error: ${e.message}`);
     }
-  } catch (e) {
-    showToast(`Error: ${e.message}`);
-  }
-});
+  });
+}
 
 // Download button listener
-els.downloadBtn?.addEventListener("click", async () => {
-  if (!selectedIcon) return;
+if (els.downloadBtn) {
+  els.downloadBtn.addEventListener("click", async () => {
+    if (!selectedIcon) return;
 
-  try {
-    const style = els.style.value || "outline";
-    const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
-    const filename = `${selectedIcon.name}-${style}-${detailsSize}.${detailsFormat}`;
+    try {
+      const style = els.style.value || "outline";
+      const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
+      const filename = `${selectedIcon.name}-${style}-${detailsSize}.${detailsFormat}`;
 
-    let blob;
-    if (detailsFormat === "png") {
-      blob = await svgToPng(svg, detailsSize);
-    } else {
-      blob = new Blob([svg], { type: "image/svg+xml" });
+      let blob;
+      if (detailsFormat === "png") {
+        blob = await svgToPng(svg, detailsSize);
+      } else {
+        blob = new Blob([svg], { type: "image/svg+xml" });
+      }
+
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      showToast(`Downloaded: ${filename}`);
+    } catch (e) {
+      showToast(`Error: ${e.message}`);
     }
-
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-
-    showToast(`Downloaded: ${filename}`);
-  } catch (e) {
-    showToast(`Error: ${e.message}`);
-  }
-});
+  });
+}
 
 /* --------------------------------------------------
    Toast
@@ -415,7 +424,7 @@ let allIcons = [];
 
 function populateCategories() {
   // Calculate category counts based on current search filter
-  const query = els.search?.value || "";
+  const query = (els.search && els.search.value) || "";
   const filteredBySearch = allIcons.filter((icon) => iconMatches(icon, query));
 
   const categoryCounts = {};
@@ -493,11 +502,12 @@ function rerender() {
 
   // For each icon, render with selected style or first available style
   for (const icon of filtered) {
-    const iconStyle = icon.styles?.includes(style)
-      ? style
-      : icon.styles?.length > 0
-        ? icon.styles[0]
-        : style;
+    const iconStyle =
+      icon.styles && icon.styles.includes(style)
+        ? style
+        : icon.styles && icon.styles.length > 0
+          ? icon.styles[0]
+          : style;
     els.grid.appendChild(renderCard(icon, iconStyle, ICON_SIZE));
   }
 
@@ -537,14 +547,16 @@ async function main() {
 /* --------------------------------------------------
    Events
 -------------------------------------------------- */
-els.search?.addEventListener("input", rerender);
-els.style?.addEventListener("change", rerender);
+if (els.search) els.search.addEventListener("input", rerender);
+if (els.style) els.style.addEventListener("change", rerender);
 
 // Clear search button
-els.clearSearchBtn?.addEventListener("click", () => {
-  els.search.value = "";
-  rerender();
-});
+if (els.clearSearchBtn) {
+  els.clearSearchBtn.addEventListener("click", () => {
+    els.search.value = "";
+    rerender();
+  });
+}
 
 // Ensure all DOM elements exist before trying to use them
 Object.entries(els).forEach(([key, el]) => {
