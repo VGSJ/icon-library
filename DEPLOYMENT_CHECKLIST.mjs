@@ -22,7 +22,7 @@ const checklist = [
   },
   {
     item: "Commit changes",
-    command: "git commit -m \"fix: implement cache-busting for outdated SVG display\"",
+    command: 'git commit -m "fix: implement cache-busting for outdated SVG display"',
     status: "READY",
   },
   {

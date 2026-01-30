@@ -11,6 +11,7 @@ const els = {
   copyBtn: document.getElementById("copyBtn"),
   downloadBtn: document.getElementById("downloadBtn"),
   sizeButtons: document.getElementById("sizeButtons"),
+  themeToggleBtn: document.getElementById("themeToggleBtn"),
 };
 
 let selectedCategory = null; // Track selected category filter
@@ -18,6 +19,36 @@ let selectedIcon = null; // Track selected icon in details panel
 let detailsFormat = localStorage.getItem("detailsFormat") || "svg"; // Track selected format
 let detailsSize = parseInt(localStorage.getItem("detailsSize") || "32"); // Track selected size for details preview
 const ICON_SIZE = 32; // Fixed icon size for grid
+
+/* --------------------------------------------------
+   Theme Management
+-------------------------------------------------- */
+function initTheme() {
+  const savedTheme = localStorage.getItem("theme") || "dark";
+  applyTheme(savedTheme);
+}
+
+function applyTheme(theme) {
+  if (theme === "light") {
+    document.body.classList.add("light-mode");
+    if (els.themeToggleBtn) els.themeToggleBtn.textContent = "☀️";
+  } else {
+    document.body.classList.remove("light-mode");
+    if (els.themeToggleBtn) els.themeToggleBtn.textContent = "🌙";
+  }
+  localStorage.setItem("theme", theme);
+}
+
+if (els.themeToggleBtn) {
+  els.themeToggleBtn.addEventListener("click", () => {
+    const currentTheme = localStorage.getItem("theme") || "dark";
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    applyTheme(newTheme);
+  });
+}
+
+// Initialize theme on page load
+initTheme();
 
 /* --------------------------------------------------
    Details Panel
