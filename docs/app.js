@@ -1,3 +1,28 @@
+/**
+ * Main Application Entry Point
+ * Loads and initializes all modular components
+ */
+
+import logger from "../src/logger.mjs";
+import state from "../src/components/state.js";
+import {
+  fetchIconsMetadata,
+  fetchSvg,
+  generateJsxCode,
+  generateVueCode,
+  generateCssCode,
+} from "../src/components/api.js";
+import { copyText, debounce, normalizeStyle, getCacheBuster } from "../src/components/utils.js";
+import {
+  renderIconGrid,
+  renderCategoryList,
+  showNotification,
+  updatePreview,
+  showLoading,
+  hideLoading,
+} from "../src/components/dom.js";
+
+// DOM Elements
 const els = {
   grid: document.getElementById("grid"),
   status: document.getElementById("status"),
@@ -13,542 +38,325 @@ const els = {
   sizeButtons: document.getElementById("sizeButtons"),
 };
 
-let selectedCategory = null; // Track selected category filter
-let selectedIcon = null; // Track selected icon in details panel
-let detailsFormat = localStorage.getItem("detailsFormat") || "svg"; // Track selected format
-let detailsSize = parseInt(localStorage.getItem("detailsSize") || "32"); // Track selected size for details preview
-const ICON_SIZE = 32; // Fixed icon size for grid
+// Search debounce
+const debouncedSearch = debounce(handleSearch, 300);
 
-/* --------------------------------------------------
-   Details Panel
--------------------------------------------------- */
-function openDetailsPanel(icon, previewElement) {
-  if (!icon || !previewElement) return; // Guard against null/undefined
+/**
+ * Initialize Application
+ */
+async function initializeApp() {
+  logger.info("Initializing icon library application");
 
-  // Remove selected state from previously selected preview
-  document.querySelectorAll(".preview.selected").forEach((p) => p.classList.remove("selected"));
+  try {
+    // Load icons metadata
+    showLoading(els.grid);
+    const icons = await fetchIconsMetadata();
 
-  selectedIcon = icon;
-  // Keep the user's previously selected format (from localStorage)
-  // detailsFormat is already loaded from localStorage on init
-  // Set size to 24, or first available size, or use saved size if available
-  if (icon.sizes && icon.sizes.includes(detailsSize)) {
-    // Keep the saved size if it's available for this icon
-  } else {
-    detailsSize = icon.sizes?.includes(24) ? 24 : icon.sizes?.length > 0 ? icon.sizes[0] : 32;
+    if (!icons || icons.length === 0) {
+      throw new Error("No icons found");
+    }
+
+    state.setAllIcons(icons);
+    hideLoading(els.grid);
+
+    // Render initial UI
+    renderCategoryList(icons, els.categories, handleCategorySelect);
+    renderIconGrid(icons, els.grid, handleIconClick);
+
+    // Setup event listeners
+    setupEventListeners();
+
+    logger.info(`Loaded ${icons.length} icons successfully`);
+    showNotification("Icon library loaded successfully", "success");
+  } catch (error) {
+    logger.error("Failed to initialize app:", error);
+    hideLoading(els.grid);
+    els.grid.innerHTML = `<p class="error">Failed to load icons: ${error.message}</p>`;
+    showNotification("Failed to load icon library", "error");
   }
-
-  els.iconName.textContent = icon.name;
-
-  // Mark the clicked preview as selected
-  previewElement.classList.add("selected");
-
-  updateDetailsPreview();
-  updateDetailsButtons();
 }
 
-function updateDetailsPreview() {
-  if (!selectedIcon) return;
+/**
+ * Setup Event Listeners
+ */
+function setupEventListeners() {
+  // Search
+  els.search.addEventListener("input", (e) => {
+    state.setSearchQuery(e.target.value);
+    debouncedSearch();
 
-  els.previewBox.innerHTML = "…";
-
-  const style = els.style.value || "outline";
-
-  fetchSvg(selectedIcon.name, style, detailsSize)
-    .then((svg) => {
-      const container = document.createElement("div");
-      container.innerHTML = svg;
-      els.previewBox.innerHTML = "";
-      els.previewBox.appendChild(container.firstElementChild || container);
-    })
-    .catch(() => {
-      els.previewBox.innerHTML = "SVG not found";
-    });
-}
-
-function updateDetailsButtons() {
-  // Update format buttons
-  document.querySelectorAll(".format-btn").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.format === detailsFormat);
+    // Show/hide clear button
+    els.clearSearchBtn.style.display = e.target.value ? "block" : "none";
   });
 
-  // Generate size buttons from icon's available sizes
-  if (selectedIcon && selectedIcon.sizes) {
-    els.sizeButtons.innerHTML = "";
-    selectedIcon.sizes.forEach((size) => {
-      const btn = document.createElement("button");
-      btn.className = "size-btn";
-      btn.textContent = `${size}`;
-      btn.dataset.size = size;
-      if (size === detailsSize) {
-        btn.classList.add("active");
-      }
-      btn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        detailsSize = size;
-        localStorage.setItem("detailsSize", detailsSize);
-        updateDetailsButtons();
-        updateDetailsPreview();
+  els.clearSearchBtn.addEventListener("click", () => {
+    els.search.value = "";
+    state.setSearchQuery("");
+    els.clearSearchBtn.style.display = "none";
+    renderIconGrid(state.allIcons, els.grid, handleIconClick);
+  });
+
+  // Style filter
+  els.style.addEventListener("change", (_e) => {
+    // Re-render icons with new style
+    renderIconGrid(state.filteredIcons, els.grid, handleIconClick);
+  });
+
+  // Format selection in details panel
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("format-btn")) {
+      document.querySelectorAll(".format-btn").forEach((btn) => {
+        btn.classList.remove("active");
       });
-      els.sizeButtons.appendChild(btn);
+      e.target.classList.add("active");
+      state.setFormat(e.target.dataset.format);
+      updateDetailsDisplay();
+    }
+  });
+
+  // Size selection in details panel
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("size-btn")) {
+      document.querySelectorAll(".size-btn").forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      e.target.classList.add("active");
+      state.setSize(parseInt(e.target.dataset.size));
+      updateDetailsDisplay();
+    }
+  });
+
+  // Copy button
+  els.copyBtn.addEventListener("click", handleCopyCode);
+
+  // Download button
+  els.downloadBtn.addEventListener("click", handleDownloadIcon);
+
+  // Listen to state changes
+  state.on("categoryChanged", () => {
+    handleCategorySelect();
+  });
+
+  state.on("iconSelected", () => {
+    showDetailsPanel();
+  });
+
+  state.on("formatChanged", () => {
+    updateDetailsDisplay();
+  });
+
+  state.on("sizeChanged", () => {
+    updateDetailsDisplay();
+  });
+
+  state.on("searchChanged", () => {
+    debouncedSearch();
+  });
+}
+
+/**
+ * Handle Category Selection
+ */
+function handleCategorySelect(event) {
+  if (event) {
+    const categoryName = event.target.dataset.category;
+    state.setCategory(categoryName);
+
+    // Update UI
+    document.querySelectorAll(".category-btn").forEach((btn) => {
+      btn.classList.remove("active");
     });
+    event.target.classList.add("active");
   }
+
+  // Filter and render
+  state.filterIcons();
+  renderIconGrid(state.filteredIcons, els.grid, handleIconClick);
 }
 
-// Convert SVG to PNG using canvas with higher resolution for better quality
-async function svgToPng(svgText, size) {
-  return new Promise((resolve, reject) => {
-    // Render at 3x resolution for better quality, then export at requested size
-    const scale = 3;
-    const canvas = document.createElement("canvas");
-    canvas.width = size * scale;
-    canvas.height = size * scale;
-    const ctx = canvas.getContext("2d");
-
-    const img = new Image();
-    img.onload = () => {
-      ctx.drawImage(img, 0, 0, size * scale, size * scale);
-      canvas.toBlob(resolve, "image/png");
-    };
-    img.onerror = () => reject(new Error("Failed to convert SVG to PNG"));
-
-    // Convert SVG to data URL
-    const blob = new Blob([svgText], { type: "image/svg+xml" });
-    const url = URL.createObjectURL(blob);
-    img.src = url;
-  });
+/**
+ * Handle Icon Click
+ */
+function handleIconClick(icon) {
+  state.setIcon(icon);
+  showDetailsPanel();
 }
 
-// Format button listeners
-document.querySelectorAll(".format-btn").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    detailsFormat = btn.dataset.format;
-    localStorage.setItem("detailsFormat", detailsFormat);
-    updateDetailsButtons();
-    updateDetailsPreview();
-  });
-});
-
-// Copy button listener
-els.copyBtn?.addEventListener("click", async () => {
-  if (!selectedIcon) return;
+/**
+ * Show Details Panel
+ */
+async function showDetailsPanel() {
+  const icon = state.selectedIcon;
+  if (!icon) return;
 
   try {
-    const style = els.style.value || "outline";
-    const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
+    // Get SVG content
+    const style = normalizeStyle(els.style.value || "outline");
+    const svgPath = `./raw-svg/${style}/32/icon-${icon.name}-${style}-32.svg${getCacheBuster()}`;
+    const svgContent = await fetchSvg(svgPath);
 
-    if (detailsFormat === "png") {
-      const pngBlob = await svgToPng(svg, detailsSize);
-      await navigator.clipboard.write([new ClipboardItem({ "image/png": pngBlob })]);
-      showToast(`Copied PNG: ${selectedIcon.name}`);
-    } else {
-      const ok = await copyText(svg);
-      if (ok) {
-        showToast(`Copied: ${selectedIcon.name}`);
-      } else {
-        openManualCopy(svg);
-      }
-    }
-  } catch (e) {
-    showToast(`Error: ${e.message}`);
-  }
-});
+    // Update icon name
+    els.iconName.textContent = icon.name;
 
-// Download button listener
-els.downloadBtn?.addEventListener("click", async () => {
-  if (!selectedIcon) return;
+    // Update preview
+    updatePreview(els.previewBox, svgContent, "svg");
 
-  try {
-    const style = els.style.value || "outline";
-    const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
-    const filename = `${selectedIcon.name}-${style}-${detailsSize}.${detailsFormat}`;
-
-    let blob;
-    if (detailsFormat === "png") {
-      blob = await svgToPng(svg, detailsSize);
-    } else {
-      blob = new Blob([svg], { type: "image/svg+xml" });
-    }
-
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-
-    showToast(`Downloaded: ${filename}`);
-  } catch (e) {
-    showToast(`Error: ${e.message}`);
-  }
-});
-
-/* --------------------------------------------------
-   Toast
--------------------------------------------------- */
-const toast = document.createElement("div");
-toast.className = "toast";
-document.body.appendChild(toast);
-let toastTimeout;
-
-function showToast(msg) {
-  clearTimeout(toastTimeout);
-  toast.textContent = msg;
-  toast.classList.add("show");
-  toastTimeout = setTimeout(() => toast.classList.remove("show"), 1400);
-}
-
-/* --------------------------------------------------
-   Clipboard (Safari-safe)
--------------------------------------------------- */
-async function copyText(text) {
-  try {
-    if (navigator.clipboard && window.isSecureContext) {
-      await navigator.clipboard.writeText(text);
-      return true;
-    }
-  } catch {}
-
-  try {
-    const ta = document.createElement("textarea");
-    ta.value = text;
-    ta.setAttribute("readonly", "");
-    ta.style.position = "fixed";
-    ta.style.left = "0";
-    ta.style.top = "0";
-    ta.style.opacity = "0";
-    document.body.appendChild(ta);
-    ta.focus();
-    ta.select();
-    ta.setSelectionRange(0, ta.value.length);
-    const ok = document.execCommand("copy");
-    document.body.removeChild(ta);
-    return ok;
-  } catch {
-    return false;
-  }
-}
-
-/* --------------------------------------------------
-   Manual copy modal (guaranteed fallback)
--------------------------------------------------- */
-function openManualCopy(svg) {
-  const overlay = document.createElement("div");
-  overlay.style.position = "fixed";
-  overlay.style.inset = "0";
-  overlay.style.background = "rgba(0,0,0,0.45)";
-  overlay.style.display = "grid";
-  overlay.style.placeItems = "center";
-  overlay.style.zIndex = "9999";
-
-  const box = document.createElement("div");
-  box.style.background = "var(--bg)";
-  box.style.color = "var(--fg)";
-  box.style.width = "min(90vw, 720px)";
-  box.style.borderRadius = "16px";
-  box.style.padding = "16px";
-  box.style.boxShadow = "0 20px 40px rgba(0,0,0,0.35)";
-
-  const title = document.createElement("div");
-  title.textContent = "Press ⌘ + C to copy SVG";
-  title.style.fontWeight = "600";
-  title.style.marginBottom = "8px";
-
-  const hint = document.createElement("div");
-  hint.textContent = "Safari blocked automatic copy. This always works.";
-  hint.style.fontSize = "12px";
-  hint.style.opacity = "0.7";
-  hint.style.marginBottom = "8px";
-
-  const ta = document.createElement("textarea");
-  ta.value = svg;
-  ta.style.width = "100%";
-  ta.style.height = "260px";
-  ta.style.fontFamily = "ui-monospace, SFMono-Regular, Menlo, monospace";
-  ta.style.fontSize = "12px";
-  ta.style.borderRadius = "10px";
-  ta.style.padding = "10px";
-
-  const close = document.createElement("button");
-  close.textContent = "Close";
-  close.style.marginTop = "12px";
-
-  close.onclick = () => overlay.remove();
-  overlay.onclick = (e) => e.target === overlay && overlay.remove();
-
-  box.appendChild(title);
-  box.appendChild(hint);
-  box.appendChild(ta);
-  box.appendChild(close);
-  overlay.appendChild(box);
-  document.body.appendChild(overlay);
-
-  ta.focus();
-  ta.select();
-}
-
-/* --------------------------------------------------
-   Utilities
--------------------------------------------------- */
-function normalize(s = "") {
-  return s.toLowerCase().trim();
-}
-
-function capitalizeCategory(cat) {
-  // Category display name overrides
-  const displayNames = {
-    "heating ventilation air conditioning": "HVAC",
-  };
-
-  if (displayNames[cat]) {
-    return displayNames[cat];
-  }
-
-  // Known abbreviations that should be ALL CAPS
-  const abbreviations = new Set([
-    "ai",
-    "vr",
-    "led",
-    "hvac",
-    "aed",
-    "cctv",
-    "gps",
-    "qr",
-    "ahu",
-    "pv",
-  ]);
-
-  return cat
-    .split(" ")
-    .map((word) => {
-      if (abbreviations.has(word.toLowerCase())) {
-        return word.toUpperCase();
-      }
-      return word.charAt(0).toUpperCase() + word.slice(1);
-    })
-    .join(" ");
-}
-
-function getCategoryLabel(icon) {
-  // Supports both old format (string) and new format ({id,label})
-  if (!icon || !icon.category) return "uncategorized";
-  if (typeof icon.category === "string") return icon.category;
-  return icon.category.label || "uncategorized";
-}
-
-function normalizeStyle(style) {
-  if (style === "fill") return "filled";
-  if (style === "outlined") return "outline";
-  return style;
-}
-
-async function fetchSvg(name, style, size) {
-  const normalizedStyle = normalizeStyle(style);
-
-  // Cache-bust with timestamp to prevent stale SVGs from being cached by browser
-  // This ensures updated SVGs from Figma sync are always fetched fresh
-  const cachebust = `v=${Date.now()}`;
-
-  // Try multiple path patterns in order
-  const paths = [
-    `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}.svg?${cachebust}`,
-    `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}px.svg?${cachebust}`,
-    `./raw-svg/${normalizedStyle}/${size}px/icon-${name}-${normalizedStyle}-${size}px.svg?${cachebust}`,
-  ];
-
-  for (const path of paths) {
-    const res = await fetch(path);
-    if (res.ok) return res.text();
-  }
-
-  throw new Error(`Missing SVG for ${name} (${style}/${size})`);
-}
-
-function iconMatches(icon, query) {
-  if (!icon || !query) return !query; // No query = match all; no icon = no match
-  const q = normalize(query);
-
-  const categoryLabel = getCategoryLabel(icon);
-
-  const hay = [icon.name || "", categoryLabel || "", ...(icon.tags || [])].map(normalize).join(" ");
-
-  return hay.includes(q);
-}
-
-/* --------------------------------------------------
-   Rendering
--------------------------------------------------- */
-function renderCard(icon, style, size) {
-  const preview = document.createElement("button");
-  preview.type = "button";
-  preview.className = "preview";
-  preview.title = "Click to view details";
-  preview.innerHTML = "…";
-
-  // Add click listener before fetching SVG
-  preview.addEventListener("click", async () => {
-    openDetailsPanel(icon, preview);
-  });
-
-  fetchSvg(icon.name, style, size)
-    .then((svg) => {
-      // Create container for SVG to avoid innerHTML issues in Safari
-      const container = document.createElement("div");
-      container.innerHTML = svg;
-      preview.innerHTML = "";
-      preview.appendChild(container.firstElementChild || container);
-    })
-    .catch(() => {
-      // Don't show error - just leave empty
-      // This handles cases where a style doesn't exist for this icon
+    // Update format buttons
+    document.querySelectorAll(".format-btn").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.format === state.detailsFormat);
     });
 
-  return preview;
+    // Update size buttons
+    updateSizeButtons(icon);
+
+    // Show panel
+    els.detailsPanel.classList.add("active");
+
+    // Update code display
+    updateDetailsDisplay();
+
+    logger.info(`Displayed details for icon: ${icon.name}`);
+  } catch (error) {
+    logger.error("Failed to show details panel:", error);
+    showNotification("Failed to load icon details", "error");
+  }
 }
 
-/* --------------------------------------------------
-   App state
--------------------------------------------------- */
-let allIcons = [];
-
-function populateCategories() {
-  // Calculate category counts based on current search filter
-  const query = els.search?.value || "";
-  const filteredBySearch = allIcons.filter((icon) => iconMatches(icon, query));
-
-  const categoryCounts = {};
-  filteredBySearch.forEach((icon) => {
-    const cat = getCategoryLabel(icon);
-    categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
-  });
-
-  // Sort alphabetically by name
-  const sorted = Object.entries(categoryCounts)
-    .sort((a, b) => a[0].localeCompare(b[0]))
-    .map(([name, count]) => ({ name, count }));
-
-  // Add "All icons" at the top
-  const allItem = { name: "All icons", count: filteredBySearch.length };
-
-  els.categories.innerHTML = "";
-
-  // Create "All icons" button
-  const allBtn = document.createElement("button");
-  allBtn.className = "category-btn" + (selectedCategory === null ? " active" : "");
-  allBtn.innerHTML = `${allItem.name} <span class="category-count">${allItem.count}</span>`;
-  allBtn.addEventListener("click", () => {
-    selectedCategory = null;
-    document.querySelectorAll(".category-btn").forEach((b) => b.classList.remove("active"));
-    allBtn.classList.add("active");
-    rerender();
-  });
-  els.categories.appendChild(allBtn);
-
-  // Create category buttons
-  sorted.forEach(({ name, count }) => {
-    const btn = document.createElement("button");
-    btn.className = "category-btn" + (selectedCategory === name ? " active" : "");
-    const displayName = capitalizeCategory(name);
-    btn.innerHTML = `${displayName} <span class="category-count">${count}</span>`;
-    btn.addEventListener("click", () => {
-      selectedCategory = name;
-      document.querySelectorAll(".category-btn").forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-      rerender();
-    });
-    els.categories.appendChild(btn);
-  });
-}
-
-function rerender() {
-  const query = els.search.value;
-  const style = els.style.value;
-
-  let filtered = allIcons.filter((icon) => iconMatches(icon, query));
-
-  // Update category counts based on current search
-  populateCategories();
-
-  // Show/hide clear button based on search input
-  if (els.clearSearchBtn) {
-    els.clearSearchBtn.style.display = query ? "flex" : "none";
-  }
-
-  // Filter by selected category if one is chosen
-  if (selectedCategory) {
-    filtered = filtered.filter((icon) => getCategoryLabel(icon) === selectedCategory);
-  }
-
-  els.grid.innerHTML = "";
-
-  if (filtered.length === 0) {
-    els.status.textContent = "No matching icons.";
-    selectedIcon = null;
+/**
+ * Update Size Buttons
+ */
+function updateSizeButtons(icon) {
+  if (!icon.sizes || icon.sizes.length === 0) {
+    els.sizeButtons.innerHTML = "";
     return;
   }
 
-  els.status.textContent = "Select an icon to copy the SVG.";
-
-  // For each icon, render with selected style or first available style
-  for (const icon of filtered) {
-    const iconStyle = icon.styles?.includes(style)
-      ? style
-      : icon.styles?.length > 0
-        ? icon.styles[0]
-        : style;
-    els.grid.appendChild(renderCard(icon, iconStyle, ICON_SIZE));
-  }
-
-  // Select the first icon by default after rerender
-  setTimeout(() => {
-    const firstPreview = document.querySelector(".preview");
-    if (firstPreview && filtered.length > 0) {
-      openDetailsPanel(filtered[0], firstPreview);
-    }
-  }, 0);
+  els.sizeButtons.innerHTML = icon.sizes
+    .map(
+      (size) => `
+    <button class="size-btn ${size === state.detailsSize ? "active" : ""}" data-size="${size}">
+      ${size}px
+    </button>
+  `
+    )
+    .join("");
 }
 
-/* --------------------------------------------------
-   Init
--------------------------------------------------- */
-async function loadIconsJson() {
-  // Cache-bust metadata to ensure fresh data after syncs
-  const cachebust = `v=${Date.now()}`;
-  const res = await fetch(`./metadata/icons.json?${cachebust}`);
-  if (!res.ok) throw new Error("Failed to load icons.json");
-  const data = await res.json();
-  // Handle both old and new metadata format
-  return data.icons ? { icons: data.icons } : data;
-}
+/**
+ * Update Details Display
+ */
+async function updateDetailsDisplay() {
+  const icon = state.selectedIcon;
+  if (!icon) return;
 
-async function main() {
   try {
-    const data = await loadIconsJson();
-    allIcons = data.icons || [];
-    populateCategories();
-    rerender(); // Auto-selects first icon via rerender()
-  } catch (e) {
-    els.status.textContent = `Error: ${e.message}`;
+    let code = "";
+
+    if (state.detailsFormat === "jsx") {
+      code = generateJsxCode(icon.name, state.detailsSize);
+    } else if (state.detailsFormat === "vue") {
+      code = generateVueCode(icon.name, state.detailsSize);
+    } else if (state.detailsFormat === "css") {
+      code = generateCssCode(icon.name, state.detailsSize);
+    } else {
+      code = `SVG: ${icon.name}-${normalizeStyle(els.style.value || "outline")}-${state.detailsSize}.svg`;
+    }
+
+    // Update code preview if it exists
+    const codePreview = document.querySelector("#code-preview code");
+    if (codePreview) {
+      codePreview.textContent = code;
+    }
+
+    logger.debug(`Updated details display for format: ${state.detailsFormat}`);
+  } catch (error) {
+    logger.error("Failed to update details display:", error);
   }
 }
 
-/* --------------------------------------------------
-   Events
--------------------------------------------------- */
-els.search?.addEventListener("input", rerender);
-els.style?.addEventListener("change", rerender);
+/**
+ * Handle Search
+ */
+function handleSearch() {
+  const query = state.searchQuery.toLowerCase();
 
-// Clear search button
-els.clearSearchBtn?.addEventListener("click", () => {
-  els.search.value = "";
-  rerender();
-});
+  if (query === "") {
+    state.setAllIcons(state.allIcons);
+    renderIconGrid(state.allIcons, els.grid, handleIconClick);
+  } else {
+    const results = state.allIcons.filter(
+      (icon) =>
+        icon.name.toLowerCase().includes(query) ||
+        icon.keywords?.some((kw) => kw.toLowerCase().includes(query))
+    );
 
-// Ensure all DOM elements exist before trying to use them
-Object.entries(els).forEach(([key, el]) => {
-  if (!el) console.warn(`Missing DOM element: #${key}`);
-});
+    renderIconGrid(results, els.grid, handleIconClick);
+    logger.debug(`Search found ${results.length} icons for "${query}"`);
+  }
+}
 
-main();
+/**
+ * Handle Copy Code
+ */
+async function handleCopyCode() {
+  const icon = state.selectedIcon;
+  if (!icon) return;
+
+  try {
+    let code = "";
+
+    if (state.detailsFormat === "jsx") {
+      code = generateJsxCode(icon.name, state.detailsSize);
+    } else if (state.detailsFormat === "vue") {
+      code = generateVueCode(icon.name, state.detailsSize);
+    } else if (state.detailsFormat === "css") {
+      code = generateCssCode(icon.name, state.detailsSize);
+    }
+
+    if (code) {
+      await copyText(code);
+      showNotification(`Copied ${state.detailsFormat} code to clipboard`, "success");
+      logger.info(`Copied ${state.detailsFormat} code for ${icon.name}`);
+    }
+  } catch (error) {
+    logger.error("Failed to copy code:", error);
+    showNotification("Failed to copy code", "error");
+  }
+}
+
+/**
+ * Handle Download Icon
+ */
+async function handleDownloadIcon() {
+  const icon = state.selectedIcon;
+  if (!icon) return;
+
+  try {
+    const style = normalizeStyle(els.style.value || "outline");
+    const svgPath = `./raw-svg/${style}/${state.detailsSize}/icon-${icon.name}-${style}-${state.detailsSize}.svg${getCacheBuster()}`;
+    const svgContent = await fetchSvg(svgPath);
+
+    const blob = new Blob([svgContent], { type: "image/svg+xml" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `icon-${icon.name}-${style}-${state.detailsSize}.svg`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+
+    showNotification(`Downloaded ${icon.name}.svg`, "success");
+    logger.info(`Downloaded icon: ${icon.name}`);
+  } catch (error) {
+    logger.error("Failed to download icon:", error);
+    showNotification("Failed to download icon", "error");
+  }
+}
+
+// Initialize app when DOM is ready
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeApp);
+} else {
+  initializeApp();
+}
