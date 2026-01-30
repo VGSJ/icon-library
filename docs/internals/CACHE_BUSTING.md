@@ -1,11 +1,13 @@
 # Cache Busting Implementation
 
 ## Problem
+
 The SVG files were being synced correctly from Figma, but browsers and CDN were caching the old versions. Users would see outdated icons (e.g., the old fire-emergency-panel design) even after syncs completed.
 
 ## Solution: Multi-Layer Cache Busting
 
 ### 1. **Client-Side Cache Busting (app.js)**
+
 Added timestamp query parameters to all fetch requests:
 
 ```javascript
@@ -25,6 +27,7 @@ const res = await fetch(`./metadata/icons.json?${cachebust}`);
 ---
 
 ### 2. **Metadata Timestamp Tracking (generate-metadata.mjs)**
+
 Every metadata generation now includes a timestamp:
 
 ```json
@@ -34,14 +37,16 @@ Every metadata generation now includes a timestamp:
 }
 ```
 
-**Effect:** 
+**Effect:**
+
 - Provides audit trail of when metadata was last updated
 - Can be used for client-side version tracking
 - Helps detect stale metadata files
 
 ---
 
-### 3. **HTTP Cache Headers (_headers file)**
+### 3. **HTTP Cache Headers (\_headers file)**
+
 Created caching strategy for GitHub Pages/CDN:
 
 ```
@@ -56,6 +61,7 @@ Created caching strategy for GitHub Pages/CDN:
 ```
 
 **Effect:**
+
 - SVGs can be cached locally for performance (24h)
 - Metadata/HTML always fetched fresh
 - Client-side query params ensure even fresh requests when needed
@@ -78,7 +84,7 @@ Created caching strategy for GitHub Pages/CDN:
 ✅ **Performance**: SVGs still cache locally for 24h when query params match  
 ✅ **Reliability**: Works across all browsers (query params are standard)  
 ✅ **Scalable**: Applies to all current and future icon syncs  
-✅ **Backwards Compatible**: Existing metadata format still works  
+✅ **Backwards Compatible**: Existing metadata format still works
 
 ---
 

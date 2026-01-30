@@ -1,10 +1,13 @@
 # Fix for Outdated SVG Display Issue
 
 ## Problem Identified
+
 After syncing updated SVGs from Figma (including the new fire-emergency-panel design), the website was still displaying the old cached versions. This is a classic HTTP caching issue where browsers/CDN serve stale assets.
 
 ## Root Cause
+
 The SVG files were correctly synced from Figma to `docs/raw-svg/`, but:
+
 1. Browser cache had no expiration
 2. SVG fetch requests had no cache-busting parameters
 3. No HTTP cache headers were configured
@@ -13,6 +16,7 @@ The SVG files were correctly synced from Figma to `docs/raw-svg/`, but:
 ## Solution Implemented
 
 ### 1. Client-Side Cache Busting ✅
+
 **File: `docs/app.js`**
 
 Every SVG and metadata fetch now includes a timestamp query parameter that changes with each page load:
@@ -25,6 +29,7 @@ const cachebust = `v=${Date.now()}`;
 This forces browsers to always fetch fresh assets.
 
 ### 2. Metadata Versioning ✅
+
 **File: `generate-metadata.mjs`**
 
 Metadata JSON now includes a timestamp field for audit and tracking:
@@ -39,22 +44,26 @@ Metadata JSON now includes a timestamp field for audit and tracking:
 Updated every time icons are synced from Figma.
 
 ### 3. HTTP Cache Headers ✅
+
 **File: `docs/_headers`**
 
 Configured cache strategy for GitHub Pages/CDN:
+
 - **Metadata** (`icons.json`): Never cached - always fresh
-- **HTML**: Never cached - always fresh  
+- **HTML**: Never cached - always fresh
 - **SVGs**: Cached for 24 hours locally
 - **App JS/CSS**: Cached for 1 hour
 
 ## How to Verify
 
 Run the validation script:
+
 ```bash
 node scripts/validate-cache-busting.mjs
 ```
 
 Or manually in browser:
+
 1. Open DevTools → Network tab
 2. Load the site
 3. You should see URLs like:
@@ -77,18 +86,18 @@ Or manually in browser:
 
 ## Files Modified
 
-| File | Change | Purpose |
-|------|--------|---------|
-| `docs/app.js` | Added `cachebust` query param to fetch calls | Force fresh SVG/metadata fetches |
-| `generate-metadata.mjs` | Added `timestamp` field to JSON output | Track when metadata was generated |
-| `docs/_headers` | Created new file | Configure HTTP cache headers |
-| `scripts/validate-cache-busting.mjs` | Created new validation script | Verify implementation |
-| `CACHE_BUSTING.md` | Created documentation | Explain the solution |
+| File                                 | Change                                       | Purpose                           |
+| ------------------------------------ | -------------------------------------------- | --------------------------------- |
+| `docs/app.js`                        | Added `cachebust` query param to fetch calls | Force fresh SVG/metadata fetches  |
+| `generate-metadata.mjs`              | Added `timestamp` field to JSON output       | Track when metadata was generated |
+| `docs/_headers`                      | Created new file                             | Configure HTTP cache headers      |
+| `scripts/validate-cache-busting.mjs` | Created new validation script                | Verify implementation             |
+| `CACHE_BUSTING.md`                   | Created documentation                        | Explain the solution              |
 
 ## Next Steps
 
 1. ✅ Commit these changes to GitHub
-2. ✅ Push to repository  
+2. ✅ Push to repository
 3. ✅ GitHub Pages will automatically use the new cache headers
 4. ✅ Hard refresh browser to see updated fire-emergency-panel
 5. ✅ All future icon syncs will automatically show fresh designs
@@ -96,6 +105,7 @@ Or manually in browser:
 ## Prevention
 
 This approach prevents future stale cache issues:
+
 - Every page load fetches fresh metadata
 - Every SVG request bypasses browser cache
 - Server cache rules ensure immediate updates

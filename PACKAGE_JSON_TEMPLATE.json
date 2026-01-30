@@ -1,0 +1,58 @@
+{
+  "name": "icon-library",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Comprehensive DTUX Icon Library with Figma sync",
+  "author": "VG",
+  "license": "MIT",
+
+  "scripts": {
+    "dev": "npx http-server docs -p 8080 -c-1 --cors",
+
+    "icons:list": "node scripts/list-category.mjs",
+    "icons:sync-category": "node scripts/sync-category.mjs",
+    "icons:sync-all": "node scripts/sync-all-categories.mjs",
+    "icons:validate": "node scripts/validate-svgs.mjs",
+    "icons:validate-cache": "node scripts/validate-cache-busting.mjs",
+    "icons:validate-all": "node scripts/validate-all.mjs",
+    "icons:detect-changes": "node scripts/detect-icon-changes.mjs",
+
+    "lint": "eslint docs/js scripts --max-warnings=0",
+    "lint:fix": "eslint docs/js scripts --fix",
+    "format": "prettier --write 'docs/**/*.{js,css,html}' 'scripts/**/*.js'",
+    "format:check": "prettier --check 'docs/**/*.{js,css,html}' 'scripts/**/*.js'",
+
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+
+    "build": "npm run lint && npm run test && npm run icons:validate-all",
+    "precommit": "lint-staged"
+  },
+
+  "lint-staged": {
+    "*.{js,mjs}": ["eslint --fix", "prettier --write"],
+    "*.{css,html,json,md}": ["prettier --write"]
+  },
+
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0"
+  },
+
+  "optionalDependencies": {
+    "@testing-library/dom": "^9.3.0",
+    "jest": "^29.7.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.0"
+  },
+
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

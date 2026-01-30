@@ -26,8 +26,8 @@ export function env(name, required = true) {
  */
 export function validateEnvironment() {
   const required = ["FIGMA_TOKEN", "FIGMA_FILE_KEY"];
-  const missing = required.filter(name => !process.env[name]);
-  
+  const missing = required.filter((name) => !process.env[name]);
+
   if (missing.length > 0) {
     throw new Error(`Missing required environment variables: ${missing.join(", ")}`);
   }
@@ -42,58 +42,58 @@ export function validateEnvironment() {
 export async function figmaFetch(url) {
   const token = env("FIGMA_TOKEN");
   if (!token) throw new Error("FIGMA_TOKEN not set");
-  
+
   let attempt = 0;
   const maxAttempts = 3;
   const baseDelay = 1000; // 1 second
-  
+
   while (attempt < maxAttempts) {
     try {
       const res = await fetch(url, {
-        headers: { "X-Figma-Token": token }
+        headers: { "X-Figma-Token": token },
       });
-      
+
       // Check rate limiting headers
       const rateLimitRemaining = res.headers.get("X-RateLimit-Remaining");
       const rateLimitReset = res.headers.get("X-RateLimit-Reset");
-      
+
       if (!res.ok) {
         // Handle rate limiting specially
         if (res.status === 429) {
           const retryAfter = parseInt(rateLimitReset || baseDelay * Math.pow(2, attempt));
           const waitTime = Math.min(retryAfter, 60000); // Cap at 60 seconds
-          
+
           console.warn(
             `⚠️  Rate limited by Figma API. Waiting ${Math.ceil(waitTime / 1000)}s before retry...`
           );
-          
-          await new Promise(resolve => setTimeout(resolve, waitTime));
+
+          await new Promise((resolve) => setTimeout(resolve, waitTime));
           attempt++;
           continue;
         }
-        
+
         throw new Error(`Figma API ${res.status}: ${res.statusText}`);
       }
-      
+
       // Log rate limit status periodically
       if (rateLimitRemaining && parseInt(rateLimitRemaining) < 10) {
         console.warn(`⚠️  Figma API rate limit warning: ${rateLimitRemaining} requests remaining`);
       }
-      
+
       return await res.json();
     } catch (error) {
       attempt++;
       if (attempt >= maxAttempts) {
         throw error;
       }
-      
+
       // Exponential backoff for network errors
       const delay = baseDelay * Math.pow(2, attempt - 1);
       console.warn(`⚠️  API request failed, retrying in ${Math.ceil(delay / 1000)}s...`);
-      await new Promise(resolve => setTimeout(resolve, delay));
+      await new Promise((resolve) => setTimeout(resolve, delay));
     }
   }
-  
+
   throw new Error("Max API retries exceeded");
 }
 
@@ -107,12 +107,12 @@ export function parseDate(dateStr) {
   if (!dateStr || typeof dateStr !== "string") {
     throw new Error(`Invalid date format: ${dateStr}`);
   }
-  
+
   const time = new Date(dateStr).getTime();
   if (isNaN(time)) {
     throw new Error(`Failed to parse date: ${dateStr}`);
   }
-  
+
   return time;
 }
 
@@ -131,10 +131,5 @@ export function normalizeCategory(name) {
  * @returns {string} Category ID
  */
 export function getCategoryId(label) {
-  return label
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, "-")
-    .replace(/&/g, "-")
-    .replace(/-+/g, "-");
+  return label.toLowerCase().trim().replace(/\s+/g, "-").replace(/&/g, "-").replace(/-+/g, "-");
 }

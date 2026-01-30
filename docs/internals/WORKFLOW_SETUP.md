@@ -9,16 +9,19 @@ The daily icon sync workflow has been configured to run automatically at **9am S
 Before the workflow can run successfully, add these secrets to your GitHub repository:
 
 ### 1. FIGMA_TOKEN (already added ✅)
+
 - **Type:** Personal Access Token from Figma
 - **Status:** ✅ Already configured
 
 ### 2. FIGMA_FILE_KEY (needs to be added ⚠️)
+
 - **Type:** Figma file ID
 - **Value:** `EOg08nH8vap01HgPoJBQws`
 - **Location:** Settings → Secrets and variables → Actions
 - **Status:** ⚠️ **PENDING** - Add this secret for workflow to work
 
 ### 3. SLACK_WEBHOOK_URL (optional)
+
 - **Type:** Slack webhook URL for notifications
 - **Status:** Optional - Skip if you don't want Slack notifications
 
@@ -66,14 +69,17 @@ To test the workflow manually:
 ## Troubleshooting
 
 ### Workflow fails with "FIGMA_FILE_KEY not set"
+
 - Add the secret as described above
 - Re-run the workflow
 
 ### Workflow fails during metadata generation
+
 - Check that local `docs/metadata/icons.json` exists
 - Verify Figma token is still valid
 
 ### No icons being synced
+
 - Run detection script manually: `node scripts/detect-icon-changes.mjs`
 - Check for metadata changes in output
 - Verify Figma file hasn't been archived

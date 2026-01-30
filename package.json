@@ -5,9 +5,21 @@
   "scripts": {
     "icons:list": "node scripts/list-category.mjs",
     "icons:sync-category": "node scripts/sync-category.mjs",
-    "dev": "npx http-server docs -p 8080 -c-1"
+    "icons:sync-all": "node scripts/sync-all-categories.mjs",
+    "icons:validate": "node scripts/validate-svgs.mjs",
+    "dev": "npx http-server docs -p 8080 -c-1",
+    "lint": "eslint . --ext .js,.mjs --ignore-pattern 'node_modules|docs/raw-svg'",
+    "lint:fix": "eslint . --ext .js,.mjs --fix --ignore-pattern 'node_modules|docs/raw-svg'",
+    "format": "prettier --write '**/*.{js,mjs,json,md,css}'",
+    "format:check": "prettier --check '**/*.{js,mjs,json,md,css}'",
+    "test": "echo 'Tests coming in Phase 2' && exit 0"
   },
   "dependencies": {
     "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.1"
   }
 }

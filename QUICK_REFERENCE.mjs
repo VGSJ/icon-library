@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Quick Reference: Cache Busting Implementation
- * 
+ *
  * PROBLEM SOLVED:
  * Outdated SVGs were displayed even after Figma sync
  * (e.g., fire-emergency-panel showing old design)

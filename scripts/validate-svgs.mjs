@@ -33,7 +33,7 @@ async function validateSVGs() {
         for (const size of sizes || []) {
           iconTotal++;
           totalVariants++;
-          
+
           const filename = `icon-${name}-${style}-${size}.svg`;
           const filepath = path.join(rawSvgDir, style, String(size), filename);
 
@@ -50,27 +50,31 @@ async function validateSVGs() {
         incompleteIcons[name] = {
           category: category?.label || "unknown",
           missing: iconMissing,
-          total: iconTotal
+          total: iconTotal,
         };
       }
     }
 
-    console.log(`\n📊 SVG Completeness:`);
+    console.log("\n📊 SVG Completeness:");
     console.log(`  ✅ Present: ${presentVariants}/${totalVariants} variants`);
 
     if (Object.keys(incompleteIcons).length > 0) {
-      console.error(`\n❌ Found ${Object.keys(incompleteIcons).length} icons with missing SVG variants:\n`);
+      console.error(
+        `\n❌ Found ${Object.keys(incompleteIcons).length} icons with missing SVG variants:\n`
+      );
       Object.entries(incompleteIcons).forEach(([name, info]) => {
         console.error(
           `  - ${name} (${info.category}): ${info.missing}/${info.total} variants missing`
         );
       });
-      console.error(`\nAll categorized icons MUST have complete SVG files before deployment.`);
-      console.error(`Sync the remaining categories or remove incomplete icons from metadata.\n`);
+      console.error("\nAll categorized icons MUST have complete SVG files before deployment.");
+      console.error("Sync the remaining categories or remove incomplete icons from metadata.\n");
       process.exit(1);
     }
 
-    console.log(`\n✅ Validation passed: all ${totalVariants} icon variants present and ready for deployment`);
+    console.log(
+      `\n✅ Validation passed: all ${totalVariants} icon variants present and ready for deployment`
+    );
   } catch (e) {
     console.error("❌ Validation error:", e.message);
     process.exit(1);

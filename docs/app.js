@@ -24,10 +24,10 @@ const ICON_SIZE = 32; // Fixed icon size for grid
 -------------------------------------------------- */
 function openDetailsPanel(icon, previewElement) {
   if (!icon || !previewElement) return; // Guard against null/undefined
-  
+
   // Remove selected state from previously selected preview
-  document.querySelectorAll(".preview.selected").forEach(p => p.classList.remove("selected"));
-  
+  document.querySelectorAll(".preview.selected").forEach((p) => p.classList.remove("selected"));
+
   selectedIcon = icon;
   // Keep the user's previously selected format (from localStorage)
   // detailsFormat is already loaded from localStorage on init
@@ -35,25 +35,25 @@ function openDetailsPanel(icon, previewElement) {
   if (icon.sizes && icon.sizes.includes(detailsSize)) {
     // Keep the saved size if it's available for this icon
   } else {
-    detailsSize = (icon.sizes?.includes(24)) ? 24 : (icon.sizes?.length > 0) ? icon.sizes[0] : 32;
+    detailsSize = icon.sizes?.includes(24) ? 24 : icon.sizes?.length > 0 ? icon.sizes[0] : 32;
   }
-  
+
   els.iconName.textContent = icon.name;
-  
+
   // Mark the clicked preview as selected
   previewElement.classList.add("selected");
-  
+
   updateDetailsPreview();
   updateDetailsButtons();
 }
 
 function updateDetailsPreview() {
   if (!selectedIcon) return;
-  
+
   els.previewBox.innerHTML = "…";
-  
+
   const style = els.style.value || "outline";
-  
+
   fetchSvg(selectedIcon.name, style, detailsSize)
     .then((svg) => {
       const container = document.createElement("div");
@@ -68,14 +68,14 @@ function updateDetailsPreview() {
 
 function updateDetailsButtons() {
   // Update format buttons
-  document.querySelectorAll(".format-btn").forEach(btn => {
+  document.querySelectorAll(".format-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.format === detailsFormat);
   });
-  
+
   // Generate size buttons from icon's available sizes
   if (selectedIcon && selectedIcon.sizes) {
     els.sizeButtons.innerHTML = "";
-    selectedIcon.sizes.forEach(size => {
+    selectedIcon.sizes.forEach((size) => {
       const btn = document.createElement("button");
       btn.className = "size-btn";
       btn.textContent = `${size}`;
@@ -104,14 +104,14 @@ async function svgToPng(svgText, size) {
     canvas.width = size * scale;
     canvas.height = size * scale;
     const ctx = canvas.getContext("2d");
-    
+
     const img = new Image();
     img.onload = () => {
       ctx.drawImage(img, 0, 0, size * scale, size * scale);
       canvas.toBlob(resolve, "image/png");
     };
     img.onerror = () => reject(new Error("Failed to convert SVG to PNG"));
-    
+
     // Convert SVG to data URL
     const blob = new Blob([svgText], { type: "image/svg+xml" });
     const url = URL.createObjectURL(blob);
@@ -120,7 +120,7 @@ async function svgToPng(svgText, size) {
 }
 
 // Format button listeners
-document.querySelectorAll(".format-btn").forEach(btn => {
+document.querySelectorAll(".format-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     detailsFormat = btn.dataset.format;
     localStorage.setItem("detailsFormat", detailsFormat);
@@ -132,17 +132,14 @@ document.querySelectorAll(".format-btn").forEach(btn => {
 // Copy button listener
 els.copyBtn?.addEventListener("click", async () => {
   if (!selectedIcon) return;
-  
+
   try {
     const style = els.style.value || "outline";
     const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
-    
+
     if (detailsFormat === "png") {
       const pngBlob = await svgToPng(svg, detailsSize);
-      const pngData = await pngBlob.arrayBuffer();
-      await navigator.clipboard.write([
-        new ClipboardItem({ "image/png": pngBlob })
-      ]);
+      await navigator.clipboard.write([new ClipboardItem({ "image/png": pngBlob })]);
       showToast(`Copied PNG: ${selectedIcon.name}`);
     } else {
       const ok = await copyText(svg);
@@ -160,19 +157,19 @@ els.copyBtn?.addEventListener("click", async () => {
 // Download button listener
 els.downloadBtn?.addEventListener("click", async () => {
   if (!selectedIcon) return;
-  
+
   try {
     const style = els.style.value || "outline";
     const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
     const filename = `${selectedIcon.name}-${style}-${detailsSize}.${detailsFormat}`;
-    
+
     let blob;
     if (detailsFormat === "png") {
       blob = await svgToPng(svg, detailsSize);
     } else {
       blob = new Blob([svg], { type: "image/svg+xml" });
     }
-    
+
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
@@ -181,7 +178,7 @@ els.downloadBtn?.addEventListener("click", async () => {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    
+
     showToast(`Downloaded: ${filename}`);
   } catch (e) {
     showToast(`Error: ${e.message}`);
@@ -212,7 +209,7 @@ async function copyText(text) {
       await navigator.clipboard.writeText(text);
       return true;
     }
-  } catch (_) {}
+  } catch {}
 
   try {
     const ta = document.createElement("textarea");
@@ -229,7 +226,7 @@ async function copyText(text) {
     const ok = document.execCommand("copy");
     document.body.removeChild(ta);
     return ok;
-  } catch (_) {
+  } catch {
     return false;
   }
 }
@@ -302,25 +299,36 @@ function normalize(s = "") {
 function capitalizeCategory(cat) {
   // Category display name overrides
   const displayNames = {
-    'heating ventilation air conditioning': 'HVAC'
+    "heating ventilation air conditioning": "HVAC",
   };
-  
+
   if (displayNames[cat]) {
     return displayNames[cat];
   }
-  
+
   // Known abbreviations that should be ALL CAPS
-  const abbreviations = new Set(['ai', 'vr', 'led', 'hvac', 'aed', 'cctv', 'gps', 'qr', 'ahu', 'pv']);
-  
+  const abbreviations = new Set([
+    "ai",
+    "vr",
+    "led",
+    "hvac",
+    "aed",
+    "cctv",
+    "gps",
+    "qr",
+    "ahu",
+    "pv",
+  ]);
+
   return cat
-    .split(' ')
-    .map(word => {
+    .split(" ")
+    .map((word) => {
       if (abbreviations.has(word.toLowerCase())) {
         return word.toUpperCase();
       }
       return word.charAt(0).toUpperCase() + word.slice(1);
     })
-    .join(' ');
+    .join(" ");
 }
 
 function getCategoryLabel(icon) {
@@ -338,23 +346,23 @@ function normalizeStyle(style) {
 
 async function fetchSvg(name, style, size) {
   const normalizedStyle = normalizeStyle(style);
-  
+
   // Cache-bust with timestamp to prevent stale SVGs from being cached by browser
   // This ensures updated SVGs from Figma sync are always fetched fresh
   const cachebust = `v=${Date.now()}`;
-  
+
   // Try multiple path patterns in order
   const paths = [
     `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}.svg?${cachebust}`,
     `./raw-svg/${normalizedStyle}/${size}/icon-${name}-${normalizedStyle}-${size}px.svg?${cachebust}`,
-    `./raw-svg/${normalizedStyle}/${size}px/icon-${name}-${normalizedStyle}-${size}px.svg?${cachebust}`
+    `./raw-svg/${normalizedStyle}/${size}px/icon-${name}-${normalizedStyle}-${size}px.svg?${cachebust}`,
   ];
-  
+
   for (const path of paths) {
     const res = await fetch(path);
     if (res.ok) return res.text();
   }
-  
+
   throw new Error(`Missing SVG for ${name} (${style}/${size})`);
 }
 
@@ -364,13 +372,7 @@ function iconMatches(icon, query) {
 
   const categoryLabel = getCategoryLabel(icon);
 
-  const hay = [
-    icon.name || "",
-    categoryLabel || "",
-    ...(icon.tags || []),
-  ]
-    .map(normalize)
-    .join(" ");
+  const hay = [icon.name || "", categoryLabel || "", ...(icon.tags || [])].map(normalize).join(" ");
 
   return hay.includes(q);
 }
@@ -415,9 +417,9 @@ function populateCategories() {
   // Calculate category counts based on current search filter
   const query = els.search?.value || "";
   const filteredBySearch = allIcons.filter((icon) => iconMatches(icon, query));
-  
+
   const categoryCounts = {};
-  filteredBySearch.forEach(icon => {
+  filteredBySearch.forEach((icon) => {
     const cat = getCategoryLabel(icon);
     categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
   });
@@ -438,7 +440,7 @@ function populateCategories() {
   allBtn.innerHTML = `${allItem.name} <span class="category-count">${allItem.count}</span>`;
   allBtn.addEventListener("click", () => {
     selectedCategory = null;
-    document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".category-btn").forEach((b) => b.classList.remove("active"));
     allBtn.classList.add("active");
     rerender();
   });
@@ -452,7 +454,7 @@ function populateCategories() {
     btn.innerHTML = `${displayName} <span class="category-count">${count}</span>`;
     btn.addEventListener("click", () => {
       selectedCategory = name;
-      document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".category-btn").forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
       rerender();
     });
@@ -465,18 +467,18 @@ function rerender() {
   const style = els.style.value;
 
   let filtered = allIcons.filter((icon) => iconMatches(icon, query));
-  
+
   // Update category counts based on current search
   populateCategories();
-  
+
   // Show/hide clear button based on search input
   if (els.clearSearchBtn) {
     els.clearSearchBtn.style.display = query ? "flex" : "none";
   }
-  
+
   // Filter by selected category if one is chosen
   if (selectedCategory) {
-    filtered = filtered.filter(icon => getCategoryLabel(icon) === selectedCategory);
+    filtered = filtered.filter((icon) => getCategoryLabel(icon) === selectedCategory);
   }
 
   els.grid.innerHTML = "";
@@ -491,10 +493,14 @@ function rerender() {
 
   // For each icon, render with selected style or first available style
   for (const icon of filtered) {
-    const iconStyle = (icon.styles?.includes(style)) ? style : (icon.styles?.length > 0 ? icon.styles[0] : style);
+    const iconStyle = icon.styles?.includes(style)
+      ? style
+      : icon.styles?.length > 0
+        ? icon.styles[0]
+        : style;
     els.grid.appendChild(renderCard(icon, iconStyle, ICON_SIZE));
   }
-  
+
   // Select the first icon by default after rerender
   setTimeout(() => {
     const firstPreview = document.querySelector(".preview");
@@ -522,7 +528,7 @@ async function main() {
     const data = await loadIconsJson();
     allIcons = data.icons || [];
     populateCategories();
-    rerender();  // Auto-selects first icon via rerender()
+    rerender(); // Auto-selects first icon via rerender()
   } catch (e) {
     els.status.textContent = `Error: ${e.message}`;
   }

@@ -8,43 +8,43 @@ const checklist = [
   {
     item: "Review all changes",
     command: "git diff",
-    status: "READY"
+    status: "READY",
   },
   {
     item: "Run validation",
     command: "node scripts/validate-cache-busting.mjs",
-    status: "✅ PASSED"
+    status: "✅ PASSED",
   },
   {
     item: "Stage changes",
     command: "git add -A",
-    status: "READY"
+    status: "READY",
   },
   {
     item: "Commit changes",
     command: 'git commit -m "fix: implement cache-busting for outdated SVG display"',
-    status: "READY"
+    status: "READY",
   },
   {
     item: "Push to GitHub",
     command: "git push origin main",
-    status: "READY"
+    status: "READY",
   },
   {
     item: "Verify GitHub Pages build",
     command: "Check GitHub Actions tab",
-    status: "READY"
+    status: "READY",
   },
   {
     item: "Test in browser",
     command: "Hard refresh (Cmd+Shift+R) and check DevTools Network tab",
-    status: "READY"
+    status: "READY",
   },
   {
     item: "Verify fire-emergency-panel",
     command: "Search for 'fire-emergency-panel' and check new design",
-    status: "READY"
-  }
+    status: "READY",
+  },
 ];
 
 console.log(`

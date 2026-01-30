@@ -3,6 +3,7 @@
 ## Scripts Currently in Repository
 
 ### Active Scripts (Being Used)
+
 1. ✅ **scripts/sync-category.mjs** - Primary sync script, used daily
 2. ✅ **scripts/sync-all-categories.mjs** - Syncs all 28 categories, used daily
 3. ✅ **scripts/validate-svgs.mjs** - Validates icon completeness
@@ -11,6 +12,7 @@
 6. ✅ **scripts/detect-icon-changes.mjs** - Used in GitHub Actions workflow (generates report)
 
 ### Deprecated Scripts (Not Used)
+
 1. ❌ **scripts/auto-remove-icons.mjs** - Placeholder, never implemented
 2. ❌ **scripts/auto-add-icons.mjs** - Placeholder, never implemented
 3. ❌ **detect-svg-changes.mjs** - Abandoned hash-based detection (superseded by timestamp approach)
@@ -19,9 +21,11 @@
 ## Analysis
 
 ### scripts/auto-remove-icons.mjs
+
 **Status:** DEPRECATED - Safe to delete
 
 **Evidence:**
+
 - Contains TODO comment: "TODO: Compare with Figma component list"
 - Just a placeholder that prints "No icons to remove"
 - Never called in workflow or code
@@ -32,9 +36,11 @@
 ---
 
 ### scripts/auto-add-icons.mjs
+
 **Status:** DEPRECATED - Safe to delete
 
 **Evidence:**
+
 - Contains TODO comment: "TODO: Fetch all Figma components and identify new ones"
 - Just a placeholder, always outputs "No new icons to add"
 - Never called in workflow or code
@@ -45,9 +51,11 @@
 ---
 
 ### detect-svg-changes.mjs
+
 **Status:** DEPRECATED - Safe to delete
 
 **Evidence:**
+
 - Implements hash-based SVG change detection using crypto/MD5
 - This approach was abandoned in favor of timestamp-based detection
 - Last commit: "refactor: remove hash comparison approach for simpler, faster sync"
@@ -59,9 +67,11 @@
 ---
 
 ### check-uncategorized.mjs
+
 **Status:** DEPRECATED - Safe to delete
 
 **Evidence:**
+
 - One-off utility script to find uncategorized icons
 - No longer needed since we use keyword-based heuristics in generate-metadata.mjs
 - Not integrated into workflow
@@ -72,11 +82,13 @@
 ---
 
 ### scripts/detect-icon-changes.mjs
+
 **Status:** ACTIVE - Keep, but consider reducing scope
 
 **Current Usage:** Called in GitHub Actions workflow to generate sync-report.md
 
 **Analysis:**
+
 - Still used in workflow (line 31 of .github/workflows/sync-icons-daily.yml)
 - Generates markdown report of added/removed/changed icons
 - However, this report is no longer meaningful because:
@@ -85,6 +97,7 @@
   3. Workflow calls this BEFORE syncing, so report is based on outdated metadata
 
 **Options:**
+
 1. **Keep as-is** - Generates pre-sync report (somewhat redundant)
 2. **Simplify** - Remove this step, let sync-category.mjs output be the report
 3. **Enhance** - Make it generate post-sync report (would need refactoring)
@@ -95,25 +108,27 @@
 
 ## Summary Table
 
-| Script | Status | Used | Safe to Delete |
-|--------|--------|------|-----------------|
-| sync-category.mjs | ✅ Active | Daily | NO |
-| sync-all-categories.mjs | ✅ Active | Daily | NO |
-| validate-svgs.mjs | ✅ Active | Manual | NO |
-| list-category.mjs | ✅ Active | Manual | NO |
-| generate-metadata.mjs | ✅ Active | Daily | NO |
-| detect-icon-changes.mjs | ⚠️ Active but redundant | Workflow | Consider removing |
-| auto-remove-icons.mjs | ❌ Deprecated | Never | YES - Safe to delete |
-| auto-add-icons.mjs | ❌ Deprecated | Never | YES - Safe to delete |
-| detect-svg-changes.mjs | ❌ Deprecated | Never | YES - Safe to delete |
-| check-uncategorized.mjs | ❌ Deprecated | Never | YES - Safe to delete |
+| Script                  | Status                  | Used     | Safe to Delete       |
+| ----------------------- | ----------------------- | -------- | -------------------- |
+| sync-category.mjs       | ✅ Active               | Daily    | NO                   |
+| sync-all-categories.mjs | ✅ Active               | Daily    | NO                   |
+| validate-svgs.mjs       | ✅ Active               | Manual   | NO                   |
+| list-category.mjs       | ✅ Active               | Manual   | NO                   |
+| generate-metadata.mjs   | ✅ Active               | Daily    | NO                   |
+| detect-icon-changes.mjs | ⚠️ Active but redundant | Workflow | Consider removing    |
+| auto-remove-icons.mjs   | ❌ Deprecated           | Never    | YES - Safe to delete |
+| auto-add-icons.mjs      | ❌ Deprecated           | Never    | YES - Safe to delete |
+| detect-svg-changes.mjs  | ❌ Deprecated           | Never    | YES - Safe to delete |
+| check-uncategorized.mjs | ❌ Deprecated           | Never    | YES - Safe to delete |
 
 ---
 
 ## Cleanup Action Plan
 
 ### Immediate (Safe, No Risk)
+
 Delete 4 unused placeholder scripts:
+
 ```bash
 rm scripts/auto-remove-icons.mjs
 rm scripts/auto-add-icons.mjs
@@ -122,9 +137,11 @@ rm check-uncategorized.mjs
 ```
 
 ### Optional (Consider Removing)
+
 Remove `detect-icon-changes.mjs` from workflow since sync-category.mjs now provides better per-category reporting.
 
 Before and After:
+
 ```yaml
 # BEFORE
 - name: Detect icon changes from Figma
@@ -143,6 +160,7 @@ Before and After:
 ## Files That Reference Deleted Scripts
 
 These documentation files reference the deprecated scripts and should be updated:
+
 1. **SYNC_SETUP.md** - Lines 173-175 mention auto-remove and auto-add
 2. **WORKFLOW_SETUP.md** - Line 77 mentions detect-icon-changes.mjs
 
@@ -162,12 +180,14 @@ These documentation files reference the deprecated scripts and should be updated
 ## Recommendation
 
 **Delete all 4 deprecated scripts immediately:**
+
 - auto-remove-icons.mjs
-- auto-add-icons.mjs  
+- auto-add-icons.mjs
 - detect-svg-changes.mjs
 - check-uncategorized.mjs
 
 **Then optionally:**
+
 - Remove detect-icon-changes.mjs from workflow (redundant reporting)
 - Update SYNC_SETUP.md and WORKFLOW_SETUP.md to remove references
 
