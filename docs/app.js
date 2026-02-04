@@ -3,7 +3,7 @@ const els = {
   status: document.getElementById("status"),
   search: document.getElementById("search"),
   clearSearchBtn: document.getElementById("clearSearchBtn"),
-  style: document.getElementById("style"),
+  styleButtons: document.querySelectorAll(".style-btn"),
   categories: document.getElementById("categories"),
   detailsPanel: document.getElementById("detailsPanel"),
   iconName: document.getElementById("iconName"),
@@ -13,6 +13,8 @@ const els = {
   sizeButtons: document.getElementById("sizeButtons"),
   themeToggleBtn: document.getElementById("themeToggleBtn"),
 };
+
+let currentStyle = localStorage.getItem("selectedStyle") || "outline"; // Track selected style
 
 let selectedCategory = null; // Track selected category filter
 let selectedIcon = null; // Track selected icon in details panel
@@ -394,11 +396,11 @@ function normalizeStyle(style) {
 function applyThemeToSvg(svgString) {
   const isLightMode = document.body.classList.contains("light-mode");
   const targetColor = isLightMode ? "#1A1A1A" : "#FAFAFA";
-  
+
   // Parse SVG and update fill and stroke attributes
   // Use regex to find and replace fill and stroke attributes
   let modifiedSvg = svgString;
-  
+
   // Replace fill attributes (but preserve "none" and "url(...)" values)
   modifiedSvg = modifiedSvg.replace(
     /fill="([^"]*)"/g,
@@ -410,7 +412,7 @@ function applyThemeToSvg(svgString) {
       return `fill="${targetColor}"`;
     }
   );
-  
+
   // Replace stroke attributes (but preserve "none" and "url(...)" values)
   modifiedSvg = modifiedSvg.replace(
     /stroke="([^"]*)"/g,
@@ -422,7 +424,7 @@ function applyThemeToSvg(svgString) {
       return `stroke="${targetColor}"`;
     }
   );
-  
+
   return modifiedSvg;
 }
 
@@ -436,35 +438,35 @@ function updateIconColors() {
       const stroke = el.getAttribute("stroke");
       const isLightMode = document.body.classList.contains("light-mode");
       const targetColor = isLightMode ? "#1A1A1A" : "#FAFAFA";
-      
+
       // Update fill if it exists and is not "none" or a URL
       if (fill && fill !== "none" && !fill.startsWith("url(") && fill !== targetColor) {
         el.setAttribute("fill", targetColor);
       }
-      
+
       // Update stroke if it exists and is not "none" or a URL
       if (stroke && stroke !== "none" && !stroke.startsWith("url(") && stroke !== targetColor) {
         el.setAttribute("stroke", targetColor);
       }
     });
   });
-  
+
   // Update icon in details preview
   const detailsSvg = els.previewBox.querySelector("svg");
   if (detailsSvg) {
     const elements = detailsSvg.querySelectorAll("[fill], [stroke]");
     const isLightMode = document.body.classList.contains("light-mode");
     const targetColor = isLightMode ? "#1A1A1A" : "#FAFAFA";
-    
+
     elements.forEach((el) => {
       const fill = el.getAttribute("fill");
       const stroke = el.getAttribute("stroke");
-      
+
       // Update fill if it exists and is not "none" or a URL
       if (fill && fill !== "none" && !fill.startsWith("url(") && fill !== targetColor) {
         el.setAttribute("fill", targetColor);
       }
-      
+
       // Update stroke if it exists and is not "none" or a URL
       if (stroke && stroke !== "none" && !stroke.startsWith("url(") && stroke !== targetColor) {
         el.setAttribute("stroke", targetColor);
@@ -593,9 +595,13 @@ function populateCategories() {
   });
 }
 
+function getSelectedStyle() {
+  return currentStyle;
+}
+
 function rerender() {
   const query = els.search.value;
-  const style = els.style.value;
+  const style = getSelectedStyle();
 
   let filtered = allIcons.filter((icon) => iconMatches(icon, query));
 
@@ -672,7 +678,7 @@ async function main() {
 function updateSearchActiveState() {
   const searchWrapper = document.querySelector(".search-wrapper");
   if (!searchWrapper) return;
-  
+
   if (els.search.value.trim()) {
     searchWrapper.classList.add("active");
   } else {
@@ -686,21 +692,45 @@ if (els.search) {
     updateSearchActiveState();
     rerender();
   });
-  
+
   // Add active state on focus
   els.search.addEventListener("focus", updateSearchActiveState);
-  
+
   // Remove active state on blur if empty
   els.search.addEventListener("blur", updateSearchActiveState);
-  
+
   // Initialize active state on page load
   updateSearchActiveState();
 }
 
 /* --------------------------------------------------
+   Style Button Handlers
+-------------------------------------------------- */
+if (els.styleButtons.length > 0) {
+  els.styleButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      currentStyle = btn.dataset.style;
+      localStorage.setItem("selectedStyle", currentStyle);
+
+      // Update active state on all buttons
+      els.styleButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      rerender();
+    });
+  });
+
+  // Set initial active state based on stored style
+  const activeBtn = document.querySelector(`.style-btn[data-style="${currentStyle}"]`);
+  if (activeBtn) {
+    els.styleButtons.forEach((b) => b.classList.remove("active"));
+    activeBtn.classList.add("active");
+  }
+}
+
+/* --------------------------------------------------
    Events
 -------------------------------------------------- */
-if (els.style) els.style.addEventListener("change", rerender);
 
 // Clear search button
 if (els.clearSearchBtn) {

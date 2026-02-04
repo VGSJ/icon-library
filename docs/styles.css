@@ -71,25 +71,7 @@ h1 {
   flex: 1;
 }
 
-.select-wrapper {
-  position: relative;
-  display: inline-block;
-  width: auto;
-  overflow: hidden;
-  border-radius: 4px;
-}
 
-.select-icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 14px;
-  height: 14px;
-  pointer-events: none;
-  opacity: 0.6;
-  z-index: 1;
-}
 
 .search-wrapper {
   position: relative;
@@ -169,7 +151,6 @@ input[type="search"]::-webkit-search-cancel-button {
   appearance: none;
 }
 
-select,
 button {
   padding: 8px 12px;
   font-size: 14px;
@@ -178,13 +159,34 @@ button {
   background: var(--card);
   color: var(--fg);
   outline: none;
-  -webkit-appearance: none;
-  appearance: none;
 }
 
-select {
-  padding-right: 32px;
+.style-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.style-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--fg);
+  outline: none;
   cursor: pointer;
+  transition: all 140ms ease;
+}
+
+.style-btn:hover {
+  border-color: var(--primary);
+}
+
+.style-btn.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: white;
 }
 
 button {

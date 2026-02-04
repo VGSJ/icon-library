@@ -17,7 +17,7 @@ export function renderIconGrid(icons, container, onIconClick) {
   container.innerHTML = "";
 
   if (icons.length === 0) {
-    container.innerHTML = '<p class="no-results">No icons found</p>';
+    container.innerHTML = "<p class=\"no-results\">No icons found</p>";
     return;
   }
 
@@ -224,7 +224,7 @@ export function showNotification(message, type = "info", duration = 3000) {
  * @param {HTMLElement} container - Container element
  */
 export function showLoading(container) {
-  container.innerHTML = '<div class="loading"><p>Loading icons...</p></div>';
+  container.innerHTML = "<div class=\"loading\"><p>Loading icons...</p></div>";
 }
 
 /**
