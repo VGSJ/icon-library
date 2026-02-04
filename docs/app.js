@@ -667,15 +667,46 @@ async function main() {
 }
 
 /* --------------------------------------------------
+   Search Active State Management
+-------------------------------------------------- */
+function updateSearchActiveState() {
+  const searchWrapper = document.querySelector(".search-wrapper");
+  if (!searchWrapper) return;
+  
+  if (els.search.value.trim()) {
+    searchWrapper.classList.add("active");
+  } else {
+    searchWrapper.classList.remove("active");
+  }
+}
+
+if (els.search) {
+  // Add active state on input
+  els.search.addEventListener("input", () => {
+    updateSearchActiveState();
+    rerender();
+  });
+  
+  // Add active state on focus
+  els.search.addEventListener("focus", updateSearchActiveState);
+  
+  // Remove active state on blur if empty
+  els.search.addEventListener("blur", updateSearchActiveState);
+  
+  // Initialize active state on page load
+  updateSearchActiveState();
+}
+
+/* --------------------------------------------------
    Events
 -------------------------------------------------- */
-if (els.search) els.search.addEventListener("input", rerender);
 if (els.style) els.style.addEventListener("change", rerender);
 
 // Clear search button
 if (els.clearSearchBtn) {
   els.clearSearchBtn.addEventListener("click", () => {
     els.search.value = "";
+    updateSearchActiveState();
     rerender();
   });
 }

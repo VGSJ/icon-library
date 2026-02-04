@@ -485,7 +485,7 @@ docs/
 ```javascript
 export const CONFIG = {
   app: {
-    title: "DTUX Icon Library",
+    title: "Urban Library",
     version: "1.0.0",
   },
   cache: {

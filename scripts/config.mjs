@@ -8,7 +8,7 @@
 export const CONFIG = {
   // Application metadata
   app: {
-    name: "DTUX Icon Library",
+    name: "Urban Library",
     version: "1.0.0",
     description: "Comprehensive icon library with Figma sync",
   },

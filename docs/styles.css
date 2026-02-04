@@ -96,6 +96,17 @@ h1 {
   display: inline-block;
   overflow: hidden;
   border-radius: 4px;
+  transition: all 140ms ease;
+}
+
+.search-wrapper.active input[type="search"] {
+  border-color: var(--primary);
+  background: var(--card);
+  box-shadow: 0 0 0 2px rgba(18, 87, 253, 0.1);
+}
+
+.search-wrapper.active .search-icon {
+  opacity: 0.8;
 }
 
 .search-icon {
