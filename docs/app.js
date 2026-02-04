@@ -37,6 +37,8 @@ function applyTheme(theme) {
     if (els.themeToggleBtn) els.themeToggleBtn.textContent = "🌙";
   }
   localStorage.setItem("theme", theme);
+  // Update all visible icons when theme changes
+  updateIconColors();
 }
 
 if (els.themeToggleBtn) {
@@ -92,8 +94,10 @@ function updateDetailsPreview() {
 
   fetchSvg(selectedIcon.name, style, detailsSize)
     .then((svg) => {
+      // Apply theme colors to SVG
+      const themedSvg = applyThemeToSvg(svg);
       const container = document.createElement("div");
-      container.innerHTML = svg;
+      container.innerHTML = themedSvg;
       els.previewBox.innerHTML = "";
       els.previewBox.appendChild(container.firstElementChild || container);
     })
@@ -384,6 +388,91 @@ function normalizeStyle(style) {
   return style;
 }
 
+/* --------------------------------------------------
+   Icon Color Management for Theme
+-------------------------------------------------- */
+function applyThemeToSvg(svgString) {
+  const isLightMode = document.body.classList.contains("light-mode");
+  const targetColor = isLightMode ? "#1A1A1A" : "#FAFAFA";
+  
+  // Parse SVG and update fill and stroke attributes
+  // Use regex to find and replace fill and stroke attributes
+  let modifiedSvg = svgString;
+  
+  // Replace fill attributes (but preserve "none" and "url(...)" values)
+  modifiedSvg = modifiedSvg.replace(
+    /fill="([^"]*)"/g,
+    (match, value) => {
+      // Skip if it's "none", "url(...)", or already the target color
+      if (value === "none" || value.startsWith("url(") || value === targetColor) {
+        return match;
+      }
+      return `fill="${targetColor}"`;
+    }
+  );
+  
+  // Replace stroke attributes (but preserve "none" and "url(...)" values)
+  modifiedSvg = modifiedSvg.replace(
+    /stroke="([^"]*)"/g,
+    (match, value) => {
+      // Skip if it's "none", "url(...)", or already the target color
+      if (value === "none" || value.startsWith("url(") || value === targetColor) {
+        return match;
+      }
+      return `stroke="${targetColor}"`;
+    }
+  );
+  
+  return modifiedSvg;
+}
+
+function updateIconColors() {
+  // Update all icons in the grid
+  document.querySelectorAll(".preview svg").forEach((svgElement) => {
+    // Get all elements with fill or stroke attributes
+    const elements = svgElement.querySelectorAll("[fill], [stroke]");
+    elements.forEach((el) => {
+      const fill = el.getAttribute("fill");
+      const stroke = el.getAttribute("stroke");
+      const isLightMode = document.body.classList.contains("light-mode");
+      const targetColor = isLightMode ? "#1A1A1A" : "#FAFAFA";
+      
+      // Update fill if it exists and is not "none" or a URL
+      if (fill && fill !== "none" && !fill.startsWith("url(") && fill !== targetColor) {
+        el.setAttribute("fill", targetColor);
+      }
+      
+      // Update stroke if it exists and is not "none" or a URL
+      if (stroke && stroke !== "none" && !stroke.startsWith("url(") && stroke !== targetColor) {
+        el.setAttribute("stroke", targetColor);
+      }
+    });
+  });
+  
+  // Update icon in details preview
+  const detailsSvg = els.previewBox.querySelector("svg");
+  if (detailsSvg) {
+    const elements = detailsSvg.querySelectorAll("[fill], [stroke]");
+    const isLightMode = document.body.classList.contains("light-mode");
+    const targetColor = isLightMode ? "#1A1A1A" : "#FAFAFA";
+    
+    elements.forEach((el) => {
+      const fill = el.getAttribute("fill");
+      const stroke = el.getAttribute("stroke");
+      
+      // Update fill if it exists and is not "none" or a URL
+      if (fill && fill !== "none" && !fill.startsWith("url(") && fill !== targetColor) {
+        el.setAttribute("fill", targetColor);
+      }
+      
+      // Update stroke if it exists and is not "none" or a URL
+      if (stroke && stroke !== "none" && !stroke.startsWith("url(") && stroke !== targetColor) {
+        el.setAttribute("stroke", targetColor);
+      }
+    });
+  }
+}
+
 async function fetchSvg(name, style, size) {
   const normalizedStyle = normalizeStyle(style);
 
@@ -434,9 +523,11 @@ function renderCard(icon, style, size) {
 
   fetchSvg(icon.name, style, size)
     .then((svg) => {
+      // Apply theme colors to SVG
+      const themedSvg = applyThemeToSvg(svg);
       // Create container for SVG to avoid innerHTML issues in Safari
       const container = document.createElement("div");
-      container.innerHTML = svg;
+      container.innerHTML = themedSvg;
       preview.innerHTML = "";
       preview.appendChild(container.firstElementChild || container);
     })
