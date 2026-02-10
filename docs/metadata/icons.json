@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-04T07:15:17.145Z",
+  "timestamp": "2026-02-10T01:41:40.956Z",
   "icons": [
     {
       "name": "3d-cube",
@@ -10406,6 +10406,35 @@
       ]
     },
     {
+      "name": "door-sensor",
+      "category": {
+        "id": "security",
+        "label": "security"
+      },
+      "tags": [
+        "people-count",
+        "sensor",
+        "intrusion-detection",
+        "monitoring",
+        "security"
+      ],
+      "aliases": [
+        "occupancy-sensor",
+        "people-detector"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "down-up-1",
       "category": {
         "id": "arrows",
@@ -10713,6 +10742,35 @@
       ],
       "aliases": [
         "waste-container"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "duplicated-alert",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "alert",
+        "warning",
+        "attention",
+        "issue",
+        "state"
+      ],
+      "aliases": [
+        "panel-alert",
+        "warning-panel"
       ],
       "styles": [
         "filled",
@@ -19942,8 +20000,9 @@
         "lock",
         "secure",
         "safe",
-        "protection",
-        "security"
+        "protect",
+        "security",
+        "armed"
       ],
       "aliases": [
         "secure-lock",
@@ -22255,6 +22314,35 @@
       ]
     },
     {
+      "name": "notification-false",
+      "category": {
+        "id": "actions-general-interface",
+        "label": "actions & general interface"
+      },
+      "tags": [
+        "notification",
+        "off",
+        "disabled",
+        "mute",
+        "false"
+      ],
+      "aliases": [
+        "notification-off",
+        "mute-notification"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "notification-snooze",
       "category": {
         "id": "actions-general-interface",
@@ -23379,19 +23467,13 @@
         "label": "people"
       },
       "tags": [
-        "people-count",
-        "sensor",
-        "intrusion-detection",
-        "monitoring",
-        "security",
         "people",
         "count",
+        "sensor",
         "occupancy",
         "detection"
       ],
       "aliases": [
-        "occupancy-sensor",
-        "people-detector",
         "people-counter",
         "occupancy-counter"
       ],
@@ -25579,10 +25661,6 @@
         "label": "arrows"
       },
       "tags": [
-        "return-filter",
-        "air",
-        "filtration",
-        "hvac",
         "undo",
         "turn-left",
         "back",
@@ -25590,9 +25668,35 @@
         "arrow"
       ],
       "aliases": [
-        "return-air-filter",
         "back",
         "reply"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
+      "name": "return-air-filter",
+      "category": {
+        "id": "heating-ventilation-air-conditioning",
+        "label": "heating ventilation air conditioning"
+      },
+      "tags": [
+        "return-filter",
+        "air",
+        "filtration",
+        "hvac"
+      ],
+      "aliases": [
+        "return-air-filter"
       ],
       "styles": [
         "filled",
@@ -30113,6 +30217,35 @@
       ]
     },
     {
+      "name": "tape-measure",
+      "category": {
+        "id": "editor",
+        "label": "editor"
+      },
+      "tags": [
+        "measure",
+        "measurement",
+        "ruler",
+        "dimension",
+        "size"
+      ],
+      "aliases": [
+        "measuring-tape",
+        "ruler"
+      ],
+      "styles": [
+        "filled",
+        "outline"
+      ],
+      "sizes": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ]
+    },
+    {
       "name": "target-aim",
       "category": {
         "id": "wayfinding",
@@ -32262,7 +32395,8 @@
         "access",
         "open",
         "security",
-        "permission"
+        "permission",
+        "disarmed"
       ],
       "aliases": [
         "open-lock",
