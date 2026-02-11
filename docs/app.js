@@ -103,9 +103,18 @@ function updateDetailsPreview() {
 
   els.previewBox.innerHTML = "…";
 
-  const style = currentStyle || "outline";
+  // If PNG is selected, reset color to white
+  if (detailsFormat === "png") {
+    detailsColor = "#ffffff";
+  }
 
-  fetchSvg(selectedIcon.name, style, detailsSize)
+  // Determine which style to use - if current style doesn't exist for this icon, use first available
+  let styleToUse = currentStyle || "outline";
+  if (selectedIcon.styles && !selectedIcon.styles.includes(styleToUse)) {
+    styleToUse = selectedIcon.styles && selectedIcon.styles.length > 0 ? selectedIcon.styles[0] : "outline";
+  }
+
+  fetchSvg(selectedIcon.name, styleToUse, detailsSize)
     .then((svg) => {
       // Apply theme colors first, then apply custom color on top
       let themedSvg = applyThemeToSvg(svg);
@@ -224,8 +233,13 @@ if (els.copyBtn) {
     if (!selectedIcon) return;
 
     try {
-      const style = currentStyle || "outline";
-      let svg = await fetchSvg(selectedIcon.name, style, detailsSize);
+      // Determine which style to use - if current style doesn't exist for this icon, use first available
+      let styleToUse = currentStyle || "outline";
+      if (selectedIcon.styles && !selectedIcon.styles.includes(styleToUse)) {
+        styleToUse = selectedIcon.styles && selectedIcon.styles.length > 0 ? selectedIcon.styles[0] : "outline";
+      }
+
+      let svg = await fetchSvg(selectedIcon.name, styleToUse, detailsSize);
 
       if (detailsFormat === "png") {
         const pngBlob = await svgToPng(svg, detailsSize);
@@ -253,9 +267,14 @@ if (els.downloadBtn) {
     if (!selectedIcon) return;
 
     try {
-      const style = currentStyle || "outline";
-      let svg = await fetchSvg(selectedIcon.name, style, detailsSize);
-      const filename = `${selectedIcon.name}-${style}-${detailsSize}.${detailsFormat}`;
+      // Determine which style to use - if current style doesn't exist for this icon, use first available
+      let styleToUse = currentStyle || "outline";
+      if (selectedIcon.styles && !selectedIcon.styles.includes(styleToUse)) {
+        styleToUse = selectedIcon.styles && selectedIcon.styles.length > 0 ? selectedIcon.styles[0] : "outline";
+      }
+
+      let svg = await fetchSvg(selectedIcon.name, styleToUse, detailsSize);
+      const filename = `${selectedIcon.name}-${styleToUse}-${detailsSize}.${detailsFormat}`;
 
       let blob;
       if (detailsFormat === "png") {
