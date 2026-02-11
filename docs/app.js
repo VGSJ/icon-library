@@ -11,6 +11,7 @@ const els = {
   copyBtn: document.getElementById("copyBtn"),
   downloadBtn: document.getElementById("downloadBtn"),
   sizeButtons: document.getElementById("sizeButtons"),
+  colorButtons: document.getElementById("colorButtons"),
   themeToggleBtn: document.getElementById("themeToggleBtn"),
 };
 
@@ -20,7 +21,17 @@ let selectedCategory = null; // Track selected category filter
 let selectedIcon = null; // Track selected icon in details panel
 let detailsFormat = localStorage.getItem("detailsFormat") || "svg"; // Track selected format
 let detailsSize = parseInt(localStorage.getItem("detailsSize") || "32"); // Track selected size for details preview
+let detailsColor = localStorage.getItem("detailsColor") || "#ffffff"; // Track selected color for details preview
 const ICON_SIZE = 32; // Fixed icon size for grid
+
+// Color options
+const COLOR_OPTIONS = [
+  { hex: "#ffffff", name: "White" },
+  { hex: "#1257FD", name: "Blue" },
+  { hex: "#FF2E24", name: "Red" },
+  { hex: "#62779A", name: "Gray" },
+  { hex: "#BABABA", name: "Light Gray" },
+];
 
 /* --------------------------------------------------
    Theme Management
@@ -96,8 +107,9 @@ function updateDetailsPreview() {
 
   fetchSvg(selectedIcon.name, style, detailsSize)
     .then((svg) => {
-      // Apply theme colors to SVG
-      const themedSvg = applyThemeToSvg(svg);
+      // Apply custom color, then apply theme colors
+      let coloredSvg = applyColorToSvg(svg, detailsColor);
+      const themedSvg = applyThemeToSvg(coloredSvg);
       const container = document.createElement("div");
       container.innerHTML = themedSvg;
       els.previewBox.innerHTML = "";
@@ -133,6 +145,35 @@ function updateDetailsButtons() {
         updateDetailsPreview();
       });
       els.sizeButtons.appendChild(btn);
+    });
+  }
+
+  // Generate color buttons
+  if (els.colorButtons) {
+    els.colorButtons.innerHTML = "";
+    COLOR_OPTIONS.forEach((option) => {
+      const btn = document.createElement("button");
+      btn.className = "color-btn";
+      btn.title = option.name;
+      btn.dataset.color = option.hex;
+
+      const swatch = document.createElement("div");
+      swatch.className = "color-swatch";
+      swatch.style.backgroundColor = option.hex;
+
+      if (option.hex === detailsColor) {
+        btn.classList.add("active");
+      }
+
+      btn.appendChild(swatch);
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        detailsColor = option.hex;
+        localStorage.setItem("detailsColor", detailsColor);
+        updateDetailsButtons();
+        updateDetailsPreview();
+      });
+      els.colorButtons.appendChild(btn);
     });
   }
 }
@@ -422,6 +463,37 @@ function applyThemeToSvg(svgString) {
         return match;
       }
       return `stroke="${targetColor}"`;
+    }
+  );
+
+  return modifiedSvg;
+}
+
+function applyColorToSvg(svgString, color) {
+  // Apply custom color to SVG
+  let modifiedSvg = svgString;
+
+  // Replace fill attributes (but preserve "none" and "url(...)" values)
+  modifiedSvg = modifiedSvg.replace(
+    /fill="([^"]*)"/g,
+    (match, value) => {
+      // Skip if it's "none" or "url(...)"
+      if (value === "none" || value.startsWith("url(")) {
+        return match;
+      }
+      return `fill="${color}"`;
+    }
+  );
+
+  // Replace stroke attributes (but preserve "none" and "url(...)" values)
+  modifiedSvg = modifiedSvg.replace(
+    /stroke="([^"]*)"/g,
+    (match, value) => {
+      // Skip if it's "none" or "url(...)"
+      if (value === "none" || value.startsWith("url(")) {
+        return match;
+      }
+      return `stroke="${color}"`;
     }
   );
 
