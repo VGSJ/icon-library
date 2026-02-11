@@ -107,11 +107,11 @@ function updateDetailsPreview() {
 
   fetchSvg(selectedIcon.name, style, detailsSize)
     .then((svg) => {
-      // Apply custom color, then apply theme colors
-      let coloredSvg = applyColorToSvg(svg, detailsColor);
-      const themedSvg = applyThemeToSvg(coloredSvg);
+      // Apply theme colors first, then apply custom color on top
+      let themedSvg = applyThemeToSvg(svg);
+      const coloredSvg = applyColorToSvg(themedSvg, detailsColor);
       const container = document.createElement("div");
-      container.innerHTML = themedSvg;
+      container.innerHTML = coloredSvg;
       els.previewBox.innerHTML = "";
       els.previewBox.appendChild(container.firstElementChild || container);
     })
