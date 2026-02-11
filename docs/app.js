@@ -126,6 +126,12 @@ function updateDetailsButtons() {
     btn.classList.toggle("active", btn.dataset.format === detailsFormat);
   });
 
+  // Show/hide color buttons based on format (only show for SVG)
+  const colorSection = els.colorButtons?.parentElement;
+  if (colorSection) {
+    colorSection.style.display = detailsFormat === "svg" ? "block" : "none";
+  }
+
   // Generate size buttons from icon's available sizes
   if (selectedIcon && selectedIcon.sizes) {
     els.sizeButtons.innerHTML = "";
@@ -219,13 +225,15 @@ if (els.copyBtn) {
 
     try {
       const style = currentStyle || "outline";
-      const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
+      let svg = await fetchSvg(selectedIcon.name, style, detailsSize);
 
       if (detailsFormat === "png") {
         const pngBlob = await svgToPng(svg, detailsSize);
         await navigator.clipboard.write([new ClipboardItem({ "image/png": pngBlob })]);
         showToast(`Copied PNG: ${selectedIcon.name}`);
       } else {
+        // Apply color to SVG before copying
+        svg = applyColorToSvg(svg, detailsColor);
         const ok = await copyText(svg);
         if (ok) {
           showToast(`Copied: ${selectedIcon.name}`);
@@ -246,13 +254,15 @@ if (els.downloadBtn) {
 
     try {
       const style = currentStyle || "outline";
-      const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
+      let svg = await fetchSvg(selectedIcon.name, style, detailsSize);
       const filename = `${selectedIcon.name}-${style}-${detailsSize}.${detailsFormat}`;
 
       let blob;
       if (detailsFormat === "png") {
         blob = await svgToPng(svg, detailsSize);
       } else {
+        // Apply color to SVG before downloading
+        svg = applyColorToSvg(svg, detailsColor);
         blob = new Blob([svg], { type: "image/svg+xml" });
       }
 
