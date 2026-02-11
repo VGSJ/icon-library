@@ -798,7 +798,13 @@ if (els.styleButtons.length > 0) {
       els.styleButtons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
 
-      rerender();
+      // If an icon is selected, update just the preview without re-rendering the grid
+      if (selectedIcon) {
+        updateDetailsPreview();
+      } else {
+        // If no icon is selected, do a full rerender
+        rerender();
+      }
     });
   });
 
