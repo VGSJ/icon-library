@@ -92,7 +92,7 @@ function updateDetailsPreview() {
 
   els.previewBox.innerHTML = "…";
 
-  const style = els.style.value || "outline";
+  const style = currentStyle || "outline";
 
   fetchSvg(selectedIcon.name, style, detailsSize)
     .then((svg) => {
@@ -177,7 +177,7 @@ if (els.copyBtn) {
     if (!selectedIcon) return;
 
     try {
-      const style = els.style.value || "outline";
+      const style = currentStyle || "outline";
       const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
 
       if (detailsFormat === "png") {
@@ -204,7 +204,7 @@ if (els.downloadBtn) {
     if (!selectedIcon) return;
 
     try {
-      const style = els.style.value || "outline";
+      const style = currentStyle || "outline";
       const svg = await fetchSvg(selectedIcon.name, style, detailsSize);
       const filename = `${selectedIcon.name}-${style}-${detailsSize}.${detailsFormat}`;
 
