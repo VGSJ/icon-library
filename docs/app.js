@@ -193,24 +193,63 @@ function updateDetailsButtons() {
   }
 }
 
-// Convert SVG to PNG using canvas with higher resolution for better quality
+// Convert SVG to PNG using canvas, respecting the requested pixel size
 async function svgToPng(svgText, size) {
   return new Promise((resolve, reject) => {
-    // Render at 3x resolution for better quality, then export at requested size
-    const scale = 3;
     const canvas = document.createElement("canvas");
-    canvas.width = size * scale;
-    canvas.height = size * scale;
+    // The exported PNG should be exactly size x size pixels
+    canvas.width = size;
+    canvas.height = size;
     const ctx = canvas.getContext("2d");
 
     const img = new Image();
     img.onload = () => {
-      ctx.drawImage(img, 0, 0, size * scale, size * scale);
-      canvas.toBlob(resolve, "image/png");
-    };
-    img.onerror = () => reject(new Error("Failed to convert SVG to PNG"));
+      try {
+        ctx.clearRect(0, 0, size, size);
 
-    // Convert SVG to data URL
+        // Default draw region covers the whole canvas
+        let drawWidth = size;
+        let drawHeight = size;
+        let offsetX = 0;
+        let offsetY = 0;
+
+        // If the SVG has a viewBox, maintain its aspect ratio and center it
+        const viewBoxMatch = svgText.match(/viewBox="([^"]+)"/);
+        if (viewBoxMatch) {
+          const parts = viewBoxMatch[1].trim().split(/[\s,]+/).map(Number);
+          if (parts.length === 4) {
+            const vbWidth = parts[2];
+            const vbHeight = parts[3];
+            if (vbWidth > 0 && vbHeight > 0) {
+              const scale = size / Math.max(vbWidth, vbHeight);
+              drawWidth = vbWidth * scale;
+              drawHeight = vbHeight * scale;
+              offsetX = (size - drawWidth) / 2;
+              offsetY = (size - drawHeight) / 2;
+            }
+          }
+        }
+
+        ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+        canvas.toBlob((blob) => {
+          URL.revokeObjectURL(img.src);
+          if (blob) {
+            resolve(blob);
+          } else {
+            reject(new Error("Failed to create PNG blob"));
+          }
+        }, "image/png");
+      } catch (e) {
+        URL.revokeObjectURL(img.src);
+        reject(e);
+      }
+    };
+    img.onerror = () => {
+      URL.revokeObjectURL(img.src);
+      reject(new Error("Failed to convert SVG to PNG"));
+    };
+
+    // Convert SVG text to an object URL that the Image element can load
     const blob = new Blob([svgText], { type: "image/svg+xml" });
     const url = URL.createObjectURL(blob);
     img.src = url;
